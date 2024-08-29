@@ -1,0 +1,17 @@
+ 
+<root> 
+  <report>      
+    <planets>
+      <planet>
+        <resources>
+          <resource amount="300" kind="metal"/>
+          <resource amount="70" kind="trilithium"/>          
+        </resources>
+      </planet>
+    </planets>
+    <ships>        
+    </ships>
+    <transmissions>
+    </transmissions>
+  </report>
+</root>

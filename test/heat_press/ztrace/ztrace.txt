@@ -1,0 +1,14 @@
+0;IN;-1;CallICFGNode173 {fun: loop}
+	1;LUSE;0;loop;CallICFGNode173 {fun: loop}
+		2;ADEF;1;BASE;200;FIObjVar ID: 368 (base object)    %buffer = alloca [200 x i8], align 1 
+3;IN;-1;CallICFGNode160 {fun: loop}
+	2;ADEF;3;BASE;200;FIObjVar ID: 368 (base object)    %buffer = alloca [200 x i8], align 1 
+	4;SUSE;3;master_query_instrumented;StoreVFGNode ID: 785 StoreStmt: [Var1237 <-- Var1227]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		5;ADEF;4;DOMINATOR;4;FIObjVar ID: 1238 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+6;IN;-1;CallICFGNode179 {fun: loop}
+	7;LUSE;6;loop;CallICFGNode179 {fun: loop}
+		2;ADEF;7;BASE;200;FIObjVar ID: 368 (base object)    %buffer = alloca [200 x i8], align 1 
+8;IN;-1;CallICFGNode156 {fun: loop}
+	2;ADEF;8;BASE;200;FIObjVar ID: 368 (base object)    %buffer = alloca [200 x i8], align 1 
+	9;SUSE;8;master_query_instrumented;StoreVFGNode ID: 785 StoreStmt: [Var1237 <-- Var1227]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		5;ADEF;9;DOMINATOR;4;FIObjVar ID: 1238 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 

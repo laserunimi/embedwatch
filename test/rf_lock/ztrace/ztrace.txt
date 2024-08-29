@@ -1,0 +1,33 @@
+0;IN;-1;CallICFGNode371 {fun: rf_read_buf_instrumented}
+	1;ADEF;0;DOMINATOR;1;FIObjVar ID: 483 (base object)    %c_instrumented = alloca i8, align 1 
+	2;SUSE;0;rf_read_buf_instrumented;StoreVFGNode ID: 282 StoreStmt: [Var496 <-- Var493]	    store i8 %5, i8* %arrayidx_instrumented, align 1, !ziuse !3 
+		3;ADEF;2;BASE;16;FIObjVar ID: 86 (base object)    %buf = alloca [16 x i8], align 1 
+		4;ADEF;2;BASE;4;FIObjVar ID: 119 (base object)    %buf = alloca [4 x i8], align 1 
+		5;ADEF;2;DOMINATOR;4;FIObjVar ID: 477 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	6;SUSE;0;rf_read_buf_instrumented;StoreVFGNode ID: 281 StoreStmt: [Var482 <-- Var491]	    store i8 %conv_instrumented, i8* %c_instrumented, align 1 
+		1;ADEF;6;DOMINATOR;1;FIObjVar ID: 483 (base object)    %c_instrumented = alloca i8, align 1 
+7;IN;-1;CallICFGNode278 {fun: main}
+	8;ADEF;7;DOMINATOR;1;FIObjVar ID: 372 (base object)    %cmd = alloca i8, align 1 
+	9;SUSE;7;main;StoreVFGNode ID: 266 StoreStmt: [Var371 <-- Var384]	    store i8 %conv, i8* %cmd, align 1 
+		8;ADEF;9;DOMINATOR;1;FIObjVar ID: 372 (base object)    %cmd = alloca i8, align 1 
+10;IN;-1;CallICFGNode170 {fun: read_code}
+	11;ADEF;10;DOMINATOR;1;FIObjVar ID: 252 (base object)    %c = alloca i8, align 1 
+	12;SUSE;10;read_code;StoreVFGNode ID: 251 StoreStmt: [Var251 <-- Var262]	    store i8 %conv, i8* %c, align 1 
+		11;ADEF;12;DOMINATOR;1;FIObjVar ID: 252 (base object)    %c = alloca i8, align 1 
+	13;SUSE;10;read_code;StoreVFGNode ID: 252 StoreStmt: [Var266 <-- Var264]	    store i8 %5, i8* %arrayidx, align 1 
+		14;ADEF;13;BASE;16;FIObjVar ID: 244 (base object)    %buf = alloca [16 x i8], align 1 
+15;IN;-1;CallICFGNode225 {fun: set_code}
+	16;ADEF;15;DOMINATOR;1;FIObjVar ID: 315 (base object)    %c = alloca i8, align 1 
+	17;SUSE;15;set_code;StoreVFGNode ID: 259 StoreStmt: [Var328 <-- Var326]	    store i8 %5, i8* %arrayidx, align 1 
+		18;ADEF;17;BASE;16;FIObjVar ID: 311 (base object)    %buf = alloca [16 x i8], align 1 
+	19;SUSE;15;set_code;StoreVFGNode ID: 258 StoreStmt: [Var314 <-- Var324]	    store i8 %conv, i8* %c, align 1 
+		16;ADEF;19;DOMINATOR;1;FIObjVar ID: 315 (base object)    %c = alloca i8, align 1 
+	20;SUSE;15;set_code;StoreVFGNode ID: 260 StoreStmt: [Var336 <-- Var5]	    store i8 0, i8* %arrayidx3, align 1 
+		18;ADEF;20;BASE;16;FIObjVar ID: 311 (base object)    %buf = alloca [16 x i8], align 1 
+21;IN;-1;CallICFGNode247 {fun: set_code} GepStmt: [Var515 <-- Var24]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  GepStmt: [Var516 <-- Var310]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  LoadStmt: [Var517 <-- Var516]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  StoreStmt: [Var515 <-- Var517]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  CopyStmt: [Var346 <-- Var345]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4 
+	22;LUSE;21;set_code;CallICFGNode247 {fun: set_code} GepStmt: [Var515 <-- Var24]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  GepStmt: [Var516 <-- Var310]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  LoadStmt: [Var517 <-- Var516]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  StoreStmt: [Var515 <-- Var517]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4  CopyStmt: [Var346 <-- Var345]	    %call4 = call i8* @strcpy(i8* %10, i8* %arraydecay) #4 
+		23;GDEF;22;BASE;7;FIObjVar ID: 26 (base object)  @the_pw = dso_local global [7 x i8] c"UNLOCK\00", align 1 { Glob  }
+24;GDEF;-1;BASE;4;FIObjVar ID: 19 (base object)  @cmd_max_tx_power = dso_local global [4 x i8] c"\AA\FA\96\07", align 1 { Glob  }
+25;GDEF;-1;BASE;3;FIObjVar ID: 16 (base object)  @cmd_reset = dso_local global [3 x i8] c"\AA\FA\F0", align 1 { Glob  }
+26;ADEF;-1;BASE;4;FIObjVar ID: 162 (base object)    %buf = alloca [4 x i8], align 1 
+27;GDEF;-1;BASE;3;FIObjVar ID: 13 (base object)  @cmd_get_config = dso_local global [3 x i8] c"\AA\FA\E1", align 1 { Glob  }

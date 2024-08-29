@@ -1,0 +1,83 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: lcd_init is whitelisted
+----------------------------------------------------------
+Function: lcd_begin is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: pinMode is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: analogWrite is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_begin is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_available is whitelisted
+----------------------------------------------------------
+Function: Serial_write is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_readString is whitelisted
+FN:__isoc99_scanf
+Function: Serial_readString, found scanf call
+Args size:2
+FN:usleep
+----------------------------------------------------------
+Function: lcd_clear is whitelisted
+FN:strcpy
+FN:strcpy
+----------------------------------------------------------
+Function: lcd_write is whitelisted
+----------------------------------------------------------
+Function: lcd_setCursor is whitelisted
+----------------------------------------------------------
+Function: digitalRead is whitelisted
+----------------------------------------------------------
+Function: analogRead is whitelisted
+----------------------------------------------------------
+Function: delay is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: map is whitelisted
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:lcd_init
+FN:pinMode
+FN:pinMode
+FN:pinMode
+FN:lcd_begin
+FN:analogWrite
+FN:Serial_begin
+----------------------------------------------------------
+Function: loop is whitelisted
+FN:Serial_available
+FN:Serial_readString
+FN:lcd_clear
+FN:lcd_write
+FN:lcd_setCursor
+FN:digitalRead
+FN:Serial_write
+FN:delay
+FN:digitalRead
+FN:Serial_write
+FN:delay
+FN:digitalRead
+FN:Serial_write
+FN:delay
+FN:analogRead
+FN:map
+FN:abs
+FN:Serial_write
+FN:Serial_write
+FN:delay
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:loop
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

@@ -1,0 +1,37 @@
+0;IN;-1;CallICFGNode493 {fun: Serial_readString_instrumented}
+	1;ADEF;0;BASE;20;FIObjVar ID: 313 (base object)    %message = alloca [20 x i8], align 1 
+	2;SUSE;0;loop;StoreVFGNode ID: 409 StoreStmt: [Var7 <-- Var8]	    store i32 0, i32* @pos, align 4 
+		3;GDEF;2;DOMINATOR;4;FIObjVar ID: 9 (base object)  @pos = dso_local global i32 0, align 4 { Glob  }
+	4;SUSE;0;Serial_readString_instrumented;StoreVFGNode ID: 449 StoreStmt: [Var642 <-- Var635]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		5;ADEF;4;DOMINATOR;4;FIObjVar ID: 643 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	6;SUSE;0;lcd_write_instrumented;StoreVFGNode ID: 458 StoreStmt: [Var696 <-- Var687]	    store i8 %c, i8* %c.addr_instrumented, align 1 
+		7;ADEF;6;DOMINATOR;1;FIObjVar ID: 697 (base object)    %c.addr_instrumented = alloca i8, align 1 
+	8;SUSE;0;lcd_write_instrumented;StoreVFGNode ID: 459 StoreStmt: [Var711 <-- Var705]	    store i8 %6, i8* %arrayidx_instrumented, align 1, !ziuse !3 
+		9;SDEF;8;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		9;SDEF;8;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		10;ADEF;8;DOMINATOR;4;FIObjVar ID: 695 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 
+	11;SUSE;0;lcd_write_instrumented;StoreVFGNode ID: 460 StoreStmt: [Var721 <-- Var715]	    store i8 %10, i8* %arrayidx2_instrumented, align 1, !ziuse !3 
+		9;SDEF;11;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		12;SDEF;11;BASE;32;64;[4];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		10;ADEF;11;DOMINATOR;4;FIObjVar ID: 695 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 
+	5;ADEF;0;DOMINATOR;4;FIObjVar ID: 643 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	13;SUSE;0;Serial_readString_instrumented;StoreVFGNode ID: 449 StoreStmt: [Var642 <-- Var635]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		5;ADEF;13;DOMINATOR;4;FIObjVar ID: 643 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+14;IN;-1;CallICFGNode517 {fun: lcd_clear_instrumented} GepStmt: [Var804 <-- Var670]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  GepStmt: [Var805 <-- Var30]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  LoadStmt: [Var806 <-- Var805]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  StoreStmt: [Var804 <-- Var806]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  CopyStmt: [Var673 <-- Var671]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3 
+	15;LUSE;14;lcd_clear_instrumented;CallICFGNode517 {fun: lcd_clear_instrumented} GepStmt: [Var804 <-- Var670]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  GepStmt: [Var805 <-- Var30]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  LoadStmt: [Var806 <-- Var805]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  StoreStmt: [Var804 <-- Var806]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3  CopyStmt: [Var673 <-- Var671]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #4, !ziuse !3 
+		9;SDEF;15;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		9;SDEF;15;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		9;SDEF;15;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		9;SDEF;15;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		16;ADEF;15;DOMINATOR;4;FIObjVar ID: 667 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 
+17;IN;-1;CallICFGNode496 {fun: Serial_readString_instrumented}
+	18;LUSE;17;Serial_readString_instrumented;CallICFGNode496 {fun: Serial_readString_instrumented}
+		1;ADEF;18;BASE;20;FIObjVar ID: 313 (base object)    %message = alloca [20 x i8], align 1 
+		5;ADEF;18;DOMINATOR;4;FIObjVar ID: 643 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+19;IN;-1;CallICFGNode523 {fun: lcd_clear_instrumented} GepStmt: [Var807 <-- Var675]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  GepStmt: [Var808 <-- Var30]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  LoadStmt: [Var809 <-- Var808]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  StoreStmt: [Var807 <-- Var809]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  CopyStmt: [Var678 <-- Var676]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3 
+	20;LUSE;19;lcd_clear_instrumented;CallICFGNode523 {fun: lcd_clear_instrumented} GepStmt: [Var807 <-- Var675]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  GepStmt: [Var808 <-- Var30]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  LoadStmt: [Var809 <-- Var808]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  StoreStmt: [Var807 <-- Var809]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3  CopyStmt: [Var678 <-- Var676]	    %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %7) #4, !ziuse !3 
+		9;SDEF;20;BASE;32;32;[3];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		12;SDEF;20;BASE;32;64;[4];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		12;SDEF;20;BASE;32;64;[4];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		12;SDEF;20;BASE;32;64;[4];FIObjVar ID: 17 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		16;ADEF;20;DOMINATOR;4;FIObjVar ID: 667 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 

@@ -1,0 +1,42 @@
+0;IN;-1;CallICFGNode668 {fun: myDFPlayer_play_instrumented}
+	1;ADEF;0;DOMINATOR;4;FIObjVar ID: 886 (base object)    %c_instrumented = alloca i32, align 4 
+	2;SUSE;0;myDFPlayer_play_instrumented;StoreVFGNode ID: 626 StoreStmt: [Var13 <-- Var953]	    store i32 %mul_instrumented, i32* @fake_write_reg, align 4 
+		3;GDEF;2;DOMINATOR;4;FIObjVar ID: 15 (base object)  @fake_write_reg = dso_local global i32 0, align 4 { Glob  }
+	4;SUSE;0;myDFPlayer_play_instrumented;StoreVFGNode ID: 625 StoreStmt: [Var13 <-- Var950]	    store i32 %add_instrumented, i32* @fake_write_reg, align 4 
+		3;GDEF;4;DOMINATOR;4;FIObjVar ID: 15 (base object)  @fake_write_reg = dso_local global i32 0, align 4 { Glob  }
+	5;SUSE;0;myDFPlayer_play_instrumented;StoreVFGNode ID: 621 StoreStmt: [Var885 <-- Var918]	    store i32 %call5_instrumented, i32* %c_instrumented, align 4 
+		1;ADEF;5;DOMINATOR;4;FIObjVar ID: 886 (base object)    %c_instrumented = alloca i32, align 4 
+	6;SUSE;0;myDFPlayer_play_instrumented;StoreVFGNode ID: 619 StoreStmt: [Var885 <-- Var207]	    store i32 100, i32* %c_instrumented, align 4 
+		1;ADEF;6;DOMINATOR;4;FIObjVar ID: 886 (base object)    %c_instrumented = alloca i32, align 4 
+	7;SUSE;0;myDFPlayer_play_instrumented;StoreVFGNode ID: 622 StoreStmt: [Var925 <-- Var921]	    store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !ziuse !3 
+		8;SDEF;7;BASE;10000;12;[3];FIObjVar ID: 407 (base object)    %mp3 = alloca %struct.mp3, align 4 
+		8;SDEF;7;BASE;10000;12;[3];FIObjVar ID: 407 (base object)    %mp3 = alloca %struct.mp3, align 4 
+		9;ADEF;7;DOMINATOR;4;FIObjVar ID: 882 (base object)    %mp3.addr_instrumented = alloca %struct.mp3*, align 4 
+10;IN;-1;CallICFGNode396 {fun: WiFi_begin_instrumented} GepStmt: [Var1083 <-- Var621]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  GepStmt: [Var1084 <-- Var623]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  LoadStmt: [Var1085 <-- Var1084]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  StoreStmt: [Var1083 <-- Var1085]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  CopyStmt: [Var624 <-- Var622]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3 
+	11;LUSE;10;WiFi_begin_instrumented;CallICFGNode396 {fun: WiFi_begin_instrumented} GepStmt: [Var1083 <-- Var621]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  GepStmt: [Var1084 <-- Var623]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  LoadStmt: [Var1085 <-- Var1084]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  StoreStmt: [Var1083 <-- Var1085]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  CopyStmt: [Var624 <-- Var622]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3 
+		12;SDEF;11;BASE;64;0;[0];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		12;SDEF;11;BASE;64;0;[0];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		12;SDEF;11;BASE;64;0;[0];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		12;SDEF;11;BASE;64;0;[0];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		13;ADEF;11;DOMINATOR;4;FIObjVar ID: 612 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+		14;ADEF;11;DOMINATOR;4;FIObjVar ID: 677 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+		15;ADEF;11;DOMINATOR;4;FIObjVar ID: 1026 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+16;IN;-1;CallICFGNode402 {fun: WiFi_begin_instrumented} GepStmt: [Var1086 <-- Var626]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  GepStmt: [Var1087 <-- Var628]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  LoadStmt: [Var1088 <-- Var1087]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  StoreStmt: [Var1086 <-- Var1088]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  CopyStmt: [Var629 <-- Var627]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3 
+	17;LUSE;16;WiFi_begin_instrumented;CallICFGNode402 {fun: WiFi_begin_instrumented} GepStmt: [Var1086 <-- Var626]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  GepStmt: [Var1087 <-- Var628]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  LoadStmt: [Var1088 <-- Var1087]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  StoreStmt: [Var1086 <-- Var1088]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3  CopyStmt: [Var629 <-- Var627]	    %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %7) #6, !ziuse !3 
+		12;SDEF;17;BASE;64;0;[0];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		18;SDEF;17;BASE;32;64;[1];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		18;SDEF;17;BASE;32;64;[1];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		18;SDEF;17;BASE;32;64;[1];FIObjVar ID: 409 (base object)    %wifi = alloca %struct.wifi, align 1 
+		13;ADEF;17;DOMINATOR;4;FIObjVar ID: 612 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+		14;ADEF;17;DOMINATOR;4;FIObjVar ID: 677 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+		15;ADEF;17;DOMINATOR;4;FIObjVar ID: 1026 (base object)    %wifi.addr_instrumented = alloca %struct.wifi*, align 4 
+19;IN;-1;CallICFGNode621 {fun: myDFPlayer_select_instrumented} GepStmt: [Var1089 <-- Var863]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  GepStmt: [Var1090 <-- Var58]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  LoadStmt: [Var1091 <-- Var1090]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  StoreStmt: [Var1089 <-- Var1091]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  CopyStmt: [Var866 <-- Var864]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3 
+	20;LUSE;19;myDFPlayer_select_instrumented;CallICFGNode621 {fun: myDFPlayer_select_instrumented} GepStmt: [Var1089 <-- Var863]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  GepStmt: [Var1090 <-- Var58]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  LoadStmt: [Var1091 <-- Var1090]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  StoreStmt: [Var1089 <-- Var1091]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3  CopyStmt: [Var866 <-- Var864]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5) #6, !ziuse !3 
+		21;SDEF;20;BASE;100;10012;[4];FIObjVar ID: 407 (base object)    %mp3 = alloca %struct.mp3, align 4 
+		21;SDEF;20;BASE;100;10012;[4];FIObjVar ID: 407 (base object)    %mp3 = alloca %struct.mp3, align 4 
+		21;SDEF;20;BASE;100;10012;[4];FIObjVar ID: 407 (base object)    %mp3 = alloca %struct.mp3, align 4 
+		22;ADEF;20;DOMINATOR;4;FIObjVar ID: 860 (base object)    %mp3.addr_instrumented = alloca %struct.mp3*, align 4 
+		23;ADEF;20;DOMINATOR;4;FIObjVar ID: 980 (base object)    %mp3.addr_instrumented = alloca %struct.mp3*, align 4 
+		24;ADEF;20;DOMINATOR;4;FIObjVar ID: 1024 (base object)    %mp3.addr_instrumented = alloca %struct.mp3*, align 4 
+27;GDEF;-1;BASE;12;FIObjVar ID: 6 (base object)  @ssid = dso_local global [12 x i8] c"<SSID HERE>\00", align 1 { Glob  }
+28;GDEF;-1;BASE;16;FIObjVar ID: 9 (base object)  @pass = dso_local global [16 x i8] c"<PASSWORD HERE>\00", align 1 { Glob  }

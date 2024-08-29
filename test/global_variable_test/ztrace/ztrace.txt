@@ -1,0 +1,9 @@
+0;IN;-1;CallICFGNode92 {fun: read_instrumented}
+	1;ADEF;0;DOMINATOR;4;FIObjVar ID: 143 (base object)    %c_instrumented = alloca i32, align 4 
+	2;SUSE;0;read_instrumented;StoreVFGNode ID: 92 StoreStmt: [Var162 <-- Var160]	    store i32 %6, i32* %arrayidx_instrumented, align 4 
+		3;GDEF;2;BASE;40;FIObjVar ID: 6 (base object)  @buff1 = common dso_local global [10 x i32] zeroinitializer, align 4 { Glob  }
+	4;SUSE;0;read_instrumented;StoreVFGNode ID: 89 StoreStmt: [Var142 <-- Var149]	    store i32 100, i32* %c_instrumented, align 4 
+		1;ADEF;4;DOMINATOR;4;FIObjVar ID: 143 (base object)    %c_instrumented = alloca i32, align 4 
+	5;SUSE;0;read_instrumented;StoreVFGNode ID: 91 StoreStmt: [Var142 <-- Var158]	    store i32 %call_instrumented, i32* %c_instrumented, align 4 
+		1;ADEF;5;DOMINATOR;4;FIObjVar ID: 143 (base object)    %c_instrumented = alloca i32, align 4 
+6;GDEF;-1;BASE;400;FIObjVar ID: 9 (base object)  @buff2 = common dso_local global [100 x i32] zeroinitializer, align 4 { Glob  }

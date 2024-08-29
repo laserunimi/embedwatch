@@ -1,0 +1,21 @@
+ <root>
+  <person
+  firstname="Bee"
+  lastname="Nedrud"
+  city="Port Elizabeth"
+  country="Gambia"
+  firstname2="Amii"
+  lastname2="Hunfredo"
+  email="Amii.Hunfredo@yopmail.com"
+  />
+  <random>12</random>
+  <random_float>1.235</random_float>
+  <bool>true</bool>
+  <date>1992-06-05</date>
+  <regEx>hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo to you</regEx>
+  <enum>xml</enum>
+  <elt>Ilse</elt><elt>Katharina</elt><elt>Tani</elt><elt>Madalyn</elt><elt>Carilyn</elt>  
+  <Amii>
+    <age>80</age>
+  </Amii>
+</root>

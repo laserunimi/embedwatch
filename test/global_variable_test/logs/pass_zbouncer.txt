@@ -1,0 +1,49 @@
+Checking for function: main
+Checking for function: read_instrumented
+-------------------------LOOPS----------------------------
+Loop in read_instrumented: ZSUSE 5 |   store i32 %call_instrumented, i32* %c_instrumented, align 4, !zsuse !7
+Injecting zbouncer_use(use=5, addr=0x560f5e067458)
+Loop in read_instrumented: ZSUSE 2 |   store i32 %15, i32* %arrayidx_instrumented, align 4, !zsuse !8
+Injecting zbouncer_use(use=2, addr=0x560f5e067a98)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 3 | @buff1 = common dso_local global [10 x i32] zeroinitializer, align 4, !zdef !0
+Injecting zbouncer_collect_galloca(def=3, addr=0x560f5e040268)
+METADATA::zdef 6 | @buff2 = common dso_local global [100 x i32] zeroinitializer, align 4, !zdef !1
+Injecting zbouncer_collect_galloca(def=6, addr=0x560f5e041768)
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 1 |   %c_instrumented = alloca i32, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=1, addr=0x560f5e067458)
+----------------------------------------------------------
+METADATA::zuse 4 |   store i32 100, i32* %c_instrumented, align 4, !zsuse !6
+Injecting zbouncer_use(use=4, addr=0x560f5e067458)
+METADATA::zuse 5 |   store i32 %call_instrumented, i32* %c_instrumented, align 4, !zsuse !7
+Injecting zbouncer_use(use=5, addr=0x560f5e067458)
+METADATA::zuse 2 |   store i32 %42, i32* %arrayidx_instrumented, align 4, !zsuse !8
+Injecting zbouncer_use(use=2, addr=0x560f5e067a98)
+----------------------------------------------------------
+Instruction:   call void @read_instrumented(i32* %16, %struct._IO_FILE* %15, i32 0, i32 0), !zref_t_id !0, !zref_f_id !5
+Has metadata zref_t_id with value 3
+Instruction:   call void @read_instrumented(i32* %16, %struct._IO_FILE* %15, i32 0, i32 0), !zref_t_id !0, !zref_f_id !5
+Has metadata zref_f_id with value 9
+Arguments recap:
+  %16 = getelementptr inbounds [10 x i32], [10 x i32]* @buff1, i32 0, i32 0
+  %15 = load %struct._IO_FILE*, %struct._IO_FILE** %f, align 4
+  %25 = load i32, i32* %19
+  %34 = load i32, i32* %28
+Instruction:   call void @read_instrumented(i32* %36, %struct._IO_FILE* %35, i32 0, i32 0), !zref_t_id !1, !zref_f_id !6
+Has metadata zref_t_id with value 6
+Instruction:   call void @read_instrumented(i32* %36, %struct._IO_FILE* %35, i32 0, i32 0), !zref_t_id !1, !zref_f_id !6
+Has metadata zref_f_id with value 7
+Arguments recap:
+  %36 = getelementptr inbounds [100 x i32], [100 x i32]* @buff2, i32 0, i32 0
+  %35 = load %struct._IO_FILE*, %struct._IO_FILE** %f, align 4
+  %45 = load i32, i32* %39
+  %54 = load i32, i32* %48
+Replacing   call void @read_instrumented(i32* %16, %struct._IO_FILE* %15, i32 0, i32 0), !zref_t_id !0, !zref_f_id !5 with   call void @read_instrumented(i32* %16, %struct._IO_FILE* %15, i32 %25, i32 %34)
+Replaced call
+Replacing   call void @read_instrumented(i32* %36, %struct._IO_FILE* %35, i32 0, i32 0), !zref_t_id !1, !zref_f_id !5 with   call void @read_instrumented(i32* %36, %struct._IO_FILE* %35, i32 %45, i32 %54)
+Replaced call
+Returning

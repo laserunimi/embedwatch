@@ -1,0 +1,188 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pinMode
+Function pinMode has parameters:
+	-i32 %pin
+	-i32 %status
+Function pinMode doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogWrite
+Function analogWrite has parameters:
+	-i32 %pin
+	-i32 %value
+Function analogWrite doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_begin
+Function Serial_begin has parameters:
+	-i32 %boud_rate
+Function Serial_begin doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_available
+Function Serial_available has parameters:
+Function Serial_available doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_print
+Function Serial_print has parameters:
+	-i8* %msg
+Instrumenting Function: Serial_println
+Function Serial_println has parameters:
+	-i8* %msg
+Instrumenting Function: Serial_readString
+Function Serial_readString has parameters:
+	-i8* %buffer
+Instrumenting Function: millis
+Function millis has parameters:
+Function millis doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: digitalRead
+Function digitalRead has parameters:
+	-i32 %pin
+Function digitalRead doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogRead
+Function analogRead has parameters:
+	-i32 %pin
+Function analogRead doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %msec
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_begin
+Function WiFi_begin has parameters:
+	-%struct.wifi* %wifi
+	-i8* %ssid
+	-i8* %password
+Instrumenting Function: WiFi_status
+Function WiFi_status has parameters:
+	-%struct.wifi* %wifi
+Instrumenting Function: http_send
+Function http_send has parameters:
+	-%struct.wifi* %wifi
+	-i8* %myip
+	-i8* %endpoint
+	-i8* %msg
+Instrumenting Function: http_recv
+Function http_recv has parameters:
+	-%struct.wifi* %wifi
+	-i8* %buf
+Instrumenting Function: sendHttpRequest
+Function sendHttpRequest has parameters:
+	-%struct.wifi* %wifi
+	-i8* %endpoint
+Instrumenting Function: setup
+Function setup has parameters:
+	-i8* %ssid
+	-i8* %password
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_print_instrumented
+Function Serial_print_instrumented has parameters:
+	-i8* %msg
+	-i32 %msg_id
+Function Serial_print_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_println_instrumented
+Function Serial_println_instrumented has parameters:
+	-i8* %msg
+	-i32 %msg_id
+Function Serial_println_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_readString_instrumented
+Function Serial_readString_instrumented has parameters:
+	-i8* %buffer
+	-i32 %buffer_id
+Function Serial_readString_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_begin_instrumented
+Function WiFi_begin_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i8* %ssid
+	-i8* %password
+	-i32 %wifi_id
+	-i32 %ssid_id
+	-i32 %password_id
+Function WiFi_begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_status_instrumented
+Function WiFi_status_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i32 %wifi_id
+Function WiFi_status_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: http_send_instrumented
+Function http_send_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i8* %myip
+	-i8* %endpoint
+	-i8* %msg
+	-i32 %wifi_id
+	-i32 %myip_id
+	-i32 %endpoint_id
+	-i32 %msg_id
+Function http_send_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: http_recv_instrumented
+Function http_recv_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i8* %buf
+	-i32 %wifi_id
+	-i32 %buf_id
+Function http_recv_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sendHttpRequest_instrumented
+Function sendHttpRequest_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i8* %endpoint
+	-i32 %wifi_id
+	-i32 %endpoint_id
+Function sendHttpRequest_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup_instrumented
+Function setup_instrumented has parameters:
+	-i8* %ssid
+	-i8* %password
+	-i32 %ssid_id
+	-i32 %password_id
+Function setup_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Serial_print was extended with 1 arguments
+Function Serial_println was extended with 1 arguments
+Function Serial_readString was extended with 1 arguments
+Function WiFi_begin was extended with 3 arguments
+Function WiFi_status was extended with 1 arguments
+Function http_recv was extended with 2 arguments
+Function http_send was extended with 4 arguments
+Function sendHttpRequest was extended with 2 arguments
+Function setup was extended with 2 arguments
+Searching for calls to:
+	- Serial_print
+	- Serial_println
+	- Serial_readString
+	- WiFi_begin
+	- WiFi_status
+	- http_recv
+	- http_send
+	- sendHttpRequest
+	- setup
+Found call to setup inside main
+Found call to Serial_println inside main
+Found call to Serial_println inside main
+Found call to sendHttpRequest inside main
+Found call to WiFi_status inside sendHttpRequest_instrumented
+Found call to http_send inside sendHttpRequest_instrumented
+Found call to http_recv inside sendHttpRequest_instrumented
+Found call to Serial_println inside sendHttpRequest_instrumented
+Found call to Serial_println inside sendHttpRequest_instrumented
+Found call to WiFi_begin inside setup_instrumented
+Found call to WiFi_status inside setup_instrumented
+Found call to Serial_print inside setup_instrumented
+Found call to Serial_println inside setup_instrumented
+Found call to Serial_println inside setup_instrumented
+Replacing calls
+Removing function Serial_print
+Remove OK Serial_print
+Removing function Serial_println
+Remove OK Serial_println
+Removing function Serial_readString
+Remove OK Serial_readString
+Removing function WiFi_begin
+Remove OK WiFi_begin
+Removing function WiFi_status
+Remove OK WiFi_status
+Removing function http_recv
+Remove OK http_recv
+Removing function http_send
+Remove OK http_send
+Removing function sendHttpRequest
+Remove OK sendHttpRequest
+Removing function setup
+Remove OK setup

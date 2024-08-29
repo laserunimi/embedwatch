@@ -1,0 +1,60 @@
+<root>
+  <row>
+    <post_title>AllinOneSEO title</post_title>
+    <noindex></noindex>
+    <nofollow></nofollow>
+    <custom_link>https://trial.smackcoders.com/yyrtcvaj/wp-admin</custom_link>
+    <disable_analytics></disable_analytics>
+    <noodp>0</noodp>
+    <noydir></noydir>
+    <aioseo_title>NewtitleforAllinoneSEO</aioseo_title>
+    <aioseo_description>new description here</aioseo_description>
+    <og_title>fbtitle</og_title>
+    <og_description>fbdescription</og_description>
+    <og_image_type>featured</og_image_type>
+    <og_video>https://trial.smackcoders.com/yyrtcvaj/wp-admin</og_video>
+    <og_object_type>default</og_object_type>
+    <twitter_card>default</twitter_card>
+    <twitter_image_type>featured</twitter_image_type>
+    <twitter_title>twittertitle</twitter_title>
+    <twitter_description>twitterdescription</twitter_description>
+    <robots_default>0</robots_default>
+    <robots_noarchive>1</robots_noarchive>
+    <robots_nosnippet>1</robots_nosnippet>
+    <robots_noimageindex>0</robots_noimageindex>
+    <robots_notranslate>0</robots_notranslate>
+    <robots_max_snippet>-1</robots_max_snippet>
+    <robots_max_videopreview>-1</robots_max_videopreview>
+    <robots_max_imagepreview>standard</robots_max_imagepreview>
+    <keyphrases>keyphrase1</keyphrases>
+  </row>
+  <row>
+    <post_title>AllinOneSEO title1</post_title>
+    <noindex></noindex>
+    <nofollow></nofollow>
+    <custom_link>https://trial.smackcoders.com/yyrtcvaj/wp-admin</custom_link>
+    <disable_analytics></disable_analytics>
+    <noodp>1</noodp>
+    <noydir></noydir>
+    <aioseo_title>NewtitleforAllinoneSEO1</aioseo_title>
+    <aioseo_description>new description here</aioseo_description>
+    <og_title>fbtitle1</og_title>
+    <og_description></og_description>
+    <og_image_type>default</og_image_type>
+    <og_video>https://trial.smackcoders.com/yyrtcvaj/wp-admin</og_video>
+    <og_object_type>default</og_object_type>
+    <twitter_card>default</twitter_card>
+    <twitter_image_type>default</twitter_image_type>
+    <twitter_title>twittertitle</twitter_title>
+    <twitter_description>twitterdescription</twitter_description>
+    <robots_default>0</robots_default>
+    <robots_noarchive>1</robots_noarchive>
+    <robots_nosnippet>1</robots_nosnippet>
+    <robots_noimageindex>0</robots_noimageindex>
+    <robots_notranslate>1</robots_notranslate>
+    <robots_max_snippet>3</robots_max_snippet>
+    <robots_max_videopreview>3</robots_max_videopreview>
+    <robots_max_imagepreview>large</robots_max_imagepreview>
+    <keyphrases>keyphrase2</keyphrases>
+  </row>
+</root>

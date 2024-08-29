@@ -1,0 +1,112 @@
+Checking for function: hook_exit
+Checking for function: pinMode
+Checking for function: analogWrite
+Checking for function: Serial_begin
+Checking for function: Serial_available
+Checking for function: digitalRead
+Checking for function: analogRead
+Checking for function: delay
+Checking for function: map
+Checking for function: setup
+Checking for function: loop
+Checking for function: main
+Checking for function: lcd_init_instrumented
+Checking for function: lcd_begin_instrumented
+Checking for function: Serial_write_instrumented
+Checking for function: Serial_readString_instrumented
+	wrapper_scanf |   %6 = call i8* @wrapper_scanf(i8* %5, i8* %4)
+Checking for function: lcd_clear_instrumented
+Checking for function: lcd_write_instrumented
+Checking for function: lcd_setCursor_instrumented
+-------------------------LOOPS----------------------------
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 3 | @pos = dso_local global i32 0, align 4, !zdef !0
+Injecting zbouncer_collect_galloca(def=3, addr=0x55a2a365e288)
+METADATA::zdef 12 | @lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+Injecting zbouncer_collect_galloca(def=12, addr=0x55a2a365d6e8)
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 1 |   %message = alloca [20 x i8], align 1, !zdef !5
+Injecting zbouncer_collect_alloca(def=1, addr=0x55a2a368c418)
+METADATA::zdef 5 |   %buffer.addr_instrumented = alloca i8*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=5, addr=0x55a2a3697f68)
+METADATA::zdef 16 |   %lcd.addr_instrumented = alloca %struct.lcd*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=16, addr=0x55a2a3698b48)
+METADATA::zdef 10 |   %lcd.addr_instrumented = alloca %struct.lcd*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=10, addr=0x55a2a369a068)
+METADATA::zdef 7 |   %c.addr_instrumented = alloca i8, align 1, !zdef !6
+Injecting zbouncer_collect_alloca(def=7, addr=0x55a2a369a0c8)
+----------------------------------------------------------
+METADATA::zuse 2 |   store i32 0, i32* @pos, align 4, !zsuse !6
+Injecting zbouncer_use(use=2, addr=0x55a2a365e288)
+METADATA::zuse 4 |   store i8* %buffer, i8** %buffer.addr_instrumented, align 4, !zsuse !6
+Injecting zbouncer_use(use=4, addr=0x55a2a3697f68)
+METADATA::zuse 6 |   store i8 %c, i8* %c.addr_instrumented, align 1, !zsuse !7
+Injecting zbouncer_use(use=6, addr=0x55a2a369a0c8)
+METADATA::zuse 8 |   store i8 %33, i8* %arrayidx_instrumented, align 1, !ziuse !8, !zsuse !9
+Injecting zbouncer_iuse(use=8, def=lcd_id, addr=0x55a2a369a778)
+METADATA::zuse 11 |   store i8 %46, i8* %arrayidx2_instrumented, align 1, !ziuse !8, !zsuse !10
+Injecting zbouncer_iuse(use=11, def=lcd_id, addr=0x55a2a369abb8)
+----------------------------------------------------------
+METADATA::zluse 18 |   %call_instrumented = call i32 (i8*, ...) @__isoc99_scanf(i8* %25, i8* %22), !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=18, def=buffer_id, addr=0x55a2a3698048, size_of_write=0x55a2a36b2d20)
+METADATA::zluse 15 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %14) #4, !ziuse !6, !zluse !7
+Injecting zbouncer_iluse(use=15, def=lcd_id, addr=0x55a2a3698d58, size_of_write=0x55a2a36b2d20)
+METADATA::zluse 20 |   %call2_instrumented = call i8* @strcpy(i8* %arraydecay1_instrumented, i8* %25) #4, !ziuse !6, !zluse !8
+Injecting zbouncer_iluse(use=20, def=lcd_id, addr=0x55a2a3699038, size_of_write=0x55a2a36b2d20)
+Instruction:   call void @lcd_init_instrumented(%struct.lcd* @lcd, i32 12, i32 11, i32 5, i32 4, i32 3, i32 2, i32 0), !zref_lcd_id !5
+Has metadata zref_lcd_id with value 21
+Arguments recap:
+@lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+i32 12
+i32 11
+i32 5
+i32 4
+i32 3
+i32 2
+  %12 = load i32, i32* %6
+Instruction:   call void @lcd_begin_instrumented(%struct.lcd* @lcd, i32 16, i32 2, i32 0), !zref_lcd_id !6
+Has metadata zref_lcd_id with value 41
+Arguments recap:
+@lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+i32 16
+i32 2
+  %21 = load i32, i32* %15
+Instruction:   call void @Serial_readString_instrumented(i8* %arraydecay, i32 0), !zref_buffer_id !5
+Has metadata zref_buffer_id with value 1
+Arguments recap:
+  %arraydecay = getelementptr inbounds [20 x i8], [20 x i8]* %message, i32 0, i32 0
+  %21 = load i32, i32* %15
+Instruction:   call void @lcd_clear_instrumented(%struct.lcd* @lcd, i32 0), !zref_lcd_id !7
+Has metadata zref_lcd_id with value 26
+Arguments recap:
+@lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+  %39 = load i32, i32* %33
+Instruction:   call void @lcd_write_instrumented(%struct.lcd* @lcd, i8 %44, i32 0), !zref_lcd_id !8
+Has metadata zref_lcd_id with value 31
+Arguments recap:
+@lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+  %44 = load i8, i8* %arrayidx4, align 1
+  %53 = load i32, i32* %47
+Instruction:   call void @lcd_setCursor_instrumented(%struct.lcd* @lcd, i32 0, i32 0, i32 0), !zref_lcd_id !9
+Has metadata zref_lcd_id with value 36
+Arguments recap:
+@lcd = common dso_local global %struct.lcd zeroinitializer, align 4, !zdef !1
+i32 0
+i32 0
+  %62 = load i32, i32* %56
+Replacing   call void @lcd_write_instrumented(%struct.lcd* @lcd, i8 %44, i32 0), !zref_lcd_id !8 with   call void @lcd_write_instrumented(%struct.lcd* @lcd, i8 %44, i32 %53)
+Replaced call
+Replacing   call void @lcd_setCursor_instrumented(%struct.lcd* @lcd, i32 0, i32 0, i32 0), !zref_lcd_id !8 with   call void @lcd_setCursor_instrumented(%struct.lcd* @lcd, i32 0, i32 0, i32 %62)
+Replaced call
+Replacing   call void @lcd_init_instrumented(%struct.lcd* @lcd, i32 12, i32 11, i32 5, i32 4, i32 3, i32 2, i32 0), !zref_lcd_id !5 with   call void @lcd_init_instrumented(%struct.lcd* @lcd, i32 12, i32 11, i32 5, i32 4, i32 3, i32 2, i32 %12)
+Replaced call
+Replacing   call void @lcd_begin_instrumented(%struct.lcd* @lcd, i32 16, i32 2, i32 0), !zref_lcd_id !5 with   call void @lcd_begin_instrumented(%struct.lcd* @lcd, i32 16, i32 2, i32 %21)
+Replaced call
+Replacing   call void @Serial_readString_instrumented(i8* %arraydecay, i32 0), !zref_buffer_id !5 with   call void @Serial_readString_instrumented(i8* %arraydecay, i32 %21)
+Replaced call
+Replacing   call void @lcd_clear_instrumented(%struct.lcd* @lcd, i32 0), !zref_lcd_id !7 with   call void @lcd_clear_instrumented(%struct.lcd* @lcd, i32 %39)
+Replaced call
+Returning

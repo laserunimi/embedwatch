@@ -1,0 +1,23 @@
+
+<root>
+  <row>
+    <post_title>Post1</post_title>
+    <post_content>Description of Post 3</post_content>
+    <post_excerpt>sample excerpt</post_excerpt>
+    <post_name>post-3</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <types_relationship>Testpost1,Testpost2</types_relationship>
+    <relationship_slug>cptpost1slug-cptpost2slug</relationship_slug>
+  </row>
+  <row>
+    <post_title>Post2</post_title>
+    <post_content>Description of Post 4</post_content>
+    <post_excerpt>sample excerpt</post_excerpt>
+    <post_name>post-3</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <types_relationship>Testpost3</types_relationship>
+    <relationship_slug>cptpost1slug-cptpost2slug</relationship_slug>
+  </row>
+</root>

@@ -1,0 +1,16 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: Serial_readString_instrumented
+Tracking recursion for Serial_readString_instrumented
+Instrumenting entry point of Serial_readString_instrumented
+Instrumenting exit point of Serial_readString_instrumented
+Instrumenting Function: lcd_write_instrumented
+Tracking recursion for lcd_write_instrumented
+Instrumenting entry point of lcd_write_instrumented
+Instrumenting exit point of lcd_write_instrumented

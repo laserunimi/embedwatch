@@ -1,0 +1,1 @@
+{"min_position":3,"items_html":"Bike","numericalArray":[31,29,29,27,25]}

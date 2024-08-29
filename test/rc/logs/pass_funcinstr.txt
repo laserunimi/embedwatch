@@ -1,0 +1,199 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: get_args
+Function get_args has parameters:
+	-i32 %argc
+	-i8** %argv
+	-%struct.pi_options* %options
+Instrumenting Function: websocket_handshake_response
+Function websocket_handshake_response has parameters:
+	-i8* %handshake
+Instrumenting Function: decode_websocket_message
+Function decode_websocket_message has parameters:
+	-i8* %message
+Instrumenting Function: parse_json
+Function parse_json has parameters:
+	-i8* %json
+	-%struct.command_node_t** %command
+	-i32* %request_response
+Instrumenting Function: free_command
+Function free_command has parameters:
+	-%struct.command_node_t* %command
+Instrumenting Function: fill_buffer
+Function fill_buffer has parameters:
+	-%struct.command_node_t* %command
+	-%struct.command_node_t* %next_command
+	-i32 %bytes_count
+Instrumenting Function: print_usage
+Function print_usage has parameters:
+	-i8* %program
+Instrumenting Function: sha1_transform
+Function sha1_transform has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %data
+Instrumenting Function: sha1_init
+Function sha1_init has parameters:
+	-%struct.SHA1_CTX* %ctx
+Instrumenting Function: sha1_update
+Function sha1_update has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %data
+	-i32 %len
+Instrumenting Function: sha1_final
+Function sha1_final has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %hash
+Instrumenting Function: base64_encode
+Function base64_encode has parameters:
+	-i8* %in
+	-i32 %inlen
+	-i8* %out
+Instrumenting Function: get_args_instrumented
+Function get_args_instrumented has parameters:
+	-i32 %argc
+	-i8** %argv
+	-%struct.pi_options* %options
+	-i32 %argv_id
+	-i32 %options_id
+Function get_args_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: websocket_handshake_response_instrumented
+Function websocket_handshake_response_instrumented has parameters:
+	-i8* %handshake
+	-i32 %handshake_id
+Function websocket_handshake_response_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: decode_websocket_message_instrumented
+Function decode_websocket_message_instrumented has parameters:
+	-i8* %message
+	-i32 %message_id
+Function decode_websocket_message_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_json_instrumented
+Function parse_json_instrumented has parameters:
+	-i8* %json
+	-%struct.command_node_t** %command
+	-i32* %request_response
+	-i32 %json_id
+	-i32 %command_id
+	-i32 %request_response_id
+Function parse_json_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: free_command_instrumented
+Function free_command_instrumented has parameters:
+	-%struct.command_node_t* %command
+	-i32 %command_id
+Function free_command_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: fill_buffer_instrumented
+Function fill_buffer_instrumented has parameters:
+	-%struct.command_node_t* %command
+	-%struct.command_node_t* %next_command
+	-i32 %bytes_count
+	-i32 %command_id
+	-i32 %next_command_id
+Function fill_buffer_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_usage_instrumented
+Function print_usage_instrumented has parameters:
+	-i8* %program
+	-i32 %program_id
+Function print_usage_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sha1_transform_instrumented
+Function sha1_transform_instrumented has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %data
+	-i32 %ctx_id
+	-i32 %data_id
+Function sha1_transform_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sha1_init_instrumented
+Function sha1_init_instrumented has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i32 %ctx_id
+Function sha1_init_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sha1_update_instrumented
+Function sha1_update_instrumented has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %data
+	-i32 %len
+	-i32 %ctx_id
+	-i32 %data_id
+Function sha1_update_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sha1_final_instrumented
+Function sha1_final_instrumented has parameters:
+	-%struct.SHA1_CTX* %ctx
+	-i8* %hash
+	-i32 %ctx_id
+	-i32 %hash_id
+Function sha1_final_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: base64_encode_instrumented
+Function base64_encode_instrumented has parameters:
+	-i8* %in
+	-i32 %inlen
+	-i8* %out
+	-i32 %in_id
+	-i32 %out_id
+Function base64_encode_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function base64_encode was extended with 2 arguments
+Function decode_websocket_message was extended with 1 arguments
+Function fill_buffer was extended with 2 arguments
+Function free_command was extended with 1 arguments
+Function get_args was extended with 2 arguments
+Function parse_json was extended with 3 arguments
+Function print_usage was extended with 1 arguments
+Function sha1_final was extended with 2 arguments
+Function sha1_init was extended with 1 arguments
+Function sha1_transform was extended with 2 arguments
+Function sha1_update was extended with 2 arguments
+Function websocket_handshake_response was extended with 1 arguments
+Searching for calls to:
+	- base64_encode
+	- decode_websocket_message
+	- fill_buffer
+	- free_command
+	- get_args
+	- parse_json
+	- print_usage
+	- sha1_final
+	- sha1_init
+	- sha1_transform
+	- sha1_update
+	- websocket_handshake_response
+Found call to get_args inside main
+Found call to websocket_handshake_response inside main
+Found call to decode_websocket_message inside main
+Found call to parse_json inside main
+Found call to free_command inside main
+Found call to free_command inside main
+Found call to fill_buffer inside main
+Found call to free_command inside main
+Found call to print_usage inside get_args_instrumented
+Found call to print_usage inside get_args_instrumented
+Found call to sha1_transform inside sha1_update_instrumented
+Found call to sha1_transform inside sha1_final_instrumented
+Found call to sha1_transform inside sha1_final_instrumented
+Replacing calls
+Removing function base64_encode
+Remove OK base64_encode
+Removing function decode_websocket_message
+Remove OK decode_websocket_message
+Removing function fill_buffer
+Remove OK fill_buffer
+Removing function free_command
+Remove OK free_command
+Removing function get_args
+Remove OK get_args
+Removing function parse_json
+Remove OK parse_json
+Removing function print_usage
+Remove OK print_usage
+Removing function sha1_final
+Remove OK sha1_final
+Removing function sha1_init
+Remove OK sha1_init
+Removing function sha1_transform
+Remove OK sha1_transform
+Removing function sha1_update
+Remove OK sha1_update
+Removing function websocket_handshake_response
+Remove OK websocket_handshake_response

@@ -1,0 +1,13 @@
+Function: main is whitelisted
+FN:gettimeofday
+FN:fopen
+FN:exit
+FN:read
+FN:read
+FN:gettimeofday
+FN:printf
+----------------------------------------------------------
+Function: read is whitelisted
+FN:fgetc
+FN:fclose
+----------------------------------------------------------

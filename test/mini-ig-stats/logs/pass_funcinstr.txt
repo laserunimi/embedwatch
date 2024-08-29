@@ -1,0 +1,162 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %msec
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pinMode
+Function pinMode has parameters:
+	-i32 %pin
+	-i32 %status
+Function pinMode doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogWrite
+Function analogWrite has parameters:
+	-i32 %pin
+	-i32 %color
+Function analogWrite doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setColor
+Function setColor has parameters:
+	-i32 %red
+	-i32 %green
+	-i32 %blue
+Function setColor doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: handleResult
+Function handleResult has parameters:
+	-i32 %followerDelta
+	-i32 %likeDelta
+	-i32 %commentDelta
+Function handleResult doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: getHttpPage
+Function getHttpPage has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+Instrumenting Function: fetchInteger
+Function fetchInteger has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+Instrumenting Function: getFollowers
+Function getFollowers has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+Instrumenting Function: getLikes
+Function getLikes has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+Instrumenting Function: getComments
+Function getComments has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+Instrumenting Function: publish
+Function publish has parameters:
+	-i8* %str
+	-i8* %buffer
+Instrumenting Function: setup
+Function setup has parameters:
+	-%struct.http_request* %request
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: getHttpPage_instrumented
+Function getHttpPage_instrumented has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+	-i32 %request_id
+	-i32 %response_id
+	-i32 %headers_id
+Function getHttpPage_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: fetchInteger_instrumented
+Function fetchInteger_instrumented has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+	-i32 %request_id
+	-i32 %response_id
+	-i32 %headers_id
+Function fetchInteger_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: getFollowers_instrumented
+Function getFollowers_instrumented has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+	-i32 %request_id
+	-i32 %response_id
+	-i32 %headers_id
+Function getFollowers_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: getLikes_instrumented
+Function getLikes_instrumented has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+	-i32 %request_id
+	-i32 %response_id
+	-i32 %headers_id
+Function getLikes_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: getComments_instrumented
+Function getComments_instrumented has parameters:
+	-%struct.http_request* %request
+	-%struct.http_response* %response
+	-i8* %headers
+	-i32 %request_id
+	-i32 %response_id
+	-i32 %headers_id
+Function getComments_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: publish_instrumented
+Function publish_instrumented has parameters:
+	-i8* %str
+	-i8* %buffer
+	-i32 %str_id
+	-i32 %buffer_id
+Function publish_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup_instrumented
+Function setup_instrumented has parameters:
+	-%struct.http_request* %request
+	-i32 %request_id
+Function setup_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function fetchInteger was extended with 3 arguments
+Function getComments was extended with 3 arguments
+Function getFollowers was extended with 3 arguments
+Function getHttpPage was extended with 3 arguments
+Function getLikes was extended with 3 arguments
+Function publish was extended with 2 arguments
+Function setup was extended with 1 arguments
+Searching for calls to:
+	- fetchInteger
+	- getComments
+	- getFollowers
+	- getHttpPage
+	- getLikes
+	- publish
+	- setup
+Found call to setup inside main
+Found call to getFollowers inside main
+Found call to getLikes inside main
+Found call to getComments inside main
+Found call to publish inside main
+Found call to getHttpPage inside fetchInteger_instrumented
+Found call to fetchInteger inside getFollowers_instrumented
+Found call to fetchInteger inside getLikes_instrumented
+Found call to fetchInteger inside getComments_instrumented
+Replacing calls
+Removing function fetchInteger
+Remove OK fetchInteger
+Removing function getComments
+Remove OK getComments
+Removing function getFollowers
+Remove OK getFollowers
+Removing function getHttpPage
+Remove OK getHttpPage
+Removing function getLikes
+Remove OK getLikes
+Removing function publish
+Remove OK publish
+Removing function setup
+Remove OK setup

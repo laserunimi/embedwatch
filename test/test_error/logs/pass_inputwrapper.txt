@@ -1,0 +1,17 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: Serial_readString is whitelisted
+FN:__isoc99_scanf
+Function: Serial_readString, found scanf call
+Args size:2
+----------------------------------------------------------
+Function: lcd_write is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:Serial_readString
+FN:lcd_write
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

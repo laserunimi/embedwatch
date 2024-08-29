@@ -1,0 +1,1018 @@
+Checking for function: hook_exit
+Checking for function: NameStartChar
+Checking for function: NameChar
+Checking for function: WhiteSpace
+Checking for function: main
+Checking for function: print_indent
+Checking for function: sxml_init_instrumented
+Checking for function: sxml_parse_instrumented
+Checking for function: str_ltrim_instrumented
+Checking for function: state_setpos_instrumented
+Checking for function: parse_instruction_instrumented
+Checking for function: parse_doctype_instrumented
+Checking for function: parse_start_instrumented
+Checking for function: str_findchr_instrumented
+Checking for function: parse_characters_instrumented
+Checking for function: parse_end_instrumented
+Checking for function: parse_comment_instrumented
+Checking for function: parse_cdata_instrumented
+Checking for function: str_startswith_instrumented
+Checking for function: str_findstr_instrumented
+Checking for function: state_pushtoken_instrumented
+Checking for function: str_find_notalnum_instrumented
+Checking for function: parse_attributes_instrumented
+Checking for function: str_rtrim_instrumented
+Checking for function: parse_attrvalue_instrumented
+Checking for function: print_prettyxml_instrumented
+Checking for function: count_lines_instrumented
+Checking for function: print_tokenvalue_instrumented
+Checking for function: print_chartokens_instrumented
+-------------------------LOOPS----------------------------
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 101 |   %buffer = alloca [8128 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=101, addr=0x5645b8745528)
+METADATA::zdef 144 |   %tokens = alloca [128 x %struct.sxmltok_t], align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=144, addr=0x5645b87455e8)
+----------------------------------------------------------
+----------------------------------------------------------
+Instruction:   call void @sxml_init_instrumented(%struct.sxml_t* %parser, i32 0), !zref_state_id !5
+Has metadata zref_state_id with value 185
+Arguments recap:
+  %parser = alloca %struct.sxml_t, align 4
+  %30 = load i32, i32* %24
+Instruction:   %call14 = call i32 @sxml_parse_instrumented(%struct.sxml_t* %parser, i8* %arraydecay12, i32 %39, %struct.sxmltok_t* %arraydecay13, i32 128, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4, !zref_state_id !6
+Has metadata zref_state_id with value 142
+Instruction:   %call14 = call i32 @sxml_parse_instrumented(%struct.sxml_t* %parser, i8* %arraydecay12, i32 %39, %struct.sxmltok_t* %arraydecay13, i32 128, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4, !zref_state_id !6
+Has metadata zref_buffer_id with value 101
+Instruction:   %call14 = call i32 @sxml_parse_instrumented(%struct.sxml_t* %parser, i8* %arraydecay12, i32 %39, %struct.sxmltok_t* %arraydecay13, i32 128, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4, !zref_state_id !6
+Has metadata zref_tokens_id with value 144
+Arguments recap:
+  %parser = alloca %struct.sxml_t, align 4
+  %arraydecay12 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %39 = load i32, i32* %bufferlen, align 4
+  %arraydecay13 = getelementptr inbounds [128 x %struct.sxmltok_t], [128 x %struct.sxmltok_t]* %tokens, i32 0, i32 0
+i32 128
+  %48 = load i32, i32* %42
+  %57 = load i32, i32* %51
+  %66 = load i32, i32* %60
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay16, %struct.sxmltok_t* %arraydecay17, i32 %70, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_buffer_id with value 101
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay16, %struct.sxmltok_t* %arraydecay17, i32 %70, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_tokens_id with value 144
+Arguments recap:
+  %arraydecay16 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %arraydecay17 = getelementptr inbounds [128 x %struct.sxmltok_t], [128 x %struct.sxmltok_t]* %tokens, i32 0, i32 0
+  %70 = load i32, i32* %ntokens, align 4
+  %indent = alloca i32, align 4
+  %79 = load i32, i32* %73
+  %88 = load i32, i32* %82
+i32 0
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay20, %struct.sxmltok_t* %arraydecay21, i32 %89, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_buffer_id with value 101
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay20, %struct.sxmltok_t* %arraydecay21, i32 %89, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_tokens_id with value 144
+Arguments recap:
+  %arraydecay20 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %arraydecay21 = getelementptr inbounds [128 x %struct.sxmltok_t], [128 x %struct.sxmltok_t]* %tokens, i32 0, i32 0
+  %89 = load i32, i32* %ntokens22, align 4
+  %indent = alloca i32, align 4
+  %98 = load i32, i32* %92
+  %107 = load i32, i32* %101
+i32 0
+Instruction:   %call25 = call i32 @count_lines_instrumented(i8* %arraydecay24, i32 %108, i32 0), !zref_buffer_id !3
+Has metadata zref_buffer_id with value 101
+Arguments recap:
+  %arraydecay24 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %108 = load i32, i32* %bufferpos, align 4
+  %117 = load i32, i32* %111
+Instruction:   %call46 = call i32 @count_lines_instrumented(i8* %arraydecay44, i32 %137, i32 0), !zref_buffer_id !3
+Has metadata zref_buffer_id with value 101
+Arguments recap:
+  %arraydecay44 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %137 = load i32, i32* %bufferpos45, align 4
+  %146 = load i32, i32* %140
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay61, %struct.sxmltok_t* %arraydecay62, i32 %162, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_buffer_id with value 101
+Instruction:   call void @print_prettyxml_instrumented(i8* %arraydecay61, %struct.sxmltok_t* %arraydecay62, i32 %162, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_tokens_id with value 144
+Arguments recap:
+  %arraydecay61 = getelementptr inbounds [8128 x i8], [8128 x i8]* %buffer, i32 0, i32 0
+  %arraydecay62 = getelementptr inbounds [128 x %struct.sxmltok_t], [128 x %struct.sxmltok_t]* %tokens, i32 0, i32 0
+  %162 = load i32, i32* %ntokens63, align 4
+  %indent = alloca i32, align 4
+  %171 = load i32, i32* %165
+  %180 = load i32, i32* %174
+i32 0
+Instruction:   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %16, i8* %17, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value buffer_id
+Instruction:   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %16, i8* %17, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value buffer_id
+Arguments recap:
+  %16 = load i8*, i8** %start_instrumented, align 4
+  %17 = load i8*, i8** %end_instrumented, align 4
+i32 %buffer_id
+i32 %buffer_id
+Instruction:   %call7_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %19, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value 122
+Instruction:   %call7_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %19, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value 132
+Instruction:   %call7_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %19, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value buffer_id
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %19 = load i8*, i8** %lt_instrumented, align 4
+  %28 = load i32, i32* %22
+  %37 = load i32, i32* %31
+i32 %buffer_id
+Instruction:   %call15_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !6, !zref_args_id !7
+Has metadata zref_state_id with value 1
+Instruction:   %call15_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !6, !zref_args_id !7
+Has metadata zref_args_id with value 11
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %58 = load i32, i32* %52
+  %67 = load i32, i32* %61
+Instruction:   %call17_instrumented = call i32 @parse_doctype_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !8, !zref_args_id !9
+Has metadata zref_state_id with value 41
+Instruction:   %call17_instrumented = call i32 @parse_doctype_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !8, !zref_args_id !9
+Has metadata zref_args_id with value 51
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %77 = load i32, i32* %71
+  %86 = load i32, i32* %80
+Instruction:   %call18_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !10, !zref_args_id !11
+Has metadata zref_state_id with value 81
+Instruction:   %call18_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !10, !zref_args_id !11
+Has metadata zref_args_id with value 91
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %96 = load i32, i32* %90
+  %105 = load i32, i32* %99
+Instruction:   %call35_instrumented = call i8* @str_findchr_instrumented(i8* %115, i8* %116, i32 60, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value buffer_id
+Instruction:   %call35_instrumented = call i8* @str_findchr_instrumented(i8* %115, i8* %116, i32 60, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value buffer_id
+Arguments recap:
+  %115 = load i8*, i8** %start30_instrumented, align 4
+  %116 = load i8*, i8** %end_instrumented, align 4
+i32 60
+i32 %buffer_id
+i32 %buffer_id
+Instruction:   %call44_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %121, i32 0, i32 0, i32 0), !zref_state_id !12, !zref_args_id !13, !zref_end_id !14
+Has metadata zref_state_id with value 102
+Instruction:   %call44_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %121, i32 0, i32 0, i32 0), !zref_state_id !12, !zref_args_id !13, !zref_end_id !14
+Has metadata zref_args_id with value 112
+Instruction:   %call44_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %121, i32 0, i32 0, i32 0), !zref_state_id !12, !zref_args_id !13, !zref_end_id !14
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %121 = load i8*, i8** %lt34_instrumented, align 4
+  %130 = load i32, i32* %124
+  %139 = load i32, i32* %133
+  %148 = load i32, i32* %142
+Instruction:   %call60_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !15, !zref_args_id !16
+Has metadata zref_state_id with value 21
+Instruction:   %call60_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !15, !zref_args_id !16
+Has metadata zref_args_id with value 31
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %167 = load i32, i32* %161
+  %176 = load i32, i32* %170
+Instruction:   %call62_instrumented = call i32 @parse_end_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !17, !zref_args_id !18
+Has metadata zref_state_id with value 187
+Instruction:   %call62_instrumented = call i32 @parse_end_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !17, !zref_args_id !18
+Has metadata zref_args_id with value 197
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %186 = load i32, i32* %180
+  %195 = load i32, i32* %189
+Instruction:   %call68_instrumented = call i32 @parse_comment_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !19, !zref_args_id !20
+Has metadata zref_state_id with value 165
+Instruction:   %call68_instrumented = call i32 @parse_comment_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !19, !zref_args_id !20
+Has metadata zref_args_id with value 175
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %207 = load i32, i32* %201
+  %216 = load i32, i32* %210
+Instruction:   %call69_instrumented = call i32 @parse_cdata_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !21, !zref_args_id !22
+Has metadata zref_state_id with value 145
+Instruction:   %call69_instrumented = call i32 @parse_cdata_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !21, !zref_args_id !22
+Has metadata zref_args_id with value 155
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %226 = load i32, i32* %220
+  %235 = load i32, i32* %229
+Instruction:   %call71_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !23, !zref_args_id !24
+Has metadata zref_state_id with value 61
+Instruction:   %call71_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !23, !zref_args_id !24
+Has metadata zref_args_id with value 71
+Arguments recap:
+  %temp_instrumented = alloca %struct.sxml_t, align 4
+  %args_instrumented = alloca %struct.sxml_args_t, align 4
+  %245 = load i32, i32* %239
+  %254 = load i32, i32* %248
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %17 = load i8*, i8** %start_instrumented, align 4
+  %18 = load i8*, i8** %end_instrumented, align 4
+  %19 = getelementptr inbounds [3 x i8], [3 x i8]* @parse_instruction.STARTTAG, i32 0, i32 0
+  %28 = load i32, i32* %22
+  %37 = load i32, i32* %31
+i32 0
+Instruction:   %call7_instrumented = call i8* @str_find_notalnum_instrumented(i8* %41, i8* %42, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call7_instrumented = call i8* @str_find_notalnum_instrumented(i8* %41, i8* %42, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %41 = load i8*, i8** %start_instrumented, align 4
+  %42 = load i8*, i8** %end_instrumented, align 4
+  %51 = load i32, i32* %45
+  %60 = load i32, i32* %54
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %64 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %65 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 4
+  %66 = load i8*, i8** %start_instrumented, align 4
+  %67 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %76 = load i32, i32* %70
+  %85 = load i32, i32* %79
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %87, %struct.sxml_args_t* %88, i8* %89, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %87, %struct.sxml_args_t* %88, i8* %89, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %87, %struct.sxml_args_t* %88, i8* %89, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %87 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %88 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %89 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %98 = load i32, i32* %92
+Instruction:   %call13_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %100, %struct.sxml_args_t* %101, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5
+Has metadata zref_state_id with value state_id
+Instruction:   %call13_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %100, %struct.sxml_args_t* %101, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5
+Has metadata zref_args_id with value args_id
+Arguments recap:
+  %100 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %101 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 %state_id
+i32 %args_id
+Instruction:   %call26_instrumented = call i32 @str_startswith_instrumented(i8* %111, i8* %112, i8* %113, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call26_instrumented = call i32 @str_startswith_instrumented(i8* %111, i8* %112, i8* %113, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %111 = load i8*, i8** %quest_instrumented, align 4
+  %112 = load i8*, i8** %end_instrumented, align 4
+  %113 = getelementptr inbounds [3 x i8], [3 x i8]* @parse_instruction.ENDTAG, i32 0, i32 0
+  %122 = load i32, i32* %116
+  %131 = load i32, i32* %125
+i32 0
+Instruction:   %call32_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %134, %struct.sxml_args_t* %135, i8* %add.ptr31_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call32_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %134, %struct.sxml_args_t* %135, i8* %add.ptr31_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call32_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %134, %struct.sxml_args_t* %135, i8* %add.ptr31_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %134 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %135 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr31_instrumented = getelementptr inbounds i8, i8* %136, i32 2
+i32 %state_id
+i32 %args_id
+  %145 = load i32, i32* %139
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %14 = load i8*, i8** %start_instrumented, align 4
+  %15 = load i8*, i8** %end_instrumented, align 4
+  %16 = getelementptr inbounds [10 x i8], [10 x i8]* @parse_doctype.STARTTAG, i32 0, i32 0
+  %25 = load i32, i32* %19
+  %34 = load i32, i32* %28
+i32 0
+Instruction:   %call6_instrumented = call i8* @str_findstr_instrumented(i8* %37, i8* %38, i8* %39, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call6_instrumented = call i8* @str_findstr_instrumented(i8* %37, i8* %38, i8* %39, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %37 = load i8*, i8** %start_instrumented, align 4
+  %38 = load i8*, i8** %end_instrumented, align 4
+  %39 = getelementptr inbounds [3 x i8], [3 x i8]* @parse_doctype.ENDTAG, i32 0, i32 0
+  %48 = load i32, i32* %42
+  %57 = load i32, i32* %51
+i32 0
+Instruction:   %call10_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call10_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call10_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call10_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %61 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %62 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 5
+  %63 = load i8*, i8** %start_instrumented, align 4
+  %64 = load i8*, i8** %bracket_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %73 = load i32, i32* %67
+  %82 = load i32, i32* %76
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %84, %struct.sxml_args_t* %85, i8* %add.ptr11_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %84, %struct.sxml_args_t* %85, i8* %add.ptr11_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %84, %struct.sxml_args_t* %85, i8* %add.ptr11_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %84 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %85 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr11_instrumented = getelementptr inbounds i8, i8* %86, i32 2
+i32 %state_id
+i32 %args_id
+  %95 = load i32, i32* %89
+Instruction:   %call11_instrumented = call i8* @str_find_notalnum_instrumented(i8* %23, i8* %24, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call11_instrumented = call i8* @str_find_notalnum_instrumented(i8* %23, i8* %24, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %23 = load i8*, i8** %name_instrumented, align 4
+  %24 = load i8*, i8** %end_instrumented, align 4
+  %33 = load i32, i32* %27
+  %42 = load i32, i32* %36
+Instruction:   %call16_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call16_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call16_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call16_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %46 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %47 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 0
+  %48 = load i8*, i8** %name_instrumented, align 4
+  %49 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %58 = load i32, i32* %52
+  %67 = load i32, i32* %61
+Instruction:   %call17_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %69, %struct.sxml_args_t* %70, i8* %71, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call17_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %69, %struct.sxml_args_t* %70, i8* %71, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call17_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %69, %struct.sxml_args_t* %70, i8* %71, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %69 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %70 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %71 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %80 = load i32, i32* %74
+Instruction:   %call18_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %82, %struct.sxml_args_t* %83, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5
+Has metadata zref_state_id with value state_id
+Instruction:   %call18_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %82, %struct.sxml_args_t* %83, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5
+Has metadata zref_args_id with value args_id
+Arguments recap:
+  %82 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %83 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 %state_id
+i32 %args_id
+Instruction:   %call33_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call33_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call33_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call33_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %95 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %96 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 1
+  %97 = load i8*, i8** %name_instrumented, align 4
+  %98 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %107 = load i32, i32* %101
+  %116 = load i32, i32* %110
+Instruction:   %call46_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %124, %struct.sxml_args_t* %125, i8* %add.ptr45_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call46_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %124, %struct.sxml_args_t* %125, i8* %add.ptr45_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call46_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %124, %struct.sxml_args_t* %125, i8* %add.ptr45_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %124 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %125 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr45_instrumented = getelementptr inbounds i8, i8* %126, i32 1
+i32 %state_id
+i32 %args_id
+  %135 = load i32, i32* %129
+Instruction:   %call_instrumented = call i8* @str_findchr_instrumented(i8* %8, i8* %9, i32 38, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i8* @str_findchr_instrumented(i8* %8, i8* %9, i32 38, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %8 = load i8*, i8** %start_instrumented, align 4
+  %9 = load i8*, i8** %end.addr_instrumented, align 4
+i32 38
+  %18 = load i32, i32* %12
+  %27 = load i32, i32* %21
+Instruction:   %call5_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call5_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call5_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call5_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %39 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %40 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 2
+  %41 = load i8*, i8** %start_instrumented, align 4
+  %42 = load i8*, i8** %ampr_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %51 = load i32, i32* %45
+  %60 = load i32, i32* %54
+Instruction:   %call9_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i8* %66, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call9_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i8* %66, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call9_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i8* %66, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %64 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %65 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %66 = load i8*, i8** %ampr_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %75 = load i32, i32* %69
+Instruction:   %call14_instrumented = call i8* @str_findchr_instrumented(i8* %81, i8* %82, i32 59, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call14_instrumented = call i8* @str_findchr_instrumented(i8* %81, i8* %82, i32 59, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %81 = load i8*, i8** %ampr_instrumented, align 4
+  %82 = load i8*, i8** %limit_instrumented, align 4
+i32 59
+  %91 = load i32, i32* %85
+  %100 = load i32, i32* %94
+Instruction:   %call21_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call21_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call21_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call21_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %108 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %109 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 2
+  %110 = load i8*, i8** %ampr_instrumented, align 4
+  %111 = load i8*, i8** %start_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %120 = load i32, i32* %114
+  %129 = load i32, i32* %123
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %131, %struct.sxml_args_t* %132, i8* %133, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %131, %struct.sxml_args_t* %132, i8* %133, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %131, %struct.sxml_args_t* %132, i8* %133, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %131 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %132 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %133 = load i8*, i8** %start_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %142 = load i32, i32* %136
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %17 = load i8*, i8** %start_instrumented, align 4
+  %18 = load i8*, i8** %end_instrumented, align 4
+  %19 = getelementptr inbounds [3 x i8], [3 x i8]* @.str.24, i32 0, i32 0
+  %28 = load i32, i32* %22
+  %37 = load i32, i32* %31
+i32 0
+Instruction:   %call9_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 62, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call9_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 62, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %44 = load i8*, i8** %start_instrumented, align 4
+  %45 = load i8*, i8** %end_instrumented, align 4
+i32 62
+  %54 = load i32, i32* %48
+  %63 = load i32, i32* %57
+Instruction:   %call14_instrumented = call i8* @str_find_notalnum_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call14_instrumented = call i8* @str_find_notalnum_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %67 = load i8*, i8** %start_instrumented, align 4
+  %68 = load i8*, i8** %gt_instrumented, align 4
+  %77 = load i32, i32* %71
+  %86 = load i32, i32* %80
+Instruction:   %call15_instrumented = call i8* @str_ltrim_instrumented(i8* %88, i8* %89, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call15_instrumented = call i8* @str_ltrim_instrumented(i8* %88, i8* %89, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %88 = load i8*, i8** %space_instrumented, align 4
+  %89 = load i8*, i8** %gt_instrumented, align 4
+  %98 = load i32, i32* %92
+  %107 = load i32, i32* %101
+Instruction:   %call20_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call20_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call20_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call20_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %110 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %111 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 1
+  %112 = load i8*, i8** %start_instrumented, align 4
+  %113 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %122 = load i32, i32* %116
+  %131 = load i32, i32* %125
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %133, %struct.sxml_args_t* %134, i8* %add.ptr21_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %133, %struct.sxml_args_t* %134, i8* %add.ptr21_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %133, %struct.sxml_args_t* %134, i8* %add.ptr21_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %133 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %134 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr21_instrumented = getelementptr inbounds i8, i8* %135, i32 1
+i32 %state_id
+i32 %args_id
+  %144 = load i32, i32* %138
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %14 = load i8*, i8** %start_instrumented, align 4
+  %15 = load i8*, i8** %end_instrumented, align 4
+  %16 = getelementptr inbounds [5 x i8], [5 x i8]* @parse_comment.STARTTAG, i32 0, i32 0
+  %25 = load i32, i32* %19
+  %34 = load i32, i32* %28
+i32 0
+Instruction:   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %38, i8* %39, i8* %40, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %38, i8* %39, i8* %40, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %38 = load i8*, i8** %start_instrumented, align 4
+  %39 = load i8*, i8** %end_instrumented, align 4
+  %40 = getelementptr inbounds [4 x i8], [4 x i8]* @parse_comment.ENDTAG, i32 0, i32 0
+  %49 = load i32, i32* %43
+  %58 = load i32, i32* %52
+i32 0
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %62 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %63 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 6
+  %64 = load i8*, i8** %start_instrumented, align 4
+  %65 = load i8*, i8** %dash_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %74 = load i32, i32* %68
+  %83 = load i32, i32* %77
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %85, %struct.sxml_args_t* %86, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %85, %struct.sxml_args_t* %86, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %85, %struct.sxml_args_t* %86, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %85 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %86 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr12_instrumented = getelementptr inbounds i8, i8* %87, i32 3
+i32 %state_id
+i32 %args_id
+  %96 = load i32, i32* %90
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %14 = load i8*, i8** %start_instrumented, align 4
+  %15 = load i8*, i8** %end_instrumented, align 4
+  %16 = getelementptr inbounds [10 x i8], [10 x i8]* @parse_cdata.STARTTAG, i32 0, i32 0
+  %25 = load i32, i32* %19
+  %34 = load i32, i32* %28
+i32 0
+Instruction:   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %39, i8* %40, i8* %41, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %39, i8* %40, i8* %41, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %39 = load i8*, i8** %start_instrumented, align 4
+  %40 = load i8*, i8** %end_instrumented, align 4
+  %41 = getelementptr inbounds [4 x i8], [4 x i8]* @parse_cdata.ENDTAG, i32 0, i32 0
+  %50 = load i32, i32* %44
+  %59 = load i32, i32* %53
+i32 0
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %63 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %64 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 3
+  %65 = load i8*, i8** %start_instrumented, align 4
+  %66 = load i8*, i8** %bracket_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %75 = load i32, i32* %69
+  %84 = load i32, i32* %78
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %86, %struct.sxml_args_t* %87, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %86, %struct.sxml_args_t* %87, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %86, %struct.sxml_args_t* %87, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %86 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %87 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %add.ptr12_instrumented = getelementptr inbounds i8, i8* %88, i32 3
+i32 %state_id
+i32 %args_id
+  %97 = load i32, i32* %91
+Instruction:   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %12, i8* %13, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %12, i8* %13, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %12 = load i8*, i8** %start_instrumented, align 4
+  %13 = load i8*, i8** %end_instrumented, align 4
+  %22 = load i32, i32* %16
+  %31 = load i32, i32* %25
+Instruction:   %call6_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 61, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call6_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 61, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %44 = load i8*, i8** %name_instrumented, align 4
+  %45 = load i8*, i8** %end_instrumented, align 4
+i32 61
+  %54 = load i32, i32* %48
+  %63 = load i32, i32* %57
+Instruction:   %call11_instrumented = call i8* @str_rtrim_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call11_instrumented = call i8* @str_rtrim_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %67 = load i8*, i8** %name_instrumented, align 4
+  %68 = load i8*, i8** %eq_instrumented, align 4
+  %77 = load i32, i32* %71
+  %86 = load i32, i32* %80
+Instruction:   %call12_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call12_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call12_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call12_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %88 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %89 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+i32 3
+  %90 = load i8*, i8** %name_instrumented, align 4
+  %91 = load i8*, i8** %space_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %100 = load i32, i32* %94
+  %109 = load i32, i32* %103
+Instruction:   %call14_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr13_instrumented, i8* %112, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call14_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr13_instrumented, i8* %112, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %add.ptr13_instrumented = getelementptr inbounds i8, i8* %111, i32 1
+  %112 = load i8*, i8** %end_instrumented, align 4
+  %121 = load i32, i32* %115
+  %130 = load i32, i32* %124
+Instruction:   %call31_instrumented = call i8* @str_findchr_instrumented(i8* %140, i8* %141, i32 %conv30_instrumented, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call31_instrumented = call i8* @str_findchr_instrumented(i8* %140, i8* %141, i32 %conv30_instrumented, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %140 = load i8*, i8** %value_instrumented, align 4
+  %141 = load i8*, i8** %end_instrumented, align 4
+  %conv30_instrumented = zext i8 %143 to i32
+  %152 = load i32, i32* %146
+  %161 = load i32, i32* %155
+Instruction:   %call36_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %165, %struct.sxml_args_t* %166, i8* %167, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call36_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %165, %struct.sxml_args_t* %166, i8* %167, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call36_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %165, %struct.sxml_args_t* %166, i8* %167, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %165 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %166 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %167 = load i8*, i8** %value_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %176 = load i32, i32* %170
+Instruction:   %call37_instrumented = call i32 @parse_attrvalue_instrumented(%struct.sxml_t* %178, %struct.sxml_args_t* %179, i8* %180, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_end_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call37_instrumented = call i32 @parse_attrvalue_instrumented(%struct.sxml_t* %178, %struct.sxml_args_t* %179, i8* %180, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_end_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call37_instrumented = call i32 @parse_attrvalue_instrumented(%struct.sxml_t* %178, %struct.sxml_args_t* %179, i8* %180, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %178 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %179 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %180 = load i8*, i8** %quot_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %189 = load i32, i32* %183
+Instruction:   %call43_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr42_instrumented, i8* %194, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_start_id with value 0
+Instruction:   %call43_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr42_instrumented, i8* %194, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %add.ptr42_instrumented = getelementptr inbounds i8, i8* %193, i32 1
+  %194 = load i8*, i8** %end_instrumented, align 4
+  %203 = load i32, i32* %197
+  %212 = load i32, i32* %206
+Instruction:   %call48_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %221, %struct.sxml_args_t* %222, i8* %223, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_state_id with value state_id
+Instruction:   %call48_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %221, %struct.sxml_args_t* %222, i8* %223, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_args_id with value args_id
+Instruction:   %call48_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %221, %struct.sxml_args_t* %222, i8* %223, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3
+Has metadata zref_ptr_id with value 0
+Arguments recap:
+  %221 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %222 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %223 = load i8*, i8** %name_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %232 = load i32, i32* %226
+Instruction:   %call_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %9, %struct.sxml_args_t* %10, i8* %11, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_end_id !5
+Has metadata zref_state_id with value state_id
+Instruction:   %call_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %9, %struct.sxml_args_t* %10, i8* %11, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_end_id !5
+Has metadata zref_args_id with value args_id
+Instruction:   %call_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %9, %struct.sxml_args_t* %10, i8* %11, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_end_id !5
+Has metadata zref_end_id with value 0
+Arguments recap:
+  %9 = load %struct.sxml_t*, %struct.sxml_t** %state.addr_instrumented, align 4
+  %10 = load %struct.sxml_args_t*, %struct.sxml_args_t** %args.addr_instrumented, align 4
+  %11 = load i8*, i8** %end.addr_instrumented, align 4
+i32 %state_id
+i32 %args_id
+  %20 = load i32, i32* %14
+Instruction:   call void @print_tokenvalue_instrumented(i8* %13, %struct.sxmltok_t* %14, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_buffer_id with value buffer_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %13, %struct.sxmltok_t* %14, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_token_id with value tokens_id
+Arguments recap:
+  %13 = load i8*, i8** %buffer.addr_instrumented, align 4
+  %14 = load %struct.sxmltok_t*, %struct.sxmltok_t** %token_instrumented, align 4
+i32 %buffer_id
+i32 %tokens_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %19, %struct.sxmltok_t* %arrayidx_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_buffer_id with value buffer_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %19, %struct.sxmltok_t* %arrayidx_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_token_id with value tokens_id
+Arguments recap:
+  %19 = load i8*, i8** %buffer.addr_instrumented, align 4
+  %arrayidx_instrumented = getelementptr inbounds %struct.sxmltok_t, %struct.sxmltok_t* %20, i32 %add_instrumented
+i32 %buffer_id
+i32 %tokens_id
+Instruction:   %call13_instrumented = call i32 @print_chartokens_instrumented(i8* %23, %struct.sxmltok_t* %arrayidx9_instrumented, i32 %sub_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_buffer_id with value buffer_id
+Instruction:   %call13_instrumented = call i32 @print_chartokens_instrumented(i8* %23, %struct.sxmltok_t* %arrayidx9_instrumented, i32 %sub_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4
+Has metadata zref_tokens_id with value tokens_id
+Arguments recap:
+  %23 = load i8*, i8** %buffer.addr_instrumented, align 4
+  %arrayidx9_instrumented = getelementptr inbounds %struct.sxmltok_t, %struct.sxmltok_t* %24, i32 %add8_instrumented
+  %sub_instrumented = sub i32 %conv11_instrumented, %add12_instrumented
+i32 %buffer_id
+i32 %tokens_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %37, %struct.sxmltok_t* %38, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_buffer_id with value buffer_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %37, %struct.sxmltok_t* %38, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_token_id with value tokens_id
+Arguments recap:
+  %37 = load i8*, i8** %buffer.addr_instrumented, align 4
+  %38 = load %struct.sxmltok_t*, %struct.sxmltok_t** %token_instrumented, align 4
+i32 %buffer_id
+i32 %tokens_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %23, %struct.sxmltok_t* %24, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_buffer_id with value buffer_id
+Instruction:   call void @print_tokenvalue_instrumented(i8* %23, %struct.sxmltok_t* %24, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4
+Has metadata zref_token_id with value tokens_id
+Arguments recap:
+  %23 = load i8*, i8** %buffer.addr_instrumented, align 4
+  %24 = load %struct.sxmltok_t*, %struct.sxmltok_t** %token_instrumented, align 4
+i32 %buffer_id
+i32 %tokens_id
+Replacing   %call14_instrumented = call i8* @str_findchr_instrumented(i8* %81, i8* %82, i32 59, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %101 = call i8* @str_findchr_instrumented(i8* %81, i8* %82, i32 59, i32 %91, i32 %100)
+Replaced call
+Replacing   %call35_instrumented = call i8* @str_findchr_instrumented(i8* %115, i8* %116, i32 60, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %117 = call i8* @str_findchr_instrumented(i8* %115, i8* %116, i32 60, i32 %buffer_id, i32 %buffer_id)
+Replaced call
+Replacing   call void @sxml_init_instrumented(%struct.sxml_t* %parser, i32 0), !zref_state_id !5 with   call void @sxml_init_instrumented(%struct.sxml_t* %parser, i32 %30)
+Replaced call
+Replacing   %call14 = call i32 @sxml_parse_instrumented(%struct.sxml_t* %parser, i8* %arraydecay12, i32 %39, %struct.sxmltok_t* %arraydecay13, i32 128, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4, !zref_state_id !5 with   %67 = call i32 @sxml_parse_instrumented(%struct.sxml_t* %parser, i8* %arraydecay12, i32 %39, %struct.sxmltok_t* %arraydecay13, i32 128, i32 %48, i32 %57, i32 %66)
+Replaced call
+Replacing   call void @print_prettyxml_instrumented(i8* %arraydecay16, %struct.sxmltok_t* %arraydecay17, i32 %70, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4 with   call void @print_prettyxml_instrumented(i8* %arraydecay16, %struct.sxmltok_t* %arraydecay17, i32 %70, i32* %indent, i32 %79, i32 %88, i32 0)
+Replaced call
+Replacing   call void @print_prettyxml_instrumented(i8* %arraydecay20, %struct.sxmltok_t* %arraydecay21, i32 %89, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4 with   call void @print_prettyxml_instrumented(i8* %arraydecay20, %struct.sxmltok_t* %arraydecay21, i32 %89, i32* %indent, i32 %98, i32 %107, i32 0)
+Replaced call
+Replacing   %call25 = call i32 @count_lines_instrumented(i8* %arraydecay24, i32 %108, i32 0), !zref_buffer_id !3 with   %118 = call i32 @count_lines_instrumented(i8* %arraydecay24, i32 %108, i32 %117)
+Replaced call
+Replacing   %call46 = call i32 @count_lines_instrumented(i8* %arraydecay44, i32 %137, i32 0), !zref_buffer_id !3 with   %147 = call i32 @count_lines_instrumented(i8* %arraydecay44, i32 %137, i32 %146)
+Replaced call
+Replacing   call void @print_prettyxml_instrumented(i8* %arraydecay61, %struct.sxmltok_t* %arraydecay62, i32 %162, i32* %indent, i32 0, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4 with   call void @print_prettyxml_instrumented(i8* %arraydecay61, %struct.sxmltok_t* %arraydecay62, i32 %162, i32* %indent, i32 %171, i32 %180, i32 0)
+Replaced call
+Replacing   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %16, i8* %17, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %18 = call i8* @str_ltrim_instrumented(i8* %16, i8* %17, i32 %buffer_id, i32 %buffer_id)
+Replaced call
+Replacing   %call7_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %19, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %38 = call i32 @state_setpos_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %19, i32 %28, i32 %37, i32 %buffer_id)
+Replaced call
+Replacing   %call15_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %68 = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %58, i32 %67)
+Replaced call
+Replacing   %call17_instrumented = call i32 @parse_doctype_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %87 = call i32 @parse_doctype_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %77, i32 %86)
+Replaced call
+Replacing   %call18_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %106 = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %96, i32 %105)
+Replaced call
+Replacing   %call44_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %121, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_end_id !5 with   %149 = call i32 @parse_characters_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i8* %121, i32 %130, i32 %139, i32 %148)
+Replaced call
+Replacing   %call60_instrumented = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %177 = call i32 @parse_instruction_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %167, i32 %176)
+Replaced call
+Replacing   %call62_instrumented = call i32 @parse_end_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %196 = call i32 @parse_end_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %186, i32 %195)
+Replaced call
+Replacing   %call68_instrumented = call i32 @parse_comment_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %217 = call i32 @parse_comment_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %207, i32 %216)
+Replaced call
+Replacing   %call69_instrumented = call i32 @parse_cdata_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %236 = call i32 @parse_cdata_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %226, i32 %235)
+Replaced call
+Replacing   %call71_instrumented = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %255 = call i32 @parse_start_instrumented(%struct.sxml_t* %temp_instrumented, %struct.sxml_args_t* %args_instrumented, i32 %245, i32 %254)
+Replaced call
+Replacing   %call_instrumented = call i8* @str_findchr_instrumented(i8* %8, i8* %9, i32 38, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %28 = call i8* @str_findchr_instrumented(i8* %8, i8* %9, i32 38, i32 %18, i32 %27)
+Replaced call
+Replacing   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %35 = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 %25, i32 %34, i32 0)
+Replaced call
+Replacing   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %39, i8* %40, i8* %41, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %60 = call i8* @str_findstr_instrumented(i8* %39, i8* %40, i8* %41, i32 %50, i32 %59, i32 0)
+Replaced call
+Replacing   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %85 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %63, %struct.sxml_args_t* %64, i32 3, i8* %65, i8* %66, i32 %state_id, i32 %args_id, i32 %75, i32 %84)
+Replaced call
+Replacing   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %86, %struct.sxml_args_t* %87, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %98 = call i32 @state_setpos_instrumented(%struct.sxml_t* %86, %struct.sxml_args_t* %87, i8* %add.ptr12_instrumented, i32 %state_id, i32 %args_id, i32 %97)
+Replaced call
+Replacing   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %38 = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 %28, i32 %37, i32 0)
+Replaced call
+Replacing   %call14_instrumented = call i8* @str_find_notalnum_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %87 = call i8* @str_find_notalnum_instrumented(i8* %67, i8* %68, i32 %77, i32 %86)
+Replaced call
+Replacing   %call15_instrumented = call i8* @str_ltrim_instrumented(i8* %88, i8* %89, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %108 = call i8* @str_ltrim_instrumented(i8* %88, i8* %89, i32 %98, i32 %107)
+Replaced call
+Replacing   %call20_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 0, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_start_id !3, !zref_end_id !3 with   %132 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %110, %struct.sxml_args_t* %111, i32 1, i8* %112, i8* %113, i32 %state_id, i32 %args_id, i32 %122, i32 %131)
+Replaced call
+Replacing   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %133, %struct.sxml_args_t* %134, i8* %add.ptr21_instrumented, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3 with   %145 = call i32 @state_setpos_instrumented(%struct.sxml_t* %133, %struct.sxml_args_t* %134, i8* %add.ptr21_instrumented, i32 %state_id, i32 %args_id, i32 %144)
+Replaced call
+Replacing   %call31_instrumented = call i8* @str_findchr_instrumented(i8* %140, i8* %141, i32 %conv30_instrumented, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %162 = call i8* @str_findchr_instrumented(i8* %140, i8* %141, i32 %conv30_instrumented, i32 %152, i32 %161)
+Replaced call
+Replacing   %call_instrumented = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %38 = call i32 @str_startswith_instrumented(i8* %17, i8* %18, i8* %19, i32 %28, i32 %37, i32 0)
+Replaced call
+Replacing   %call7_instrumented = call i8* @str_find_notalnum_instrumented(i8* %41, i8* %42, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %61 = call i8* @str_find_notalnum_instrumented(i8* %41, i8* %42, i32 %51, i32 %60)
+Replaced call
+Replacing   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %86 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i32 4, i8* %66, i8* %67, i32 %state_id, i32 %args_id, i32 %76, i32 %85)
+Replaced call
+Replacing   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %87, %struct.sxml_args_t* %88, i8* %89, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %99 = call i32 @state_setpos_instrumented(%struct.sxml_t* %87, %struct.sxml_args_t* %88, i8* %89, i32 %state_id, i32 %args_id, i32 %98)
+Replaced call
+Replacing   %call13_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %100, %struct.sxml_args_t* %101, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %102 = call i32 @parse_attributes_instrumented(%struct.sxml_t* %100, %struct.sxml_args_t* %101, i32 %state_id, i32 %args_id)
+Replaced call
+Replacing   %call26_instrumented = call i32 @str_startswith_instrumented(i8* %111, i8* %112, i8* %113, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %132 = call i32 @str_startswith_instrumented(i8* %111, i8* %112, i8* %113, i32 %122, i32 %131, i32 0)
+Replaced call
+Replacing   %call32_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %134, %struct.sxml_args_t* %135, i8* %add.ptr31_instrumented, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %146 = call i32 @state_setpos_instrumented(%struct.sxml_t* %134, %struct.sxml_args_t* %135, i8* %add.ptr31_instrumented, i32 %state_id, i32 %args_id, i32 %145)
+Replaced call
+Replacing   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %35 = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 %25, i32 %34, i32 0)
+Replaced call
+Replacing   %call6_instrumented = call i8* @str_findstr_instrumented(i8* %37, i8* %38, i8* %39, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %58 = call i8* @str_findstr_instrumented(i8* %37, i8* %38, i8* %39, i32 %48, i32 %57, i32 0)
+Replaced call
+Replacing   %call10_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %83 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %61, %struct.sxml_args_t* %62, i32 5, i8* %63, i8* %64, i32 %state_id, i32 %args_id, i32 %73, i32 %82)
+Replaced call
+Replacing   %call12_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %84, %struct.sxml_args_t* %85, i8* %add.ptr11_instrumented, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %96 = call i32 @state_setpos_instrumented(%struct.sxml_t* %84, %struct.sxml_args_t* %85, i8* %add.ptr11_instrumented, i32 %state_id, i32 %args_id, i32 %95)
+Replaced call
+Replacing   %call11_instrumented = call i8* @str_find_notalnum_instrumented(i8* %23, i8* %24, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %43 = call i8* @str_find_notalnum_instrumented(i8* %23, i8* %24, i32 %33, i32 %42)
+Replaced call
+Replacing   %call16_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %68 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %46, %struct.sxml_args_t* %47, i32 0, i8* %48, i8* %49, i32 %state_id, i32 %args_id, i32 %58, i32 %67)
+Replaced call
+Replacing   %call17_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %69, %struct.sxml_args_t* %70, i8* %71, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %81 = call i32 @state_setpos_instrumented(%struct.sxml_t* %69, %struct.sxml_args_t* %70, i8* %71, i32 %state_id, i32 %args_id, i32 %80)
+Replaced call
+Replacing   %call18_instrumented = call i32 @parse_attributes_instrumented(%struct.sxml_t* %82, %struct.sxml_args_t* %83, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4 with   %84 = call i32 @parse_attributes_instrumented(%struct.sxml_t* %82, %struct.sxml_args_t* %83, i32 %state_id, i32 %args_id)
+Replaced call
+Replacing   %call33_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %117 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %95, %struct.sxml_args_t* %96, i32 1, i8* %97, i8* %98, i32 %state_id, i32 %args_id, i32 %107, i32 %116)
+Replaced call
+Replacing   %call46_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %124, %struct.sxml_args_t* %125, i8* %add.ptr45_instrumented, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %136 = call i32 @state_setpos_instrumented(%struct.sxml_t* %124, %struct.sxml_args_t* %125, i8* %add.ptr45_instrumented, i32 %state_id, i32 %args_id, i32 %135)
+Replaced call
+Replacing   %call5_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %61 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %39, %struct.sxml_args_t* %40, i32 2, i8* %41, i8* %42, i32 %state_id, i32 %args_id, i32 %51, i32 %60)
+Replaced call
+Replacing   %call9_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i8* %66, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %76 = call i32 @state_setpos_instrumented(%struct.sxml_t* %64, %struct.sxml_args_t* %65, i8* %66, i32 %state_id, i32 %args_id, i32 %75)
+Replaced call
+Replacing   %call21_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %130 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %108, %struct.sxml_args_t* %109, i32 2, i8* %110, i8* %111, i32 %state_id, i32 %args_id, i32 %120, i32 %129)
+Replaced call
+Replacing   %call22_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %131, %struct.sxml_args_t* %132, i8* %133, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %143 = call i32 @state_setpos_instrumented(%struct.sxml_t* %131, %struct.sxml_args_t* %132, i8* %133, i32 %state_id, i32 %args_id, i32 %142)
+Replaced call
+Replacing   %call9_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 62, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %64 = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 62, i32 %54, i32 %63)
+Replaced call
+Replacing   %call37_instrumented = call i32 @parse_attrvalue_instrumented(%struct.sxml_t* %178, %struct.sxml_args_t* %179, i8* %180, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_end_id !3 with   %190 = call i32 @parse_attrvalue_instrumented(%struct.sxml_t* %178, %struct.sxml_args_t* %179, i8* %180, i32 %state_id, i32 %args_id, i32 %189)
+Replaced call
+Replacing   %call43_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr42_instrumented, i8* %194, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %213 = call i8* @str_ltrim_instrumented(i8* %add.ptr42_instrumented, i8* %194, i32 %203, i32 %212)
+Replaced call
+Replacing   %call48_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %221, %struct.sxml_args_t* %222, i8* %223, i32 0, i32 0, i32 0), !zref_state_id !4, !zref_args_id !5, !zref_ptr_id !3 with   %233 = call i32 @state_setpos_instrumented(%struct.sxml_t* %221, %struct.sxml_args_t* %222, i8* %223, i32 %state_id, i32 %args_id, i32 %232)
+Replaced call
+Replacing   %call_instrumented = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %35 = call i32 @str_startswith_instrumented(i8* %14, i8* %15, i8* %16, i32 %25, i32 %34, i32 0)
+Replaced call
+Replacing   %call7_instrumented = call i8* @str_findstr_instrumented(i8* %38, i8* %39, i8* %40, i32 0, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %59 = call i8* @str_findstr_instrumented(i8* %38, i8* %39, i8* %40, i32 %49, i32 %58, i32 0)
+Replaced call
+Replacing   %call11_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %84 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %62, %struct.sxml_args_t* %63, i32 6, i8* %64, i8* %65, i32 %state_id, i32 %args_id, i32 %74, i32 %83)
+Replaced call
+Replacing   %call13_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %85, %struct.sxml_args_t* %86, i8* %add.ptr12_instrumented, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %97 = call i32 @state_setpos_instrumented(%struct.sxml_t* %85, %struct.sxml_args_t* %86, i8* %add.ptr12_instrumented, i32 %state_id, i32 %args_id, i32 %96)
+Replaced call
+Replacing   %call6_instrumented = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 61, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %64 = call i8* @str_findchr_instrumented(i8* %44, i8* %45, i32 61, i32 %54, i32 %63)
+Replaced call
+Replacing   %call_instrumented = call i8* @str_ltrim_instrumented(i8* %12, i8* %13, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %32 = call i8* @str_ltrim_instrumented(i8* %12, i8* %13, i32 %22, i32 %31)
+Replaced call
+Replacing   %call11_instrumented = call i8* @str_rtrim_instrumented(i8* %67, i8* %68, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %87 = call i8* @str_rtrim_instrumented(i8* %67, i8* %68, i32 %77, i32 %86)
+Replaced call
+Replacing   %call12_instrumented = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 0, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_start_id !5, !zref_end_id !5 with   %110 = call i32 @state_pushtoken_instrumented(%struct.sxml_t* %88, %struct.sxml_args_t* %89, i32 3, i8* %90, i8* %91, i32 %state_id, i32 %args_id, i32 %100, i32 %109)
+Replaced call
+Replacing   %call14_instrumented = call i8* @str_ltrim_instrumented(i8* %add.ptr13_instrumented, i8* %112, i32 0, i32 0), !zref_start_id !3, !zref_end_id !3 with   %131 = call i8* @str_ltrim_instrumented(i8* %add.ptr13_instrumented, i8* %112, i32 %121, i32 %130)
+Replaced call
+Replacing   %call36_instrumented = call i32 @state_setpos_instrumented(%struct.sxml_t* %165, %struct.sxml_args_t* %166, i8* %167, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_ptr_id !5 with   %177 = call i32 @state_setpos_instrumented(%struct.sxml_t* %165, %struct.sxml_args_t* %166, i8* %167, i32 %state_id, i32 %args_id, i32 %176)
+Replaced call
+Replacing   %call13_instrumented = call i32 @print_chartokens_instrumented(i8* %23, %struct.sxmltok_t* %arrayidx9_instrumented, i32 %sub_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_tokens_id !4 with   %29 = call i32 @print_chartokens_instrumented(i8* %23, %struct.sxmltok_t* %arrayidx9_instrumented, i32 %sub_instrumented, i32 %buffer_id, i32 %tokens_id)
+Replaced call
+Replacing   %call_instrumented = call i32 @parse_characters_instrumented(%struct.sxml_t* %9, %struct.sxml_args_t* %10, i8* %11, i32 0, i32 0, i32 0), !zref_state_id !3, !zref_args_id !4, !zref_end_id !5 with   %21 = call i32 @parse_characters_instrumented(%struct.sxml_t* %9, %struct.sxml_args_t* %10, i8* %11, i32 %state_id, i32 %args_id, i32 %20)
+Replaced call
+Replacing   call void @print_tokenvalue_instrumented(i8* %13, %struct.sxmltok_t* %14, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4 with   call void @print_tokenvalue_instrumented(i8* %13, %struct.sxmltok_t* %14, i32 %buffer_id, i32 %tokens_id)
+Replaced call
+Replacing   call void @print_tokenvalue_instrumented(i8* %19, %struct.sxmltok_t* %arrayidx_instrumented, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4 with   call void @print_tokenvalue_instrumented(i8* %19, %struct.sxmltok_t* %arrayidx_instrumented, i32 %buffer_id, i32 %tokens_id)
+Replaced call
+Replacing   call void @print_tokenvalue_instrumented(i8* %37, %struct.sxmltok_t* %38, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4 with   call void @print_tokenvalue_instrumented(i8* %37, %struct.sxmltok_t* %38, i32 %buffer_id, i32 %tokens_id)
+Replaced call
+Replacing   call void @print_tokenvalue_instrumented(i8* %23, %struct.sxmltok_t* %24, i32 0, i32 0), !zref_buffer_id !3, !zref_token_id !4 with   call void @print_tokenvalue_instrumented(i8* %23, %struct.sxmltok_t* %24, i32 %buffer_id, i32 %tokens_id)
+Replaced call
+Returning

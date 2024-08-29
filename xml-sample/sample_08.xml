@@ -1,0 +1,64 @@
+<root>
+  <row>
+    <post_title>Post with ACF fields</post_title>
+    <text_field>Test field</text_field>
+    <text_area_field>Text area test field</text_area_field>
+    <number_field>101</number_field>
+    <range_field>83</range_field>
+    <email_field>admin123@gmail.com</email_field>
+    <url_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv</url_field>
+    <password_field>admin123</password_field>
+    <image_field>https://www.techmakroti.com/wp-content/uploads/2019/05/Image-Optimization.jpg</image_field>
+    <file_field>give the file URL from your wordpress media library</file_field>
+    <wysiwyg_editor_field>You can write your wysiwyg editor content here</wysiwyg_editor_field>
+    <oembed_field>https://www.youtube.com/watch?v=Uho22R0BCHQ&amp;t=11s</oembed_field>
+    <select_field>green</select_field>
+    <checkbox_field>male</checkbox_field>
+    <radio_button_field>button1</radio_button_field>
+    <button_field>buttontype1</button_field>
+    <true_or_false_field>0</true_or_false_field>
+    <link_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv</link_field>
+    <post_object_field>post1</post_object_field>
+    <page_link_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv</page_link_field>
+    <relationship_field>relationpost1</relationship_field>
+    <taxonomy_field>taxonomy1</taxonomy_field>
+    <user_field>12</user_field>
+    <google_map_field>London Tavern Hotel, Lennox Street, Richmond Victoria, Australien|-37.82216990000001|144.9936796</google_map_field>
+    <date_picker_field>20200218</date_picker_field>
+    <date_time_picker_field>yyyy-mm-dd  12:16:30 AM</date_time_picker_field>
+    <time_picker_field>16:25:54</time_picker_field>
+    <color_picker_field>#69d61b</color_picker_field>
+    <gallery_field>https://www.account4web.com/wp-content/uploads/2019/01/wordpress-1810632_960_720-300x298.jpg,https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/wordpress_v2-512.png</gallery_field>
+  </row>
+  <row>
+    <post_title>Post with ACF fieldss</post_title>
+    <text_field>Test field</text_field>
+    <text_area_field>Text area test field</text_area_field>
+    <number_field>111</number_field>
+    <range_field>84</range_field>
+    <email_field>admin1234@gmail.com</email_field>
+    <url_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv</url_field>
+    <password_field>admin1234</password_field>
+    <image_field>https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1200px-WordPress_blue_logo.svg.png</image_field>
+    <file_field>give the file URL from your wordpress media library</file_field>
+    <wysiwyg_editor_field>You can write your wysiwyg editor content here</wysiwyg_editor_field>
+    <oembed_field>https://www.youtube.com/watch?v=Uho22R0BCHQ&amp;t=11s</oembed_field>
+    <select_field>green,blue</select_field>
+    <checkbox_field>male,children,female</checkbox_field>
+    <radio_button_field>button2</radio_button_field>
+    <button_field>buttontype2</button_field>
+    <true_or_false_field>1</true_or_false_field>
+    <link_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv</link_field>
+    <post_object_field>post1,post2,post3</post_object_field>
+    <page_link_field>https://www.smackcoders.com/documentation/ultimate-csv-importer-pro/how-to-import-csv,http://www.repairmsexcel.com/blog/merge-rows-and-columns-in-excel</page_link_field>
+    <relationship_field>relationpost1,relationpost2</relationship_field>
+    <taxonomy_field>taxonomy1,taxonomy2,taxonomy3</taxonomy_field>
+    <user_field>23</user_field>
+    <google_map_field>Burj Khalifa - Sheikh Mohammed bin Rashid Boulevard - Dubai - Vereinigte Arabische Emirate|25.197197|55.27437639999999</google_map_field>
+    <date_picker_field>20100218</date_picker_field>
+    <date_time_picker_field>yyyy-mm-dd  12:16:30 AM</date_time_picker_field>
+    <time_picker_field>16:25:55</time_picker_field>
+    <color_picker_field>#69d61c</color_picker_field>
+    <gallery_field>https://icons.iconarchive.com/icons/graphics-vibe/simple-rounded-social/256/wordpress-icon.png,https://findicons.com/files/icons/773/dellios_system/512/wordpress.png,https://s.w.org/images/backgrounds/wordpress-bg-medblue-square.png</gallery_field>
+  </row>
+</root>

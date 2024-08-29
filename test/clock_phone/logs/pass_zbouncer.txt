@@ -1,0 +1,184 @@
+Checking for function: hook_exit
+Checking for function: pinMode
+Checking for function: digitalWrite
+Checking for function: Serial_begin
+Checking for function: delay
+Checking for function: myDFPlayer_readFileCounts
+Checking for function: main
+Checking for function: Serial_print_instrumented
+Checking for function: Serial_println_instrumented
+Checking for function: WiFi_status_instrumented
+Checking for function: WiFi_begin_instrumented
+Checking for function: printWiFiStatus_instrumented
+Checking for function: setupWifi_instrumented
+Checking for function: myDFPlayer_begin_instrumented
+Checking for function: myDFPlayer_readState_instrumented
+Checking for function: myDFPlayer_readVolume_instrumented
+Checking for function: myDFPlayer_volume_instrumented
+Checking for function: myDFPlayer_select_instrumented
+Checking for function: myDFPlayer_play_instrumented
+Checking for function: SetupMP3_instrumented
+Checking for function: setup_instrumented
+-------------------------LOOPS----------------------------
+Loop in myDFPlayer_play_instrumented: ZSUSE 4 |   store i32 %add_instrumented, i32* @fake_write_reg, align 4, !zsuse !12
+Injecting zbouncer_use(use=4, addr=0x560fbd8c38d8)
+Loop in myDFPlayer_play_instrumented: ZSUSE 2 |   store i32 %mul_instrumented, i32* @fake_write_reg, align 4, !zsuse !13
+Injecting zbouncer_use(use=2, addr=0x560fbd8c38d8)
+Loop in myDFPlayer_play_instrumented: ZSUSE 5 |   store i32 %call5_instrumented, i32* %c_instrumented, align 4, !zsuse !9
+Injecting zbouncer_use(use=5, addr=0x560fbd8ecd28)
+Loop in myDFPlayer_play_instrumented: ZIUSE 7 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !ziuse !10, !zsuse !11
+Injecting zbouncer_iuse(use=7, def=mp3_id, addr=0x560fbd8edd98)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 27 | @ssid = dso_local global [12 x i8] c"<SSID HERE>\00", align 1, !zdef !0
+Injecting zbouncer_collect_galloca(def=27, addr=0x560fbd8c2998)
+METADATA::zdef 28 | @pass = dso_local global [16 x i8] c"<PASSWORD HERE>\00", align 1, !zdef !1
+Injecting zbouncer_collect_galloca(def=28, addr=0x560fbd8c3a08)
+METADATA::zdef 3 | @fake_write_reg = dso_local global i32 0, align 4, !zdef !2
+Injecting zbouncer_collect_galloca(def=3, addr=0x560fbd8c38d8)
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 8 |   %mp3 = alloca %struct.mp3, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=8, addr=0x560fbd8dd118)
+METADATA::zdef 18 |   %wifi = alloca %struct.wifi, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=18, addr=0x560fbd8dd178)
+METADATA::zdef 13 |   %wifi.addr_instrumented = alloca %struct.wifi*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=13, addr=0x560fbd8e4178)
+METADATA::zdef 14 |   %wifi.addr_instrumented = alloca %struct.wifi*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=14, addr=0x560fbd8e6428)
+METADATA::zdef 22 |   %mp3.addr_instrumented = alloca %struct.mp3*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=22, addr=0x560fbd8eb9b8)
+METADATA::zdef 9 |   %mp3.addr_instrumented = alloca %struct.mp3*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=9, addr=0x560fbd8ecc68)
+METADATA::zdef 1 |   %c_instrumented = alloca i32, align 4, !zdef !7
+Injecting zbouncer_collect_alloca(def=1, addr=0x560fbd8ecd28)
+METADATA::zdef 23 |   %mp3.addr_instrumented = alloca %struct.mp3*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=23, addr=0x560fbd8efd98)
+METADATA::zdef 24 |   %mp3.addr_instrumented = alloca %struct.mp3*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=24, addr=0x560fbd8f13e8)
+METADATA::zdef 15 |   %wifi.addr_instrumented = alloca %struct.wifi*, align 4, !zdef !7
+Injecting zbouncer_collect_alloca(def=15, addr=0x560fbd8f1448)
+----------------------------------------------------------
+METADATA::zuse 6 |   store i32 100, i32* %c_instrumented, align 4, !zsuse !8
+Injecting zbouncer_use(use=6, addr=0x560fbd8ecd28)
+METADATA::zuse 5 |   store i32 %call5_instrumented, i32* %c_instrumented, align 4, !zsuse !9
+Injecting zbouncer_use(use=5, addr=0x560fbd8ecd28)
+METADATA::zuse 7 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !ziuse !10, !zsuse !11
+Injecting zbouncer_iuse(use=7, def=mp3_id, addr=0x560fbd8edd98)
+METADATA::zuse 4 |   store i32 %add_instrumented, i32* @fake_write_reg, align 4, !zsuse !12
+Injecting zbouncer_use(use=4, addr=0x560fbd8c38d8)
+METADATA::zuse 2 |   store i32 %mul_instrumented, i32* @fake_write_reg, align 4, !zsuse !13
+Injecting zbouncer_use(use=2, addr=0x560fbd8c38d8)
+----------------------------------------------------------
+METADATA::zluse 11 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %14) #6, !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=11, def=wifi_id, addr=0x560fbd8e4548, size_of_write=0x560fbd908770)
+METADATA::zluse 17 |   %call4_instrumented = call i8* @strcpy(i8* %arraydecay3_instrumented, i8* %25) #6, !ziuse !7, !zluse !9
+Injecting zbouncer_iluse(use=17, def=wifi_id, addr=0x560fbd8e47e8, size_of_write=0x560fbd908770)
+METADATA::zluse 20 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %14) #6, !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=20, def=mp3_id, addr=0x560fbd8ebbc8, size_of_write=0x560fbd908770)
+Instruction:   call void @setup_instrumented(%struct.mp3* %mp3, %struct.wifi* %wifi, i32 0, i32 0), !zref_wifi_id !8, !zref_mp3_id !9
+Has metadata zref_mp3_id with value 29
+Instruction:   call void @setup_instrumented(%struct.mp3* %mp3, %struct.wifi* %wifi, i32 0, i32 0), !zref_wifi_id !8, !zref_mp3_id !9
+Has metadata zref_wifi_id with value 31
+Arguments recap:
+  %mp3 = alloca %struct.mp3, align 4, !zdef !6
+  %wifi = alloca %struct.wifi, align 1, !zdef !7
+  %44 = load i32, i32* %38
+  %53 = load i32, i32* %47
+Instruction:   call void @myDFPlayer_play_instrumented(%struct.mp3* %mp3, i32 0), !zref_mp3_id !10
+Has metadata zref_mp3_id with value 25
+Arguments recap:
+  %mp3 = alloca %struct.mp3, align 4, !zdef !6
+  %70 = load i32, i32* %64
+Instruction:   call void @Serial_println_instrumented(i8* %15, i32 0), !zref_msg_id !0
+Has metadata zref_msg_id with value 27
+Arguments recap:
+  %15 = getelementptr inbounds [12 x i8], [12 x i8]* @ssid, i32 0, i32 0
+  %24 = load i32, i32* %18
+Instruction:   call void @WiFi_begin_instrumented(%struct.wifi* %25, i8* %26, i8* %27, i32 0, i32 0, i32 0), !zref_wifi_id !7, !zref_ssid_id !0, !zref_password_id !1
+Has metadata zref_wifi_id with value wifi_id
+Instruction:   call void @WiFi_begin_instrumented(%struct.wifi* %25, i8* %26, i8* %27, i32 0, i32 0, i32 0), !zref_wifi_id !7, !zref_ssid_id !0, !zref_password_id !1
+Has metadata zref_ssid_id with value 27
+Instruction:   call void @WiFi_begin_instrumented(%struct.wifi* %25, i8* %26, i8* %27, i32 0, i32 0, i32 0), !zref_wifi_id !7, !zref_ssid_id !0, !zref_password_id !1
+Has metadata zref_password_id with value 28
+Arguments recap:
+  %25 = load %struct.wifi*, %struct.wifi** %wifi.addr_instrumented, align 4
+  %26 = getelementptr inbounds [12 x i8], [12 x i8]* @ssid, i32 0, i32 0
+  %27 = getelementptr inbounds [16 x i8], [16 x i8]* @pass, i32 0, i32 0
+i32 %wifi_id
+  %36 = load i32, i32* %30
+  %45 = load i32, i32* %39
+Instruction:   %call_instrumented = call i32 @WiFi_status_instrumented(%struct.wifi* %47, i32 0), !zref_wifi_id !7
+Has metadata zref_wifi_id with value wifi_id
+Arguments recap:
+  %47 = load %struct.wifi*, %struct.wifi** %wifi.addr_instrumented, align 4
+i32 %wifi_id
+Instruction:   call void @printWiFiStatus_instrumented(%struct.wifi* %49, i32 0), !zref_wifi_id !7
+Has metadata zref_wifi_id with value wifi_id
+Arguments recap:
+  %49 = load %struct.wifi*, %struct.wifi** %wifi.addr_instrumented, align 4
+i32 %wifi_id
+Instruction:   call void @myDFPlayer_begin_instrumented(%struct.mp3* %14, i32 0), !zref_mp3_id !7
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %14 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 %mp3_id
+Instruction:   call void @myDFPlayer_readState_instrumented(%struct.mp3* %16, i32 0), !zref_mp3_id !7
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %16 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 %mp3_id
+Instruction:   call void @myDFPlayer_volume_instrumented(%struct.mp3* %18, i32 3, i32 0), !zref_mp3_id !7
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %18 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 3
+i32 %mp3_id
+Instruction:   call void @myDFPlayer_readState_instrumented(%struct.mp3* %20, i32 0), !zref_mp3_id !7
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %20 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 %mp3_id
+Instruction:   call void @myDFPlayer_select_instrumented(%struct.mp3* %25, i32 0), !zref_mp3_id !7
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %25 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 %mp3_id
+Instruction:   call void @SetupMP3_instrumented(%struct.mp3* %22, i32 0), !zref_mp3_id !8
+Has metadata zref_mp3_id with value mp3_id
+Arguments recap:
+  %22 = load %struct.mp3*, %struct.mp3** %mp3.addr_instrumented, align 4
+i32 %mp3_id
+Instruction:   call void @setupWifi_instrumented(%struct.wifi* %23, i32 0), !zref_wifi_id !9
+Has metadata zref_wifi_id with value wifi_id
+Arguments recap:
+  %23 = load %struct.wifi*, %struct.wifi** %wifi.addr_instrumented, align 4
+i32 %wifi_id
+Replacing   call void @setup_instrumented(%struct.mp3* %mp3, %struct.wifi* %wifi, i32 0, i32 0), !zref_wifi_id !8, !zref_mp3_id !9 with   call void @setup_instrumented(%struct.mp3* %mp3, %struct.wifi* %wifi, i32 %44, i32 %53)
+Replaced call
+Replacing   call void @myDFPlayer_play_instrumented(%struct.mp3* %mp3, i32 0), !zref_mp3_id !8 with   call void @myDFPlayer_play_instrumented(%struct.mp3* %mp3, i32 %70)
+Replaced call
+Replacing   call void @Serial_println_instrumented(i8* %15, i32 0), !zref_msg_id !0 with   call void @Serial_println_instrumented(i8* %15, i32 %24)
+Replaced call
+Replacing   call void @WiFi_begin_instrumented(%struct.wifi* %25, i8* %26, i8* %27, i32 0, i32 0, i32 0), !zref_wifi_id !7, !zref_ssid_id !0, !zref_password_id !1 with   call void @WiFi_begin_instrumented(%struct.wifi* %25, i8* %26, i8* %27, i32 %wifi_id, i32 %36, i32 %45)
+Replaced call
+Replacing   %call_instrumented = call i32 @WiFi_status_instrumented(%struct.wifi* %47, i32 0), !zref_wifi_id !7 with   %48 = call i32 @WiFi_status_instrumented(%struct.wifi* %47, i32 %wifi_id)
+Replaced call
+Replacing   call void @printWiFiStatus_instrumented(%struct.wifi* %49, i32 0), !zref_wifi_id !7 with   call void @printWiFiStatus_instrumented(%struct.wifi* %49, i32 %wifi_id)
+Replaced call
+Replacing   call void @myDFPlayer_begin_instrumented(%struct.mp3* %14, i32 0), !zref_mp3_id !7 with   call void @myDFPlayer_begin_instrumented(%struct.mp3* %14, i32 %mp3_id)
+Replaced call
+Replacing   call void @myDFPlayer_readState_instrumented(%struct.mp3* %16, i32 0), !zref_mp3_id !7 with   call void @myDFPlayer_readState_instrumented(%struct.mp3* %16, i32 %mp3_id)
+Replaced call
+Replacing   call void @myDFPlayer_volume_instrumented(%struct.mp3* %18, i32 3, i32 0), !zref_mp3_id !7 with   call void @myDFPlayer_volume_instrumented(%struct.mp3* %18, i32 3, i32 %mp3_id)
+Replaced call
+Replacing   call void @myDFPlayer_readState_instrumented(%struct.mp3* %20, i32 0), !zref_mp3_id !7 with   call void @myDFPlayer_readState_instrumented(%struct.mp3* %20, i32 %mp3_id)
+Replaced call
+Replacing   call void @myDFPlayer_select_instrumented(%struct.mp3* %25, i32 0), !zref_mp3_id !7 with   call void @myDFPlayer_select_instrumented(%struct.mp3* %25, i32 %mp3_id)
+Replaced call
+Replacing   call void @SetupMP3_instrumented(%struct.mp3* %22, i32 0), !zref_mp3_id !8 with   call void @SetupMP3_instrumented(%struct.mp3* %22, i32 %mp3_id)
+Replaced call
+Replacing   call void @setupWifi_instrumented(%struct.wifi* %23, i32 0), !zref_wifi_id !8 with   call void @setupWifi_instrumented(%struct.wifi* %23, i32 %wifi_id)
+Replaced call
+Returning

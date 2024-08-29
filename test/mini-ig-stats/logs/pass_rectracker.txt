@@ -1,0 +1,56 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: delay
+Tracking recursion for delay
+Instrumenting entry point of delay
+Instrumenting exit point of delay
+Instrumenting Function: pinMode
+Tracking recursion for pinMode
+Instrumenting entry point of pinMode
+Instrumenting exit point of pinMode
+Instrumenting Function: analogWrite
+Tracking recursion for analogWrite
+Instrumenting entry point of analogWrite
+Instrumenting exit point of analogWrite
+Instrumenting Function: setColor
+Tracking recursion for setColor
+Instrumenting entry point of setColor
+Instrumenting exit point of setColor
+Instrumenting Function: handleResult
+Tracking recursion for handleResult
+Instrumenting entry point of handleResult
+Instrumenting exit point of handleResult
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: getHttpPage_instrumented
+Tracking recursion for getHttpPage_instrumented
+Instrumenting entry point of getHttpPage_instrumented
+Instrumenting exit point of getHttpPage_instrumented
+Instrumenting Function: fetchInteger_instrumented
+Tracking recursion for fetchInteger_instrumented
+Instrumenting entry point of fetchInteger_instrumented
+Instrumenting exit point of fetchInteger_instrumented
+Instrumenting Function: getFollowers_instrumented
+Tracking recursion for getFollowers_instrumented
+Instrumenting entry point of getFollowers_instrumented
+Instrumenting exit point of getFollowers_instrumented
+Instrumenting Function: getLikes_instrumented
+Tracking recursion for getLikes_instrumented
+Instrumenting entry point of getLikes_instrumented
+Instrumenting exit point of getLikes_instrumented
+Instrumenting Function: getComments_instrumented
+Tracking recursion for getComments_instrumented
+Instrumenting entry point of getComments_instrumented
+Instrumenting exit point of getComments_instrumented
+Instrumenting Function: publish_instrumented
+Tracking recursion for publish_instrumented
+Instrumenting entry point of publish_instrumented
+Instrumenting exit point of publish_instrumented
+Instrumenting Function: setup_instrumented
+Tracking recursion for setup_instrumented
+Instrumenting entry point of setup_instrumented
+Instrumenting exit point of setup_instrumented

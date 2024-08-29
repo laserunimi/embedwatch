@@ -1,0 +1,134 @@
+Checking for function: die
+Checking for function: get_rf_config
+Checking for function: reset_rf_config
+Checking for function: max_tx_power
+Checking for function: configure_rf
+Checking for function: unlock
+Checking for function: read_code
+Checking for function: set_code
+Checking for function: main
+Checking for function: debug_print_instrumented
+Checking for function: rf_write_buf_instrumented
+Checking for function: rf_read_buf_instrumented
+-------------------------LOOPS----------------------------
+Loop in read_code: ZSUSE 12 |   store i8 %conv, i8* %c, align 1, !zsuse !9
+Injecting zbouncer_use(use=12, addr=0x560e43ee9ea8)
+Loop in read_code: ZSUSE 13 |   store i8 %14, i8* %arrayidx, align 1, !zsuse !10
+Injecting zbouncer_use(use=13, addr=0x560e43eea398)
+Loop in set_code: ZSUSE 19 |   store i8 %conv, i8* %c, align 1, !zsuse !9
+Injecting zbouncer_use(use=19, addr=0x560e43ef6c28)
+Loop in set_code: ZSUSE 17 |   store i8 %14, i8* %arrayidx, align 1, !zsuse !10
+Injecting zbouncer_use(use=17, addr=0x560e43ef70f8)
+Loop in main: ZSUSE 9 |   store i8 %conv, i8* %cmd, align 1, !zsuse !8
+Injecting zbouncer_use(use=9, addr=0x560e43ef8ec8)
+Loop in rf_read_buf_instrumented: ZSUSE 6 |   store i8 %conv_instrumented, i8* %c_instrumented, align 1, !zsuse !9
+Injecting zbouncer_use(use=6, addr=0x560e43ef9398)
+Loop in rf_read_buf_instrumented: ZIUSE 2 |   store i8 %14, i8* %arrayidx_instrumented, align 1, !ziuse !10, !zsuse !11
+Injecting zbouncer_iuse(use=2, def=buf_id, addr=0x560e43ef98d0)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 27 | @cmd_get_config = dso_local global [3 x i8] c"\AA\FA\E1", align 1, !zdef !0
+Injecting zbouncer_collect_galloca(def=27, addr=0x560e43ec9c08)
+METADATA::zdef 25 | @cmd_reset = dso_local global [3 x i8] c"\AA\FA\F0", align 1, !zdef !1
+Injecting zbouncer_collect_galloca(def=25, addr=0x560e43ec9c88)
+METADATA::zdef 24 | @cmd_max_tx_power = dso_local global [4 x i8] c"\AA\FA\96\07", align 1, !zdef !2
+Injecting zbouncer_collect_galloca(def=24, addr=0x560e43ec9e58)
+METADATA::zdef 23 | @the_pw = dso_local global [7 x i8] c"UNLOCK\00", align 1, !zdef !3
+Injecting zbouncer_collect_galloca(def=23, addr=0x560e43ec9fd8)
+-------------------------- ZEXIT ----------------------------
+----------------------------------------------------------
+METADATA::zdef 3 |   %buf = alloca [16 x i8], align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=3, addr=0x560e43eef5a8)
+METADATA::zdef 4 |   %buf = alloca [4 x i8], align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=4, addr=0x560e43ef1708)
+METADATA::zdef 26 |   %buf = alloca [4 x i8], align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=26, addr=0x560e43ef2758)
+METADATA::zdef 14 |   %buf = alloca [16 x i8], align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=14, addr=0x560e43ef4cd8)
+METADATA::zdef 11 |   %c = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=11, addr=0x560e43ee9ea8)
+METADATA::zdef 18 |   %buf = alloca [16 x i8], align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=18, addr=0x560e43ef6b68)
+METADATA::zdef 16 |   %c = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=16, addr=0x560e43ef6c28)
+METADATA::zdef 8 |   %cmd = alloca i8, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=8, addr=0x560e43ef8ec8)
+METADATA::zdef 5 |   %buf.addr_instrumented = alloca i8*, align 4, !zdef !7
+Injecting zbouncer_collect_alloca(def=5, addr=0x560e43ef9278)
+METADATA::zdef 1 |   %c_instrumented = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=1, addr=0x560e43ef9398)
+----------------------------------------------------------
+METADATA::zuse 12 |   store i8 %conv, i8* %c, align 1, !zsuse !9
+Injecting zbouncer_use(use=12, addr=0x560e43ee9ea8)
+METADATA::zuse 13 |   store i8 %41, i8* %arrayidx, align 1, !zsuse !10
+Injecting zbouncer_use(use=13, addr=0x560e43eea398)
+METADATA::zuse 19 |   store i8 %conv, i8* %c, align 1, !zsuse !9
+Injecting zbouncer_use(use=19, addr=0x560e43ef6c28)
+METADATA::zuse 17 |   store i8 %41, i8* %arrayidx, align 1, !zsuse !10
+Injecting zbouncer_use(use=17, addr=0x560e43ef70f8)
+METADATA::zuse 20 |   store i8 0, i8* %arrayidx3, align 1, !zsuse !11
+Injecting zbouncer_use(use=20, addr=0x560e43ef7438)
+METADATA::zuse 9 |   store i8 %conv, i8* %cmd, align 1, !zsuse !8
+Injecting zbouncer_use(use=9, addr=0x560e43ef8ec8)
+METADATA::zuse 6 |   store i8 %conv_instrumented, i8* %c_instrumented, align 1, !zsuse !9
+Injecting zbouncer_use(use=6, addr=0x560e43ef9398)
+METADATA::zuse 2 |   store i8 %41, i8* %arrayidx_instrumented, align 1, !ziuse !10, !zsuse !11
+Injecting zbouncer_iuse(use=2, def=buf_id, addr=0x560e43ef98d0)
+----------------------------------------------------------
+METADATA::zluse 22 |   %call4 = call i8* @strcpy(i8* %73, i8* %arraydecay) #4, !zluse !12
+Injecting zbouncer_luse(use=22, addr=0x560e43ef7808, size_of_write=0x560e43f1b680)
+Instruction:   call void @rf_write_buf_instrumented(i8* %13, i32 3, i32 0), !zref_buf_id !0
+Has metadata zref_buf_id with value 27
+Arguments recap:
+  %13 = getelementptr inbounds [3 x i8], [3 x i8]* @cmd_get_config, i32 0, i32 0
+i32 3
+  %22 = load i32, i32* %16
+Instruction:   %call = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 16, i32 0), !zref_buf_id !7
+Has metadata zref_buf_id with value 3
+Arguments recap:
+  %arraydecay = getelementptr inbounds [16 x i8], [16 x i8]* %buf, i32 0, i32 0
+i32 16
+  %31 = load i32, i32* %25
+Instruction:   call void @rf_write_buf_instrumented(i8* %14, i32 4, i32 0), !zref_buf_id !1
+Has metadata zref_buf_id with value 25
+Arguments recap:
+  %14 = getelementptr inbounds [3 x i8], [3 x i8]* @cmd_reset, i32 0, i32 0
+i32 4
+  %23 = load i32, i32* %17
+Instruction:   %call = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 4, i32 0), !zref_buf_id !7
+Has metadata zref_buf_id with value 4
+Arguments recap:
+  %arraydecay = getelementptr inbounds [4 x i8], [4 x i8]* %buf, i32 0, i32 0
+i32 4
+  %32 = load i32, i32* %26
+Instruction:   call void @debug_print_instrumented(i8* %arraydecay1, i32 0), !zref_s_id !7
+Has metadata zref_s_id with value 4
+Arguments recap:
+  %arraydecay1 = getelementptr inbounds [4 x i8], [4 x i8]* %buf, i32 0, i32 0
+  %42 = load i32, i32* %36
+Instruction:   call void @rf_write_buf_instrumented(i8* %13, i32 4, i32 0), !zref_buf_id !2
+Has metadata zref_buf_id with value 24
+Arguments recap:
+  %13 = getelementptr inbounds [4 x i8], [4 x i8]* @cmd_max_tx_power, i32 0, i32 0
+i32 4
+  %22 = load i32, i32* %16
+Instruction:   call void @debug_print_instrumented(i8* %arraydecay1, i32 0), !zref_s_id !7
+Has metadata zref_s_id with value 26
+Arguments recap:
+  %arraydecay1 = getelementptr inbounds [4 x i8], [4 x i8]* %buf, i32 0, i32 0
+  %31 = load i32, i32* %25
+Replacing   call void @rf_write_buf_instrumented(i8* %13, i32 3, i32 0), !zref_buf_id !0 with   call void @rf_write_buf_instrumented(i8* %13, i32 3, i32 %22)
+Replaced call
+Replacing   %call = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 16, i32 0), !zref_buf_id !7 with   %32 = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 16, i32 %31)
+Replaced call
+Replacing   call void @rf_write_buf_instrumented(i8* %14, i32 4, i32 0), !zref_buf_id !1 with   call void @rf_write_buf_instrumented(i8* %14, i32 4, i32 %23)
+Replaced call
+Replacing   %call = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 4, i32 0), !zref_buf_id !7 with   %33 = call i32 @rf_read_buf_instrumented(i8* %arraydecay, i32 4, i32 %32)
+Replaced call
+Replacing   call void @debug_print_instrumented(i8* %arraydecay1, i32 0), !zref_s_id !7 with   call void @debug_print_instrumented(i8* %arraydecay1, i32 %42)
+Replaced call
+Replacing   call void @rf_write_buf_instrumented(i8* %13, i32 4, i32 0), !zref_buf_id !2 with   call void @rf_write_buf_instrumented(i8* %13, i32 4, i32 %22)
+Replaced call
+Replacing   call void @debug_print_instrumented(i8* %arraydecay1, i32 0), !zref_s_id !7 with   call void @debug_print_instrumented(i8* %arraydecay1, i32 %31)
+Replaced call
+Returning

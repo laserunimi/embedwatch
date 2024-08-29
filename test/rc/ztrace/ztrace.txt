@@ -1,0 +1,8 @@
+0;IN;-1;CallICFGNode522 {fun: decode_websocket_message_instrumented}
+	1;LUSE;0;decode_websocket_message_instrumented;CallICFGNode522 {fun: decode_websocket_message_instrumented}
+		2;ADEF;1;BASE;24;FIObjVar ID: 773 (base object)    %key_instrumented = alloca [24 x i8], align 1 
+3;IN;-1;CallICFGNode519 {fun: decode_websocket_message_instrumented}
+	2;ADEF;3;BASE;24;FIObjVar ID: 773 (base object)    %key_instrumented = alloca [24 x i8], align 1 
+4;ADEF;-1;BASE;200;FIObjVar ID: 152 (base object)    %json_buffer = alloca [200 x i8], align 1 
+6;DDEF;-1;BASE;-1;FIObjVar ID: 201 (base object)    %call2 = call noalias i8* @malloc(i32 32) #8 
+	5;ADEF;6;DOMINATOR;4;FIObjVar ID: 142 (base object)    %command = alloca %struct.command_node_t*, align 4 

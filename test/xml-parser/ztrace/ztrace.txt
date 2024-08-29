@@ -1,0 +1,277 @@
+0;IN;-1;CallICFGNode175 {fun: main}
+	1;ADEF;0;BASE;8128;FIObjVar ID: 327 (base object)    %buffer = alloca [8128 x i8], align 1 
+	2;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1755 StoreStmt: [Var2182 <-- Var2180]	    store i16 %conv_instrumented, i16* %type2_instrumented, align 4 
+		3;ADEF;2;DOMINATOR;4;FIObjVar ID: 1526 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		4;SDEF;2;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		5;ADEF;2;DOMINATOR;4;FIObjVar ID: 1041 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		6;ADEF;2;DOMINATOR;4;FIObjVar ID: 1189 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		7;ADEF;2;DOMINATOR;4;FIObjVar ID: 1284 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		8;ADEF;2;DOMINATOR;4;FIObjVar ID: 1658 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		9;ADEF;2;DOMINATOR;4;FIObjVar ID: 1775 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		10;ADEF;2;DOMINATOR;4;FIObjVar ID: 1867 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		11;ADEF;2;DOMINATOR;4;FIObjVar ID: 2140 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		12;ADEF;2;DOMINATOR;4;FIObjVar ID: 2148 (base object)    %token_instrumented = alloca %struct.sxmltok_t*, align 4 
+		13;ADEF;2;DOMINATOR;4;FIObjVar ID: 2320 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		14;ADEF;2;DOMINATOR;4;FIObjVar ID: 2598 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+	15;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1754 StoreStmt: [Var2147 <-- Var2177]	    store %struct.sxmltok_t* %arrayidx_instrumented, %struct.sxmltok_t** %token_instrumented, align 4 
+		12;ADEF;15;DOMINATOR;4;FIObjVar ID: 2148 (base object)    %token_instrumented = alloca %struct.sxmltok_t*, align 4 
+	16;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1570 StoreStmt: [Var681 <-- Var664]	    store i32 %bufferlen, i32* %bufferlen.addr_instrumented, align 4 
+		17;ADEF;16;DOMINATOR;4;FIObjVar ID: 682 (base object)    %bufferlen.addr_instrumented = alloca i32, align 4 
+	18;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1799 StoreStmt: [Var2521 <-- Var2571]	    store i8* %17, i8** %retval_instrumented, align 4 
+		19;ADEF;18;DOMINATOR;4;FIObjVar ID: 2522 (base object)    %retval_instrumented = alloca i8*, align 4 
+	20;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1796 StoreStmt: [Var2529 <-- Var2554]	    store i8* %add.ptr_instrumented, i8** %prev_instrumented, align 4 
+		21;ADEF;20;DOMINATOR;4;FIObjVar ID: 2530 (base object)    %prev_instrumented = alloca i8*, align 4 
+	22;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1793 StoreStmt: [Var2523 <-- Var2512]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		23;ADEF;22;DOMINATOR;4;FIObjVar ID: 2524 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	24;SUSE;0;NameChar;StoreVFGNode ID: 1527 StoreStmt: [Var222 <-- Var216]	    store i32 %c, i32* %c.addr, align 4 
+		25;ADEF;24;DOMINATOR;4;FIObjVar ID: 223 (base object)    %c.addr = alloca i32, align 4 
+	26;SUSE;0;str_findchr_instrumented;StoreVFGNode ID: 1673 StoreStmt: [Var1449 <-- Var1437]	    store i32 %c, i32* %c.addr_instrumented, align 4 
+		27;ADEF;26;DOMINATOR;4;FIObjVar ID: 1450 (base object)    %c.addr_instrumented = alloca i32, align 4 
+	28;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1798 StoreStmt: [Var2527 <-- Var2568]	    store i8* %16, i8** %it_instrumented, align 4 
+		29;ADEF;28;DOMINATOR;4;FIObjVar ID: 2528 (base object)    %it_instrumented = alloca i8*, align 4 
+	30;SUSE;0;NameStartChar;StoreVFGNode ID: 1524 StoreStmt: [Var160 <-- Var203]	    store i32 %lor.ext, i32* %retval, align 4 
+		31;ADEF;30;DOMINATOR;4;FIObjVar ID: 161 (base object)    %retval = alloca i32, align 4 
+	32;SUSE;0;parse_instruction_instrumented;StoreVFGNode ID: 1636 StoreStmt: [Var1044 <-- Var1141]	    store i8* %add.ptr18_instrumented, i8** %quest_instrumented, align 4 
+		33;ADEF;32;DOMINATOR;4;FIObjVar ID: 1045 (base object)    %quest_instrumented = alloca i8*, align 4 
+	34;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1756 StoreStmt: [Var2192 <-- Var2190]	    store i32 %sub.ptr.sub_instrumented, i32* %startpos_instrumented, align 4 
+		3;ADEF;34;DOMINATOR;4;FIObjVar ID: 1526 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		4;SDEF;34;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		4;SDEF;34;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		5;ADEF;34;DOMINATOR;4;FIObjVar ID: 1041 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		6;ADEF;34;DOMINATOR;4;FIObjVar ID: 1189 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		7;ADEF;34;DOMINATOR;4;FIObjVar ID: 1284 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		8;ADEF;34;DOMINATOR;4;FIObjVar ID: 1658 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		9;ADEF;34;DOMINATOR;4;FIObjVar ID: 1775 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		10;ADEF;34;DOMINATOR;4;FIObjVar ID: 1867 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		11;ADEF;34;DOMINATOR;4;FIObjVar ID: 2140 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		12;ADEF;34;DOMINATOR;4;FIObjVar ID: 2148 (base object)    %token_instrumented = alloca %struct.sxmltok_t*, align 4 
+		13;ADEF;34;DOMINATOR;4;FIObjVar ID: 2320 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		14;ADEF;34;DOMINATOR;4;FIObjVar ID: 2598 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+	35;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1679 StoreStmt: [Var1527 <-- Var1512]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		36;ADEF;35;DOMINATOR;4;FIObjVar ID: 1528 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	37;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1787 StoreStmt: [Var2325 <-- Var2479]	    store i8* %call42_instrumented, i8** %name_instrumented, align 4 
+		38;ADEF;37;DOMINATOR;4;FIObjVar ID: 2326 (base object)    %name_instrumented = alloca i8*, align 4 
+	39;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1779 StoreStmt: [Var2333 <-- Var2419]	    store i8* %call14_instrumented, i8** %quot_instrumented, align 4 
+		40;ADEF;39;DOMINATOR;4;FIObjVar ID: 2334 (base object)    %quot_instrumented = alloca i8*, align 4 
+	41;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1825 StoreStmt: [Var2791 <-- Var2783]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		42;ADEF;41;DOMINATOR;4;FIObjVar ID: 2792 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	43;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1736 StoreStmt: [Var2025 <-- Var2011]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		44;ADEF;43;DOMINATOR;4;FIObjVar ID: 2026 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	45;SUSE;0;WhiteSpace;StoreVFGNode ID: 1530 StoreStmt: [Var289 <-- Var281]	    store i32 %c, i32* %c.addr, align 4 
+		46;ADEF;45;DOMINATOR;4;FIObjVar ID: 290 (base object)    %c.addr = alloca i32, align 4 
+	47;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1656 StoreStmt: [Var1293 <-- Var1305]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		48;ADEF;47;DOMINATOR;4;FIObjVar ID: 1294 (base object)    %start_instrumented = alloca i8*, align 4 
+	49;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1773 StoreStmt: [Var2323 <-- Var2357]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		50;ADEF;49;DOMINATOR;4;FIObjVar ID: 2324 (base object)    %end_instrumented = alloca i8*, align 4 
+	51;SUSE;0;parse_cdata_instrumented;StoreVFGNode ID: 1718 StoreStmt: [Var1872 <-- Var1890]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		52;ADEF;51;DOMINATOR;4;FIObjVar ID: 1873 (base object)    %end_instrumented = alloca i8*, align 4 
+	53;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1783 StoreStmt: [Var2333 <-- Var2451]	    store i8* %call30_instrumented, i8** %quot_instrumented, align 4 
+		40;ADEF;53;DOMINATOR;4;FIObjVar ID: 2334 (base object)    %quot_instrumented = alloca i8*, align 4 
+	54;SUSE;0;str_findchr_instrumented;StoreVFGNode ID: 1671 StoreStmt: [Var1445 <-- Var1435]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		55;ADEF;54;DOMINATOR;4;FIObjVar ID: 1446 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	56;SUSE;0;str_ltrim_instrumented;StoreVFGNode ID: 1614 StoreStmt: [Var929 <-- Var920]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		57;ADEF;56;DOMINATOR;4;FIObjVar ID: 930 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	58;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1828 StoreStmt: [Var2797 <-- Var2807]	    store i8* %6, i8** %it_instrumented, align 4 
+		59;ADEF;58;DOMINATOR;4;FIObjVar ID: 2798 (base object)    %it_instrumented = alloca i8*, align 4 
+	60;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1832 StoreStmt: [Var2797 <-- Var2832]	    store i8* %incdec.ptr_instrumented, i8** %it_instrumented, align 4 
+		59;ADEF;60;DOMINATOR;4;FIObjVar ID: 2798 (base object)    %it_instrumented = alloca i8*, align 4 
+	61;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1686 StoreStmt: [Var1529 <-- Var1623]	    store i8* %add.ptr20_instrumented, i8** %start_instrumented, align 4 
+		62;ADEF;61;DOMINATOR;4;FIObjVar ID: 1530 (base object)    %start_instrumented = alloca i8*, align 4 
+	63;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1742 StoreStmt: [Var2023 <-- Var2106]	    store i8* %add.ptr18_instrumented, i8** %start.addr_instrumented, align 4 
+		64;ADEF;63;DOMINATOR;4;FIObjVar ID: 2024 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	65;SUSE;0;parse_comment_instrumented;StoreVFGNode ID: 1706 StoreStmt: [Var1780 <-- Var1798]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		66;ADEF;65;DOMINATOR;4;FIObjVar ID: 1781 (base object)    %end_instrumented = alloca i8*, align 4 
+	67;SUSE;0;parse_doctype_instrumented;StoreVFGNode ID: 1645 StoreStmt: [Var1194 <-- Var1212]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		68;ADEF;67;DOMINATOR;4;FIObjVar ID: 1195 (base object)    %end_instrumented = alloca i8*, align 4 
+	69;SUSE;0;parse_end_instrumented;StoreVFGNode ID: 1693 StoreStmt: [Var1665 <-- Var1683]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		70;ADEF;69;DOMINATOR;4;FIObjVar ID: 1666 (base object)    %end_instrumented = alloca i8*, align 4 
+	71;SUSE;0;parse_end_instrumented;StoreVFGNode ID: 1692 StoreStmt: [Var1663 <-- Var1675]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		72;ADEF;71;DOMINATOR;4;FIObjVar ID: 1664 (base object)    %start_instrumented = alloca i8*, align 4 
+	73;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1827 StoreStmt: [Var2795 <-- Var2805]	    store i8* %add.ptr_instrumented, i8** %end_instrumented, align 4 
+		74;ADEF;73;DOMINATOR;4;FIObjVar ID: 2796 (base object)    %end_instrumented = alloca i8*, align 4 
+	75;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1795 StoreStmt: [Var2527 <-- Var2545]	    store i8* %9, i8** %it_instrumented, align 4 
+		29;ADEF;75;DOMINATOR;4;FIObjVar ID: 2528 (base object)    %it_instrumented = alloca i8*, align 4 
+	76;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1776 StoreStmt: [Var2329 <-- Var2395]	    store i8* %call6_instrumented, i8** %eq_instrumented, align 4 
+		77;ADEF;76;DOMINATOR;4;FIObjVar ID: 2330 (base object)    %eq_instrumented = alloca i8*, align 4 
+	78;SUSE;0;parse_end_instrumented;StoreVFGNode ID: 1696 StoreStmt: [Var1659 <-- Var1721]	    store i8* %call8_instrumented, i8** %gt_instrumented, align 4 
+		79;ADEF;78;DOMINATOR;4;FIObjVar ID: 1660 (base object)    %gt_instrumented = alloca i8*, align 4 
+	80;SUSE;0;parse_comment_instrumented;StoreVFGNode ID: 1705 StoreStmt: [Var1778 <-- Var1790]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		81;ADEF;80;DOMINATOR;4;FIObjVar ID: 1779 (base object)    %start_instrumented = alloca i8*, align 4 
+	82;SUSE;0;print_tokenvalue_instrumented;StoreVFGNode ID: 1835 StoreStmt: [Var2850 <-- Var2841]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		83;ADEF;82;DOMINATOR;4;FIObjVar ID: 2851 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	84;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1576 StoreStmt: [Var689 <-- Var719]	    store i8* %add.ptr_instrumented, i8** %end_instrumented, align 4 
+		85;ADEF;84;DOMINATOR;4;FIObjVar ID: 690 (base object)    %end_instrumented = alloca i8*, align 4 
+	86;SUSE;0;str_ltrim_instrumented;StoreVFGNode ID: 1615 StoreStmt: [Var931 <-- Var921]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		87;ADEF;86;DOMINATOR;4;FIObjVar ID: 932 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	88;SUSE;0;parse_end_instrumented;StoreVFGNode ID: 1695 StoreStmt: [Var1663 <-- Var1717]	    store i8* %add.ptr7_instrumented, i8** %start_instrumented, align 4 
+		72;ADEF;88;DOMINATOR;4;FIObjVar ID: 1664 (base object)    %start_instrumented = alloca i8*, align 4 
+	89;SUSE;0;str_ltrim_instrumented;StoreVFGNode ID: 1616 StoreStmt: [Var933 <-- Var949]	    store i8* %9, i8** %it_instrumented, align 4 
+		90;ADEF;89;DOMINATOR;4;FIObjVar ID: 934 (base object)    %it_instrumented = alloca i8*, align 4 
+	91;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1684 StoreStmt: [Var1533 <-- Var1608]	    store i8* %call14_instrumented, i8** %colon_instrumented, align 4 
+		92;ADEF;91;DOMINATOR;4;FIObjVar ID: 1534 (base object)    %colon_instrumented = alloca i8*, align 4 
+	93;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1758 StoreStmt: [Var2205 <-- Var103]	    store i16 0, i16* %size_instrumented, align 2 
+		3;ADEF;93;DOMINATOR;4;FIObjVar ID: 1526 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		4;SDEF;93;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		5;ADEF;93;DOMINATOR;4;FIObjVar ID: 1041 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		6;ADEF;93;DOMINATOR;4;FIObjVar ID: 1189 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		7;ADEF;93;DOMINATOR;4;FIObjVar ID: 1284 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		8;ADEF;93;DOMINATOR;4;FIObjVar ID: 1658 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		9;ADEF;93;DOMINATOR;4;FIObjVar ID: 1775 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		10;ADEF;93;DOMINATOR;4;FIObjVar ID: 1867 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		11;ADEF;93;DOMINATOR;4;FIObjVar ID: 2140 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		12;ADEF;93;DOMINATOR;4;FIObjVar ID: 2148 (base object)    %token_instrumented = alloca %struct.sxmltok_t*, align 4 
+		13;ADEF;93;DOMINATOR;4;FIObjVar ID: 2320 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		14;ADEF;93;DOMINATOR;4;FIObjVar ID: 2598 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+	94;SUSE;0;print_chartokens_instrumented;StoreVFGNode ID: 1845 StoreStmt: [Var2902 <-- Var2934]	    store i8* %add.ptr3_instrumented, i8** %ampr_instrumented, align 4 
+		95;ADEF;94;DOMINATOR;4;FIObjVar ID: 2903 (base object)    %ampr_instrumented = alloca i8*, align 4 
+	96;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1595 StoreStmt: [Var701 <-- Var821]	    store i8* %add.ptr32_instrumented, i8** %start29_instrumented, align 4 
+		97;ADEF;96;DOMINATOR;4;FIObjVar ID: 702 (base object)    %start29_instrumented = alloca i8*, align 4 
+	98;SUSE;0;print_prettyxml_instrumented;StoreVFGNode ID: 1810 StoreStmt: [Var2653 <-- Var2641]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		99;ADEF;98;DOMINATOR;4;FIObjVar ID: 2654 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	100;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1581 StoreStmt: [Var695 <-- Var744]	    store i8* %add.ptr6_instrumented, i8** %start_instrumented, align 4 
+		101;ADEF;100;DOMINATOR;4;FIObjVar ID: 696 (base object)    %start_instrumented = alloca i8*, align 4 
+	102;SUSE;0;str_startswith_instrumented;StoreVFGNode ID: 1728 StoreStmt: [Var1959 <-- Var1945]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		103;ADEF;102;DOMINATOR;4;FIObjVar ID: 1960 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	104;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1797 StoreStmt: [Var2521 <-- Var2562]	    store i8* %15, i8** %retval_instrumented, align 4 
+		19;ADEF;104;DOMINATOR;4;FIObjVar ID: 2522 (base object)    %retval_instrumented = alloca i8*, align 4 
+	105;SUSE;0;parse_doctype_instrumented;StoreVFGNode ID: 1644 StoreStmt: [Var1192 <-- Var1204]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		106;ADEF;105;DOMINATOR;4;FIObjVar ID: 1193 (base object)    %start_instrumented = alloca i8*, align 4 
+	107;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1665 StoreStmt: [Var1287 <-- Var1402]	    store i8* %incdec.ptr_instrumented, i8** %gt_instrumented, align 4 
+		108;ADEF;107;DOMINATOR;4;FIObjVar ID: 1288 (base object)    %gt_instrumented = alloca i8*, align 4 
+	109;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1577 StoreStmt: [Var722 <-- Var721]	    store i8* %9, i8** %buffer1_instrumented, align 4 
+		4;SDEF;109;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+	110;SUSE;0;parse_comment_instrumented;StoreVFGNode ID: 1709 StoreStmt: [Var1778 <-- Var1819]	    store i8* %add.ptr5_instrumented, i8** %start_instrumented, align 4 
+		81;ADEF;110;DOMINATOR;4;FIObjVar ID: 1779 (base object)    %start_instrumented = alloca i8*, align 4 
+	111;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1659 StoreStmt: [Var1289 <-- Var1347]	    store i8* %add.ptr9_instrumented, i8** %name_instrumented, align 4 
+		112;ADEF;111;DOMINATOR;4;FIObjVar ID: 1290 (base object)    %name_instrumented = alloca i8*, align 4 
+	113;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1774 StoreStmt: [Var2325 <-- Var2361]	    store i8* %call_instrumented, i8** %name_instrumented, align 4 
+		38;ADEF;113;DOMINATOR;4;FIObjVar ID: 2326 (base object)    %name_instrumented = alloca i8*, align 4 
+	114;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1743 StoreStmt: [Var2021 <-- Var2109]	    store i8* %30, i8** %retval_instrumented, align 4 
+		115;ADEF;114;DOMINATOR;4;FIObjVar ID: 2022 (base object)    %retval_instrumented = alloca i8*, align 4 
+	116;SUSE;0;parse_instruction_instrumented;StoreVFGNode ID: 1631 StoreStmt: [Var1048 <-- Var1097]	    store i8* %add.ptr5_instrumented, i8** %start_instrumented, align 4 
+		117;ADEF;116;DOMINATOR;4;FIObjVar ID: 1049 (base object)    %start_instrumented = alloca i8*, align 4 
+	118;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1657 StoreStmt: [Var1295 <-- Var1313]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		119;ADEF;118;DOMINATOR;4;FIObjVar ID: 1296 (base object)    %end_instrumented = alloca i8*, align 4 
+	120;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1569 StoreStmt: [Var679 <-- Var663]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		121;ADEF;120;DOMINATOR;4;FIObjVar ID: 680 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	122;SUSE;0;str_findchr_instrumented;StoreVFGNode ID: 1672 StoreStmt: [Var1447 <-- Var1436]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		123;ADEF;122;DOMINATOR;4;FIObjVar ID: 1448 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	124;SUSE;0;parse_instruction_instrumented;StoreVFGNode ID: 1628 StoreStmt: [Var1048 <-- Var1060]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		117;ADEF;124;DOMINATOR;4;FIObjVar ID: 1049 (base object)    %start_instrumented = alloca i8*, align 4 
+	125;SUSE;0;parse_doctype_instrumented;StoreVFGNode ID: 1648 StoreStmt: [Var1192 <-- Var1234]	    store i8* %add.ptr5_instrumented, i8** %start_instrumented, align 4 
+		106;ADEF;125;DOMINATOR;4;FIObjVar ID: 1193 (base object)    %start_instrumented = alloca i8*, align 4 
+	126;SUSE;0;str_startswith_instrumented;StoreVFGNode ID: 1727 StoreStmt: [Var1957 <-- Var1944]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		127;ADEF;126;DOMINATOR;4;FIObjVar ID: 1958 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	128;SUSE;0;str_find_notalnum_instrumented;StoreVFGNode ID: 1765 StoreStmt: [Var2257 <-- Var2247]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		129;ADEF;128;DOMINATOR;4;FIObjVar ID: 2258 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	130;SUSE;0;state_setpos_instrumented;StoreVFGNode ID: 1622 StoreStmt: [Var995 <-- Var982]	    store i8* %ptr, i8** %ptr.addr_instrumented, align 4 
+		131;ADEF;130;DOMINATOR;4;FIObjVar ID: 996 (base object)    %ptr.addr_instrumented = alloca i8*, align 4 
+	132;SUSE;0;parse_instruction_instrumented;StoreVFGNode ID: 1629 StoreStmt: [Var1050 <-- Var1068]	    store i8* %add.ptr2_instrumented, i8** %end_instrumented, align 4 
+		133;ADEF;132;DOMINATOR;4;FIObjVar ID: 1051 (base object)    %end_instrumented = alloca i8*, align 4 
+	134;SUSE;0;parse_attrvalue_instrumented;StoreVFGNode ID: 1804 StoreStmt: [Var2599 <-- Var2584]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		135;ADEF;134;DOMINATOR;4;FIObjVar ID: 2600 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	136;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1749 StoreStmt: [Var2143 <-- Var2124]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		137;ADEF;136;DOMINATOR;4;FIObjVar ID: 2144 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	138;SUSE;0;main;StoreVFGNode ID: 1549 StoreStmt: [Var328 <-- Var470]	    store i32 %add30, i32* %bufferlen, align 4 
+		139;ADEF;138;DOMINATOR;4;FIObjVar ID: 329 (base object)    %bufferlen = alloca i32, align 4 
+	140;SUSE;0;str_findchr_instrumented;StoreVFGNode ID: 1674 StoreStmt: [Var1451 <-- Var1491]	    store i8* %call_instrumented, i8** %it_instrumented, align 4 
+		141;ADEF;140;DOMINATOR;4;FIObjVar ID: 1452 (base object)    %it_instrumented = alloca i8*, align 4 
+	142;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1757 StoreStmt: [Var2202 <-- Var2200]	    store i32 %sub.ptr.sub6_instrumented, i32* %endpos_instrumented, align 4 
+		3;ADEF;142;DOMINATOR;4;FIObjVar ID: 1526 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		4;SDEF;142;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		4;SDEF;142;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		5;ADEF;142;DOMINATOR;4;FIObjVar ID: 1041 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		6;ADEF;142;DOMINATOR;4;FIObjVar ID: 1189 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		7;ADEF;142;DOMINATOR;4;FIObjVar ID: 1284 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		8;ADEF;142;DOMINATOR;4;FIObjVar ID: 1658 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		9;ADEF;142;DOMINATOR;4;FIObjVar ID: 1775 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		10;ADEF;142;DOMINATOR;4;FIObjVar ID: 1867 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		11;ADEF;142;DOMINATOR;4;FIObjVar ID: 2140 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		12;ADEF;142;DOMINATOR;4;FIObjVar ID: 2148 (base object)    %token_instrumented = alloca %struct.sxmltok_t*, align 4 
+		13;ADEF;142;DOMINATOR;4;FIObjVar ID: 2320 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+		14;ADEF;142;DOMINATOR;4;FIObjVar ID: 2598 (base object)    %args.addr_instrumented = alloca %struct.sxml_args_t*, align 4 
+	143;SUSE;0;str_find_notalnum_instrumented;StoreVFGNode ID: 1764 StoreStmt: [Var2255 <-- Var2246]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		144;ADEF;143;DOMINATOR;4;FIObjVar ID: 2256 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	145;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1778 StoreStmt: [Var2331 <-- Var2407]	    store i8* %call11_instrumented, i8** %space_instrumented, align 4 
+		146;ADEF;145;DOMINATOR;4;FIObjVar ID: 2332 (base object)    %space_instrumented = alloca i8*, align 4 
+	147;SUSE;0;state_pushtoken_instrumented;StoreVFGNode ID: 1750 StoreStmt: [Var2145 <-- Var2125]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		148;ADEF;147;DOMINATOR;4;FIObjVar ID: 2146 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	149;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1578 StoreStmt: [Var725 <-- Var724]	    store i32 %10, i32* %bufferlen2_instrumented, align 4 
+		4;SDEF;149;BASE;4;0;[0];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+		150;SDEF;149;BASE;4;4;[1];FIObjVar ID: 692 (base object)    %args_instrumented = alloca %struct.sxml_args_t, align 4 
+	151;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1735 StoreStmt: [Var2023 <-- Var2010]	    store i8* %start, i8** %start.addr_instrumented, align 4 
+		64;ADEF;151;DOMINATOR;4;FIObjVar ID: 2024 (base object)    %start.addr_instrumented = alloca i8*, align 4 
+	152;SUSE;0;parse_cdata_instrumented;StoreVFGNode ID: 1717 StoreStmt: [Var1870 <-- Var1882]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		153;ADEF;152;DOMINATOR;4;FIObjVar ID: 1871 (base object)    %start_instrumented = alloca i8*, align 4 
+	154;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1596 StoreStmt: [Var703 <-- Var825]	    store i8* %call34_instrumented, i8** %lt33_instrumented, align 4 
+		155;ADEF;154;DOMINATOR;4;FIObjVar ID: 704 (base object)    %lt33_instrumented = alloca i8*, align 4 
+	156;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1681 StoreStmt: [Var1535 <-- Var1550]	    store i8* %call_instrumented, i8** %ampr_instrumented, align 4 
+		157;ADEF;156;DOMINATOR;4;FIObjVar ID: 1536 (base object)    %ampr_instrumented = alloca i8*, align 4 
+	158;SUSE;0;str_ltrim_instrumented;StoreVFGNode ID: 1617 StoreStmt: [Var933 <-- Var969]	    store i8* %incdec.ptr_instrumented, i8** %it_instrumented, align 4 
+		90;ADEF;158;DOMINATOR;4;FIObjVar ID: 934 (base object)    %it_instrumented = alloca i8*, align 4 
+	159;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1772 StoreStmt: [Var2321 <-- Var2349]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		160;ADEF;159;DOMINATOR;4;FIObjVar ID: 2322 (base object)    %start_instrumented = alloca i8*, align 4 
+	161;SUSE;0;NameStartChar;StoreVFGNode ID: 1522 StoreStmt: [Var162 <-- Var154]	    store i32 %c, i32* %c.addr, align 4 
+		162;ADEF;161;DOMINATOR;4;FIObjVar ID: 163 (base object)    %c.addr = alloca i32, align 4 
+	163;SUSE;0;parse_cdata_instrumented;StoreVFGNode ID: 1722 StoreStmt: [Var1868 <-- Var1916]	    store i8* %call6_instrumented, i8** %bracket_instrumented, align 4 
+		164;ADEF;163;DOMINATOR;4;FIObjVar ID: 1869 (base object)    %bracket_instrumented = alloca i8*, align 4 
+	165;SUSE;0;state_setpos_instrumented;StoreVFGNode ID: 1623 StoreStmt: [Var1008 <-- Var1006]	    store i32 %sub.ptr.sub_instrumented, i32* %bufferpos_instrumented, align 4, !ziuse !3 
+		166;ADEF;165;DOMINATOR;4;FIObjVar ID: 1524 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		167;SDEF;165;BASE;4;0;[0];FIObjVar ID: 688 (base object)    %temp_instrumented = alloca %struct.sxml_t, align 4 
+		167;SDEF;165;BASE;4;0;[0];FIObjVar ID: 688 (base object)    %temp_instrumented = alloca %struct.sxml_t, align 4 
+		168;ADEF;165;DOMINATOR;4;FIObjVar ID: 992 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		169;ADEF;165;DOMINATOR;4;FIObjVar ID: 1039 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		170;ADEF;165;DOMINATOR;4;FIObjVar ID: 1187 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		171;ADEF;165;DOMINATOR;4;FIObjVar ID: 1282 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		172;ADEF;165;DOMINATOR;4;FIObjVar ID: 1656 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		173;ADEF;165;DOMINATOR;4;FIObjVar ID: 1773 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		174;ADEF;165;DOMINATOR;4;FIObjVar ID: 1865 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		175;ADEF;165;DOMINATOR;4;FIObjVar ID: 2318 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+		176;ADEF;165;DOMINATOR;4;FIObjVar ID: 2596 (base object)    %state.addr_instrumented = alloca %struct.sxml_t*, align 4 
+	177;SUSE;0;str_find_notalnum_instrumented;StoreVFGNode ID: 1766 StoreStmt: [Var2259 <-- Var2275]	    store i8* %9, i8** %it_instrumented, align 4 
+		178;ADEF;177;DOMINATOR;4;FIObjVar ID: 2260 (base object)    %it_instrumented = alloca i8*, align 4 
+	179;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1664 StoreStmt: [Var1287 <-- Var1384]	    store i8* %add.ptr24_instrumented, i8** %gt_instrumented, align 4 
+		108;ADEF;179;DOMINATOR;4;FIObjVar ID: 1288 (base object)    %gt_instrumented = alloca i8*, align 4 
+	180;SUSE;0;parse_cdata_instrumented;StoreVFGNode ID: 1721 StoreStmt: [Var1870 <-- Var1911]	    store i8* %add.ptr5_instrumented, i8** %start_instrumented, align 4 
+		153;ADEF;180;DOMINATOR;4;FIObjVar ID: 1871 (base object)    %start_instrumented = alloca i8*, align 4 
+	181;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1680 StoreStmt: [Var1529 <-- Var1546]	    store i8* %add.ptr_instrumented, i8** %start_instrumented, align 4 
+		62;ADEF;181;DOMINATOR;4;FIObjVar ID: 1530 (base object)    %start_instrumented = alloca i8*, align 4 
+	182;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1740 StoreStmt: [Var2033 <-- Var2088]	    store i8* %call8_instrumented, i8** %it_instrumented, align 4 
+		183;ADEF;182;DOMINATOR;4;FIObjVar ID: 2034 (base object)    %it_instrumented = alloca i8*, align 4 
+	184;SUSE;0;parse_instruction_instrumented;StoreVFGNode ID: 1632 StoreStmt: [Var1046 <-- Var1101]	    store i8* %call6_instrumented, i8** %space_instrumented, align 4 
+		185;ADEF;184;DOMINATOR;4;FIObjVar ID: 1047 (base object)    %space_instrumented = alloca i8*, align 4 
+	186;SUSE;0;str_find_notalnum_instrumented;StoreVFGNode ID: 1767 StoreStmt: [Var2259 <-- Var2295]	    store i8* %incdec.ptr_instrumented, i8** %it_instrumented, align 4 
+		178;ADEF;186;DOMINATOR;4;FIObjVar ID: 2260 (base object)    %it_instrumented = alloca i8*, align 4 
+	187;SUSE;0;main;StoreVFGNode ID: 1550 StoreStmt: [Var472 <-- Var228]	    store i32 0, i32* %bufferpos31, align 4 
+		188;SDEF;187;BASE;4;0;[0];FIObjVar ID: 341 (base object)    %parser = alloca %struct.sxml_t, align 4 
+		188;SDEF;187;BASE;4;0;[0];FIObjVar ID: 341 (base object)    %parser = alloca %struct.sxml_t, align 4 
+	189;SUSE;0;parse_characters_instrumented;StoreVFGNode ID: 1683 StoreStmt: [Var1531 <-- Var1604]	    store i8* %cond_instrumented, i8** %limit_instrumented, align 4 
+		190;ADEF;189;DOMINATOR;4;FIObjVar ID: 1532 (base object)    %limit_instrumented = alloca i8*, align 4 
+	191;SUSE;0;str_rtrim_instrumented;StoreVFGNode ID: 1794 StoreStmt: [Var2525 <-- Var2513]	    store i8* %end, i8** %end.addr_instrumented, align 4 
+		192;ADEF;191;DOMINATOR;4;FIObjVar ID: 2526 (base object)    %end.addr_instrumented = alloca i8*, align 4 
+	193;SUSE;0;parse_start_instrumented;StoreVFGNode ID: 1660 StoreStmt: [Var1291 <-- Var1351]	    store i8* %call10_instrumented, i8** %space_instrumented, align 4 
+		194;ADEF;193;DOMINATOR;4;FIObjVar ID: 1292 (base object)    %space_instrumented = alloca i8*, align 4 
+	195;SUSE;0;sxml_parse_instrumented;StoreVFGNode ID: 1582 StoreStmt: [Var697 <-- Var748]	    store i8* %call_instrumented, i8** %lt_instrumented, align 4 
+		196;ADEF;195;DOMINATOR;4;FIObjVar ID: 698 (base object)    %lt_instrumented = alloca i8*, align 4 
+	197;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1826 StoreStmt: [Var2793 <-- Var2784]	    store i32 %bufferlen, i32* %bufferlen.addr_instrumented, align 4 
+		198;ADEF;197;DOMINATOR;4;FIObjVar ID: 2794 (base object)    %bufferlen.addr_instrumented = alloca i32, align 4 
+	199;SUSE;0;parse_attributes_instrumented;StoreVFGNode ID: 1782 StoreStmt: [Var2335 <-- Var2444]	    store i8* %add.ptr28_instrumented, i8** %value_instrumented, align 4 
+		200;ADEF;199;DOMINATOR;4;FIObjVar ID: 2336 (base object)    %value_instrumented = alloca i8*, align 4 
+	201;SUSE;0;str_findstr_instrumented;StoreVFGNode ID: 1741 StoreStmt: [Var2021 <-- Var2101]	    store i8* %28, i8** %retval_instrumented, align 4 
+		115;ADEF;201;DOMINATOR;4;FIObjVar ID: 2022 (base object)    %retval_instrumented = alloca i8*, align 4 
+	202;SUSE;0;main;StoreVFGNode ID: 1546 StoreStmt: [Var328 <-- Var423]	    store i32 %sub, i32* %bufferlen, align 4 
+		139;ADEF;202;DOMINATOR;4;FIObjVar ID: 329 (base object)    %bufferlen = alloca i32, align 4 
+	203;SUSE;0;print_chartokens_instrumented;StoreVFGNode ID: 1839 StoreStmt: [Var2894 <-- Var2882]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		204;ADEF;203;DOMINATOR;4;FIObjVar ID: 2895 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	205;SUSE;0;parse_doctype_instrumented;StoreVFGNode ID: 1649 StoreStmt: [Var1190 <-- Var1239]	    store i8* %call6_instrumented, i8** %bracket_instrumented, align 4 
+		206;ADEF;205;DOMINATOR;4;FIObjVar ID: 1191 (base object)    %bracket_instrumented = alloca i8*, align 4 
+	207;SUSE;0;count_lines_instrumented;StoreVFGNode ID: 1830 StoreStmt: [Var2797 <-- Var2818]	    store i8* %call_instrumented, i8** %it_instrumented, align 4 
+		59;ADEF;207;DOMINATOR;4;FIObjVar ID: 2798 (base object)    %it_instrumented = alloca i8*, align 4 
+	208;SUSE;0;parse_comment_instrumented;StoreVFGNode ID: 1710 StoreStmt: [Var1776 <-- Var1824]	    store i8* %call6_instrumented, i8** %dash_instrumented, align 4 
+		209;ADEF;208;DOMINATOR;4;FIObjVar ID: 1777 (base object)    %dash_instrumented = alloca i8*, align 4 
+	210;SUSE;0;parse_end_instrumented;StoreVFGNode ID: 1698 StoreStmt: [Var1661 <-- Var1731]	    store i8* %call13_instrumented, i8** %space_instrumented, align 4 
+		211;ADEF;210;DOMINATOR;4;FIObjVar ID: 1662 (base object)    %space_instrumented = alloca i8*, align 4 
+212;IN;-1;CallICFGNode178 {fun: main}
+	213;LUSE;212;main;CallICFGNode178 {fun: main}
+		1;ADEF;213;BASE;8128;FIObjVar ID: 327 (base object)    %buffer = alloca [8128 x i8], align 1 
+356;ADEF;-1;BASE;1536;FIObjVar ID: 331 (base object)    %tokens = alloca [128 x %struct.sxmltok_t], align 4 

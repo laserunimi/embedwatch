@@ -1,0 +1,94 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:get_args
+FN:printf
+FN:malloc
+FN:printf
+FN:printf
+FN:llvm.memset.p0i8.i32
+FN:htonl
+FN:htons
+FN:printf
+FN:fgets
+FFFgets main call skip...
+FN:strlen
+FN:printf
+FN:strncmp
+FN:websocket_handshake_response
+FN:printf
+FN:decode_websocket_message
+FN:strstr
+FN:printf
+FN:parse_json
+FN:time
+FN:snprintf
+FN:ntohs
+FN:htons
+FN:printf
+FN:printf
+FN:free_command
+FN:free_command
+FN:fill_buffer
+FN:free_command
+FN:usleep
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------
+Function: get_args is whitelisted
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:getopt_long
+FN:print_usage
+FN:exit
+FN:atoi
+FN:fprintf
+FN:print_usage
+FN:exit
+FN:fprintf
+FN:exit
+----------------------------------------------------------
+Function: websocket_handshake_response is whitelisted
+FN:strstr
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:snprintf
+----------------------------------------------------------
+Function: decode_websocket_message is whitelisted
+FN:printf
+FN:printf
+FN:__isoc99_scanf
+Function: decode_websocket_message, found scanf call
+Args size:2
+----------------------------------------------------------
+Function: parse_json is whitelisted
+----------------------------------------------------------
+Function: free_command is whitelisted
+FN:free
+----------------------------------------------------------
+Function: fill_buffer is whitelisted
+FN:__assert_fail
+FN:printf
+----------------------------------------------------------
+Function: print_usage is whitelisted
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+----------------------------------------------------------
+Function: sha1_transform is whitelisted
+----------------------------------------------------------
+Function: sha1_init is whitelisted
+----------------------------------------------------------
+Function: sha1_update is whitelisted
+FN:sha1_transform
+----------------------------------------------------------
+Function: sha1_final is whitelisted
+FN:sha1_transform
+FN:llvm.memset.p0i8.i32
+FN:sha1_transform
+----------------------------------------------------------
+Function: base64_encode is whitelisted
+----------------------------------------------------------

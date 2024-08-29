@@ -1,0 +1,80 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: pinMode is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: analogWrite is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_begin is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_available is whitelisted
+----------------------------------------------------------
+Function: Serial_print is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_println is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_readString is whitelisted
+FN:__isoc99_scanf
+Function: Serial_readString, found scanf call
+Args size:2
+----------------------------------------------------------
+Function: millis is whitelisted
+----------------------------------------------------------
+Function: digitalRead is whitelisted
+----------------------------------------------------------
+Function: analogRead is whitelisted
+----------------------------------------------------------
+Function: delay is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: WiFi_begin is whitelisted
+FN:strcpy
+FN:strcpy
+----------------------------------------------------------
+Function: WiFi_status is whitelisted
+----------------------------------------------------------
+Function: http_send is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: http_recv is whitelisted
+FN:fopen
+FN:exit
+FN:fgetc
+FN:fclose
+----------------------------------------------------------
+Function: sendHttpRequest is whitelisted
+FN:millis
+FN:WiFi_status
+FN:http_send
+FN:http_recv
+FN:Serial_println
+FN:Serial_println
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:pinMode
+FN:Serial_begin
+FN:WiFi_begin
+FN:WiFi_status
+FN:delay
+FN:Serial_print
+FN:Serial_println
+FN:Serial_println
+FN:millis
+FN:millis
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:digitalRead
+FN:Serial_println
+FN:Serial_println
+FN:sendHttpRequest
+FN:delay
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

@@ -1,0 +1,211 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: sxml_init is whitelisted
+----------------------------------------------------------
+Function: sxml_parse is whitelisted
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:str_ltrim
+FN:state_setpos
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:fprintf
+FN:parse_instruction
+FN:parse_doctype
+FN:parse_start
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:str_findchr
+FN:parse_characters
+FN:llvm.memcpy.p0i8.p0i8.i32
+FN:parse_instruction
+FN:parse_end
+FN:parse_comment
+FN:parse_cdata
+FN:parse_start
+FN:llvm.memcpy.p0i8.p0i8.i32
+----------------------------------------------------------
+Function: str_ltrim is whitelisted
+FN:__assert_fail
+FN:WhiteSpace
+----------------------------------------------------------
+Function: state_setpos is whitelisted
+----------------------------------------------------------
+Function: parse_instruction is whitelisted
+FN:__assert_fail
+FN:str_startswith
+FN:printf
+FN:str_find_notalnum
+FN:state_pushtoken
+FN:state_setpos
+FN:parse_attributes
+FN:str_startswith
+FN:printf
+FN:state_setpos
+----------------------------------------------------------
+Function: parse_doctype is whitelisted
+FN:str_startswith
+FN:str_findstr
+FN:state_pushtoken
+FN:state_setpos
+----------------------------------------------------------
+Function: parse_start is whitelisted
+FN:__assert_fail
+FN:NameStartChar
+FN:printf
+FN:str_find_notalnum
+FN:state_pushtoken
+FN:state_setpos
+FN:parse_attributes
+FN:state_pushtoken
+FN:printf
+FN:state_setpos
+----------------------------------------------------------
+Function: str_findchr is whitelisted
+FN:__assert_fail
+FN:__assert_fail
+FN:memchr
+----------------------------------------------------------
+Function: parse_characters is whitelisted
+FN:str_findchr
+FN:__assert_fail
+FN:state_pushtoken
+FN:state_setpos
+FN:str_findchr
+FN:state_pushtoken
+FN:state_setpos
+----------------------------------------------------------
+Function: parse_end is whitelisted
+FN:__assert_fail
+FN:str_startswith
+FN:NameStartChar
+FN:fprintf
+FN:str_findchr
+FN:str_find_notalnum
+FN:str_ltrim
+FN:state_pushtoken
+FN:state_setpos
+----------------------------------------------------------
+Function: parse_comment is whitelisted
+FN:str_startswith
+FN:printf
+FN:str_findstr
+FN:state_pushtoken
+FN:state_setpos
+----------------------------------------------------------
+Function: parse_cdata is whitelisted
+FN:str_startswith
+FN:fprintf
+FN:str_findstr
+FN:state_pushtoken
+FN:state_setpos
+----------------------------------------------------------
+Function: str_startswith is whitelisted
+FN:__assert_fail
+FN:strlen
+FN:memcmp
+----------------------------------------------------------
+Function: str_findstr is whitelisted
+FN:__assert_fail
+FN:strlen
+FN:__assert_fail
+FN:memchr
+FN:memcmp
+----------------------------------------------------------
+Function: state_pushtoken is whitelisted
+FN:__assert_fail
+----------------------------------------------------------
+Function: NameStartChar is whitelisted
+----------------------------------------------------------
+Function: str_find_notalnum is whitelisted
+FN:__assert_fail
+FN:NameChar
+----------------------------------------------------------
+Function: NameChar is whitelisted
+FN:NameStartChar
+----------------------------------------------------------
+Function: parse_attributes is whitelisted
+FN:str_ltrim
+FN:__assert_fail
+FN:NameStartChar
+FN:str_findchr
+FN:str_rtrim
+FN:state_pushtoken
+FN:str_ltrim
+FN:printf
+FN:str_findchr
+FN:state_setpos
+FN:parse_attrvalue
+FN:str_ltrim
+FN:state_setpos
+----------------------------------------------------------
+Function: str_rtrim is whitelisted
+FN:__assert_fail
+FN:WhiteSpace
+----------------------------------------------------------
+Function: parse_attrvalue is whitelisted
+FN:parse_characters
+----------------------------------------------------------
+Function: WhiteSpace is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:sxml_init
+FN:sprintf
+FN:printf
+FN:fopen
+FN:fgets
+FFFgets main call skip...
+FN:printf
+FN:fclose
+FN:sxml_parse
+FN:print_prettyxml
+FN:print_prettyxml
+FN:count_lines
+FN:llvm.memmove.p0i8.p0i8.i32
+FN:__assert_fail
+FN:fread
+FN:__assert_fail
+FN:count_lines
+FN:fprintf
+FN:sprintf
+FN:fprintf
+FN:__assert_fail
+FN:print_prettyxml
+FN:sleep
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------
+Function: print_prettyxml is whitelisted
+FN:print_indent
+FN:printf
+FN:print_tokenvalue
+FN:printf
+FN:print_tokenvalue
+FN:printf
+FN:print_chartokens
+FN:printf
+FN:puts
+FN:print_indent
+FN:printf
+FN:print_tokenvalue
+FN:puts
+----------------------------------------------------------
+Function: count_lines is whitelisted
+FN:memchr
+----------------------------------------------------------
+Function: print_indent is whitelisted
+FN:sprintf
+FN:printf
+----------------------------------------------------------
+Function: print_tokenvalue is whitelisted
+FN:sprintf
+FN:printf
+----------------------------------------------------------
+Function: print_chartokens is whitelisted
+FN:__assert_fail
+FN:print_tokenvalue
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+FN:__assert_fail
+----------------------------------------------------------

@@ -1,0 +1,13 @@
+<root>
+  <person firstname="Maye" lastname="Myrilla" city="Port of Spain" country="Niger" firstname2="Ardys" lastname2="Syd" email="Ardys.Syd@yopmail.com" />
+  <random>78</random>
+  <random_float>80.587</random_float>
+  <bool>false</bool>
+  <date>1991-07-24</date>
+  <regEx>hellooooo world</regEx>
+  <enum>online</enum>
+  <elt>Mildrid</elt><elt>Farrah</elt><elt>Nariko</elt><elt>Aurelie</elt><elt>Modestia</elt>  
+  <Ardys>
+    <age>58</age>
+  </Ardys>
+</root>

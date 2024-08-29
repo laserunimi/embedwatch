@@ -1,0 +1,56 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: get_args_instrumented
+Tracking recursion for get_args_instrumented
+Instrumenting entry point of get_args_instrumented
+Instrumenting exit point of get_args_instrumented
+Instrumenting Function: websocket_handshake_response_instrumented
+Tracking recursion for websocket_handshake_response_instrumented
+Instrumenting entry point of websocket_handshake_response_instrumented
+Instrumenting exit point of websocket_handshake_response_instrumented
+Instrumenting Function: decode_websocket_message_instrumented
+Tracking recursion for decode_websocket_message_instrumented
+Instrumenting entry point of decode_websocket_message_instrumented
+Instrumenting exit point of decode_websocket_message_instrumented
+Instrumenting Function: parse_json_instrumented
+Tracking recursion for parse_json_instrumented
+Instrumenting entry point of parse_json_instrumented
+Instrumenting exit point of parse_json_instrumented
+Instrumenting Function: free_command_instrumented
+Tracking recursion for free_command_instrumented
+Instrumenting entry point of free_command_instrumented
+Instrumenting exit point of free_command_instrumented
+Instrumenting Function: fill_buffer_instrumented
+Tracking recursion for fill_buffer_instrumented
+Instrumenting entry point of fill_buffer_instrumented
+Instrumenting exit point of fill_buffer_instrumented
+Instrumenting Function: print_usage_instrumented
+Tracking recursion for print_usage_instrumented
+Instrumenting entry point of print_usage_instrumented
+Instrumenting exit point of print_usage_instrumented
+Instrumenting Function: sha1_transform_instrumented
+Tracking recursion for sha1_transform_instrumented
+Instrumenting entry point of sha1_transform_instrumented
+Instrumenting exit point of sha1_transform_instrumented
+Instrumenting Function: sha1_init_instrumented
+Tracking recursion for sha1_init_instrumented
+Instrumenting entry point of sha1_init_instrumented
+Instrumenting exit point of sha1_init_instrumented
+Instrumenting Function: sha1_update_instrumented
+Tracking recursion for sha1_update_instrumented
+Instrumenting entry point of sha1_update_instrumented
+Instrumenting exit point of sha1_update_instrumented
+Instrumenting Function: sha1_final_instrumented
+Tracking recursion for sha1_final_instrumented
+Instrumenting entry point of sha1_final_instrumented
+Instrumenting exit point of sha1_final_instrumented
+Instrumenting Function: base64_encode_instrumented
+Tracking recursion for base64_encode_instrumented
+Instrumenting entry point of base64_encode_instrumented
+Instrumenting exit point of base64_encode_instrumented

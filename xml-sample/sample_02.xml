@@ -1,0 +1,19 @@
+<Root>
+  <ConfigParameter>RootConfigParameter</ConfigParameter>
+  <Customer>
+    <Name>Frank</Name>
+    <Config>
+      <ConfigParameter>FirstConfigParameter</ConfigParameter>
+    </Config>
+  </Customer>
+  <Customer>
+    <Name>Bob</Name>
+    <!--This customer doesn't have a Config element-->
+  </Customer>
+  <Customer>
+    <Name>Bill</Name>
+    <Config>
+      <ConfigParameter>SecondConfigParameter</ConfigParameter>
+    </Config>
+  </Customer>
+</Root>

@@ -1,0 +1,87 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:llvm.memset.p0i8.i32
+FN:__isoc99_scanf
+Function: main, found scanf call
+Args size:2
+FN:strlen
+FN:json_parse
+FN:printf
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------
+Function: json_parse is whitelisted
+FN:json_set_token_id
+FN:json_set_token_primitive
+FN:json_parse_value
+----------------------------------------------------------
+Function: json_set_token_id is whitelisted
+FN:json_get_token
+----------------------------------------------------------
+Function: json_set_token_primitive is whitelisted
+FN:json_get_token
+----------------------------------------------------------
+Function: json_parse_value is whitelisted
+FN:json_skip_whitespace
+FN:json_set_token_complex
+FN:json_parse_object
+FN:json_set_token_complex
+FN:json_parse_array
+FN:json_parse_number
+FN:json_set_token_primitive
+FN:json_is_token_delimiter
+FN:json_set_token_primitive
+FN:json_is_token_delimiter
+FN:json_set_token_primitive
+FN:json_is_token_delimiter
+FN:json_set_token_primitive
+FN:json_parse_string
+FN:json_set_token_primitive
+----------------------------------------------------------
+Function: json_skip_whitespace is whitelisted
+FN:json_is_whitespace
+----------------------------------------------------------
+Function: json_set_token_complex is whitelisted
+FN:json_get_token
+----------------------------------------------------------
+Function: json_parse_object is whitelisted
+FN:json_skip_whitespace
+FN:json_is_valid_token
+FN:json_is_valid_token
+FN:json_get_token
+FN:json_skip_whitespace
+FN:json_parse_string
+FN:json_set_token_id
+FN:json_skip_whitespace
+FN:json_parse_value
+FN:json_skip_whitespace
+FN:json_get_token
+----------------------------------------------------------
+Function: json_parse_array is whitelisted
+FN:json_get_token
+FN:json_skip_whitespace
+FN:json_skip_whitespace
+FN:json_set_token_id
+FN:json_parse_value
+FN:json_get_token
+FN:json_skip_whitespace
+----------------------------------------------------------
+Function: json_parse_number is whitelisted
+FN:json_is_token_delimiter
+----------------------------------------------------------
+Function: json_is_token_delimiter is whitelisted
+FN:json_is_whitespace
+----------------------------------------------------------
+Function: json_parse_string is whitelisted
+FN:json_is_token_delimiter
+----------------------------------------------------------
+Function: json_is_whitespace is whitelisted
+----------------------------------------------------------
+Function: json_get_token is whitelisted
+----------------------------------------------------------
+Function: json_is_valid_token is whitelisted
+FN:json_get_token
+----------------------------------------------------------

@@ -1,0 +1,30 @@
+Instrumenting Function: die
+Tracking recursion for die
+Instrumenting entry point of die
+Instrumenting Function: get_humidity
+Tracking recursion for get_humidity
+Instrumenting entry point of get_humidity
+Instrumenting exit point of get_humidity
+Instrumenting Function: get_temp
+Tracking recursion for get_temp
+Instrumenting entry point of get_temp
+Instrumenting exit point of get_temp
+Instrumenting Function: get_new_temp
+Tracking recursion for get_new_temp
+Instrumenting entry point of get_new_temp
+Instrumenting exit point of get_new_temp
+Instrumenting Function: check_temp
+Tracking recursion for check_temp
+Instrumenting entry point of check_temp
+Instrumenting exit point of check_temp
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting Function: pc_read_buf_vuln_instrumented
+Tracking recursion for pc_read_buf_vuln_instrumented
+Instrumenting entry point of pc_read_buf_vuln_instrumented
+Instrumenting exit point of pc_read_buf_vuln_instrumented
+Instrumenting Function: read_data_instrumented
+Tracking recursion for read_data_instrumented
+Instrumenting entry point of read_data_instrumented
+Instrumenting exit point of read_data_instrumented

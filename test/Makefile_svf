@@ -1,0 +1,74 @@
+CC = /usr/local/cross_armhf_clang_9.0.0/bin/clang
+OPT = /usr/local/cross_armhf_clang_9.0.0/bin/opt
+LLC = /usr/local/cross_armhf_clang_9.0.0/bin/llc
+DIS = /usr/local/cross_armhf_clang_9.0.0/bin/llvm-dis
+LINK = /usr/local/cross_armhf_clang_9.0.0/bin/llvm-link
+AS = /usr/local/cross_armhf_clang_9.0.0/bin/llvm-as
+LIB_LLVM = /root/llvm_all/build_llvm/lib
+LLVM_TRANSFORMS = /root/llvm_all/llvm/lib/Transforms
+PASS_NAME = zbouncer
+PASS_WRAPPER = InputWrapper
+PASS_FUNC = FunctionInstrumentor
+PASS_RECURSION = RecursionTracker
+WRAPPED_FN = wrapped-fn
+JOIN_WRAPPED = join-wrapped
+
+PASS_LOOP = loopunroll
+PASS_VSA = ValueSetAnalysis
+PASS_VSA_NAME = vsapass
+
+PASS_VSA_2 = llvm-abstractinterpretation
+
+ROOT_BUILD = ..
+PATH_2_REACH_SVF = ../../../SVF
+
+SUBDIRS := $(wildcard */.)
+
+pass-all:
+	yes | cp -f $(ROOT_BUILD)/CMakeLists.txt $(LLVM_TRANSFORMS)/CMakeLists.txt
+# Copy VSA Pass
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_VSA)
+	cp -r $(ROOT_BUILD)/$(PASS_VSA) $(LLVM_TRANSFORMS)/$(PASS_VSA)
+# Copy VSA Pass 2 (llvm-abstractinterpretation)
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_VSA_2)
+	cp -r $(ROOT_BUILD)/$(PASS_VSA_2) $(LLVM_TRANSFORMS)/$(PASS_VSA_2)
+# Copy InputWrapper Pass
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_WRAPPER)
+	cp -r $(ROOT_BUILD)/$(PASS_WRAPPER) $(LLVM_TRANSFORMS)/$(PASS_WRAPPER)
+# Copy Function Instrumentor Pass
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_FUNC)
+	cp -r $(ROOT_BUILD)/$(PASS_FUNC) $(LLVM_TRANSFORMS)/$(PASS_FUNC)
+# Copy Zbouncer Pass
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_NAME)
+	cp -r $(ROOT_BUILD)/$(PASS_NAME) $(LLVM_TRANSFORMS)/$(PASS_NAME)
+# Copy Recursion Pass
+	rm -rf $(LLVM_TRANSFORMS)/$(PASS_RECURSION)
+	cp -r $(ROOT_BUILD)/$(PASS_RECURSION) $(LLVM_TRANSFORMS)/$(PASS_RECURSION)
+# Compile all new Passes
+	cd /root/llvm_all/build_llvm && ninja install
+
+	
+	
+instr-zbouncer: pass-all $(SUBDIRS)
+$(SUBDIRS):
+# ---- Zbouncer ----
+	$(eval TEST := $(patsubst %/.,%,$@))
+	if [ -e "$(TEST)/$(TEST).wrapped.svf.bc" ]; then \
+		$(OPT) -load $(LIB_LLVM)/LLVM$(PASS_NAME).so -$(PASS_NAME) -time-passes < $(TEST)/$(TEST).wrapped.svf.bc > $(TEST)/$(TEST).wrapped.svf.deploy.bc 2>$(TEST)/log_3_Zbouncer.txt; \
+		$(DIS) $(TEST)/$(TEST).wrapped.svf.deploy.bc; \
+		cat $(TEST)/log_3_Zbouncer.txt; \
+		$(CC) -O0 -fno-discard-value-names -emit-llvm $(ROOT_BUILD)/$(WRAPPED_FN)/$(WRAPPED_FN).c -c -o $(TEST)/wrapped_fn.bc; \
+		$(LINK) $(TEST)/$(TEST).wrapped.svf.deploy.bc $(TEST)/wrapped_fn.bc -o $(TEST)/join-wrapped.bc; \
+		$(DIS) $(TEST)/join-wrapped.bc; \
+		cp $(ROOT_BUILD)/lib/libzbouncer.a /usr/local/lib/zbouncer/libzbouncer.a; \
+		mkdir -p /usr/local/lib/zbouncer/libzbouncer; \
+		cp $(ROOT_BUILD)/libzbouncer/host/libzbouncer.h /usr/local/lib/zbouncer/libzbouncer/libzbouncer.h; \
+		$(CC) $(TEST)/join-wrapped.bc -L/usr/local/lib/zbouncer -lzbouncer -o $(TEST)/$(TEST).wrapped.svf.deploy.exec; \
+		cp $(TEST)/$(TEST).wrapped.svf.deploy.exec $(ROOT_BUILD)/zbouncer-ta/host/optee_hello; \
+	fi
+	
+
+.PHONY: all $(SUBDIRS)
+
+clean:
+	find . -type f ! \( -name 'Makefile' -o -name '*.c' \) -delete

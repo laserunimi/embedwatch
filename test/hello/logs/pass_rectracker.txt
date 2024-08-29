@@ -1,0 +1,16 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: func1
+Tracking recursion for func1
+Instrumenting entry point of func1
+Instrumenting exit point of func1
+Instrumenting Function: myfunc
+Tracking recursion for myfunc
+Instrumenting entry point of myfunc
+Instrumenting exit point of myfunc
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main

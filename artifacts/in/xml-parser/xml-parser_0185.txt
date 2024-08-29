@@ -1,0 +1,10 @@
+<root>
+  <random>78</random>
+  <random_float>80.587</random_float>
+  <bool>false</bool>
+  <date>1991-07-24</date>
+  <regEx>hellooooo world</regEx>
+  <Ardys>
+    <age>58</age>
+  </Ardys>
+</root> 

@@ -1,0 +1,66 @@
+Checking for function: die
+Checking for function: get_humidity
+Checking for function: get_temp
+Checking for function: get_new_temp
+Checking for function: check_temp
+Checking for function: main
+Checking for function: pc_read_buf_vuln_instrumented
+Checking for function: read_data_instrumented
+-------------------------LOOPS----------------------------
+Loop in get_new_temp: ZSUSE 7 |   store i8 %conv, i8* %c, align 1, !zsuse !5
+Injecting zbouncer_use(use=7, addr=0x558404f58388)
+Loop in get_new_temp: ZSUSE 8 |   store i8 %19, i8* %arrayidx12, align 1, !zsuse !7
+Injecting zbouncer_use(use=8, addr=0x558404f59128)
+Loop in main: ZSUSE 13 |   store i8 %conv, i8* %cmd, align 1, !zsuse !4
+Injecting zbouncer_use(use=13, addr=0x558404f5d358)
+Loop in pc_read_buf_vuln_instrumented: ZSUSE 4 |   store i8 %conv_instrumented, i8* %c_instrumented, align 1, !zsuse !5
+Injecting zbouncer_use(use=4, addr=0x558404f5eef8)
+Loop in pc_read_buf_vuln_instrumented: ZSUSE 2 |   store i8 %14, i8* %arrayidx_instrumented, align 1, !zsuse !6
+Injecting zbouncer_use(use=2, addr=0x558404f5f3b0)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+----------------------------------------------------------
+METADATA::zdef 14 |   %reply = alloca [10 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=14, addr=0x558404f535f8)
+METADATA::zdef 15 |   %reply = alloca [10 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=15, addr=0x558404f4f658)
+METADATA::zdef 9 |   %buf = alloca [16 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=9, addr=0x558404f582c8)
+METADATA::zdef 6 |   %c = alloca i8, align 1, !zdef !4
+Injecting zbouncer_collect_alloca(def=6, addr=0x558404f58388)
+METADATA::zdef 12 |   %cmd = alloca i8, align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=12, addr=0x558404f5d358)
+METADATA::zdef 3 |   %buf.addr_instrumented = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=3, addr=0x558404f5ee38)
+METADATA::zdef 1 |   %c_instrumented = alloca i8, align 1, !zdef !4
+Injecting zbouncer_collect_alloca(def=1, addr=0x558404f5eef8)
+----------------------------------------------------------
+METADATA::zuse 7 |   store i8 %conv, i8* %c, align 1, !zsuse !5
+Injecting zbouncer_use(use=7, addr=0x558404f58388)
+METADATA::zuse 10 |   store i8 0, i8* %arrayidx, align 1, !zsuse !6
+Injecting zbouncer_use(use=10, addr=0x558404f58ae8)
+METADATA::zuse 8 |   store i8 %55, i8* %arrayidx12, align 1, !zsuse !7
+Injecting zbouncer_use(use=8, addr=0x558404f59128)
+METADATA::zuse 13 |   store i8 %conv, i8* %cmd, align 1, !zsuse !4
+Injecting zbouncer_use(use=13, addr=0x558404f5d358)
+METADATA::zuse 4 |   store i8 %conv_instrumented, i8* %c_instrumented, align 1, !zsuse !5
+Injecting zbouncer_use(use=4, addr=0x558404f5eef8)
+METADATA::zuse 2 |   store i8 %41, i8* %arrayidx_instrumented, align 1, !zsuse !6
+Injecting zbouncer_use(use=2, addr=0x558404f5f3b0)
+----------------------------------------------------------
+Instruction:   call void @read_data_instrumented(i8* %arraydecay, i32 0), !zref_data_read_id !3
+Has metadata zref_data_read_id with value 14
+Arguments recap:
+  %arraydecay = getelementptr inbounds [10 x i8], [10 x i8]* %reply, i32 0, i32 0
+  %21 = load i32, i32* %15
+Instruction:   call void @read_data_instrumented(i8* %arraydecay, i32 0), !zref_data_read_id !3
+Has metadata zref_data_read_id with value 15
+Arguments recap:
+  %arraydecay = getelementptr inbounds [10 x i8], [10 x i8]* %reply, i32 0, i32 0
+  %21 = load i32, i32* %15
+Replacing   call void @read_data_instrumented(i8* %arraydecay, i32 0), !zref_data_read_id !3 with   call void @read_data_instrumented(i8* %arraydecay, i32 %21)
+Replaced call
+Replacing   call void @read_data_instrumented(i8* %arraydecay, i32 0), !zref_data_read_id !3 with   call void @read_data_instrumented(i8* %arraydecay, i32 %21)
+Replaced call
+Returning

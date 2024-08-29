@@ -1,0 +1,50 @@
+<root>
+  <row>
+    <post_title>Blog Post-1</post_title>
+    <post_content>Sample Content -1</post_content>
+    <post_excerpt>Sample excerpt-1</post_excerpt>
+    <post_date>yyyy-mm-dd</post_date>
+    <post_name>bp1</post_name>
+    <post_author>admin</post_author>
+    <post_status>publish</post_status>
+    <nextgen_gallery_id>23</nextgen_gallery_id>
+    <featured_image>https://berocket.com/img/blog/97001ed5f3bc56eaefc1152c604184a6.png</featured_image>
+    <post_format>post-standard</post_format>
+    <comment_status>open</comment_status>
+    <ping_status>closed</ping_status>
+    <post_category>single category</post_category>
+    <post_tag>tag1,tag2,tag3</post_tag>
+  </row>
+  <row>
+    <post_title>Blog Post-2</post_title>
+    <post_content>Sample Content -2</post_content>
+    <post_excerpt>Sample excerpt-2</post_excerpt>
+    <post_date>yyyy-mm-dd</post_date>
+    <post_name>bp2</post_name>
+    <post_author>Shansmith</post_author>
+    <post_status>draft</post_status>
+    <nextgen_gallery_id>23</nextgen_gallery_id>
+    <featured_image>https://icdc.co.ke/agrocity/wp-content/uploads/2017/07/blog_post.jpg</featured_image>
+    <post_format>post-vieo</post_format>
+    <comment_status>open</comment_status>
+    <ping_status>closed</ping_status>
+    <post_category>multi1|multi2</post_category>
+    <post_tag>tag1,tag2,tag4</post_tag>
+  </row>
+  <row>
+    <post_title>Blog Post-3</post_title>
+    <post_content>Sample Content -3</post_content>
+    <post_excerpt>Sample excerpt-3</post_excerpt>
+    <post_date>yyyy-mm-dd</post_date>
+    <post_name>bp3</post_name>
+    <post_author>AlexCarey</post_author>
+    <post_status>publish</post_status>
+    <nextgen_gallery_id>25</nextgen_gallery_id>
+    <featured_image>https://blog.hotmart.com/blog/2018/01/BLOG_guest-post-vantagens-ALTERACAO-670x419-1.png</featured_image>
+    <post_format>post-standard</post_format>
+    <comment_status>open</comment_status>
+    <ping_status>closed</ping_status>
+    <post_category>parent&gt;child&gt;grand-child</post_category>
+    <post_tag>tag1,tag2,tag5</post_tag>
+  </row>
+</root>

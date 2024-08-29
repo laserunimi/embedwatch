@@ -1,0 +1,85 @@
+Instrumenting Function: die
+Function die has parameters:
+Function die doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: debug_print
+Function debug_print has parameters:
+	-i8* %s
+Instrumenting Function: rf_write_buf
+Function rf_write_buf has parameters:
+	-i8* %buf
+	-i32 %len
+Instrumenting Function: rf_read_buf
+Function rf_read_buf has parameters:
+	-i8* %buf
+	-i32 %len
+Instrumenting Function: get_rf_config
+Function get_rf_config has parameters:
+Function get_rf_config doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: reset_rf_config
+Function reset_rf_config has parameters:
+Function reset_rf_config doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: max_tx_power
+Function max_tx_power has parameters:
+Function max_tx_power doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: configure_rf
+Function configure_rf has parameters:
+Function configure_rf doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: unlock
+Function unlock has parameters:
+Function unlock doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: read_code
+Function read_code has parameters:
+Function read_code doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: set_code
+Function set_code has parameters:
+Function set_code doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: debug_print_instrumented
+Function debug_print_instrumented has parameters:
+	-i8* %s
+	-i32 %s_id
+Function debug_print_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: rf_write_buf_instrumented
+Function rf_write_buf_instrumented has parameters:
+	-i8* %buf
+	-i32 %len
+	-i32 %buf_id
+Function rf_write_buf_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: rf_read_buf_instrumented
+Function rf_read_buf_instrumented has parameters:
+	-i8* %buf
+	-i32 %len
+	-i32 %buf_id
+Function rf_read_buf_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function debug_print was extended with 1 arguments
+Function rf_read_buf was extended with 1 arguments
+Function rf_write_buf was extended with 1 arguments
+Searching for calls to:
+	- debug_print
+	- rf_read_buf
+	- rf_write_buf
+Found call to rf_write_buf inside get_rf_config
+Found call to rf_read_buf inside get_rf_config
+Found call to debug_print inside reset_rf_config
+Found call to rf_write_buf inside reset_rf_config
+Found call to rf_read_buf inside reset_rf_config
+Found call to debug_print inside reset_rf_config
+Found call to debug_print inside reset_rf_config
+Found call to rf_write_buf inside max_tx_power
+Found call to debug_print inside max_tx_power
+Found call to debug_print inside max_tx_power
+Found call to debug_print inside unlock
+Found call to rf_write_buf inside read_code
+Found call to debug_print inside read_code
+Found call to rf_write_buf inside read_code
+Found call to debug_print inside main
+Found call to rf_write_buf inside main
+Replacing calls
+Removing function debug_print
+Remove OK debug_print
+Removing function rf_read_buf
+Remove OK rf_read_buf
+Removing function rf_write_buf
+Remove OK rf_write_buf

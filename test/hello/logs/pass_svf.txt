@@ -1,0 +1,768 @@
+
+*********CallGraph Stats***************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+TotalNode           9
+TotalCycle          0
+NodeInCycle         0
+MaxNodeInCycle      0
+TotalEdge           11
+CalRetPairInCycle   0
+#######################################################
+
+*********General Stats***************
+################ (program : hello.rectracker.bc)###############
+TotalPointers       180
+TotalObjects        32
+TotalFieldObjects   7
+MaxStructSize       2
+TotalSVFStmts       157
+TotalPTASVFStmts    53
+FIObjNum            0
+FSObjNum            31
+AddrsNum            43
+LoadsNum            30
+StoresNum           29
+CopysNum            20
+GepsNum             10
+CallsNum            1
+ReturnsNum          0
+FunctionObjs        9
+GlobalObjs          2
+HeapObjs            2
+StackObjs           17
+VarStructObj        2
+VarArrayObj         1
+ConstStructObj      0
+ConstArrayObj       0
+NonPtrObj           24
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       11
+BBWith2Succ         2
+BBWith3Succ         0
+-------------------------------------------------------
+LLVMIRTime          0.002
+SymbolTableTime     0.001
+SVFIRTime           0.002
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.256098
+AvgIn/OutLoadEdge   0.0731707
+AvgIn/OutAddrEdge   0.390244
+AvgIn/OutEdge       0.768293
+LocalVarInRecur     0
+NumOfCGNode         231
+TotalValidNode      82
+TotalValidObjNode   31
+NumOfCGEdge         31
+NumOfAddrs          32
+NumOfCopys          11
+NumOfGeps           10
+NumOfLoads          6
+NumOfStores         4
+MaxInCopyEdge       1
+MaxOutCopyEdge      3
+MaxInLoadEdge       1
+MaxOutLoadEdge      3
+MaxInStoreEdge      1
+MaxOutStoreEdge     1
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      2
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+CollapseTime        0
+TotalTime           0.002
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.21645
+AvgTopLvlPtsSize    0.979167
+TotalPointers       180
+TotalObjects        39
+AddrProcessed       32
+CopyProcessed       8
+GepProcessed        10
+LoadProcessed       6
+StoreProcessed      4
+NumOfSFRs           0
+NumOfFieldExpand    0
+Pointers            180
+MemObjects          32
+DummyFieldPtrs      0
+FieldObjs           7
+MaxPtsSetSize       1
+SolveIterations     2
+IndCallSites        0
+IndEdgeSolved       0
+NumOfSCCDetect      2
+TotalCycleNum       0
+TotalPWCCycleNum    0
+NodesInCycles       0
+MaxNodesInSCC       0
+NullPointer         0
+PointsToConstPtr    0
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : hello.rectracker.bc)###############
+UniquePointsToSets       39
+TotalUnions              50
+PropertyUnions           50
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         453
+PropertyComplements      453
+UniqueComplements        0
+LookupComplements        0
+PreemptiveComplements    0
+TotalIntersections       10
+PropertyIntersections    10
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  0
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+TotalMSSATime       0.002
+GenRegionTime       0.001
+GenMUCHITime        0.001
+InsertPHITime       0
+SSARenameTime       0
+AverageRegSize      1
+MaxRegSize          1
+MemRegions          7
+FunEntryChi         8
+FunRetMu            8
+CSChiNode           2
+CSMuNode            3
+LoadMuNode          6
+StoreChiNode        4
+MSSAPhi             0
+FunHasEntryChi      2
+FunHasRetMu         4
+CSHasChi            2
+CSHasMu             3
+LoadHasMu           6
+StoreHasChi         4
+BBHasMSSAPhi        0
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+MSSAPhi             0
+TotalNode           84
+FormalIn            8
+FormalOut           8
+FormalParam         1
+FormalRet           0
+ActualIn            3
+ActualOut           2
+ActualParam         8
+ActualRet           0
+Addr                32
+Copy                1
+Gep                 10
+Store               4
+Load                6
+PHI                 0
+TotalEdge           55
+DirectEdge          33
+IndirectEdge        22
+IndirectEdgeLabels  22
+IndCallEdge         1
+IndRetEdge          0
+DirectCallEdge      0
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         3
+MaxOutDegree        4
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         1
+MaxIndOutDeg        4
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+TotalMSSATime       0.003
+GenRegionTime       0.002
+GenMUCHITime        0.001
+InsertPHITime       0
+SSARenameTime       0
+AverageRegSize      1
+MaxRegSize          1
+MemRegions          25
+FunEntryChi         29
+FunRetMu            29
+CSChiNode           5
+CSMuNode            6
+LoadMuNode          30
+StoreChiNode        28
+MSSAPhi             4
+FunHasEntryChi      4
+FunHasRetMu         4
+CSHasChi            5
+CSHasMu             5
+LoadHasMu           30
+StoreHasChi         28
+BBHasMSSAPhi        2
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : hello.rectracker.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+MSSAPhi             4
+TotalNode           252
+FormalIn            29
+FormalOut           29
+FormalParam         3
+FormalRet           1
+ActualIn            6
+ActualOut           5
+ActualParam         13
+ActualRet           5
+Addr                43
+Copy                20
+Gep                 10
+Store               29
+Load                30
+PHI                 1
+TotalEdge           259
+DirectEdge          150
+IndirectEdge        109
+IndirectEdgeLabels  109
+IndCallEdge         4
+IndRetEdge          3
+DirectCallEdge      1
+DirectRetEdge       0
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         3
+MaxOutDegree        17
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         2
+MaxIndOutDeg        5
+#######################################################
+args PTA type: --pta-dda
+Test - update svfg
+(fgetc) CallICFGNode78 {fun: myfunc}
+[DEBUG] findFirstStore found 1 elements
+Finding uses of   %c = alloca i32, align 4 with ID 89
+[SelectDef] On node: ValVar ID: 89
+   %c = alloca i32, align 4 
+On edge 90-->89
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 89
+	-  %c = alloca i32, align 4
+[SelectDefs] Adding node: FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+On edge 95-->89
+On edge 118-->89
+[SelectDef] On node: ValVar ID: 118
+   %call2 = call i32 @fgetc(%struct._IO_FILE* %8) 
+[SelectDef] On node: ValVar ID: 95
+ i32 100 { constant data }
+On edge 3-->95
+Discarding edge
+Found:
+	- 90   %c = alloca i32, align 4
+[DEFBUILDER] Building ADef
+VFG-ID=119 (store) | IntraICFGNode81 {fun: myfunc}
+StoreStmt: [Var89 <-- Var118]	
+   store i32 %call2, i32* %c, align 4 
+VFG-ID=117 (store) | IntraICFGNode70 {fun: myfunc}
+StoreStmt: [Var89 <-- Var95]	
+   store i32 100, i32* %c, align 4 
+VFG-ID=120 (store) | IntraICFGNode92 {fun: myfunc}
+StoreStmt: [Var125 <-- Var123]	
+   store i8 %conv, i8* %arrayidx3, align 1 
+Store:   store i32 %call2, i32* %c, align 4
+Store where:   %c = alloca i32, align 4
+Target of   store i32 %call2, i32* %c, align 4 is   %c = alloca i32, align 4 with PAG id 89
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[SelectDef] On node: FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4  to result
+[STORE] Found defs:
+Store:   store i32 100, i32* %c, align 4
+Store where:   %c = alloca i32, align 4
+Target of   store i32 100, i32* %c, align 4 is   %c = alloca i32, align 4 with PAG id 89
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[SelectDef] On node: FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4  to result
+[STORE] Found defs:
+Store:   store i8 %conv, i8* %arrayidx3, align 1
+Store where:   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Target of   store i8 %conv, i8* %arrayidx3, align 1 is   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10 with PAG id 125
+Checking PagEdge node associated to:   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Visist starts at PAGNode 79
+[SelectDef] On node: ValVar ID: 79
+   %buf = alloca [20 x i8], align 1 
+On edge 80-->79
+[SelectDefs] Adding node: FIObjVar ID: 80 (base object)
+   %buf = alloca [20 x i8], align 1 
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+ Analyzing call to hook_exit inside main
+ Analyzing call to printf inside main
+ Analyzing call to gettimeofday inside main
+ Analyzing call to func1 inside main
+ Analyzing call to gettimeofday inside main
+ Analyzing call to myfunc inside main
+ Analyzing call to free inside myfunc
+ Analyzing call to fgetc inside myfunc
+ Analyzing call to malloc inside myfunc
+ Analyzing call to malloc inside myfunc
+ Analyzing call to printf inside func1
+Checking function hook_exit
+Checking function func1
+Checking function printf
+Checking function myfunc
+Checking function malloc
+Checking function fgetc
+Checking function free
+Checking function main
+Checking function gettimeofday
+Checking function hook_exit
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16 %7, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %7, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function func1
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i32 %num, i32* %num.addr, align 4
+Target of   store i32 %num, i32* %num.addr, align 4 is   %num.addr = alloca i32, align 4 with PAG id 38
+Checking PagEdge node associated to:   %num.addr = alloca i32, align 4
+Visist starts at PAGNode 39
+[SelectDef] On node: FIObjVar ID: 39 (base object)
+   %num.addr = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 39 (base object)
+   %num.addr = alloca i32, align 4  to result
+Found:
+	- NodeId: 39 Instr:   %num.addr = alloca i32, align 4
+Finding defs for:   store i32 0, i32* %i, align 4
+Target of   store i32 0, i32* %i, align 4 is   %i = alloca i32, align 4 with PAG id 40
+Checking PagEdge node associated to:   %i = alloca i32, align 4
+Visist starts at PAGNode 41
+[SelectDef] On node: FIObjVar ID: 41 (base object)
+   %i = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 41 (base object)
+   %i = alloca i32, align 4  to result
+Found:
+	- NodeId: 41 Instr:   %i = alloca i32, align 4
+Finding defs for:   store i32 %inc, i32* %i, align 4
+Target of   store i32 %inc, i32* %i, align 4 is   %i = alloca i32, align 4 with PAG id 40
+Checking PagEdge node associated to:   %i = alloca i32, align 4
+Visist starts at PAGNode 41
+[SelectDef] On node: FIObjVar ID: 41 (base object)
+   %i = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 41 (base object)
+   %i = alloca i32, align 4  to result
+Found:
+	- NodeId: 41 Instr:   %i = alloca i32, align 4
+Finding defs for:   store i16 %12, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %12, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function printf
+Checking function myfunc
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i8* %call, i8** %myobj, align 4
+Target of   store i8* %call, i8** %myobj, align 4 is   %myobj = alloca i8*, align 4 with PAG id 81
+Checking PagEdge node associated to:   %myobj = alloca i8*, align 4
+Visist starts at PAGNode 82
+[SelectDef] On node: FIObjVar ID: 82 (base object)
+   %myobj = alloca i8*, align 4 
+Start node is a Def already, adding FIObjVar ID: 82 (base object)
+   %myobj = alloca i8*, align 4  to result
+Found:
+	- NodeId: 82 Instr:   %myobj = alloca i8*, align 4
+Finding defs for:   store i8 %5, i8* %zero, align 1
+Target of   store i8 %5, i8* %zero, align 1 is   %zero = alloca i8, align 1 with PAG id 83
+Checking PagEdge node associated to:   %zero = alloca i8, align 1
+Visist starts at PAGNode 84
+[SelectDef] On node: FIObjVar ID: 84 (base object)
+   %zero = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 84 (base object)
+   %zero = alloca i8, align 1  to result
+Found:
+	- NodeId: 84 Instr:   %zero = alloca i8, align 1
+Finding defs for:   store i8* %6, i8** %myobj2, align 4
+Target of   store i8* %6, i8** %myobj2, align 4 is   %myobj2 = alloca i8*, align 4 with PAG id 85
+Checking PagEdge node associated to:   %myobj2 = alloca i8*, align 4
+Visist starts at PAGNode 86
+[SelectDef] On node: FIObjVar ID: 86 (base object)
+   %myobj2 = alloca i8*, align 4 
+Start node is a Def already, adding FIObjVar ID: 86 (base object)
+   %myobj2 = alloca i8*, align 4  to result
+Found:
+	- NodeId: 86 Instr:   %myobj2 = alloca i8*, align 4
+Finding defs for:   store i8* %call1, i8** %new, align 4
+Target of   store i8* %call1, i8** %new, align 4 is   %new = alloca i8*, align 4 with PAG id 87
+Checking PagEdge node associated to:   %new = alloca i8*, align 4
+Visist starts at PAGNode 88
+[SelectDef] On node: FIObjVar ID: 88 (base object)
+   %new = alloca i8*, align 4 
+Start node is a Def already, adding FIObjVar ID: 88 (base object)
+   %new = alloca i8*, align 4  to result
+Found:
+	- NodeId: 88 Instr:   %new = alloca i8*, align 4
+Finding defs for:   store i32 100, i32* %c, align 4
+Target of   store i32 100, i32* %c, align 4 is   %c = alloca i32, align 4 with PAG id 89
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[SelectDef] On node: FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4  to result
+Found:
+	- NodeId: 90 Instr:   %c = alloca i32, align 4
+Finding defs for:   store i32 0, i32* %i, align 4
+Target of   store i32 0, i32* %i, align 4 is   %i = alloca i32, align 4 with PAG id 91
+Checking PagEdge node associated to:   %i = alloca i32, align 4
+Visist starts at PAGNode 92
+[SelectDef] On node: FIObjVar ID: 92 (base object)
+   %i = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 92 (base object)
+   %i = alloca i32, align 4  to result
+Found:
+	- NodeId: 92 Instr:   %i = alloca i32, align 4
+Finding defs for:   store i32 %call2, i32* %c, align 4
+Target of   store i32 %call2, i32* %c, align 4 is   %c = alloca i32, align 4 with PAG id 89
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[SelectDef] On node: FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4  to result
+Found:
+	- NodeId: 90 Instr:   %c = alloca i32, align 4
+Finding defs for:   store i8 %conv, i8* %arrayidx3, align 1
+Target of   store i8 %conv, i8* %arrayidx3, align 1 is   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10 with PAG id 125
+Checking PagEdge node associated to:   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Visist starts at PAGNode 79
+[SelectDef] On node: ValVar ID: 79
+   %buf = alloca [20 x i8], align 1 
+On edge 80-->79
+[SelectDefs] Adding node: FIObjVar ID: 80 (base object)
+   %buf = alloca [20 x i8], align 1 
+Found:
+	- NodeId: 80 Instr:   %buf = alloca [20 x i8], align 1
+Finding defs for:   store i32 %inc, i32* %i, align 4
+Target of   store i32 %inc, i32* %i, align 4 is   %i = alloca i32, align 4 with PAG id 91
+Checking PagEdge node associated to:   %i = alloca i32, align 4
+Visist starts at PAGNode 92
+[SelectDef] On node: FIObjVar ID: 92 (base object)
+   %i = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 92 (base object)
+   %i = alloca i32, align 4  to result
+Found:
+	- NodeId: 92 Instr:   %i = alloca i32, align 4
+Finding defs for:   store i8 65, i8* %arrayidx4, align 1
+Target of   store i8 65, i8* %arrayidx4, align 1 is   %arrayidx4 = getelementptr inbounds i8, i8* %12, i32 0 with PAG id 132
+Checking PagEdge node associated to:   %arrayidx4 = getelementptr inbounds i8, i8* %12, i32 0
+Visist starts at PAGNode 131
+[SelectDef] On node: ValVar ID: 131
+   %12 = load i8*, i8** %myobj2, align 4 
+On edge 85-->131
+[SelectDef] On node: ValVar ID: 85
+   %myobj2 = alloca i8*, align 4 
+On edge 86-->85
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 85
+	-  %myobj2 = alloca i8*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 86 (base object)
+   %myobj2 = alloca i8*, align 4 
+On edge 103-->85
+[SelectDef] On node: ValVar ID: 103
+   %6 = load i8*, i8** %myobj, align 4 
+On edge 81-->103
+[SelectDef] On node: ValVar ID: 81
+   %myobj = alloca i8*, align 4 
+On edge 82-->81
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 81
+	-  %myobj = alloca i8*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 82 (base object)
+   %myobj = alloca i8*, align 4 
+On edge 93-->81
+[SelectDef] On node: ValVar ID: 93
+   %call = call noalias i8* @malloc(i32 100) #3 
+On edge 94-->93
+[SelectDefs] Adding node: FIObjVar ID: 94 (base object)
+   %call = call noalias i8* @malloc(i32 100) #3 
+Found:
+	- NodeId: 94 Instr:   %call = call noalias i8* @malloc(i32 100) #3
+	- NodeId: 82 Instr:   %myobj = alloca i8*, align 4
+	- NodeId: 86 Instr:   %myobj2 = alloca i8*, align 4
+Finding defs for:   store i8 3, i8* %arrayidx5, align 1
+Target of   store i8 3, i8* %arrayidx5, align 1 is   %arrayidx5 = getelementptr inbounds i8, i8* %14, i32 12 with PAG id 140
+Checking PagEdge node associated to:   %arrayidx5 = getelementptr inbounds i8, i8* %14, i32 12
+Visist starts at PAGNode 139
+[SelectDef] On node: ValVar ID: 139
+   %14 = load i8*, i8** %new, align 4 
+On edge 87-->139
+[SelectDef] On node: ValVar ID: 87
+   %new = alloca i8*, align 4 
+On edge 88-->87
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 87
+	-  %new = alloca i8*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 88 (base object)
+   %new = alloca i8*, align 4 
+On edge 105-->87
+[SelectDef] On node: ValVar ID: 105
+   %call1 = call noalias i8* @malloc(i32 20) #3 
+On edge 106-->105
+[SelectDefs] Adding node: FIObjVar ID: 106 (base object)
+   %call1 = call noalias i8* @malloc(i32 20) #3 
+Found:
+	- NodeId: 106 Instr:   %call1 = call noalias i8* @malloc(i32 20) #3
+	- NodeId: 88 Instr:   %new = alloca i8*, align 4
+Finding defs for:   store i16 %18, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %18, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function malloc
+Checking function fgetc
+Checking function free
+Checking function main
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i32 0, i32* %retval, align 4
+Target of   store i32 0, i32* %retval, align 4 is   %retval = alloca i32, align 4 with PAG id 165
+Checking PagEdge node associated to:   %retval = alloca i32, align 4
+Visist starts at PAGNode 166
+[SelectDef] On node: FIObjVar ID: 166 (base object)
+   %retval = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 166 (base object)
+   %retval = alloca i32, align 4  to result
+Found:
+	- NodeId: 166 Instr:   %retval = alloca i32, align 4
+Finding defs for:   store i32 %argc, i32* %argc.addr, align 4
+Target of   store i32 %argc, i32* %argc.addr, align 4 is   %argc.addr = alloca i32, align 4 with PAG id 167
+Checking PagEdge node associated to:   %argc.addr = alloca i32, align 4
+Visist starts at PAGNode 168
+[SelectDef] On node: FIObjVar ID: 168 (base object)
+   %argc.addr = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 168 (base object)
+   %argc.addr = alloca i32, align 4  to result
+Found:
+	- NodeId: 168 Instr:   %argc.addr = alloca i32, align 4
+Finding defs for:   store i8** %argv, i8*** %argv.addr, align 4
+Target of   store i8** %argv, i8*** %argv.addr, align 4 is   %argv.addr = alloca i8**, align 4 with PAG id 169
+Checking PagEdge node associated to:   %argv.addr = alloca i8**, align 4
+Visist starts at PAGNode 170
+[SelectDef] On node: FIObjVar ID: 170 (base object)
+   %argv.addr = alloca i8**, align 4 
+Start node is a Def already, adding FIObjVar ID: 170 (base object)
+   %argv.addr = alloca i8**, align 4  to result
+Found:
+	- NodeId: 170 Instr:   %argv.addr = alloca i8**, align 4
+Finding defs for:   store i32 %sub, i32* %seconds, align 4
+Target of   store i32 %sub, i32* %seconds, align 4 is   %seconds = alloca i32, align 4 with PAG id 175
+Checking PagEdge node associated to:   %seconds = alloca i32, align 4
+Visist starts at PAGNode 176
+[SelectDef] On node: FIObjVar ID: 176 (base object)
+   %seconds = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 176 (base object)
+   %seconds = alloca i32, align 4  to result
+Found:
+	- NodeId: 176 Instr:   %seconds = alloca i32, align 4
+Finding defs for:   store i32 %sub4, i32* %microseconds, align 4
+Target of   store i32 %sub4, i32* %microseconds, align 4 is   %microseconds = alloca i32, align 4 with PAG id 177
+Checking PagEdge node associated to:   %microseconds = alloca i32, align 4
+Visist starts at PAGNode 178
+[SelectDef] On node: FIObjVar ID: 178 (base object)
+   %microseconds = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 178 (base object)
+   %microseconds = alloca i32, align 4  to result
+Found:
+	- NodeId: 178 Instr:   %microseconds = alloca i32, align 4
+Finding defs for:   store double %add, double* %elapsed, align 8
+Target of   store double %add, double* %elapsed, align 8 is   %elapsed = alloca double, align 8 with PAG id 179
+Checking PagEdge node associated to:   %elapsed = alloca double, align 8
+Visist starts at PAGNode 180
+[SelectDef] On node: FIObjVar ID: 180 (base object)
+   %elapsed = alloca double, align 8 
+Start node is a Def already, adding FIObjVar ID: 180 (base object)
+   %elapsed = alloca double, align 8  to result
+Found:
+	- NodeId: 180 Instr:   %elapsed = alloca double, align 8
+Finding defs for:   store i16 %15, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %15, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 10
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 12
+[SelectDef] On node: FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 12 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 12 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function gettimeofday
+On input [0.IN] (PAGNode: 89) fgetc
+--- Children ---
+[1.ADEF - DOMINATOR ] (PAGNode: 90) FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+[2.STOREUSE] (VFGNode: StoreVFGNode ID: 119 StoreStmt: [Var89 <-- Var118]	
+   store i32 %call2, i32* %c, align 4 ) 
+ storeParam:  %c = alloca i32, align 4
+Count target object: 0
+--- Children ---
+[1.ADEF - DOMINATOR ] (PAGNode: 90) FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+----------------
+[3.STOREUSE] (VFGNode: StoreVFGNode ID: 117 StoreStmt: [Var89 <-- Var95]	
+   store i32 100, i32* %c, align 4 ) 
+ storeParam:  %c = alloca i32, align 4
+Count target object: 0
+--- Children ---
+[1.ADEF - DOMINATOR ] (PAGNode: 90) FIObjVar ID: 90 (base object)
+   %c = alloca i32, align 4 
+----------------
+[4.STOREUSE] (VFGNode: StoreVFGNode ID: 120 StoreStmt: [Var125 <-- Var123]	
+   store i8 %conv, i8* %arrayidx3, align 1 ) 
+ storeParam:  %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Count target object: 0
+--- Children ---
+[5.ADEF] (PAGNode: 80) FIObjVar ID: 80 (base object)
+   %buf = alloca [20 x i8], align 1 
+----------------
+----------------
+
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %c = alloca i32, align 4
+Visist starts at PAGNode 90
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Visist starts at PAGNode 79
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[5.ADEF] (PAGNode: 80) FIObjVar ID: 80 (base object)
+   %buf = alloca [20 x i8], align 1 
+
+Of Use:
+[4.STOREUSE] (VFGNode: StoreVFGNode ID: 120 StoreStmt: [Var125 <-- Var123]	
+   store i8 %conv, i8* %arrayidx3, align 1 ) 
+ storeParam:  %arrayidx3 = getelementptr inbounds [20 x i8], [20 x i8]* %buf, i32 0, i32 %10
+Count target object: 0
+--- Children ---
+[5.ADEF] (PAGNode: 80) FIObjVar ID: 80 (base object)
+   %buf = alloca [20 x i8], align 1 
+----------------
+
+Avoiding pre-calculated indirect link
+0;IN;-1;CallICFGNode78 {fun: myfunc}
+	1;ADEF;0;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	2;SUSE;0;myfunc;StoreVFGNode ID: 119 StoreStmt: [Var89 <-- Var118]	    store i32 %call2, i32* %c, align 4 
+		1;ADEF;2;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	3;SUSE;0;myfunc;StoreVFGNode ID: 117 StoreStmt: [Var89 <-- Var95]	    store i32 100, i32* %c, align 4 
+		1;ADEF;3;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	4;SUSE;0;myfunc;StoreVFGNode ID: 120 StoreStmt: [Var125 <-- Var123]	    store i8 %conv, i8* %arrayidx3, align 1 
+		5;ADEF;4;BASE;20;FIObjVar ID: 80 (base object)    %buf = alloca [20 x i8], align 1 
+  store i32 100, i32* %c, align 4 | defStr:  | storeStr: 3 | libStr: 
+  %buf = alloca [20 x i8], align 1 | defStr: 5 | storeStr:  | libStr: 
+  store i8 %conv, i8* %arrayidx3, align 1 | defStr:  | storeStr: 4 | libStr: 
+  store i32 %call2, i32* %c, align 4 | defStr:  | storeStr: 2 | libStr: 
+  %c = alloca i32, align 4 | defStr: 1 | storeStr:  | libStr: 
+---------------------------------------------------
+Writing '/home/laser/Desktop/zbouncer/test/../test/hello/graph/pag.dot'...
+Writing '/home/laser/Desktop/zbouncer/test/../test/hello/graph/svfg.dot'...
+Writing '/home/laser/Desktop/zbouncer/test/../test/hello/graph/icfg.dot'...

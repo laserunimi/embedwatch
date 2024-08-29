@@ -1,0 +1,34 @@
+<root>
+  <row>
+    <post_title>USA</post_title>
+    <post_content>New location for the Learning</post_content>
+    <post_excerpt></post_excerpt>
+    <post_date>2021-08-10</post_date>
+    <post_name>usa</post_name>
+    <post_author>admin</post_author>
+    <post_status>publish</post_status>
+    <featured_image>https://trial.smackcoders.com/yyrtcvaj/wp-content/uploads/2021/08/Communication-Gagnes-nine-events-teaching-students-friends-group.jpg</featured_image>
+    <location_address>234</location_address>
+    <location_town>Texas</location_town>
+    <location_state>USA</location_state>
+    <location_postcode>610897</location_postcode>
+    <location_region>USA</location_region>
+    <location_country>US</location_country>
+  </row>
+  <row>
+    <post_title>UK</post_title>
+    <post_content>Type your content here</post_content>
+    <post_excerpt></post_excerpt>
+    <post_date>2021-08-10</post_date>
+    <post_name>uk</post_name>
+    <post_author>admin</post_author>
+    <post_status>publish</post_status>
+    <featured_image>https://trial.smackcoders.com/yyrtcvaj/wp-content/uploads/2021/08/Communication-Gagnes-nine-events-teaching-students-friends-group.jpg</featured_image>
+    <location_address>London Bridge, Station Approach Road, London, UK</location_address>
+    <location_town>London</location_town>
+    <location_state>UK</location_state>
+    <location_postcode>876543</location_postcode>
+    <location_region>UK</location_region>
+    <location_country>VG</location_country>
+  </row>
+</root>

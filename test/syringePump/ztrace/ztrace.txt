@@ -1,0 +1,56 @@
+0;IN;-1;CallICFGNode87 {fun: digitalRead}
+	1;ADEF;0;BASE;4;FIObjVar ID: 241 (base object)    %val = alloca i32, align 4 
+	2;SUSE;0;checkTriggers;StoreVFGNode ID: 756 StoreStmt: [Var60 <-- Var929]	    store i32 %14, i32* @prevBigTrigger, align 4 
+		3;GDEF;2;DOMINATOR;4;FIObjVar ID: 61 (base object)  @prevBigTrigger = dso_local global i32 0, align 4 { Glob  }
+	4;SUSE;0;checkTriggers;StoreVFGNode ID: 751 StoreStmt: [Var62 <-- Var908]	    store i32 %7, i32* @prevTrigger, align 4 
+		5;GDEF;4;DOMINATOR;4;FIObjVar ID: 63 (base object)  @prevTrigger = dso_local global i32 0, align 4 { Glob  }
+	6;SUSE;0;checkTriggers;StoreVFGNode ID: 750 StoreStmt: [Var889 <-- Var896]	    store i32 %call, i32* %pushTriggerValue, align 4 
+		7;ADEF;6;DOMINATOR;4;FIObjVar ID: 890 (base object)    %pushTriggerValue = alloca i32, align 4 
+	8;SUSE;0;checkTriggers;StoreVFGNode ID: 752 StoreStmt: [Var891 <-- Var911]	    store i32 %call2, i32* %bigTriggerValue, align 4 
+		9;ADEF;8;DOMINATOR;4;FIObjVar ID: 892 (base object)    %bigTriggerValue = alloca i32, align 4 
+10;IN;-1;CallICFGNode376 {fun: readSerial} GepStmt: [Var1450 <-- Var64]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  GepStmt: [Var1451 <-- Var558]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  LoadStmt: [Var1452 <-- Var1451]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  StoreStmt: [Var1450 <-- Var1452]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  CopyStmt: [Var596 <-- Var595]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5 
+	11;LUSE;10;readSerial;CallICFGNode376 {fun: readSerial} GepStmt: [Var1450 <-- Var64]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  GepStmt: [Var1451 <-- Var558]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  LoadStmt: [Var1452 <-- Var1451]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  StoreStmt: [Var1450 <-- Var1452]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5  CopyStmt: [Var596 <-- Var595]	    %call4 = call i8* @strcpy(i8* %9, i8* %arraydecay) #5 
+		12;GDEF;11;BASE;8000;FIObjVar ID: 66 (base object)  @serialStr = dso_local global [8000 x i8] zeroinitializer, align 1 { Glob  }
+13;IN;-1;CallICFGNode158 {fun: Serial_read}
+	14;ADEF;13;DOMINATOR;1;FIObjVar ID: 333 (base object)    %c = alloca i8, align 1 
+	15;SUSE;13;bolus;StoreVFGNode ID: 733 StoreStmt: [Var688 <-- Var711]	    store i32 %conv5, i32* %steps, align 4 
+		16;ADEF;15;DOMINATOR;4;FIObjVar ID: 689 (base object)    %steps = alloca i32, align 4 
+	17;SUSE;13;bolus;StoreVFGNode ID: 732 StoreStmt: [Var688 <-- Var699]	    store i32 %conv1, i32* %steps, align 4 
+		16;ADEF;17;DOMINATOR;4;FIObjVar ID: 689 (base object)    %steps = alloca i32, align 4 
+	18;SUSE;13;processSerial;StoreVFGNode ID: 728 StoreStmt: [Var70 <-- Var17]	    store i32 0, i32* @serialStrLen, align 4 
+		19;GDEF;18;DOMINATOR;4;FIObjVar ID: 71 (base object)  @serialStrLen = dso_local global i32 0, align 4 { Glob  }
+	20;SUSE;13;Serial_read;StoreVFGNode ID: 693 StoreStmt: [Var332 <-- Var338]	    store i8 %conv, i8* %c, align 1 
+		14;ADEF;20;DOMINATOR;1;FIObjVar ID: 333 (base object)    %c = alloca i8, align 1 
+	21;SUSE;13;processSerial;StoreVFGNode ID: 727 StoreStmt: [Var67 <-- Var68]	    store i8 0, i8* @serialStrReady, align 1 
+		22;GDEF;21;DOMINATOR;1;FIObjVar ID: 69 (base object)  @serialStrReady = dso_local global i8 0, align 1 { Glob  }
+	23;SUSE;13;loop;StoreVFGNode ID: 711 StoreStmt: [Var522 <-- Var524]	    store i8 43, i8* %5, align 1 
+		12;GDEF;23;BASE;8000;FIObjVar ID: 66 (base object)  @serialStr = dso_local global [8000 x i8] zeroinitializer, align 1 { Glob  }
+	24;SUSE;13;bolus;StoreVFGNode ID: 734 StoreStmt: [Var38 <-- Var715]	    store float %add, float* @mLUsed, align 4 
+		25;GDEF;24;DOMINATOR;4;FIObjVar ID: 40 (base object)  @mLUsed = dso_local global float 0.000000e+00, align 4 { Glob  }
+	26;SUSE;13;readSerial;StoreVFGNode ID: 720 StoreStmt: [Var586 <-- Var584]	    store i8 %6, i8* %arrayidx, align 1 
+		27;ADEF;26;BASE;8000;FIObjVar ID: 559 (base object)    %buffer = alloca [8000 x i8], align 1 
+	28;SUSE;13;loop;StoreVFGNode ID: 710 StoreStmt: [Var32 <-- Var520]	    store float %conv1, float* @mLBolus, align 4 
+		29;GDEF;28;DOMINATOR;4;FIObjVar ID: 34 (base object)  @mLBolus = dso_local global float 5.000000e-01, align 4 { Glob  }
+	30;SUSE;13;readSerial;StoreVFGNode ID: 718 StoreStmt: [Var560 <-- Var574]	    store i8 %conv, i8* %inChar, align 1 
+		31;ADEF;30;DOMINATOR;1;FIObjVar ID: 561 (base object)    %inChar = alloca i8, align 1 
+	32;SUSE;13;processSerial;StoreVFGNode ID: 726 StoreStmt: [Var32 <-- Var653]	    store float %conv13, float* @mLBolus, align 4 
+		29;GDEF;32;DOMINATOR;4;FIObjVar ID: 34 (base object)  @mLBolus = dso_local global float 5.000000e-01, align 4 { Glob  }
+	33;SUSE;13;readSerial;StoreVFGNode ID: 719 StoreStmt: [Var67 <-- Var526]	    store i8 1, i8* @serialStrReady, align 1 
+		22;GDEF;33;DOMINATOR;1;FIObjVar ID: 69 (base object)  @serialStrReady = dso_local global i8 0, align 1 { Glob  }
+	34;SUSE;13;loop;StoreVFGNode ID: 712 StoreStmt: [Var67 <-- Var526]	    store i8 1, i8* @serialStrReady, align 1 
+		22;GDEF;34;DOMINATOR;1;FIObjVar ID: 69 (base object)  @serialStrReady = dso_local global i8 0, align 1 { Glob  }
+	35;SUSE;13;readSerial;StoreVFGNode ID: 721 StoreStmt: [Var70 <-- Var589]	    store i32 %inc, i32* @serialStrLen, align 4 
+		19;GDEF;35;DOMINATOR;4;FIObjVar ID: 71 (base object)  @serialStrLen = dso_local global i32 0, align 4 { Glob  }
+	36;SUSE;13;Serial_write_instrumented;StoreVFGNode ID: 820 StoreStmt: [Var1407 <-- Var1398]	    store i32 %len, i32* %len.addr_instrumented, align 4 
+		37;ADEF;36;DOMINATOR;4;FIObjVar ID: 1408 (base object)    %len.addr_instrumented = alloca i32, align 4 
+	38;SUSE;13;bolus;StoreVFGNode ID: 735 StoreStmt: [Var38 <-- Var732]	    store float %sub12, float* @mLUsed, align 4 
+		25;GDEF;38;DOMINATOR;4;FIObjVar ID: 40 (base object)  @mLUsed = dso_local global float 0.000000e+00, align 4 { Glob  }
+	39;SUSE;13;bolus;StoreVFGNode ID: 736 StoreStmt: [Var38 <-- Var39]	    store float 0.000000e+00, float* @mLUsed, align 4 
+		25;GDEF;39;DOMINATOR;4;FIObjVar ID: 40 (base object)  @mLUsed = dso_local global float 0.000000e+00, align 4 { Glob  }
+	40;SUSE;13;toUInt_instrumented;StoreVFGNode ID: 824 StoreStmt: [Var1433 <-- Var1424]	    store i32 %len, i32* %len.addr_instrumented, align 4 
+		41;ADEF;40;DOMINATOR;4;FIObjVar ID: 1434 (base object)    %len.addr_instrumented = alloca i32, align 4 
+42;IN;-1;CallICFGNode90 {fun: digitalRead}
+	43;LUSE;42;digitalRead;CallICFGNode90 {fun: digitalRead}
+		1;ADEF;43;BASE;4;FIObjVar ID: 241 (base object)    %val = alloca i32, align 4 
+92;ADEF;-1;BASE;80;FIObjVar ID: 777 (base object)    %s1 = alloca [80 x i8], align 1 
+109;ADEF;-1;BASE;80;FIObjVar ID: 779 (base object)    %s2 = alloca [80 x i8], align 1 

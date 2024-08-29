@@ -1,0 +1,76 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: pinMode
+Tracking recursion for pinMode
+Instrumenting entry point of pinMode
+Instrumenting exit point of pinMode
+Instrumenting Function: analogWrite
+Tracking recursion for analogWrite
+Instrumenting entry point of analogWrite
+Instrumenting exit point of analogWrite
+Instrumenting Function: Serial_begin
+Tracking recursion for Serial_begin
+Instrumenting entry point of Serial_begin
+Instrumenting exit point of Serial_begin
+Instrumenting Function: Serial_available
+Tracking recursion for Serial_available
+Instrumenting entry point of Serial_available
+Instrumenting exit point of Serial_available
+Instrumenting Function: digitalRead
+Tracking recursion for digitalRead
+Instrumenting entry point of digitalRead
+Instrumenting exit point of digitalRead
+Instrumenting Function: analogRead
+Tracking recursion for analogRead
+Instrumenting entry point of analogRead
+Instrumenting exit point of analogRead
+Instrumenting Function: delay
+Tracking recursion for delay
+Instrumenting entry point of delay
+Instrumenting exit point of delay
+Instrumenting Function: map
+Tracking recursion for map
+Instrumenting entry point of map
+Instrumenting exit point of map
+Instrumenting Function: setup
+Tracking recursion for setup
+Instrumenting entry point of setup
+Instrumenting exit point of setup
+Instrumenting Function: loop
+Tracking recursion for loop
+Instrumenting entry point of loop
+Instrumenting exit point of loop
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: lcd_init_instrumented
+Tracking recursion for lcd_init_instrumented
+Instrumenting entry point of lcd_init_instrumented
+Instrumenting exit point of lcd_init_instrumented
+Instrumenting Function: lcd_begin_instrumented
+Tracking recursion for lcd_begin_instrumented
+Instrumenting entry point of lcd_begin_instrumented
+Instrumenting exit point of lcd_begin_instrumented
+Instrumenting Function: Serial_write_instrumented
+Tracking recursion for Serial_write_instrumented
+Instrumenting entry point of Serial_write_instrumented
+Instrumenting exit point of Serial_write_instrumented
+Instrumenting Function: Serial_readString_instrumented
+Tracking recursion for Serial_readString_instrumented
+Instrumenting entry point of Serial_readString_instrumented
+Instrumenting exit point of Serial_readString_instrumented
+Instrumenting Function: lcd_clear_instrumented
+Tracking recursion for lcd_clear_instrumented
+Instrumenting entry point of lcd_clear_instrumented
+Instrumenting exit point of lcd_clear_instrumented
+Instrumenting Function: lcd_write_instrumented
+Tracking recursion for lcd_write_instrumented
+Instrumenting entry point of lcd_write_instrumented
+Instrumenting exit point of lcd_write_instrumented
+Instrumenting Function: lcd_setCursor_instrumented
+Tracking recursion for lcd_setCursor_instrumented
+Instrumenting entry point of lcd_setCursor_instrumented
+Instrumenting exit point of lcd_setCursor_instrumented

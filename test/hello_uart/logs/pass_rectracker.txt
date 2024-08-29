@@ -1,0 +1,36 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: uart_init_instrumented
+Tracking recursion for uart_init_instrumented
+Instrumenting entry point of uart_init_instrumented
+Instrumenting exit point of uart_init_instrumented
+Instrumenting Function: gpio_set_tx_instrumented
+Tracking recursion for gpio_set_tx_instrumented
+Instrumenting entry point of gpio_set_tx_instrumented
+Instrumenting exit point of gpio_set_tx_instrumented
+Instrumenting Function: gpio_set_rx_instrumented
+Tracking recursion for gpio_set_rx_instrumented
+Instrumenting entry point of gpio_set_rx_instrumented
+Instrumenting exit point of gpio_set_rx_instrumented
+Instrumenting Function: uart_putc_raw_instrumented
+Tracking recursion for uart_putc_raw_instrumented
+Instrumenting entry point of uart_putc_raw_instrumented
+Instrumenting exit point of uart_putc_raw_instrumented
+Instrumenting Function: uart_putc_instrumented
+Tracking recursion for uart_putc_instrumented
+Instrumenting entry point of uart_putc_instrumented
+Instrumenting exit point of uart_putc_instrumented
+Instrumenting Function: uart_puts_instrumented
+Tracking recursion for uart_puts_instrumented
+Instrumenting entry point of uart_puts_instrumented
+Instrumenting exit point of uart_puts_instrumented
+Instrumenting Function: uart_input_instrumented
+Tracking recursion for uart_input_instrumented
+Instrumenting entry point of uart_input_instrumented
+Instrumenting exit point of uart_input_instrumented

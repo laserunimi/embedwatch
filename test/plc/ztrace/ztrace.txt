@@ -1,0 +1,100 @@
+0;IN;-1;CallICFGNode566 {fun: Modbus_poll_instrumented}
+	1;GDEF;0;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	2;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 512 StoreStmt: [Var715 <-- Var765]	    store i8 %call6_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;2;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	4;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 466 StoreStmt: [Var362 <-- Var450]	    store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		5;ADEF;4;DOMINATOR;1;FIObjVar ID: 363 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	6;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 478 StoreStmt: [Var476 <-- Var545]	    store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 
+		7;ADEF;6;DOMINATOR;1;FIObjVar ID: 477 (base object)    %u8currentBit_instrumented = alloca i8, align 1 
+	8;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 477 StoreStmt: [Var474 <-- Var540]	    store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 
+		9;ADEF;8;DOMINATOR;1;FIObjVar ID: 475 (base object)    %u8currentRegister_instrumented = alloca i8, align 1 
+	10;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 444 StoreStmt: [Var199 <-- Var287]	    store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 
+		11;ADEF;10;DOMINATOR;1;FIObjVar ID: 200 (base object)    %u8currentBit_instrumented = alloca i8, align 1 
+	12;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 443 StoreStmt: [Var197 <-- Var282]	    store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 
+		13;ADEF;12;DOMINATOR;1;FIObjVar ID: 198 (base object)    %u8currentRegister_instrumented = alloca i8, align 1 
+	14;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 451 StoreStmt: [Var205 <-- Var334]	    store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		15;ADEF;14;DOMINATOR;1;FIObjVar ID: 206 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	16;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 462 StoreStmt: [Var12 <-- Var423]	    store i8 %inc_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;16;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	18;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 450 StoreStmt: [Var12 <-- Var326]	    store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;18;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	19;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 448 StoreStmt: [Var12 <-- Var309]	    store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;19;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	20;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 496 StoreStmt: [Var12 <-- Var579]	    store i8 6, i8* @u8BufferSize, align 1 
+		17;GDEF;20;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	21;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 485 StoreStmt: [Var12 <-- Var579]	    store i8 6, i8* @u8BufferSize, align 1 
+		17;GDEF;21;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	22;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 459 StoreStmt: [Var12 <-- Var260]	    store i8 3, i8* @u8BufferSize, align 1 
+		17;GDEF;22;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	23;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 437 StoreStmt: [Var201 <-- Var251]	    store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 
+		24;ADEF;23;DOMINATOR;1;FIObjVar ID: 202 (base object)    %u8bytesno_instrumented = alloca i8, align 1 
+	25;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 457 StoreStmt: [Var360 <-- Var388]	    store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+		26;ADEF;25;DOMINATOR;1;FIObjVar ID: 361 (base object)    %u8regsno_instrumented = alloca i8, align 1 
+	27;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 463 StoreStmt: [Var436 <-- Var433]	    store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 
+		1;GDEF;27;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	28;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 491 StoreStmt: [Var607 <-- Var624]	    store i8 %6, i8* %u8func_instrumented, align 1 
+		29;ADEF;28;DOMINATOR;1;FIObjVar ID: 608 (base object)    %u8func_instrumented = alloca i8, align 1 
+	30;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 435 StoreStmt: [Var213 <-- Var238]	    store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+		31;ADEF;30;DOMINATOR;2;FIObjVar ID: 214 (base object)    %u16Coilno_instrumented = alloca i16, align 2 
+	32;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 460 StoreStmt: [Var364 <-- Var397]	    store i8 %15, i8* %i_instrumented, align 1 
+		33;ADEF;32;DOMINATOR;1;FIObjVar ID: 365 (base object)    %i_instrumented = alloca i8, align 1 
+	34;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 479 StoreStmt: [Var488 <-- Var550]	    store i8 %20, i8* %bTemp_instrumented, align 1 
+		35;ADEF;34;DOMINATOR;1;FIObjVar ID: 489 (base object)    %bTemp_instrumented = alloca i8, align 1 
+	36;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 438 StoreStmt: [Var257 <-- Var256]	    store i8 %16, i8* %17, align 1 
+		1;GDEF;36;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	37;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 472 StoreStmt: [Var492 <-- Var516]	    store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+		38;ADEF;37;DOMINATOR;2;FIObjVar ID: 493 (base object)    %u16Coilno_instrumented = alloca i16, align 2 
+	39;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 480 StoreStmt: [Var557 <-- Var553]	    store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2, !ziuse !3 
+		40;GDEF;39;BASE;32;FIObjVar ID: 21 (base object)  @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+		41;ADEF;39;DOMINATOR;4;FIObjVar ID: 471 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+		42;ADEF;39;DOMINATOR;4;FIObjVar ID: 718 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+	43;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 434 StoreStmt: [Var211 <-- Var228]	    store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+		44;ADEF;43;DOMINATOR;2;FIObjVar ID: 212 (base object)    %u16StartCoil_instrumented = alloca i16, align 2 
+	45;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 442 StoreStmt: [Var209 <-- Var276]	    store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 
+		46;ADEF;45;DOMINATOR;2;FIObjVar ID: 210 (base object)    %u16coil_instrumented = alloca i16, align 2 
+	47;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 514 StoreStmt: [Var715 <-- Var775]	    store i8 %call10_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;47;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	48;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 495 StoreStmt: [Var649 <-- Var648]	    store i8 %16, i8* %17, align 1 
+		1;GDEF;48;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	49;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 458 StoreStmt: [Var394 <-- Var393]	    store i8 %conv9_instrumented, i8* %14, align 1 
+		1;GDEF;49;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	50;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 439 StoreStmt: [Var12 <-- Var260]	    store i8 3, i8* @u8BufferSize, align 1 
+		17;GDEF;50;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	51;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 509 StoreStmt: [Var740 <-- Var738]	    store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 
+		1;GDEF;51;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	52;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 511 StoreStmt: [Var715 <-- Var759]	    store i8 %call4_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;52;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	53;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 513 StoreStmt: [Var715 <-- Var770]	    store i8 %call8_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;53;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	54;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 494 StoreStmt: [Var646 <-- Var13]	    store i8 0, i8* %15, align 1 
+		1;GDEF;54;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	55;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 486 StoreStmt: [Var482 <-- Var583]	    store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		56;ADEF;55;DOMINATOR;1;FIObjVar ID: 483 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	57;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 461 StoreStmt: [Var420 <-- Var417]	    store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 
+		1;GDEF;57;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	58;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 501 StoreStmt: [Var613 <-- Var697]	    store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		59;ADEF;58;DOMINATOR;1;FIObjVar ID: 614 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	60;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 456 StoreStmt: [Var358 <-- Var378]	    store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+		61;ADEF;60;DOMINATOR;1;FIObjVar ID: 359 (base object)    %u8StartAdd_instrumented = alloca i8, align 1 
+	62;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 471 StoreStmt: [Var490 <-- Var506]	    store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+		63;ADEF;62;DOMINATOR;2;FIObjVar ID: 491 (base object)    %u16StartCoil_instrumented = alloca i16, align 2 
+	64;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 445 StoreStmt: [Var297 <-- Var294]	    store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 
+		1;GDEF;64;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	65;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 493 StoreStmt: [Var611 <-- Var644]	    store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+		66;ADEF;65;DOMINATOR;1;FIObjVar ID: 612 (base object)    %u8regsno_instrumented = alloca i8, align 1 
+	67;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 498 StoreStmt: [Var617 <-- Var677]	    store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 
+		68;ADEF;67;DOMINATOR;2;FIObjVar ID: 618 (base object)    %temp_instrumented = alloca i16, align 2 
+	69;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 464 StoreStmt: [Var12 <-- Var439]	    store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;69;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	70;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 499 StoreStmt: [Var686 <-- Var679]	    store i16 %24, i16* %arrayidx24_instrumented, align 2, !ziuse !3 
+		40;GDEF;70;BASE;32;FIObjVar ID: 21 (base object)  @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+		71;ADEF;70;DOMINATOR;4;FIObjVar ID: 604 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+		42;ADEF;70;DOMINATOR;4;FIObjVar ID: 718 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+	72;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 492 StoreStmt: [Var609 <-- Var634]	    store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+		73;ADEF;72;DOMINATOR;1;FIObjVar ID: 610 (base object)    %u8StartAdd_instrumented = alloca i8, align 1 
+	74;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 465 StoreStmt: [Var364 <-- Var444]	    store i8 %inc25_instrumented, i8* %i_instrumented, align 1 
+		33;ADEF;74;DOMINATOR;1;FIObjVar ID: 365 (base object)    %i_instrumented = alloca i8, align 1 
+	75;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 436 StoreStmt: [Var201 <-- Var243]	    store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 
+		24;ADEF;75;DOMINATOR;1;FIObjVar ID: 202 (base object)    %u8bytesno_instrumented = alloca i8, align 1 
+	76;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 476 StoreStmt: [Var486 <-- Var535]	    store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 
+		77;ADEF;76;DOMINATOR;2;FIObjVar ID: 487 (base object)    %u16coil_instrumented = alloca i16, align 2 

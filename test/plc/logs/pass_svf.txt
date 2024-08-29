@@ -1,0 +1,3060 @@
+
+*********CallGraph Stats***************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+TotalNode           10
+TotalCycle          0
+NodeInCycle         0
+MaxNodeInCycle      0
+TotalEdge           11
+CalRetPairInCycle   0
+#######################################################
+
+*********General Stats***************
+################ (program : plc.rectracker.bc)###############
+TotalPointers       699
+TotalObjects        78
+TotalFieldObjects   1
+MaxStructSize       0
+TotalSVFStmts       670
+TotalPTASVFStmts    152
+FIObjNum            1
+FSObjNum            76
+AddrsNum            100
+LoadsNum            131
+StoresNum           115
+CopysNum            129
+GepsNum             41
+CallsNum            15
+ReturnsNum          5
+FunctionObjs        10
+GlobalObjs          19
+HeapObjs            0
+StackObjs           47
+VarStructObj        0
+VarArrayObj         2
+ConstStructObj      0
+ConstArrayObj       0
+NonPtrObj           68
+ConstantObj         0
+IndCallSites        0
+TotalCallSite       11
+BBWith2Succ         11
+BBWith3Succ         1
+-------------------------------------------------------
+LLVMIRTime          0.002
+SymbolTableTime     0.004
+SVFIRTime           0.008
+#######################################################
+
+*********Constraint Graph Stats***************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+AvgIn/OutCopyEdge   0.313901
+AvgIn/OutLoadEdge   0.0627803
+AvgIn/OutAddrEdge   0.367713
+AvgIn/OutEdge       0.784753
+LocalVarInRecur     0
+NumOfCGNode         791
+TotalValidNode      223
+TotalValidObjNode   77
+NumOfCGEdge         93
+NumOfAddrs          82
+NumOfCopys          29
+NumOfGeps           41
+NumOfLoads          14
+NumOfStores         9
+MaxInCopyEdge       2
+MaxOutCopyEdge      30
+MaxInLoadEdge       1
+MaxOutLoadEdge      5
+MaxInStoreEdge      2
+MaxOutStoreEdge     1
+AvgIn/OutStoreEdge  0
+MaxInAddrEdge       1
+MaxOutAddrEdge      6
+#######################################################
+
+*********Andersen Pointer Analysis Stats***************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+CollapseTime        0
+TotalTime           0.01
+SCCDetectTime       0
+SCCMergeTime        0
+LoadStoreTime       0
+CopyGepTime         0
+UpdateCGTime        0
+AvgPtsSetSize       0.182048
+AvgTopLvlPtsSize    0.971831
+TotalPointers       699
+TotalObjects        79
+AddrProcessed       82
+CopyProcessed       40
+GepProcessed        42
+LoadProcessed       14
+StoreProcessed      9
+NumOfSFRs           0
+NumOfFieldExpand    0
+Pointers            699
+MemObjects          78
+DummyFieldPtrs      0
+FieldObjs           1
+MaxPtsSetSize       1
+SolveIterations     3
+IndCallSites        0
+IndEdgeSolved       0
+NumOfSCCDetect      3
+TotalCycleNum       0
+TotalPWCCycleNum    0
+NodesInCycles       0
+MaxNodesInSCC       0
+NullPointer         0
+PointsToConstPtr    0
+PointsToBlkPtr      0
+#######################################################
+
+****Persistent Points-To Cache Statistics: Andersen's analysis bitvector****
+################ (program : plc.rectracker.bc)###############
+UniquePointsToSets       80
+TotalUnions              185
+PropertyUnions           185
+UniqueUnions             0
+LookupUnions             0
+PreemptiveUnions         0
+TotalComplements         2393
+PropertyComplements      2377
+UniqueComplements        1
+LookupComplements        14
+PreemptiveComplements    1
+TotalIntersections       26
+PropertyIntersections    24
+UniqueIntersections      0
+LookupIntersections      0
+PreemptiveIntersections  2
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+TotalMSSATime       0.003
+GenRegionTime       0.001
+GenMUCHITime        0
+InsertPHITime       0
+SSARenameTime       0.002
+AverageRegSize      1
+MaxRegSize          1
+MemRegions          9
+FunEntryChi         11
+FunRetMu            9
+CSChiNode           1
+CSMuNode            2
+LoadMuNode          14
+StoreChiNode        8
+MSSAPhi             1
+FunHasEntryChi      8
+FunHasRetMu         7
+CSHasChi            1
+CSHasMu             1
+LoadHasMu           14
+StoreHasChi         8
+BBHasMSSAPhi        1
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+TotalTime           0
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0
+TLNodeTime          0
+ATNodeTime          0
+OptTime             0
+AvgWeight           1
+MSSAPhi             1
+TotalNode           190
+FormalIn            11
+FormalOut           9
+FormalParam         7
+FormalRet           0
+ActualIn            2
+ActualOut           1
+ActualParam         11
+ActualRet           0
+Addr                82
+Copy                1
+Gep                 41
+Store               9
+Load                14
+PHI                 0
+TotalEdge           129
+DirectEdge          90
+IndirectEdge        39
+IndirectEdgeLabels  39
+IndCallEdge         2
+IndRetEdge          1
+DirectCallEdge      5
+DirectRetEdge       0
+AvgInDegree         0
+AvgOutDegree        0
+MaxInDegree         3
+MaxOutDegree        30
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         2
+MaxIndOutDeg        6
+#######################################################
+
+*********Memory SSA Statistics***************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+TotalMSSATime       0.009
+GenRegionTime       0.005
+GenMUCHITime        0.002
+InsertPHITime       0.001
+SSARenameTime       0.002
+AverageRegSize      1.05357
+MaxRegSize          3
+MemRegions          56
+FunEntryChi         76
+FunRetMu            71
+CSChiNode           16
+CSMuNode            20
+LoadMuNode          128
+StoreChiNode        97
+MSSAPhi             37
+FunHasEntryChi      8
+FunHasRetMu         7
+CSHasChi            5
+CSHasMu             5
+LoadHasMu           131
+StoreHasChi         99
+BBHasMSSAPhi        11
+#######################################################
+
+****SVFG Statistics****
+
+************************
+################ (program : plc.rectracker.bc)###############
+-------------------------------------------------------
+TotalTime           0.003
+ConnDirEdgeTime     0
+ConnIndEdgeTime     0.002
+TLNodeTime          0
+ATNodeTime          0.001
+OptTime             0
+AvgWeight           1.02009
+MSSAPhi             37
+TotalNode           933
+FormalIn            76
+FormalOut           71
+FormalParam         22
+FormalRet           7
+ActualIn            20
+ActualOut           16
+ActualParam         22
+ActualRet           11
+Addr                100
+Copy                129
+Gep                 41
+Store               115
+Load                131
+PHI                 6
+TotalEdge           1144
+DirectEdge          696
+IndirectEdge        448
+IndirectEdgeLabels  457
+IndCallEdge         23
+IndRetEdge          19
+DirectCallEdge      15
+DirectRetEdge       5
+AvgInDegree         1
+AvgOutDegree        1
+MaxInDegree         5
+MaxOutDegree        32
+AvgIndInDeg         1
+AvgIndOutDeg        1
+MaxIndInDeg         5
+MaxIndOutDeg        8
+#######################################################
+args PTA type: --pta-dda
+Test - update svfg
+(fgetc) CallICFGNode566 {fun: Modbus_poll_instrumented}
+[DEBUG] findFirstStore found 1 elements
+Finding uses of   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8 with ID 740
+[SelectDef] On node: ValVar ID: 740
+   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8 
+On edge 5-->740
+On edge 738-->740
+[SelectDef] On node: ValVar ID: 738
+   %conv_instrumented = trunc i32 %call_instrumented to i8 
+On edge 737-->738
+[SelectDef] On node: ValVar ID: 737
+   %call_instrumented = call i32 @fgetc(%struct._IO_FILE* %7) 
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- 11 @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+[DEFBUILDER] Building GDef
+VFG-ID=512 (store) | IntraICFGNode607 {fun: Modbus_poll_instrumented}
+StoreStmt: [Var715 <-- Var765]	
+   store i8 %call6_instrumented, i8* %retval_instrumented, align 1 
+VFG-ID=466 (store) | IntraICFGNode291 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var362 <-- Var450]	
+   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+VFG-ID=478 (store) | IntraICFGNode413 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var476 <-- Var545]	
+   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 
+VFG-ID=477 (store) | IntraICFGNode405 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var474 <-- Var540]	
+   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 
+VFG-ID=444 (store) | IntraICFGNode196 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var199 <-- Var287]	
+   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 
+VFG-ID=443 (store) | IntraICFGNode186 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var197 <-- Var282]	
+   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 
+VFG-ID=451 (store) | IntraICFGNode183 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var205 <-- Var334]	
+   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+VFG-ID=462 (store) | IntraICFGNode309 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var12 <-- Var423]	
+   store i8 %inc_instrumented, i8* @u8BufferSize, align 1 
+VFG-ID=450 (store) | IntraICFGNode177 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var12 <-- Var326]	
+   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 
+VFG-ID=448 (store) | IntraICFGNode222 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var12 <-- Var309]	
+   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 
+VFG-ID=496 (store) | IntraICFGNode490 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var12 <-- Var579]	
+   store i8 6, i8* @u8BufferSize, align 1 
+VFG-ID=485 (store) | IntraICFGNode384 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var12 <-- Var579]	
+   store i8 6, i8* @u8BufferSize, align 1 
+VFG-ID=459 (store) | IntraICFGNode269 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var12 <-- Var260]	
+   store i8 3, i8* @u8BufferSize, align 1 
+VFG-ID=437 (store) | IntraICFGNode147 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var201 <-- Var251]	
+   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 
+VFG-ID=457 (store) | IntraICFGNode262 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var360 <-- Var388]	
+   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+VFG-ID=463 (store) | IntraICFGNode321 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var436 <-- Var433]	
+   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 
+VFG-ID=491 (store) | IntraICFGNode464 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var607 <-- Var624]	
+   store i8 %6, i8* %u8func_instrumented, align 1 
+VFG-ID=435 (store) | IntraICFGNode132 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var213 <-- Var238]	
+   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+VFG-ID=460 (store) | IntraICFGNode271 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var364 <-- Var397]	
+   store i8 %15, i8* %i_instrumented, align 1 
+VFG-ID=479 (store) | IntraICFGNode418 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var488 <-- Var550]	
+   store i8 %20, i8* %bTemp_instrumented, align 1 
+VFG-ID=438 (store) | IntraICFGNode148 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var257 <-- Var256]	
+   store i8 %16, i8* %17, align 1 
+VFG-ID=472 (store) | IntraICFGNode372 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var492 <-- Var516]	
+   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+VFG-ID=480 (store) | IntraICFGNode425 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var557 <-- Var553]	
+   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2 
+VFG-ID=434 (store) | IntraICFGNode122 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var211 <-- Var228]	
+   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+VFG-ID=442 (store) | IntraICFGNode173 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var209 <-- Var276]	
+   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 
+VFG-ID=514 (store) | IntraICFGNode609 {fun: Modbus_poll_instrumented}
+StoreStmt: [Var715 <-- Var775]	
+   store i8 %call10_instrumented, i8* %retval_instrumented, align 1 
+VFG-ID=495 (store) | IntraICFGNode489 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var649 <-- Var648]	
+   store i8 %16, i8* %17, align 1 
+VFG-ID=458 (store) | IntraICFGNode268 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var394 <-- Var393]	
+   store i8 %conv9_instrumented, i8* %14, align 1 
+VFG-ID=439 (store) | IntraICFGNode150 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var12 <-- Var260]	
+   store i8 3, i8* @u8BufferSize, align 1 
+VFG-ID=509 (store) | IntraICFGNode576 {fun: Modbus_poll_instrumented}
+StoreStmt: [Var740 <-- Var738]	
+   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 
+VFG-ID=511 (store) | IntraICFGNode606 {fun: Modbus_poll_instrumented}
+StoreStmt: [Var715 <-- Var759]	
+   store i8 %call4_instrumented, i8* %retval_instrumented, align 1 
+VFG-ID=513 (store) | IntraICFGNode608 {fun: Modbus_poll_instrumented}
+StoreStmt: [Var715 <-- Var770]	
+   store i8 %call8_instrumented, i8* %retval_instrumented, align 1 
+VFG-ID=494 (store) | IntraICFGNode486 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var646 <-- Var13]	
+   store i8 0, i8* %15, align 1 
+VFG-ID=486 (store) | IntraICFGNode394 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var482 <-- Var583]	
+   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+VFG-ID=461 (store) | IntraICFGNode304 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var420 <-- Var417]	
+   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 
+VFG-ID=501 (store) | IntraICFGNode508 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var613 <-- Var697]	
+   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+VFG-ID=456 (store) | IntraICFGNode252 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var358 <-- Var378]	
+   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+VFG-ID=471 (store) | IntraICFGNode362 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var490 <-- Var506]	
+   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+VFG-ID=445 (store) | IntraICFGNode208 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var297 <-- Var294]	
+   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 
+VFG-ID=493 (store) | IntraICFGNode484 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var611 <-- Var644]	
+   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+VFG-ID=498 (store) | IntraICFGNode529 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var617 <-- Var677]	
+   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 
+VFG-ID=464 (store) | IntraICFGNode324 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var12 <-- Var439]	
+   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 
+VFG-ID=499 (store) | IntraICFGNode538 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var686 <-- Var679]	
+   store i16 %24, i16* %arrayidx24_instrumented, align 2 
+VFG-ID=492 (store) | IntraICFGNode474 {fun: Modbus_process_FC16_instrumented}
+StoreStmt: [Var609 <-- Var634]	
+   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+VFG-ID=465 (store) | IntraICFGNode328 {fun: Modbus_process_FC3_instrumented}
+StoreStmt: [Var364 <-- Var444]	
+   store i8 %inc25_instrumented, i8* %i_instrumented, align 1 
+VFG-ID=436 (store) | IntraICFGNode137 {fun: Modbus_process_FC1_instrumented}
+StoreStmt: [Var201 <-- Var243]	
+   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 
+VFG-ID=476 (store) | IntraICFGNode395 {fun: Modbus_process_FC15_instrumented}
+StoreStmt: [Var486 <-- Var535]	
+   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 
+Store:   store i8 %call6_instrumented, i8* %retval_instrumented, align 1
+Store where:   %retval_instrumented = alloca i8, align 1
+Target of   store i8 %call6_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Store where:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Target of   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 362
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 363
+[SelectDef] On node: FIObjVar ID: 363 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 363 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1
+Store where:   %u8currentBit_instrumented = alloca i8, align 1
+Target of   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 is   %u8currentBit_instrumented = alloca i8, align 1 with PAG id 476
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 477
+[SelectDef] On node: FIObjVar ID: 477 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 477 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1
+Store where:   %u8currentRegister_instrumented = alloca i8, align 1
+Target of   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 is   %u8currentRegister_instrumented = alloca i8, align 1 with PAG id 474
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 475
+[SelectDef] On node: FIObjVar ID: 475 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 475 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1
+Store where:   %u8currentBit_instrumented = alloca i8, align 1
+Target of   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 is   %u8currentBit_instrumented = alloca i8, align 1 with PAG id 199
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 200
+[SelectDef] On node: FIObjVar ID: 200 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 200 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1
+Store where:   %u8currentRegister_instrumented = alloca i8, align 1
+Target of   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 is   %u8currentRegister_instrumented = alloca i8, align 1 with PAG id 197
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 198
+[SelectDef] On node: FIObjVar ID: 198 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 198 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Store where:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Target of   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 205
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 206
+[SelectDef] On node: FIObjVar ID: 206 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 206 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %inc_instrumented, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 %inc_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+[DEFBUILDER] Building GDef
+Store:   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 6, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 6, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 6, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 6, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 3, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 3, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1
+Store where:   %u8bytesno_instrumented = alloca i8, align 1
+Target of   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 is   %u8bytesno_instrumented = alloca i8, align 1 with PAG id 201
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[SelectDef] On node: FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1
+Store where:   %u8regsno_instrumented = alloca i8, align 1
+Target of   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 is   %u8regsno_instrumented = alloca i8, align 1 with PAG id 360
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 361
+[SelectDef] On node: FIObjVar ID: 361 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 361 (base object)
+   %u8regsno_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1
+Store where:   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Target of   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 is   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented with PAG id 436
+Checking PagEdge node associated to:   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %6, i8* %u8func_instrumented, align 1
+Store where:   %u8func_instrumented = alloca i8, align 1
+Target of   store i8 %6, i8* %u8func_instrumented, align 1 is   %u8func_instrumented = alloca i8, align 1 with PAG id 607
+Checking PagEdge node associated to:   %u8func_instrumented = alloca i8, align 1
+Visist starts at PAGNode 608
+[SelectDef] On node: FIObjVar ID: 608 (base object)
+   %u8func_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 608 (base object)
+   %u8func_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2
+Store where:   %u16Coilno_instrumented = alloca i16, align 2
+Target of   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 is   %u16Coilno_instrumented = alloca i16, align 2 with PAG id 213
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 214
+[SelectDef] On node: FIObjVar ID: 214 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 214 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %15, i8* %i_instrumented, align 1
+Store where:   %i_instrumented = alloca i8, align 1
+Target of   store i8 %15, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 364
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[SelectDef] On node: FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %20, i8* %bTemp_instrumented, align 1
+Store where:   %bTemp_instrumented = alloca i8, align 1
+Target of   store i8 %20, i8* %bTemp_instrumented, align 1 is   %bTemp_instrumented = alloca i8, align 1 with PAG id 488
+Checking PagEdge node associated to:   %bTemp_instrumented = alloca i8, align 1
+Visist starts at PAGNode 489
+[SelectDef] On node: FIObjVar ID: 489 (base object)
+   %bTemp_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 489 (base object)
+   %bTemp_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %16, i8* %17, align 1
+Store where:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Target of   store i8 %16, i8* %17, align 1 is   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2 with PAG id 257
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2
+Store where:   %u16Coilno_instrumented = alloca i16, align 2
+Target of   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 is   %u16Coilno_instrumented = alloca i16, align 2 with PAG id 492
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 493
+[SelectDef] On node: FIObjVar ID: 493 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 493 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2
+Store where:   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Target of   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2 is   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented with PAG id 557
+Checking PagEdge node associated to:   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Visist starts at PAGNode 554
+[SelectDef] On node: ValVar ID: 554
+   %22 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 470-->554
+[SelectDef] On node: ValVar ID: 470
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 471-->470
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 470
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 462-->470
+[SelectDef] On node: ValVar ID: 462
+ i16* %regs { 0th arg Modbus_process_FC15_instrumented  }
+On edge 768-->462
+[SelectDef] On node: ValVar ID: 768
+   %19 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 717-->768
+[SelectDef] On node: ValVar ID: 717
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 718-->717
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 717
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 707-->717
+[SelectDef] On node: ValVar ID: 707
+ i16* %regs { 0th arg Modbus_poll_instrumented  }
+On edge 85-->707
+[SelectDef] On node: ValVar ID: 85
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+On edge 19-->85
+[SelectDef] On node: ValVar ID: 19
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+On edge 21-->19
+[SelectDefs] Adding node: FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[STORE] Found defs:
+[DEFBUILDER] Building GDef
+[DEFBUILDER] Building ADef
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2
+Store where:   %u16StartCoil_instrumented = alloca i16, align 2
+Target of   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 is   %u16StartCoil_instrumented = alloca i16, align 2 with PAG id 211
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 212
+[SelectDef] On node: FIObjVar ID: 212 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 212 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2
+Store where:   %u16coil_instrumented = alloca i16, align 2
+Target of   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 is   %u16coil_instrumented = alloca i16, align 2 with PAG id 209
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 210
+[SelectDef] On node: FIObjVar ID: 210 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 210 (base object)
+   %u16coil_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %call10_instrumented, i8* %retval_instrumented, align 1
+Store where:   %retval_instrumented = alloca i8, align 1
+Target of   store i8 %call10_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+Store:   store i8 %16, i8* %17, align 1
+Store where:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Target of   store i8 %16, i8* %17, align 1 is   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5 with PAG id 649
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %conv9_instrumented, i8* %14, align 1
+Store where:   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Target of   store i8 %conv9_instrumented, i8* %14, align 1 is   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2 with PAG id 394
+Checking PagEdge node associated to:   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 3, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 3, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1
+Store where:   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Target of   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 is   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8 with PAG id 740
+Checking PagEdge node associated to:   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %call4_instrumented, i8* %retval_instrumented, align 1
+Store where:   %retval_instrumented = alloca i8, align 1
+Target of   store i8 %call4_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+Store:   store i8 %call8_instrumented, i8* %retval_instrumented, align 1
+Store where:   %retval_instrumented = alloca i8, align 1
+Target of   store i8 %call8_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+Store:   store i8 0, i8* %15, align 1
+Store where:   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Target of   store i8 0, i8* %15, align 1 is   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4 with PAG id 646
+Checking PagEdge node associated to:   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Store where:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Target of   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 482
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 483
+[SelectDef] On node: FIObjVar ID: 483 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 483 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1
+Store where:   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Target of   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 is   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented with PAG id 420
+Checking PagEdge node associated to:   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Store where:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Target of   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 613
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 614
+[SelectDef] On node: FIObjVar ID: 614 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 614 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1
+Store where:   %u8StartAdd_instrumented = alloca i8, align 1
+Target of   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 is   %u8StartAdd_instrumented = alloca i8, align 1 with PAG id 358
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 359
+[SelectDef] On node: FIObjVar ID: 359 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 359 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2
+Store where:   %u16StartCoil_instrumented = alloca i16, align 2
+Target of   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 is   %u16StartCoil_instrumented = alloca i16, align 2 with PAG id 490
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 491
+[SelectDef] On node: FIObjVar ID: 491 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 491 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1
+Store where:   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Target of   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 is   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented with PAG id 297
+Checking PagEdge node associated to:   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[STORE] Found defs:
+Store:   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1
+Store where:   %u8regsno_instrumented = alloca i8, align 1
+Target of   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 is   %u8regsno_instrumented = alloca i8, align 1 with PAG id 611
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 612
+[SelectDef] On node: FIObjVar ID: 612 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 612 (base object)
+   %u8regsno_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2
+Store where:   %temp_instrumented = alloca i16, align 2
+Target of   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 is   %temp_instrumented = alloca i16, align 2 with PAG id 617
+Checking PagEdge node associated to:   %temp_instrumented = alloca i16, align 2
+Visist starts at PAGNode 618
+[SelectDef] On node: FIObjVar ID: 618 (base object)
+   %temp_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 618 (base object)
+   %temp_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1
+Store where: @u8BufferSize = common dso_local global i8 0, align 1
+Target of   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+[STORE] Found defs:
+Store:   store i16 %24, i16* %arrayidx24_instrumented, align 2
+Store where:   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Target of   store i16 %24, i16* %arrayidx24_instrumented, align 2 is   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented with PAG id 686
+Checking PagEdge node associated to:   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Visist starts at PAGNode 680
+[SelectDef] On node: ValVar ID: 680
+   %25 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 603-->680
+[SelectDef] On node: ValVar ID: 603
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 604-->603
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 603
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 595-->603
+[SelectDef] On node: ValVar ID: 595
+ i16* %regs { 0th arg Modbus_process_FC16_instrumented  }
+On edge 773-->595
+[SelectDef] On node: ValVar ID: 773
+   %21 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 717-->773
+[SelectDef] On node: ValVar ID: 717
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 718-->717
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 717
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 707-->717
+[SelectDef] On node: ValVar ID: 707
+ i16* %regs { 0th arg Modbus_poll_instrumented  }
+On edge 85-->707
+[SelectDef] On node: ValVar ID: 85
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+On edge 19-->85
+[SelectDef] On node: ValVar ID: 19
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+On edge 21-->19
+[SelectDefs] Adding node: FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1
+Store where:   %u8StartAdd_instrumented = alloca i8, align 1
+Target of   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 is   %u8StartAdd_instrumented = alloca i8, align 1 with PAG id 609
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 610
+[SelectDef] On node: FIObjVar ID: 610 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 610 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+Store:   store i8 %inc25_instrumented, i8* %i_instrumented, align 1
+Store where:   %i_instrumented = alloca i8, align 1
+Target of   store i8 %inc25_instrumented, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 364
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[SelectDef] On node: FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+Store:   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1
+Store where:   %u8bytesno_instrumented = alloca i8, align 1
+Target of   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 is   %u8bytesno_instrumented = alloca i8, align 1 with PAG id 201
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[SelectDef] On node: FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1  to result
+[STORE] Found defs:
+Store:   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2
+Store where:   %u16coil_instrumented = alloca i16, align 2
+Target of   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 is   %u16coil_instrumented = alloca i16, align 2 with PAG id 486
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 487
+[SelectDef] On node: FIObjVar ID: 487 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 487 (base object)
+   %u16coil_instrumented = alloca i16, align 2  to result
+[STORE] Found defs:
+[DEFBUILDER] Building ADef
+ Analyzing call to Modbus_process_FC3_instrumented inside Modbus_poll_instrumented
+Function Modbus_process_FC3_instrumentedis instrumented
+Parameter 0 is a pointer
+Checking aliasing of  with argument regs of Modbus_poll_instrumented
+Parameter 0 is aliased with argument regs
+Parameter 1 is not a pointer
+Parameter 2 is not a pointer
+ Analyzing call to printf inside Modbus_poll_instrumented
+ Analyzing call to Modbus_process_FC1_instrumented inside Modbus_poll_instrumented
+Function Modbus_process_FC1_instrumentedis instrumented
+Parameter 0 is a pointer
+Checking aliasing of  with argument regs of Modbus_poll_instrumented
+Parameter 0 is aliased with argument regs
+Parameter 1 is not a pointer
+Parameter 2 is not a pointer
+ Analyzing call to fgetc inside Modbus_poll_instrumented
+ Analyzing call to printf inside Modbus_process_FC16_instrumented
+ Analyzing call to Modbus_process_FC16_instrumented inside Modbus_poll_instrumented
+Function Modbus_process_FC16_instrumentedis instrumented
+Parameter 0 is a pointer
+Checking aliasing of  with argument regs of Modbus_poll_instrumented
+Parameter 0 is aliased with argument regs
+Parameter 1 is not a pointer
+Parameter 2 is not a pointer
+ Analyzing call to printf inside Modbus_process_FC15_instrumented
+ Analyzing call to Modbus_process_FC15_instrumented inside Modbus_poll_instrumented
+Function Modbus_process_FC15_instrumentedis instrumented
+Parameter 0 is a pointer
+Checking aliasing of  with argument regs of Modbus_poll_instrumented
+Parameter 0 is aliased with argument regs
+Parameter 1 is not a pointer
+Parameter 2 is not a pointer
+ Analyzing call to printf inside Modbus_process_FC3_instrumented
+ Analyzing call to printf inside Modbus_process_FC1_instrumented
+ Analyzing call to Modbus_poll_instrumented inside main
+Function Modbus_poll_instrumentedis instrumented
+Parameter 0 is a pointer
+Def of param: GepVFGNode ID: 260 GepStmt: [Var85 <-- Var19]	
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+[SelectDef] On node: ValVar ID: 85
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+On edge 19-->85
+[SelectDef] On node: ValVar ID: 19
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+On edge 21-->19
+[SelectDefs] Adding node: FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+Defs of param 0 are 1
+FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+Defs of param  number 0 is 40 and has lenght 32
+Parameter 1 is not a pointer
+Parameter 2 is not a pointer
+Checking function printf
+Checking function fgetc
+Checking function main
+Checking function bitWrite_instrumented
+Checking function bitRead_instrumented
+Checking function Modbus_process_FC1_instrumented
+Checking function Modbus_process_FC3_instrumented
+Checking function Modbus_process_FC15_instrumented
+Checking function Modbus_process_FC16_instrumented
+Checking function Modbus_poll_instrumented
+Checking function printf
+Checking function fgetc
+Checking function main
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i32 0, i32* %retval, align 4
+Target of   store i32 0, i32* %retval, align 4 is   %retval = alloca i32, align 4 with PAG id 80
+Checking PagEdge node associated to:   %retval = alloca i32, align 4
+Visist starts at PAGNode 81
+[SelectDef] On node: FIObjVar ID: 81 (base object)
+   %retval = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 81 (base object)
+   %retval = alloca i32, align 4  to result
+Found:
+	- NodeId: 81 Instr:   %retval = alloca i32, align 4
+Checking function bitWrite_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i8* %x, i8** %x.addr_instrumented, align 4
+Target of   store i8* %x, i8** %x.addr_instrumented, align 4 is   %x.addr_instrumented = alloca i8*, align 4 with PAG id 103
+Checking PagEdge node associated to:   %x.addr_instrumented = alloca i8*, align 4
+Visist starts at PAGNode 104
+[SelectDef] On node: FIObjVar ID: 104 (base object)
+   %x.addr_instrumented = alloca i8*, align 4 
+Start node is a Def already, adding FIObjVar ID: 104 (base object)
+   %x.addr_instrumented = alloca i8*, align 4  to result
+Found:
+	- NodeId: 104 Instr:   %x.addr_instrumented = alloca i8*, align 4
+Finding defs for:   store i8 %n, i8* %n.addr_instrumented, align 1
+Target of   store i8 %n, i8* %n.addr_instrumented, align 1 is   %n.addr_instrumented = alloca i8, align 1 with PAG id 105
+Checking PagEdge node associated to:   %n.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 106
+[SelectDef] On node: FIObjVar ID: 106 (base object)
+   %n.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 106 (base object)
+   %n.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 106 Instr:   %n.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %value, i8* %value.addr_instrumented, align 1
+Target of   store i8 %value, i8* %value.addr_instrumented, align 1 is   %value.addr_instrumented = alloca i8, align 1 with PAG id 107
+Checking PagEdge node associated to:   %value.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 108
+[SelectDef] On node: FIObjVar ID: 108 (base object)
+   %value.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 108 (base object)
+   %value.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 108 Instr:   %value.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv4_instrumented, i8* %6, align 1
+Target of   store i8 %conv4_instrumented, i8* %6, align 1 is   %6 = load i8*, i8** %x.addr_instrumented, align 4 with PAG id 119
+Checking PagEdge node associated to:   %6 = load i8*, i8** %x.addr_instrumented, align 4
+Visist starts at PAGNode 103
+[SelectDef] On node: ValVar ID: 103
+   %x.addr_instrumented = alloca i8*, align 4 
+On edge 104-->103
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 103
+	-  %x.addr_instrumented = alloca i8*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 104 (base object)
+   %x.addr_instrumented = alloca i8*, align 4 
+On edge 94-->103
+[SelectDef] On node: ValVar ID: 94
+ i8* %x { 0th arg bitWrite_instrumented  }
+Found:
+	- NodeId: 104 Instr:   %x.addr_instrumented = alloca i8*, align 4
+Finding defs for:   store i8 %conv12_instrumented, i8* %10, align 1
+Target of   store i8 %conv12_instrumented, i8* %10, align 1 is   %10 = load i8*, i8** %x.addr_instrumented, align 4 with PAG id 136
+Checking PagEdge node associated to:   %10 = load i8*, i8** %x.addr_instrumented, align 4
+Visist starts at PAGNode 103
+[SelectDef] On node: ValVar ID: 103
+   %x.addr_instrumented = alloca i8*, align 4 
+On edge 104-->103
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 103
+	-  %x.addr_instrumented = alloca i8*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 104 (base object)
+   %x.addr_instrumented = alloca i8*, align 4 
+On edge 94-->103
+[SelectDef] On node: ValVar ID: 94
+ i8* %x { 0th arg bitWrite_instrumented  }
+Found:
+	- NodeId: 104 Instr:   %x.addr_instrumented = alloca i8*, align 4
+Finding defs for:   store i16 %15, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %15, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function bitRead_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i8* %x, i8** %x.addr_instrumented, align 4
+Target of   store i8* %x, i8** %x.addr_instrumented, align 4 is   %x.addr_instrumented = alloca i8*, align 4 with PAG id 162
+Checking PagEdge node associated to:   %x.addr_instrumented = alloca i8*, align 4
+Visist starts at PAGNode 163
+[SelectDef] On node: FIObjVar ID: 163 (base object)
+   %x.addr_instrumented = alloca i8*, align 4 
+Start node is a Def already, adding FIObjVar ID: 163 (base object)
+   %x.addr_instrumented = alloca i8*, align 4  to result
+Found:
+	- NodeId: 163 Instr:   %x.addr_instrumented = alloca i8*, align 4
+Finding defs for:   store i8 %n, i8* %n.addr_instrumented, align 1
+Target of   store i8 %n, i8* %n.addr_instrumented, align 1 is   %n.addr_instrumented = alloca i8, align 1 with PAG id 164
+Checking PagEdge node associated to:   %n.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 165
+[SelectDef] On node: FIObjVar ID: 165 (base object)
+   %n.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 165 (base object)
+   %n.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 165 Instr:   %n.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %10, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %10, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function Modbus_process_FC1_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16* %regs, i16** %regs.addr_instrumented, align 4
+Target of   store i16* %regs, i16** %regs.addr_instrumented, align 4 is   %regs.addr_instrumented = alloca i16*, align 4 with PAG id 193
+Checking PagEdge node associated to:   %regs.addr_instrumented = alloca i16*, align 4
+Visist starts at PAGNode 194
+[SelectDef] On node: FIObjVar ID: 194 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+Start node is a Def already, adding FIObjVar ID: 194 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4  to result
+Found:
+	- NodeId: 194 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %u8size, i8* %u8size.addr_instrumented, align 1
+Target of   store i8 %u8size, i8* %u8size.addr_instrumented, align 1 is   %u8size.addr_instrumented = alloca i8, align 1 with PAG id 195
+Checking PagEdge node associated to:   %u8size.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 196
+[SelectDef] On node: FIObjVar ID: 196 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 196 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 196 Instr:   %u8size.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2
+Target of   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 is   %u16StartCoil_instrumented = alloca i16, align 2 with PAG id 211
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 212
+[SelectDef] On node: FIObjVar ID: 212 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 212 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 212 Instr:   %u16StartCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2
+Target of   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 is   %u16Coilno_instrumented = alloca i16, align 2 with PAG id 213
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 214
+[SelectDef] On node: FIObjVar ID: 214 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 214 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 214 Instr:   %u16Coilno_instrumented = alloca i16, align 2
+Finding defs for:   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1
+Target of   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 is   %u8bytesno_instrumented = alloca i8, align 1 with PAG id 201
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[SelectDef] On node: FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 202 Instr:   %u8bytesno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1
+Target of   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 is   %u8bytesno_instrumented = alloca i8, align 1 with PAG id 201
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[SelectDef] On node: FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 202 Instr:   %u8bytesno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %16, i8* %17, align 1
+Target of   store i8 %16, i8* %17, align 1 is   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2 with PAG id 257
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 3, i8* @u8BufferSize, align 1
+Target of   store i8 3, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 0, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 0, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 203
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 204
+[SelectDef] On node: FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 204 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i16 0, i16* %u16currentCoil_instrumented, align 2
+Target of   store i16 0, i16* %u16currentCoil_instrumented, align 2 is   %u16currentCoil_instrumented = alloca i16, align 2 with PAG id 207
+Checking PagEdge node associated to:   %u16currentCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 208
+[SelectDef] On node: FIObjVar ID: 208 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 208 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 208 Instr:   %u16currentCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2
+Target of   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 is   %u16coil_instrumented = alloca i16, align 2 with PAG id 209
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 210
+[SelectDef] On node: FIObjVar ID: 210 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 210 (base object)
+   %u16coil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 210 Instr:   %u16coil_instrumented = alloca i16, align 2
+Finding defs for:   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1
+Target of   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 is   %u8currentRegister_instrumented = alloca i8, align 1 with PAG id 197
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 198
+[SelectDef] On node: FIObjVar ID: 198 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 198 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 198 Instr:   %u8currentRegister_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1
+Target of   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 is   %u8currentBit_instrumented = alloca i8, align 1 with PAG id 199
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 200
+[SelectDef] On node: FIObjVar ID: 200 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 200 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 200 Instr:   %u8currentBit_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1
+Target of   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 is   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented with PAG id 297
+Checking PagEdge node associated to:   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 %inc28_instrumented, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 %inc28_instrumented, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 203
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 204
+[SelectDef] On node: FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 204 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 0, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 0, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 203
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 204
+[SelectDef] On node: FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 204 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 204 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1
+Target of   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i16 %inc35_instrumented, i16* %u16currentCoil_instrumented, align 2
+Target of   store i16 %inc35_instrumented, i16* %u16currentCoil_instrumented, align 2 is   %u16currentCoil_instrumented = alloca i16, align 2 with PAG id 207
+Checking PagEdge node associated to:   %u16currentCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 208
+[SelectDef] On node: FIObjVar ID: 208 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 208 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 208 Instr:   %u16currentCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1
+Target of   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Target of   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 205
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 206
+[SelectDef] On node: FIObjVar ID: 206 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 206 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 206 Instr:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %39, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %39, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function Modbus_process_FC3_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16* %regs, i16** %regs.addr_instrumented, align 4
+Target of   store i16* %regs, i16** %regs.addr_instrumented, align 4 is   %regs.addr_instrumented = alloca i16*, align 4 with PAG id 354
+Checking PagEdge node associated to:   %regs.addr_instrumented = alloca i16*, align 4
+Visist starts at PAGNode 355
+[SelectDef] On node: FIObjVar ID: 355 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+Start node is a Def already, adding FIObjVar ID: 355 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4  to result
+Found:
+	- NodeId: 355 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %u8size, i8* %u8size.addr_instrumented, align 1
+Target of   store i8 %u8size, i8* %u8size.addr_instrumented, align 1 is   %u8size.addr_instrumented = alloca i8, align 1 with PAG id 356
+Checking PagEdge node associated to:   %u8size.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 357
+[SelectDef] On node: FIObjVar ID: 357 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 357 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 357 Instr:   %u8size.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1
+Target of   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 is   %u8StartAdd_instrumented = alloca i8, align 1 with PAG id 358
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 359
+[SelectDef] On node: FIObjVar ID: 359 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 359 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 359 Instr:   %u8StartAdd_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1
+Target of   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 is   %u8regsno_instrumented = alloca i8, align 1 with PAG id 360
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 361
+[SelectDef] On node: FIObjVar ID: 361 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 361 (base object)
+   %u8regsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 361 Instr:   %u8regsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv9_instrumented, i8* %14, align 1
+Target of   store i8 %conv9_instrumented, i8* %14, align 1 is   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2 with PAG id 394
+Checking PagEdge node associated to:   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 3, i8* @u8BufferSize, align 1
+Target of   store i8 3, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 %15, i8* %i_instrumented, align 1
+Target of   store i8 %15, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 364
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[SelectDef] On node: FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 365 Instr:   %i_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1
+Target of   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 is   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented with PAG id 420
+Checking PagEdge node associated to:   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 %inc_instrumented, i8* @u8BufferSize, align 1
+Target of   store i8 %inc_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1
+Target of   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 is   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented with PAG id 436
+Checking PagEdge node associated to:   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1
+Target of   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 %inc25_instrumented, i8* %i_instrumented, align 1
+Target of   store i8 %inc25_instrumented, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 364
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[SelectDef] On node: FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 365 Instr:   %i_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Target of   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 362
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 363
+[SelectDef] On node: FIObjVar ID: 363 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 363 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 363 Instr:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %35, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %35, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function Modbus_process_FC15_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16* %regs, i16** %regs.addr_instrumented, align 4
+Target of   store i16* %regs, i16** %regs.addr_instrumented, align 4 is   %regs.addr_instrumented = alloca i16*, align 4 with PAG id 470
+Checking PagEdge node associated to:   %regs.addr_instrumented = alloca i16*, align 4
+Visist starts at PAGNode 471
+[SelectDef] On node: FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+Start node is a Def already, adding FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4  to result
+Found:
+	- NodeId: 471 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %u8size, i8* %u8size.addr_instrumented, align 1
+Target of   store i8 %u8size, i8* %u8size.addr_instrumented, align 1 is   %u8size.addr_instrumented = alloca i8, align 1 with PAG id 472
+Checking PagEdge node associated to:   %u8size.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 473
+[SelectDef] On node: FIObjVar ID: 473 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 473 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 473 Instr:   %u8size.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2
+Target of   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 is   %u16StartCoil_instrumented = alloca i16, align 2 with PAG id 490
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 491
+[SelectDef] On node: FIObjVar ID: 491 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 491 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 491 Instr:   %u16StartCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2
+Target of   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 is   %u16Coilno_instrumented = alloca i16, align 2 with PAG id 492
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 493
+[SelectDef] On node: FIObjVar ID: 493 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 493 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 493 Instr:   %u16Coilno_instrumented = alloca i16, align 2
+Finding defs for:   store i8 0, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 0, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 480
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 481
+[SelectDef] On node: FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 481 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 7, i8* %u8frameByte_instrumented, align 1
+Target of   store i8 7, i8* %u8frameByte_instrumented, align 1 is   %u8frameByte_instrumented = alloca i8, align 1 with PAG id 478
+Checking PagEdge node associated to:   %u8frameByte_instrumented = alloca i8, align 1
+Visist starts at PAGNode 479
+[SelectDef] On node: FIObjVar ID: 479 (base object)
+   %u8frameByte_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 479 (base object)
+   %u8frameByte_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 479 Instr:   %u8frameByte_instrumented = alloca i8, align 1
+Finding defs for:   store i16 0, i16* %u16currentCoil_instrumented, align 2
+Target of   store i16 0, i16* %u16currentCoil_instrumented, align 2 is   %u16currentCoil_instrumented = alloca i16, align 2 with PAG id 484
+Checking PagEdge node associated to:   %u16currentCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 485
+[SelectDef] On node: FIObjVar ID: 485 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 485 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 485 Instr:   %u16currentCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2
+Target of   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 is   %u16coil_instrumented = alloca i16, align 2 with PAG id 486
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 487
+[SelectDef] On node: FIObjVar ID: 487 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 487 (base object)
+   %u16coil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 487 Instr:   %u16coil_instrumented = alloca i16, align 2
+Finding defs for:   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1
+Target of   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 is   %u8currentRegister_instrumented = alloca i8, align 1 with PAG id 474
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 475
+[SelectDef] On node: FIObjVar ID: 475 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 475 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 475 Instr:   %u8currentRegister_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1
+Target of   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 is   %u8currentBit_instrumented = alloca i8, align 1 with PAG id 476
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 477
+[SelectDef] On node: FIObjVar ID: 477 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 477 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 477 Instr:   %u8currentBit_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %20, i8* %bTemp_instrumented, align 1
+Target of   store i8 %20, i8* %bTemp_instrumented, align 1 is   %bTemp_instrumented = alloca i8, align 1 with PAG id 488
+Checking PagEdge node associated to:   %bTemp_instrumented = alloca i8, align 1
+Visist starts at PAGNode 489
+[SelectDef] On node: FIObjVar ID: 489 (base object)
+   %bTemp_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 489 (base object)
+   %bTemp_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 489 Instr:   %bTemp_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2
+Target of   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2 is   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented with PAG id 557
+Checking PagEdge node associated to:   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Visist starts at PAGNode 554
+[SelectDef] On node: ValVar ID: 554
+   %22 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 470-->554
+[SelectDef] On node: ValVar ID: 470
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 471-->470
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 470
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 462-->470
+[SelectDef] On node: ValVar ID: 462
+ i16* %regs { 0th arg Modbus_process_FC15_instrumented  }
+On edge 768-->462
+[SelectDef] On node: ValVar ID: 768
+   %19 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 717-->768
+[SelectDef] On node: ValVar ID: 717
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 718-->717
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 717
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 707-->717
+[SelectDef] On node: ValVar ID: 707
+ i16* %regs { 0th arg Modbus_poll_instrumented  }
+On edge 85-->707
+[SelectDef] On node: ValVar ID: 85
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+On edge 19-->85
+[SelectDef] On node: ValVar ID: 19
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+On edge 21-->19
+[SelectDefs] Adding node: FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+Found:
+	- NodeId: 21 Instr: @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2
+	- NodeId: 471 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+	- NodeId: 718 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %inc_instrumented, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 %inc_instrumented, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 480
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 481
+[SelectDef] On node: FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 481 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 0, i8* %u8bitsno_instrumented, align 1
+Target of   store i8 0, i8* %u8bitsno_instrumented, align 1 is   %u8bitsno_instrumented = alloca i8, align 1 with PAG id 480
+Checking PagEdge node associated to:   %u8bitsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 481
+[SelectDef] On node: FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 481 (base object)
+   %u8bitsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 481 Instr:   %u8bitsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %inc24_instrumented, i8* %u8frameByte_instrumented, align 1
+Target of   store i8 %inc24_instrumented, i8* %u8frameByte_instrumented, align 1 is   %u8frameByte_instrumented = alloca i8, align 1 with PAG id 478
+Checking PagEdge node associated to:   %u8frameByte_instrumented = alloca i8, align 1
+Visist starts at PAGNode 479
+[SelectDef] On node: FIObjVar ID: 479 (base object)
+   %u8frameByte_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 479 (base object)
+   %u8frameByte_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 479 Instr:   %u8frameByte_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %inc25_instrumented, i16* %u16currentCoil_instrumented, align 2
+Target of   store i16 %inc25_instrumented, i16* %u16currentCoil_instrumented, align 2 is   %u16currentCoil_instrumented = alloca i16, align 2 with PAG id 484
+Checking PagEdge node associated to:   %u16currentCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 485
+[SelectDef] On node: FIObjVar ID: 485 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 485 (base object)
+   %u16currentCoil_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 485 Instr:   %u16currentCoil_instrumented = alloca i16, align 2
+Finding defs for:   store i8 6, i8* @u8BufferSize, align 1
+Target of   store i8 6, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Target of   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 482
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 483
+[SelectDef] On node: FIObjVar ID: 483 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 483 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 483 Instr:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %33, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %33, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function Modbus_process_FC16_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16* %regs, i16** %regs.addr_instrumented, align 4
+Target of   store i16* %regs, i16** %regs.addr_instrumented, align 4 is   %regs.addr_instrumented = alloca i16*, align 4 with PAG id 603
+Checking PagEdge node associated to:   %regs.addr_instrumented = alloca i16*, align 4
+Visist starts at PAGNode 604
+[SelectDef] On node: FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+Start node is a Def already, adding FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4  to result
+Found:
+	- NodeId: 604 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %u8size, i8* %u8size.addr_instrumented, align 1
+Target of   store i8 %u8size, i8* %u8size.addr_instrumented, align 1 is   %u8size.addr_instrumented = alloca i8, align 1 with PAG id 605
+Checking PagEdge node associated to:   %u8size.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 606
+[SelectDef] On node: FIObjVar ID: 606 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 606 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 606 Instr:   %u8size.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %6, i8* %u8func_instrumented, align 1
+Target of   store i8 %6, i8* %u8func_instrumented, align 1 is   %u8func_instrumented = alloca i8, align 1 with PAG id 607
+Checking PagEdge node associated to:   %u8func_instrumented = alloca i8, align 1
+Visist starts at PAGNode 608
+[SelectDef] On node: FIObjVar ID: 608 (base object)
+   %u8func_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 608 (base object)
+   %u8func_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 608 Instr:   %u8func_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1
+Target of   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 is   %u8StartAdd_instrumented = alloca i8, align 1 with PAG id 609
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 610
+[SelectDef] On node: FIObjVar ID: 610 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 610 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 610 Instr:   %u8StartAdd_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1
+Target of   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 is   %u8regsno_instrumented = alloca i8, align 1 with PAG id 611
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 612
+[SelectDef] On node: FIObjVar ID: 612 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 612 (base object)
+   %u8regsno_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 612 Instr:   %u8regsno_instrumented = alloca i8, align 1
+Finding defs for:   store i8 0, i8* %15, align 1
+Target of   store i8 0, i8* %15, align 1 is   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4 with PAG id 646
+Checking PagEdge node associated to:   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 %16, i8* %17, align 1
+Target of   store i8 %16, i8* %17, align 1 is   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5 with PAG id 649
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i8 6, i8* @u8BufferSize, align 1
+Target of   store i8 6, i8* @u8BufferSize, align 1 is @u8BufferSize = common dso_local global i8 0, align 1 with PAG id 12
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[SelectDef] On node: FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 14 Instr: @u8BufferSize = common dso_local global i8 0, align 1
+Finding defs for:   store i8 0, i8* %i_instrumented, align 1
+Target of   store i8 0, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 615
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 616
+[SelectDef] On node: FIObjVar ID: 616 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 616 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 616 Instr:   %i_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2
+Target of   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 is   %temp_instrumented = alloca i16, align 2 with PAG id 617
+Checking PagEdge node associated to:   %temp_instrumented = alloca i16, align 2
+Visist starts at PAGNode 618
+[SelectDef] On node: FIObjVar ID: 618 (base object)
+   %temp_instrumented = alloca i16, align 2 
+Start node is a Def already, adding FIObjVar ID: 618 (base object)
+   %temp_instrumented = alloca i16, align 2  to result
+Found:
+	- NodeId: 618 Instr:   %temp_instrumented = alloca i16, align 2
+Finding defs for:   store i16 %24, i16* %arrayidx24_instrumented, align 2
+Target of   store i16 %24, i16* %arrayidx24_instrumented, align 2 is   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented with PAG id 686
+Checking PagEdge node associated to:   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Visist starts at PAGNode 680
+[SelectDef] On node: ValVar ID: 680
+   %25 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 603-->680
+[SelectDef] On node: ValVar ID: 603
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 604-->603
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 603
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 595-->603
+[SelectDef] On node: ValVar ID: 595
+ i16* %regs { 0th arg Modbus_process_FC16_instrumented  }
+On edge 773-->595
+[SelectDef] On node: ValVar ID: 773
+   %21 = load i16*, i16** %regs.addr_instrumented, align 4 
+On edge 717-->773
+[SelectDef] On node: ValVar ID: 717
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 718-->717
+[SelectDefs] Found AddrEdge with other incoming edges, probably a dominator:
+	- 717
+	-  %regs.addr_instrumented = alloca i16*, align 4
+[SelectDefs] Adding node: FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+On edge 707-->717
+[SelectDef] On node: ValVar ID: 707
+ i16* %regs { 0th arg Modbus_poll_instrumented  }
+On edge 85-->707
+[SelectDef] On node: ValVar ID: 85
+   %4 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0 
+On edge 19-->85
+[SelectDef] On node: ValVar ID: 19
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+On edge 21-->19
+[SelectDefs] Adding node: FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+Found:
+	- NodeId: 21 Instr: @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2
+	- NodeId: 604 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+	- NodeId: 718 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %inc_instrumented, i8* %i_instrumented, align 1
+Target of   store i8 %inc_instrumented, i8* %i_instrumented, align 1 is   %i_instrumented = alloca i8, align 1 with PAG id 615
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 616
+[SelectDef] On node: FIObjVar ID: 616 (base object)
+   %i_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 616 (base object)
+   %i_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 616 Instr:   %i_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1
+Target of   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 is   %u8CopyBufferSize_instrumented = alloca i8, align 1 with PAG id 613
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 614
+[SelectDef] On node: FIObjVar ID: 614 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 614 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 614 Instr:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %34, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %34, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Checking function Modbus_poll_instrumented
+Finding defs for:   store i16 %3, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %3, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+Finding defs for:   store i16* %regs, i16** %regs.addr_instrumented, align 4
+Target of   store i16* %regs, i16** %regs.addr_instrumented, align 4 is   %regs.addr_instrumented = alloca i16*, align 4 with PAG id 717
+Checking PagEdge node associated to:   %regs.addr_instrumented = alloca i16*, align 4
+Visist starts at PAGNode 718
+[SelectDef] On node: FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+Start node is a Def already, adding FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4  to result
+Found:
+	- NodeId: 718 Instr:   %regs.addr_instrumented = alloca i16*, align 4
+Finding defs for:   store i8 %u8size, i8* %u8size.addr_instrumented, align 1
+Target of   store i8 %u8size, i8* %u8size.addr_instrumented, align 1 is   %u8size.addr_instrumented = alloca i8, align 1 with PAG id 719
+Checking PagEdge node associated to:   %u8size.addr_instrumented = alloca i8, align 1
+Visist starts at PAGNode 720
+[SelectDef] On node: FIObjVar ID: 720 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 720 (base object)
+   %u8size.addr_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 720 Instr:   %u8size.addr_instrumented = alloca i8, align 1
+Finding defs for:   store i16* %4, i16** @au16regs, align 4
+Target of   store i16* %4, i16** @au16regs, align 4 is @au16regs = common dso_local global i16* null, align 4 with PAG id 15
+Checking PagEdge node associated to: @au16regs = common dso_local global i16* null, align 4
+Visist starts at PAGNode 16
+[SelectDef] On node: FIObjVar ID: 16 (base object)
+ @au16regs = common dso_local global i16* null, align 4 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 16 (base object)
+ @au16regs = common dso_local global i16* null, align 4 { Glob  } to result
+Found:
+	- NodeId: 16 Instr: @au16regs = common dso_local global i16* null, align 4
+Finding defs for:   store i8 %5, i8* @u8regsize, align 1
+Target of   store i8 %5, i8* @u8regsize, align 1 is @u8regsize = common dso_local global i8 0, align 1 with PAG id 17
+Checking PagEdge node associated to: @u8regsize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 18
+[SelectDef] On node: FIObjVar ID: 18 (base object)
+ @u8regsize = common dso_local global i8 0, align 1 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 18 (base object)
+ @u8regsize = common dso_local global i8 0, align 1 { Glob  } to result
+Found:
+	- NodeId: 18 Instr: @u8regsize = common dso_local global i8 0, align 1
+Finding defs for:   store i32 0, i32* %i_instrumented, align 4
+Target of   store i32 0, i32* %i_instrumented, align 4 is   %i_instrumented = alloca i32, align 4 with PAG id 721
+Checking PagEdge node associated to:   %i_instrumented = alloca i32, align 4
+Visist starts at PAGNode 722
+[SelectDef] On node: FIObjVar ID: 722 (base object)
+   %i_instrumented = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 722 (base object)
+   %i_instrumented = alloca i32, align 4  to result
+Found:
+	- NodeId: 722 Instr:   %i_instrumented = alloca i32, align 4
+Finding defs for:   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1
+Target of   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 is   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8 with PAG id 740
+Checking PagEdge node associated to:   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Visist starts at PAGNode 5
+[SelectDef] On node: ValVar ID: 5
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+On edge 11-->5
+[SelectDefs] Adding node: FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+Found:
+	- NodeId: 11 Instr: @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1
+Finding defs for:   store i32 %inc_instrumented, i32* %i_instrumented, align 4
+Target of   store i32 %inc_instrumented, i32* %i_instrumented, align 4 is   %i_instrumented = alloca i32, align 4 with PAG id 721
+Checking PagEdge node associated to:   %i_instrumented = alloca i32, align 4
+Visist starts at PAGNode 722
+[SelectDef] On node: FIObjVar ID: 722 (base object)
+   %i_instrumented = alloca i32, align 4 
+Start node is a Def already, adding FIObjVar ID: 722 (base object)
+   %i_instrumented = alloca i32, align 4  to result
+Found:
+	- NodeId: 722 Instr:   %i_instrumented = alloca i32, align 4
+Finding defs for:   store i8 %call4_instrumented, i8* %retval_instrumented, align 1
+Target of   store i8 %call4_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 716 Instr:   %retval_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %call6_instrumented, i8* %retval_instrumented, align 1
+Target of   store i8 %call6_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 716 Instr:   %retval_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %call8_instrumented, i8* %retval_instrumented, align 1
+Target of   store i8 %call8_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 716 Instr:   %retval_instrumented = alloca i8, align 1
+Finding defs for:   store i8 %call10_instrumented, i8* %retval_instrumented, align 1
+Target of   store i8 %call10_instrumented, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 716 Instr:   %retval_instrumented = alloca i8, align 1
+Finding defs for:   store i8 -1, i8* %retval_instrumented, align 1
+Target of   store i8 -1, i8* %retval_instrumented, align 1 is   %retval_instrumented = alloca i8, align 1 with PAG id 715
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[SelectDef] On node: FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+Start node is a Def already, adding FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1  to result
+Found:
+	- NodeId: 716 Instr:   %retval_instrumented = alloca i8, align 1
+Finding defs for:   store i16 %27, i16* @zbouncer_recursion_counter, align 2
+Target of   store i16 %27, i16* @zbouncer_recursion_counter, align 2 is @zbouncer_recursion_counter = common global i16 0, align 2 with PAG id 60
+Checking PagEdge node associated to: @zbouncer_recursion_counter = common global i16 0, align 2
+Visist starts at PAGNode 61
+[SelectDef] On node: FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  }
+Start node is a Def already, adding FIObjVar ID: 61 (base object)
+ @zbouncer_recursion_counter = common global i16 0, align 2 { Glob  } to result
+Found:
+	- NodeId: 61 Instr: @zbouncer_recursion_counter = common global i16 0, align 2
+On input [0.IN] (PAGNode: 740) fgetc
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+[2.STOREUSE] (VFGNode: StoreVFGNode ID: 512 StoreStmt: [Var715 <-- Var765]	
+   store i8 %call6_instrumented, i8* %retval_instrumented, align 1 ) 
+ storeParam:  %retval_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[3.ADEF - DOMINATOR ] (PAGNode: 716) FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+----------------
+[4.STOREUSE] (VFGNode: StoreVFGNode ID: 466 StoreStmt: [Var362 <-- Var450]	
+   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 ) 
+ storeParam:  %u8CopyBufferSize_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[5.ADEF - DOMINATOR ] (PAGNode: 363) FIObjVar ID: 363 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+----------------
+[6.STOREUSE] (VFGNode: StoreVFGNode ID: 478 StoreStmt: [Var476 <-- Var545]	
+   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 ) 
+ storeParam:  %u8currentBit_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[7.ADEF - DOMINATOR ] (PAGNode: 477) FIObjVar ID: 477 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+----------------
+[8.STOREUSE] (VFGNode: StoreVFGNode ID: 477 StoreStmt: [Var474 <-- Var540]	
+   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 ) 
+ storeParam:  %u8currentRegister_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[9.ADEF - DOMINATOR ] (PAGNode: 475) FIObjVar ID: 475 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+----------------
+[10.STOREUSE] (VFGNode: StoreVFGNode ID: 444 StoreStmt: [Var199 <-- Var287]	
+   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 ) 
+ storeParam:  %u8currentBit_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[11.ADEF - DOMINATOR ] (PAGNode: 200) FIObjVar ID: 200 (base object)
+   %u8currentBit_instrumented = alloca i8, align 1 
+----------------
+[12.STOREUSE] (VFGNode: StoreVFGNode ID: 443 StoreStmt: [Var197 <-- Var282]	
+   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 ) 
+ storeParam:  %u8currentRegister_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[13.ADEF - DOMINATOR ] (PAGNode: 198) FIObjVar ID: 198 (base object)
+   %u8currentRegister_instrumented = alloca i8, align 1 
+----------------
+[14.STOREUSE] (VFGNode: StoreVFGNode ID: 451 StoreStmt: [Var205 <-- Var334]	
+   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 ) 
+ storeParam:  %u8CopyBufferSize_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[15.ADEF - DOMINATOR ] (PAGNode: 206) FIObjVar ID: 206 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+----------------
+[16.STOREUSE] (VFGNode: StoreVFGNode ID: 462 StoreStmt: [Var12 <-- Var423]	
+   store i8 %inc_instrumented, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[18.STOREUSE] (VFGNode: StoreVFGNode ID: 450 StoreStmt: [Var12 <-- Var326]	
+   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[19.STOREUSE] (VFGNode: StoreVFGNode ID: 448 StoreStmt: [Var12 <-- Var309]	
+   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[20.STOREUSE] (VFGNode: StoreVFGNode ID: 496 StoreStmt: [Var12 <-- Var579]	
+   store i8 6, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[21.STOREUSE] (VFGNode: StoreVFGNode ID: 485 StoreStmt: [Var12 <-- Var579]	
+   store i8 6, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[22.STOREUSE] (VFGNode: StoreVFGNode ID: 459 StoreStmt: [Var12 <-- Var260]	
+   store i8 3, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[23.STOREUSE] (VFGNode: StoreVFGNode ID: 437 StoreStmt: [Var201 <-- Var251]	
+   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 ) 
+ storeParam:  %u8bytesno_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[24.ADEF - DOMINATOR ] (PAGNode: 202) FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+----------------
+[25.STOREUSE] (VFGNode: StoreVFGNode ID: 457 StoreStmt: [Var360 <-- Var388]	
+   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 ) 
+ storeParam:  %u8regsno_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[26.ADEF - DOMINATOR ] (PAGNode: 361) FIObjVar ID: 361 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+----------------
+[27.STOREUSE] (VFGNode: StoreVFGNode ID: 463 StoreStmt: [Var436 <-- Var433]	
+   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 ) 
+ storeParam:  %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[28.STOREUSE] (VFGNode: StoreVFGNode ID: 491 StoreStmt: [Var607 <-- Var624]	
+   store i8 %6, i8* %u8func_instrumented, align 1 ) 
+ storeParam:  %u8func_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[29.ADEF - DOMINATOR ] (PAGNode: 608) FIObjVar ID: 608 (base object)
+   %u8func_instrumented = alloca i8, align 1 
+----------------
+[30.STOREUSE] (VFGNode: StoreVFGNode ID: 435 StoreStmt: [Var213 <-- Var238]	
+   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 ) 
+ storeParam:  %u16Coilno_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[31.ADEF - DOMINATOR ] (PAGNode: 214) FIObjVar ID: 214 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+----------------
+[32.STOREUSE] (VFGNode: StoreVFGNode ID: 460 StoreStmt: [Var364 <-- Var397]	
+   store i8 %15, i8* %i_instrumented, align 1 ) 
+ storeParam:  %i_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[33.ADEF - DOMINATOR ] (PAGNode: 365) FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+----------------
+[34.STOREUSE] (VFGNode: StoreVFGNode ID: 479 StoreStmt: [Var488 <-- Var550]	
+   store i8 %20, i8* %bTemp_instrumented, align 1 ) 
+ storeParam:  %bTemp_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[35.ADEF - DOMINATOR ] (PAGNode: 489) FIObjVar ID: 489 (base object)
+   %bTemp_instrumented = alloca i8, align 1 
+----------------
+[36.STOREUSE] (VFGNode: StoreVFGNode ID: 438 StoreStmt: [Var257 <-- Var256]	
+   store i8 %16, i8* %17, align 1 ) 
+ storeParam:  %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[37.STOREUSE] (VFGNode: StoreVFGNode ID: 472 StoreStmt: [Var492 <-- Var516]	
+   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 ) 
+ storeParam:  %u16Coilno_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[38.ADEF - DOMINATOR ] (PAGNode: 493) FIObjVar ID: 493 (base object)
+   %u16Coilno_instrumented = alloca i16, align 2 
+----------------
+[39.STOREUSE] (VFGNode: StoreVFGNode ID: 480 StoreStmt: [Var557 <-- Var553]	
+   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2 ) 
+ storeParam:  %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Count target object: 0
+--- Children ---
+[40.GDEF] (PAGNode: 21) FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[41.ADEF - DOMINATOR ] (PAGNode: 471) FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+[42.ADEF - DOMINATOR ] (PAGNode: 718) FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+----------------
+[43.STOREUSE] (VFGNode: StoreVFGNode ID: 434 StoreStmt: [Var211 <-- Var228]	
+   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 ) 
+ storeParam:  %u16StartCoil_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[44.ADEF - DOMINATOR ] (PAGNode: 212) FIObjVar ID: 212 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+----------------
+[45.STOREUSE] (VFGNode: StoreVFGNode ID: 442 StoreStmt: [Var209 <-- Var276]	
+   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 ) 
+ storeParam:  %u16coil_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[46.ADEF - DOMINATOR ] (PAGNode: 210) FIObjVar ID: 210 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+----------------
+[47.STOREUSE] (VFGNode: StoreVFGNode ID: 514 StoreStmt: [Var715 <-- Var775]	
+   store i8 %call10_instrumented, i8* %retval_instrumented, align 1 ) 
+ storeParam:  %retval_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[3.ADEF - DOMINATOR ] (PAGNode: 716) FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+----------------
+[48.STOREUSE] (VFGNode: StoreVFGNode ID: 495 StoreStmt: [Var649 <-- Var648]	
+   store i8 %16, i8* %17, align 1 ) 
+ storeParam:  %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[49.STOREUSE] (VFGNode: StoreVFGNode ID: 458 StoreStmt: [Var394 <-- Var393]	
+   store i8 %conv9_instrumented, i8* %14, align 1 ) 
+ storeParam:  %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[50.STOREUSE] (VFGNode: StoreVFGNode ID: 439 StoreStmt: [Var12 <-- Var260]	
+   store i8 3, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[51.STOREUSE] (VFGNode: StoreVFGNode ID: 509 StoreStmt: [Var740 <-- Var738]	
+   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 ) 
+ storeParam:  %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[52.STOREUSE] (VFGNode: StoreVFGNode ID: 511 StoreStmt: [Var715 <-- Var759]	
+   store i8 %call4_instrumented, i8* %retval_instrumented, align 1 ) 
+ storeParam:  %retval_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[3.ADEF - DOMINATOR ] (PAGNode: 716) FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+----------------
+[53.STOREUSE] (VFGNode: StoreVFGNode ID: 513 StoreStmt: [Var715 <-- Var770]	
+   store i8 %call8_instrumented, i8* %retval_instrumented, align 1 ) 
+ storeParam:  %retval_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[3.ADEF - DOMINATOR ] (PAGNode: 716) FIObjVar ID: 716 (base object)
+   %retval_instrumented = alloca i8, align 1 
+----------------
+[54.STOREUSE] (VFGNode: StoreVFGNode ID: 494 StoreStmt: [Var646 <-- Var13]	
+   store i8 0, i8* %15, align 1 ) 
+ storeParam:  %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[55.STOREUSE] (VFGNode: StoreVFGNode ID: 486 StoreStmt: [Var482 <-- Var583]	
+   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 ) 
+ storeParam:  %u8CopyBufferSize_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[56.ADEF - DOMINATOR ] (PAGNode: 483) FIObjVar ID: 483 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+----------------
+[57.STOREUSE] (VFGNode: StoreVFGNode ID: 461 StoreStmt: [Var420 <-- Var417]	
+   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 ) 
+ storeParam:  %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[58.STOREUSE] (VFGNode: StoreVFGNode ID: 501 StoreStmt: [Var613 <-- Var697]	
+   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 ) 
+ storeParam:  %u8CopyBufferSize_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[59.ADEF - DOMINATOR ] (PAGNode: 614) FIObjVar ID: 614 (base object)
+   %u8CopyBufferSize_instrumented = alloca i8, align 1 
+----------------
+[60.STOREUSE] (VFGNode: StoreVFGNode ID: 456 StoreStmt: [Var358 <-- Var378]	
+   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 ) 
+ storeParam:  %u8StartAdd_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[61.ADEF - DOMINATOR ] (PAGNode: 359) FIObjVar ID: 359 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+----------------
+[62.STOREUSE] (VFGNode: StoreVFGNode ID: 471 StoreStmt: [Var490 <-- Var506]	
+   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 ) 
+ storeParam:  %u16StartCoil_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[63.ADEF - DOMINATOR ] (PAGNode: 491) FIObjVar ID: 491 (base object)
+   %u16StartCoil_instrumented = alloca i16, align 2 
+----------------
+[64.STOREUSE] (VFGNode: StoreVFGNode ID: 445 StoreStmt: [Var297 <-- Var294]	
+   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 ) 
+ storeParam:  %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+[65.STOREUSE] (VFGNode: StoreVFGNode ID: 493 StoreStmt: [Var611 <-- Var644]	
+   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 ) 
+ storeParam:  %u8regsno_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[66.ADEF - DOMINATOR ] (PAGNode: 612) FIObjVar ID: 612 (base object)
+   %u8regsno_instrumented = alloca i8, align 1 
+----------------
+[67.STOREUSE] (VFGNode: StoreVFGNode ID: 498 StoreStmt: [Var617 <-- Var677]	
+   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 ) 
+ storeParam:  %temp_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[68.ADEF - DOMINATOR ] (PAGNode: 618) FIObjVar ID: 618 (base object)
+   %temp_instrumented = alloca i16, align 2 
+----------------
+[69.STOREUSE] (VFGNode: StoreVFGNode ID: 464 StoreStmt: [Var12 <-- Var439]	
+   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 ) 
+ storeParam:@u8BufferSize = common dso_local global i8 0, align 1
+Count target object: 0
+--- Children ---
+[17.GDEF - DOMINATOR ] (PAGNode: 14) FIObjVar ID: 14 (base object)
+ @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+----------------
+[70.STOREUSE] (VFGNode: StoreVFGNode ID: 499 StoreStmt: [Var686 <-- Var679]	
+   store i16 %24, i16* %arrayidx24_instrumented, align 2 ) 
+ storeParam:  %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Count target object: 0
+--- Children ---
+[40.GDEF] (PAGNode: 21) FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[71.ADEF - DOMINATOR ] (PAGNode: 604) FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+[42.ADEF - DOMINATOR ] (PAGNode: 718) FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+----------------
+[72.STOREUSE] (VFGNode: StoreVFGNode ID: 492 StoreStmt: [Var609 <-- Var634]	
+   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 ) 
+ storeParam:  %u8StartAdd_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[73.ADEF - DOMINATOR ] (PAGNode: 610) FIObjVar ID: 610 (base object)
+   %u8StartAdd_instrumented = alloca i8, align 1 
+----------------
+[74.STOREUSE] (VFGNode: StoreVFGNode ID: 465 StoreStmt: [Var364 <-- Var444]	
+   store i8 %inc25_instrumented, i8* %i_instrumented, align 1 ) 
+ storeParam:  %i_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[33.ADEF - DOMINATOR ] (PAGNode: 365) FIObjVar ID: 365 (base object)
+   %i_instrumented = alloca i8, align 1 
+----------------
+[75.STOREUSE] (VFGNode: StoreVFGNode ID: 436 StoreStmt: [Var201 <-- Var243]	
+   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 ) 
+ storeParam:  %u8bytesno_instrumented = alloca i8, align 1
+Count target object: 0
+--- Children ---
+[24.ADEF - DOMINATOR ] (PAGNode: 202) FIObjVar ID: 202 (base object)
+   %u8bytesno_instrumented = alloca i8, align 1 
+----------------
+[76.STOREUSE] (VFGNode: StoreVFGNode ID: 476 StoreStmt: [Var486 <-- Var535]	
+   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 ) 
+ storeParam:  %u16coil_instrumented = alloca i16, align 2
+Count target object: 0
+--- Children ---
+[77.ADEF - DOMINATOR ] (PAGNode: 487) FIObjVar ID: 487 (base object)
+   %u16coil_instrumented = alloca i16, align 2 
+----------------
+----------------
+
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 363
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 477
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 475
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8currentBit_instrumented = alloca i8, align 1
+Visist starts at PAGNode 200
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8currentRegister_instrumented = alloca i8, align 1
+Visist starts at PAGNode 198
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 206
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 361
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[27.STOREUSE] (VFGNode: StoreVFGNode ID: 463 StoreStmt: [Var436 <-- Var433]	
+   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 ) 
+ storeParam:  %arrayidx23_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom22_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %u8func_instrumented = alloca i8, align 1
+Visist starts at PAGNode 608
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 214
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %bTemp_instrumented = alloca i8, align 1
+Visist starts at PAGNode 489
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[36.STOREUSE] (VFGNode: StoreVFGNode ID: 438 StoreStmt: [Var257 <-- Var256]	
+   store i8 %16, i8* %17, align 1 ) 
+ storeParam:  %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %u16Coilno_instrumented = alloca i16, align 2
+Visist starts at PAGNode 493
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Visist starts at PAGNode 554
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[41.ADEF - DOMINATOR ] (PAGNode: 471) FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+
+Of Use:
+[39.STOREUSE] (VFGNode: StoreVFGNode ID: 480 StoreStmt: [Var557 <-- Var553]	
+   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2 ) 
+ storeParam:  %arrayidx20_instrumented = getelementptr inbounds i16, i16* %22, i32 %idxprom19_instrumented
+Count target object: 0
+--- Children ---
+[40.GDEF] (PAGNode: 21) FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[41.ADEF - DOMINATOR ] (PAGNode: 471) FIObjVar ID: 471 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+[42.ADEF - DOMINATOR ] (PAGNode: 718) FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+----------------
+
+Pag ID of source is 470
+Target: ValVar ID: 470
+   %regs.addr_instrumented = alloca i16*, align 4 
+StoreStmt: [Var470 <-- Var462]	
+   store i16* %regs, i16** %regs.addr_instrumented, align 4 
+  store i16* %regs, i16** %regs.addr_instrumented, align 4
+Checking aliasing of regs with argument regs of Modbus_process_FC15_instrumented
+Aliased with regs
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 212
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 210
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[48.STOREUSE] (VFGNode: StoreVFGNode ID: 495 StoreStmt: [Var649 <-- Var648]	
+   store i8 %16, i8* %17, align 1 ) 
+ storeParam:  %17 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 5
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[49.STOREUSE] (VFGNode: StoreVFGNode ID: 458 StoreStmt: [Var394 <-- Var393]	
+   store i8 %conv9_instrumented, i8* %14, align 1 ) 
+ storeParam:  %14 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 2
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[51.STOREUSE] (VFGNode: StoreVFGNode ID: 509 StoreStmt: [Var740 <-- Var738]	
+   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 ) 
+ storeParam:  %arrayidx_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %8
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %retval_instrumented = alloca i8, align 1
+Visist starts at PAGNode 716
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[54.STOREUSE] (VFGNode: StoreVFGNode ID: 494 StoreStmt: [Var646 <-- Var13]	
+   store i8 0, i8* %15, align 1 ) 
+ storeParam:  %15 = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 4
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 483
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[57.STOREUSE] (VFGNode: StoreVFGNode ID: 461 StoreStmt: [Var420 <-- Var417]	
+   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 ) 
+ storeParam:  %arrayidx17_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom16_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %u8CopyBufferSize_instrumented = alloca i8, align 1
+Visist starts at PAGNode 614
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 359
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u16StartCoil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 491
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Visist starts at PAGNode 5
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+
+Of Use:
+[64.STOREUSE] (VFGNode: StoreVFGNode ID: 445 StoreStmt: [Var297 <-- Var294]	
+   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 ) 
+ storeParam:  %arrayidx27_instrumented = getelementptr inbounds [15 x i8], [15 x i8]* @au8Buffer, i32 0, i32 %idxprom26_instrumented
+Count target object: 0
+--- Children ---
+[1.GDEF] (PAGNode: 11) FIObjVar ID: 11 (base object)
+ @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+----------------
+
+Avoiding pre-calculated indirect link
+Checking PagEdge node associated to:   %u8regsno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 612
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %temp_instrumented = alloca i16, align 2
+Visist starts at PAGNode 618
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to: @u8BufferSize = common dso_local global i8 0, align 1
+Visist starts at PAGNode 14
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Visist starts at PAGNode 680
+[DEBUG] findFirstDominator found 1 elements
+Considering Def:
+[71.ADEF - DOMINATOR ] (PAGNode: 604) FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+
+Of Use:
+[70.STOREUSE] (VFGNode: StoreVFGNode ID: 499 StoreStmt: [Var686 <-- Var679]	
+   store i16 %24, i16* %arrayidx24_instrumented, align 2 ) 
+ storeParam:  %arrayidx24_instrumented = getelementptr inbounds i16, i16* %25, i32 %add23_instrumented
+Count target object: 0
+--- Children ---
+[40.GDEF] (PAGNode: 21) FIObjVar ID: 21 (base object)
+ @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+[71.ADEF - DOMINATOR ] (PAGNode: 604) FIObjVar ID: 604 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+[42.ADEF - DOMINATOR ] (PAGNode: 718) FIObjVar ID: 718 (base object)
+   %regs.addr_instrumented = alloca i16*, align 4 
+----------------
+
+Pag ID of source is 603
+Target: ValVar ID: 603
+   %regs.addr_instrumented = alloca i16*, align 4 
+StoreStmt: [Var603 <-- Var595]	
+   store i16* %regs, i16** %regs.addr_instrumented, align 4 
+  store i16* %regs, i16** %regs.addr_instrumented, align 4
+Checking aliasing of regs with argument regs of Modbus_process_FC16_instrumented
+Aliased with regs
+Checking PagEdge node associated to:   %u8StartAdd_instrumented = alloca i8, align 1
+Visist starts at PAGNode 610
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %i_instrumented = alloca i8, align 1
+Visist starts at PAGNode 365
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u8bytesno_instrumented = alloca i8, align 1
+Visist starts at PAGNode 202
+[DEBUG] findFirstDominator found 0 elements
+Checking PagEdge node associated to:   %u16coil_instrumented = alloca i16, align 2
+Visist starts at PAGNode 487
+[DEBUG] findFirstDominator found 0 elements
+0;IN;-1;CallICFGNode566 {fun: Modbus_poll_instrumented}
+	1;GDEF;0;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	2;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 512 StoreStmt: [Var715 <-- Var765]	    store i8 %call6_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;2;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	4;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 466 StoreStmt: [Var362 <-- Var450]	    store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		5;ADEF;4;DOMINATOR;1;FIObjVar ID: 363 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	6;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 478 StoreStmt: [Var476 <-- Var545]	    store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 
+		7;ADEF;6;DOMINATOR;1;FIObjVar ID: 477 (base object)    %u8currentBit_instrumented = alloca i8, align 1 
+	8;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 477 StoreStmt: [Var474 <-- Var540]	    store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 
+		9;ADEF;8;DOMINATOR;1;FIObjVar ID: 475 (base object)    %u8currentRegister_instrumented = alloca i8, align 1 
+	10;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 444 StoreStmt: [Var199 <-- Var287]	    store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 
+		11;ADEF;10;DOMINATOR;1;FIObjVar ID: 200 (base object)    %u8currentBit_instrumented = alloca i8, align 1 
+	12;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 443 StoreStmt: [Var197 <-- Var282]	    store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 
+		13;ADEF;12;DOMINATOR;1;FIObjVar ID: 198 (base object)    %u8currentRegister_instrumented = alloca i8, align 1 
+	14;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 451 StoreStmt: [Var205 <-- Var334]	    store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		15;ADEF;14;DOMINATOR;1;FIObjVar ID: 206 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	16;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 462 StoreStmt: [Var12 <-- Var423]	    store i8 %inc_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;16;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	18;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 450 StoreStmt: [Var12 <-- Var326]	    store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;18;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	19;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 448 StoreStmt: [Var12 <-- Var309]	    store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;19;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	20;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 496 StoreStmt: [Var12 <-- Var579]	    store i8 6, i8* @u8BufferSize, align 1 
+		17;GDEF;20;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	21;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 485 StoreStmt: [Var12 <-- Var579]	    store i8 6, i8* @u8BufferSize, align 1 
+		17;GDEF;21;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	22;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 459 StoreStmt: [Var12 <-- Var260]	    store i8 3, i8* @u8BufferSize, align 1 
+		17;GDEF;22;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	23;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 437 StoreStmt: [Var201 <-- Var251]	    store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 
+		24;ADEF;23;DOMINATOR;1;FIObjVar ID: 202 (base object)    %u8bytesno_instrumented = alloca i8, align 1 
+	25;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 457 StoreStmt: [Var360 <-- Var388]	    store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+		26;ADEF;25;DOMINATOR;1;FIObjVar ID: 361 (base object)    %u8regsno_instrumented = alloca i8, align 1 
+	27;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 463 StoreStmt: [Var436 <-- Var433]	    store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 
+		1;GDEF;27;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	28;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 491 StoreStmt: [Var607 <-- Var624]	    store i8 %6, i8* %u8func_instrumented, align 1 
+		29;ADEF;28;DOMINATOR;1;FIObjVar ID: 608 (base object)    %u8func_instrumented = alloca i8, align 1 
+	30;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 435 StoreStmt: [Var213 <-- Var238]	    store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+		31;ADEF;30;DOMINATOR;2;FIObjVar ID: 214 (base object)    %u16Coilno_instrumented = alloca i16, align 2 
+	32;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 460 StoreStmt: [Var364 <-- Var397]	    store i8 %15, i8* %i_instrumented, align 1 
+		33;ADEF;32;DOMINATOR;1;FIObjVar ID: 365 (base object)    %i_instrumented = alloca i8, align 1 
+	34;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 479 StoreStmt: [Var488 <-- Var550]	    store i8 %20, i8* %bTemp_instrumented, align 1 
+		35;ADEF;34;DOMINATOR;1;FIObjVar ID: 489 (base object)    %bTemp_instrumented = alloca i8, align 1 
+	36;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 438 StoreStmt: [Var257 <-- Var256]	    store i8 %16, i8* %17, align 1 
+		1;GDEF;36;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	37;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 472 StoreStmt: [Var492 <-- Var516]	    store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 
+		38;ADEF;37;DOMINATOR;2;FIObjVar ID: 493 (base object)    %u16Coilno_instrumented = alloca i16, align 2 
+	39;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 480 StoreStmt: [Var557 <-- Var553]	    store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2, !ziuse !3 
+		40;GDEF;39;BASE;32;FIObjVar ID: 21 (base object)  @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+		41;ADEF;39;DOMINATOR;4;FIObjVar ID: 471 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+		42;ADEF;39;DOMINATOR;4;FIObjVar ID: 718 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+	43;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 434 StoreStmt: [Var211 <-- Var228]	    store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+		44;ADEF;43;DOMINATOR;2;FIObjVar ID: 212 (base object)    %u16StartCoil_instrumented = alloca i16, align 2 
+	45;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 442 StoreStmt: [Var209 <-- Var276]	    store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 
+		46;ADEF;45;DOMINATOR;2;FIObjVar ID: 210 (base object)    %u16coil_instrumented = alloca i16, align 2 
+	47;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 514 StoreStmt: [Var715 <-- Var775]	    store i8 %call10_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;47;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	48;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 495 StoreStmt: [Var649 <-- Var648]	    store i8 %16, i8* %17, align 1 
+		1;GDEF;48;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	49;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 458 StoreStmt: [Var394 <-- Var393]	    store i8 %conv9_instrumented, i8* %14, align 1 
+		1;GDEF;49;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	50;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 439 StoreStmt: [Var12 <-- Var260]	    store i8 3, i8* @u8BufferSize, align 1 
+		17;GDEF;50;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	51;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 509 StoreStmt: [Var740 <-- Var738]	    store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 
+		1;GDEF;51;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	52;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 511 StoreStmt: [Var715 <-- Var759]	    store i8 %call4_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;52;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	53;SUSE;0;Modbus_poll_instrumented;StoreVFGNode ID: 513 StoreStmt: [Var715 <-- Var770]	    store i8 %call8_instrumented, i8* %retval_instrumented, align 1 
+		3;ADEF;53;DOMINATOR;1;FIObjVar ID: 716 (base object)    %retval_instrumented = alloca i8, align 1 
+	54;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 494 StoreStmt: [Var646 <-- Var13]	    store i8 0, i8* %15, align 1 
+		1;GDEF;54;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	55;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 486 StoreStmt: [Var482 <-- Var583]	    store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		56;ADEF;55;DOMINATOR;1;FIObjVar ID: 483 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	57;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 461 StoreStmt: [Var420 <-- Var417]	    store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 
+		1;GDEF;57;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	58;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 501 StoreStmt: [Var613 <-- Var697]	    store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 
+		59;ADEF;58;DOMINATOR;1;FIObjVar ID: 614 (base object)    %u8CopyBufferSize_instrumented = alloca i8, align 1 
+	60;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 456 StoreStmt: [Var358 <-- Var378]	    store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+		61;ADEF;60;DOMINATOR;1;FIObjVar ID: 359 (base object)    %u8StartAdd_instrumented = alloca i8, align 1 
+	62;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 471 StoreStmt: [Var490 <-- Var506]	    store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 
+		63;ADEF;62;DOMINATOR;2;FIObjVar ID: 491 (base object)    %u16StartCoil_instrumented = alloca i16, align 2 
+	64;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 445 StoreStmt: [Var297 <-- Var294]	    store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 
+		1;GDEF;64;BASE;15;FIObjVar ID: 11 (base object)  @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 { Glob  }
+	65;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 493 StoreStmt: [Var611 <-- Var644]	    store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 
+		66;ADEF;65;DOMINATOR;1;FIObjVar ID: 612 (base object)    %u8regsno_instrumented = alloca i8, align 1 
+	67;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 498 StoreStmt: [Var617 <-- Var677]	    store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 
+		68;ADEF;67;DOMINATOR;2;FIObjVar ID: 618 (base object)    %temp_instrumented = alloca i16, align 2 
+	69;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 464 StoreStmt: [Var12 <-- Var439]	    store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 
+		17;GDEF;69;DOMINATOR;1;FIObjVar ID: 14 (base object)  @u8BufferSize = common dso_local global i8 0, align 1 { Glob  }
+	70;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 499 StoreStmt: [Var686 <-- Var679]	    store i16 %24, i16* %arrayidx24_instrumented, align 2, !ziuse !3 
+		40;GDEF;70;BASE;32;FIObjVar ID: 21 (base object)  @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 { Glob  }
+		71;ADEF;70;DOMINATOR;4;FIObjVar ID: 604 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+		42;ADEF;70;DOMINATOR;4;FIObjVar ID: 718 (base object)    %regs.addr_instrumented = alloca i16*, align 4 
+	72;SUSE;0;Modbus_process_FC16_instrumented;StoreVFGNode ID: 492 StoreStmt: [Var609 <-- Var634]	    store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 
+		73;ADEF;72;DOMINATOR;1;FIObjVar ID: 610 (base object)    %u8StartAdd_instrumented = alloca i8, align 1 
+	74;SUSE;0;Modbus_process_FC3_instrumented;StoreVFGNode ID: 465 StoreStmt: [Var364 <-- Var444]	    store i8 %inc25_instrumented, i8* %i_instrumented, align 1 
+		33;ADEF;74;DOMINATOR;1;FIObjVar ID: 365 (base object)    %i_instrumented = alloca i8, align 1 
+	75;SUSE;0;Modbus_process_FC1_instrumented;StoreVFGNode ID: 436 StoreStmt: [Var201 <-- Var243]	    store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 
+		24;ADEF;75;DOMINATOR;1;FIObjVar ID: 202 (base object)    %u8bytesno_instrumented = alloca i8, align 1 
+	76;SUSE;0;Modbus_process_FC15_instrumented;StoreVFGNode ID: 476 StoreStmt: [Var486 <-- Var535]	    store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 
+		77;ADEF;76;DOMINATOR;2;FIObjVar ID: 487 (base object)    %u16coil_instrumented = alloca i16, align 2 
+  store i8 6, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 21 | libStr: 
+  store i8 3, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 22 | libStr: 
+  %u8currentBit_instrumented = alloca i8, align 1 | defStr: 11 | storeStr:  | libStr: 
+@au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2 | defStr: 40 | storeStr:  | libStr: 
+  %regs.addr_instrumented = alloca i16*, align 4 | defStr: 41 | storeStr:  | libStr: 
+  %regs.addr_instrumented = alloca i16*, align 4 | defStr: 42 | storeStr:  | libStr: 
+  %u16StartCoil_instrumented = alloca i16, align 2 | defStr: 44 | storeStr:  | libStr: 
+  %u16coil_instrumented = alloca i16, align 2 | defStr: 46 | storeStr:  | libStr: 
+  store i8 %call10_instrumented, i8* %retval_instrumented, align 1 | defStr:  | storeStr: 47 | libStr: 
+  store i8 %call6_instrumented, i8* %retval_instrumented, align 1 | defStr:  | storeStr: 2 | libStr: 
+  store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 | defStr:  | storeStr: 4 | libStr: 
+  store i8 %20, i8* %bTemp_instrumented, align 1 | defStr:  | storeStr: 34 | libStr: 
+  %bTemp_instrumented = alloca i8, align 1 | defStr: 35 | storeStr:  | libStr: 
+  store i8 %16, i8* %17, align 1 | defStr:  | storeStr: 36 | libStr: 
+  store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 | defStr:  | storeStr: 37 | libStr: 
+  %u16Coilno_instrumented = alloca i16, align 2 | defStr: 38 | storeStr:  | libStr: 
+  store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2, !ziuse !9 | defStr:  | storeStr: 39 | libStr: 
+  store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2 | defStr:  | storeStr: 45 | libStr: 
+  store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 | defStr:  | storeStr: 43 | libStr: 
+  %u8currentBit_instrumented = alloca i8, align 1 | defStr: 7 | storeStr:  | libStr: 
+  store i8 6, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 20 | libStr: 
+  %u8currentRegister_instrumented = alloca i8, align 1 | defStr: 9 | storeStr:  | libStr: 
+  store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1 | defStr:  | storeStr: 23 | libStr: 
+  store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 | defStr:  | storeStr: 25 | libStr: 
+  store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1 | defStr:  | storeStr: 27 | libStr: 
+@au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1 | defStr: 1 | storeStr:  | libStr: 
+  store i8 %16, i8* %17, align 1 | defStr:  | storeStr: 48 | libStr: 
+  store i8 %conv9_instrumented, i8* %14, align 1 | defStr:  | storeStr: 49 | libStr: 
+  store i8 3, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 50 | libStr: 
+  store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1 | defStr:  | storeStr: 51 | libStr: 
+  store i8 %call4_instrumented, i8* %retval_instrumented, align 1 | defStr:  | storeStr: 52 | libStr: 
+  store i8 %call8_instrumented, i8* %retval_instrumented, align 1 | defStr:  | storeStr: 53 | libStr: 
+  store i8 0, i8* %15, align 1 | defStr:  | storeStr: 54 | libStr: 
+  store i8 %6, i8* %u8func_instrumented, align 1 | defStr:  | storeStr: 28 | libStr: 
+  %u8func_instrumented = alloca i8, align 1 | defStr: 29 | storeStr:  | libStr: 
+  store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2 | defStr:  | storeStr: 30 | libStr: 
+  %u16Coilno_instrumented = alloca i16, align 2 | defStr: 31 | storeStr:  | libStr: 
+  store i8 %15, i8* %i_instrumented, align 1 | defStr:  | storeStr: 32 | libStr: 
+  %i_instrumented = alloca i8, align 1 | defStr: 33 | storeStr:  | libStr: 
+  %retval_instrumented = alloca i8, align 1 | defStr: 3 | storeStr:  | libStr: 
+  %u8CopyBufferSize_instrumented = alloca i8, align 1 | defStr: 5 | storeStr:  | libStr: 
+  store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1 | defStr:  | storeStr: 6 | libStr: 
+  store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1 | defStr:  | storeStr: 8 | libStr: 
+  store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1 | defStr:  | storeStr: 10 | libStr: 
+  store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1 | defStr:  | storeStr: 12 | libStr: 
+  %u8currentRegister_instrumented = alloca i8, align 1 | defStr: 13 | storeStr:  | libStr: 
+  store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 | defStr:  | storeStr: 14 | libStr: 
+  %u8CopyBufferSize_instrumented = alloca i8, align 1 | defStr: 15 | storeStr:  | libStr: 
+  store i8 %inc_instrumented, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 16 | libStr: 
+@u8BufferSize = common dso_local global i8 0, align 1 | defStr: 17 | storeStr:  | libStr: 
+  %u8bytesno_instrumented = alloca i8, align 1 | defStr: 24 | storeStr:  | libStr: 
+  store i8 %inc41_instrumented, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 18 | libStr: 
+  %u8regsno_instrumented = alloca i8, align 1 | defStr: 26 | storeStr:  | libStr: 
+  store i8 %inc33_instrumented, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 19 | libStr: 
+  store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 | defStr:  | storeStr: 55 | libStr: 
+  %u8CopyBufferSize_instrumented = alloca i8, align 1 | defStr: 56 | storeStr:  | libStr: 
+  store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1 | defStr:  | storeStr: 57 | libStr: 
+  store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1 | defStr:  | storeStr: 58 | libStr: 
+  %u8CopyBufferSize_instrumented = alloca i8, align 1 | defStr: 59 | storeStr:  | libStr: 
+  store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 | defStr:  | storeStr: 60 | libStr: 
+  %u8StartAdd_instrumented = alloca i8, align 1 | defStr: 61 | storeStr:  | libStr: 
+  store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2 | defStr:  | storeStr: 62 | libStr: 
+  %u16StartCoil_instrumented = alloca i16, align 2 | defStr: 63 | storeStr:  | libStr: 
+  store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1 | defStr:  | storeStr: 64 | libStr: 
+  store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1 | defStr:  | storeStr: 65 | libStr: 
+  %u8regsno_instrumented = alloca i8, align 1 | defStr: 66 | storeStr:  | libStr: 
+  store i16 %conv20_instrumented, i16* %temp_instrumented, align 2 | defStr:  | storeStr: 67 | libStr: 
+  %temp_instrumented = alloca i16, align 2 | defStr: 68 | storeStr:  | libStr: 
+  store i8 %inc24_instrumented, i8* @u8BufferSize, align 1 | defStr:  | storeStr: 69 | libStr: 
+  store i16 %24, i16* %arrayidx24_instrumented, align 2, !ziuse !16 | defStr:  | storeStr: 70 | libStr: 
+  store i8 %inc25_instrumented, i8* %i_instrumented, align 1 | defStr:  | storeStr: 74 | libStr: 
+  store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1 | defStr:  | storeStr: 72 | libStr: 
+  %regs.addr_instrumented = alloca i16*, align 4 | defStr: 71 | storeStr:  | libStr: 
+  %u8StartAdd_instrumented = alloca i8, align 1 | defStr: 73 | storeStr:  | libStr: 
+  %u16coil_instrumented = alloca i16, align 2 | defStr: 77 | storeStr:  | libStr: 
+  store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1 | defStr:  | storeStr: 75 | libStr: 
+  store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2 | defStr:  | storeStr: 76 | libStr: 
+---------------------------------------------------
+Writing '/home/laser/Desktop/zbouncer/test/../test/plc/graph/pag.dot'...
+Writing '/home/laser/Desktop/zbouncer/test/../test/plc/graph/svfg.dot'...
+Writing '/home/laser/Desktop/zbouncer/test/../test/plc/graph/icfg.dot'...

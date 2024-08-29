@@ -1,0 +1,74 @@
+Checking for function: pinMode
+Checking for function: analogWrite
+Checking for function: Serial_begin
+Checking for function: Serial_available
+Checking for function: Serial_print
+Checking for function: Serial_println
+Checking for function: Serial_readString
+	wrapper_scanf |   %2 = call i8* @wrapper_scanf(i8* %1, i8* %0)
+Checking for function: millis
+Checking for function: digitalRead
+Checking for function: analogRead
+Checking for function: delay
+Checking for function: WiFi_begin
+Checking for function: WiFi_status
+Checking for function: http_send
+Checking for function: http_recv
+Checking for function: sendHttpRequest
+Checking for function: setup
+Checking for function: main
+Checking for function: wrapper_scanf
+Checking for function: wrapper_gets
+----------------------------------------------------------
+Function: main is the entry point -> injecting zinit()
+----------------------------------------------------------
+METADATA::zdef 4_12 |   %buffer.addr = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=4, addr=0x5649031d08d8)
+METADATA::zdef 1_7 |   %wifi.addr = alloca %struct.wifi*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=1, addr=0x5649031d2ab8)
+METADATA::zdef 22 |   %buf.addr = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=22, addr=0x5649031d5fb8)
+METADATA::zdef 18_20 |   %c = alloca i32, align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=18, addr=0x5649031d6078)
+METADATA::zdef 23 |   %buffer = alloca [100 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=23, addr=0x5649031d7728)
+METADATA::zdef 14 |   %buf.addr = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=14, addr=0x5649031d5348)
+----------------------------------------------------------
+METADATA::zuse 11 |   store i8* %buffer, i8** %buffer.addr, align 4, !zsuse !4
+Injecting zbouncer_use(use=11, addr=0x5649031d08d8)
+METADATA::zuse 19 |   store i32 100, i32* %c, align 4, !zsuse !5
+Injecting zbouncer_use(use=19, addr=0x5649031d6078)
+METADATA::zuse 17 |   store i32 %call2, i32* %c, align 4, !zsuse !6
+Injecting zbouncer_use(use=17, addr=0x5649031d6078)
+METADATA::zuse 21 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !7
+Injecting zbouncer_use(use=21, addr=0x5649031d6b00)
+METADATA::zuse 13 |   store i8* %buf, i8** %buf.addr, align 4, !zsuse !4
+Injecting zbouncer_use(use=13, addr=0x5649031d5348)
+----------------------------------------------------------
+METADATA::zluse 5 |   %call = call i32 (i8*, ...) @__isoc99_scanf(i8* %3, i8* %0), !zluse !5
+Injecting zbouncer_luse(use=5, addr=0x5649031d09b8, size_of_write=0x5649031e3f00)
+METADATA::zluse 2 |   %call = call i8* @strcpy(i8* %arraydecay, i8* %1) #4, !zluse !4
+Injecting zbouncer_luse(use=2, addr=0x5649031c9038, size_of_write=0x5649031e3f00)
+METADATA::zluse 8 |   %call4 = call i8* @strcpy(i8* %arraydecay3, i8* %3) #4, !zluse !5
+Injecting zbouncer_luse(use=8, addr=0x5649031c92d8, size_of_write=0x5649031e3f00)
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0023 seconds (0.0023 wall clock)
+
+   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0014 ( 61.3%)   0.0014 ( 61.3%)   0.0014 ( 61.3%)  Zbouncer
+   0.0008 ( 35.2%)   0.0008 ( 35.2%)   0.0008 ( 35.1%)  Bitcode Writer
+   0.0001 (  3.6%)   0.0001 (  3.6%)   0.0001 (  3.6%)  Module Verifier
+   0.0023 (100.0%)   0.0023 (100.0%)   0.0023 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                LLVM IR Parsing
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0006 seconds (0.0006 wall clock)
+
+   ---User Time---   --User+System--   ---Wall Time---  --- Name ---
+   0.0006 (100.0%)   0.0006 (100.0%)   0.0006 (100.0%)  Parse IR
+   0.0006 (100.0%)   0.0006 (100.0%)   0.0006 (100.0%)  Total
+

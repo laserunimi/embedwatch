@@ -1,0 +1,17 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: func1 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: myfunc is whitelisted
+FN:fgetc
+FN:printf
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:func1
+FN:myfunc
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

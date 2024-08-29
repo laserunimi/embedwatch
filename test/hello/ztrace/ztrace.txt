@@ -1,0 +1,8 @@
+0;IN;-1;CallICFGNode78 {fun: myfunc}
+	1;ADEF;0;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	2;SUSE;0;myfunc;StoreVFGNode ID: 119 StoreStmt: [Var89 <-- Var118]	    store i32 %call2, i32* %c, align 4 
+		1;ADEF;2;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	3;SUSE;0;myfunc;StoreVFGNode ID: 117 StoreStmt: [Var89 <-- Var95]	    store i32 100, i32* %c, align 4 
+		1;ADEF;3;DOMINATOR;4;FIObjVar ID: 90 (base object)    %c = alloca i32, align 4 
+	4;SUSE;0;myfunc;StoreVFGNode ID: 120 StoreStmt: [Var125 <-- Var123]	    store i8 %conv, i8* %arrayidx3, align 1 
+		5;ADEF;4;BASE;20;FIObjVar ID: 80 (base object)    %buf = alloca [20 x i8], align 1 

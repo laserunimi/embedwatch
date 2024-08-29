@@ -1,0 +1,36 @@
+Function: die is whitelisted
+FN:sleep
+----------------------------------------------------------
+Function: pc_read_buf_vuln is whitelisted
+FN:fgetc
+----------------------------------------------------------
+Function: read_data is whitelisted
+----------------------------------------------------------
+Function: get_humidity is whitelisted
+FN:read_data
+----------------------------------------------------------
+Function: get_temp is whitelisted
+FN:read_data
+----------------------------------------------------------
+Function: get_new_temp is whitelisted
+FN:fgetc
+FN:atof
+FN:printf
+----------------------------------------------------------
+Function: check_temp is whitelisted
+FN:printf
+FN:printf
+FN:printf
+----------------------------------------------------------
+Function: main is whitelisted
+FN:printf
+FN:sleep
+FN:printf
+FN:fgetc
+FN:get_temp
+FN:check_temp
+FN:printf
+FN:get_humidity
+FN:printf
+FN:get_new_temp
+----------------------------------------------------------

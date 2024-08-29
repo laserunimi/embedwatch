@@ -1,0 +1,11 @@
+0;IN;-1;CallICFGNode136 {fun: read_instrumented}
+	1;ADEF;0;DOMINATOR;4;FIObjVar ID: 190 (base object)    %c_instrumented = alloca i32, align 4 
+	2;SUSE;0;read_instrumented;StoreVFGNode ID: 119 StoreStmt: [Var189 <-- Var205]	    store i32 %call_instrumented, i32* %c_instrumented, align 4 
+		1;ADEF;2;DOMINATOR;4;FIObjVar ID: 190 (base object)    %c_instrumented = alloca i32, align 4 
+	3;SUSE;0;read_instrumented;StoreVFGNode ID: 117 StoreStmt: [Var189 <-- Var196]	    store i32 100, i32* %c_instrumented, align 4 
+		1;ADEF;3;DOMINATOR;4;FIObjVar ID: 190 (base object)    %c_instrumented = alloca i32, align 4 
+	4;SUSE;0;read_instrumented;StoreVFGNode ID: 120 StoreStmt: [Var210 <-- Var207]	    store i32 %6, i32* %arrayidx_instrumented, align 4, !ziuse !3 
+		5;ADEF;4;BASE;40;FIObjVar ID: 58 (base object)    %buff1 = alloca [10 x i32], align 4 
+		6;ADEF;4;BASE;400;FIObjVar ID: 60 (base object)    %buff2 = alloca [100 x i32], align 4 
+		7;ADEF;4;DOMINATOR;4;FIObjVar ID: 152 (base object)    %t.addr_instrumented = alloca i32*, align 4 
+		8;ADEF;4;DOMINATOR;4;FIObjVar ID: 186 (base object)    %t.addr_instrumented = alloca i32*, align 4 

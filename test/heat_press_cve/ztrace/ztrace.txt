@@ -1,0 +1,164 @@
+0;IN;-1;CallICFGNode84 {fun: Modbus_poll}
+	1;GDEF;0;BASE;100;FIObjVar ID: 50 (base object)  @au8Buffer = common dso_local global [100 x i8] zeroinitializer, align 1 { Glob  }
+	2;SUSE;0;loop;StoreVFGNode ID: 725 StoreStmt: [Var53 <-- Var44]	    store i8 0, i8* @u8state, align 1 
+		3;GDEF;2;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	4;SUSE;0;Modbus_poll;StoreVFGNode ID: 672 StoreStmt: [Var53 <-- Var286]	    store i8 1, i8* @u8state, align 1 
+		3;GDEF;4;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	5;SUSE;0;loop;StoreVFGNode ID: 733 StoreStmt: [Var53 <-- Var591]	    store i8 %dec33, i8* @u8state, align 1 
+		3;GDEF;5;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	6;SUSE;0;loop;StoreVFGNode ID: 736 StoreStmt: [Var53 <-- Var44]	    store i8 0, i8* @u8state, align 1 
+		3;GDEF;6;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	7;SUSE;0;loop;StoreVFGNode ID: 735 StoreStmt: [Var112 <-- Var609]	    store i32 %call40, i32* @u32wait, align 4 
+		8;GDEF;7;DOMINATOR;4;FIObjVar ID: 113 (base object)  @u32wait = common dso_local global i32 0, align 4 { Glob  }
+	9;SUSE;0;loop;StoreVFGNode ID: 727 StoreStmt: [Var112 <-- Var557]	    store i32 %call21, i32* @u32wait, align 4 
+		8;GDEF;9;DOMINATOR;4;FIObjVar ID: 113 (base object)  @u32wait = common dso_local global i32 0, align 4 { Glob  }
+	10;SUSE;0;loop;StoreVFGNode ID: 729 StoreStmt: [Var53 <-- Var576]	    store i8 %inc28, i8* @u8state, align 1 
+		3;GDEF;10;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	11;SUSE;0;loop;StoreVFGNode ID: 728 StoreStmt: [Var53 <-- Var562]	    store i8 %dec, i8* @u8state, align 1 
+		3;GDEF;11;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	12;SUSE;0;loop;StoreVFGNode ID: 713 StoreStmt: [Var53 <-- Var487]	    store i8 %inc, i8* @u8state, align 1 
+		3;GDEF;12;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	13;SUSE;0;loop;StoreVFGNode ID: 748 StoreStmt: [Var146 <-- Var673]	    store i32 %lnot.ext, i32* @segundosp, align 4 
+		14;GDEF;13;DOMINATOR;4;FIObjVar ID: 147 (base object)  @segundosp = common dso_local global i32 0, align 4 { Glob  }
+	15;SUSE;0;loop;StoreVFGNode ID: 758 StoreStmt: [Var120 <-- Var708]	    store i32 %add83, i32* @reloj, align 4 
+		16;GDEF;15;DOMINATOR;4;FIObjVar ID: 121 (base object)  @reloj = common dso_local global i32 0, align 4 { Glob  }
+	17;SUSE;0;loop;StoreVFGNode ID: 714 StoreStmt: [Var53 <-- Var503]	    store i8 %inc4, i8* @u8state, align 1 
+		3;GDEF;17;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	18;SUSE;0;loop;StoreVFGNode ID: 768 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;18;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	20;SUSE;0;loop;StoreVFGNode ID: 764 StoreStmt: [Var140 <-- Var761]	    store i32 %inc117, i32* @ssres, align 4 
+		19;GDEF;20;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	21;SUSE;0;loop;StoreVFGNode ID: 760 StoreStmt: [Var140 <-- Var730]	    store i32 %inc97, i32* @ssres, align 4 
+		19;GDEF;21;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	22;SUSE;0;loop;StoreVFGNode ID: 769 StoreStmt: [Var136 <-- Var5]	    store i32 0, i32* @mmres, align 4 
+		23;GDEF;22;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	24;SUSE;0;loop;StoreVFGNode ID: 767 StoreStmt: [Var136 <-- Var773]	    store i32 %inc124, i32* @mmres, align 4 
+		23;GDEF;24;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	25;SUSE;0;loop;StoreVFGNode ID: 763 StoreStmt: [Var136 <-- Var742]	    store i32 %inc104, i32* @mmres, align 4 
+		23;GDEF;25;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	26;SUSE;0;loop;StoreVFGNode ID: 779 StoreStmt: [Var114 <-- Var835]	    store i32 %add149, i32* @tiempopid1, align 4 
+		27;GDEF;26;DOMINATOR;4;FIObjVar ID: 115 (base object)  @tiempopid1 = common dso_local global i32 0, align 4 { Glob  }
+	28;SUSE;0;loop;StoreVFGNode ID: 741 StoreStmt: [Var138 <-- Var639]	    store i32 %sub51, i32* @mmt, align 4 
+		29;GDEF;28;DOMINATOR;4;FIObjVar ID: 139 (base object)  @mmt = common dso_local global i32 0, align 4 { Glob  }
+	30;SUSE;0;loop;StoreVFGNode ID: 754 StoreStmt: [Var136 <-- Var5]	    store i32 0, i32* @mmres, align 4 
+		23;GDEF;30;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	31;SUSE;0;loop;StoreVFGNode ID: 747 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;31;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	32;SUSE;0;loop;StoreVFGNode ID: 749 StoreStmt: [Var144 <-- Var676]	    store i32 %65, i32* @minutosp, align 4 
+		33;GDEF;32;DOMINATOR;4;FIObjVar ID: 145 (base object)  @minutosp = common dso_local global i32 0, align 4 { Glob  }
+	34;SUSE;0;loop;StoreVFGNode ID: 761 StoreStmt: [Var120 <-- Var733]	    store i32 %add99, i32* @reloj, align 4 
+		16;GDEF;34;DOMINATOR;4;FIObjVar ID: 121 (base object)  @reloj = common dso_local global i32 0, align 4 { Glob  }
+	35;SUSE;0;loop;StoreVFGNode ID: 776 StoreStmt: [Var9 <-- Var827]	    store float %106, float* @ep1, align 4 
+		36;GDEF;35;DOMINATOR;4;FIObjVar ID: 11 (base object)  @ep1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	37;SUSE;0;loop;StoreVFGNode ID: 746 StoreStmt: [Var136 <-- Var5]	    store i32 0, i32* @mmres, align 4 
+		23;GDEF;37;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	38;SUSE;0;loop;StoreVFGNode ID: 724 StoreStmt: [Var132 <-- Var544]	    store i32 %conv15, i32* @segundos, align 4 
+		39;GDEF;38;DOMINATOR;4;FIObjVar ID: 133 (base object)  @segundos = common dso_local global i32 0, align 4 { Glob  }
+	40;SUSE;0;loop;StoreVFGNode ID: 738 StoreStmt: [Var138 <-- Var620]	    store i32 %sub, i32* @mmt, align 4 
+		29;GDEF;40;DOMINATOR;4;FIObjVar ID: 139 (base object)  @mmt = common dso_local global i32 0, align 4 { Glob  }
+	41;SUSE;0;loop;StoreVFGNode ID: 770 StoreStmt: [Var12 <-- Var796]	    store float %sub137, float* @e1, align 4 
+		42;GDEF;41;DOMINATOR;4;FIObjVar ID: 13 (base object)  @e1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	43;SUSE;0;loop;StoreVFGNode ID: 753 StoreStmt: [Var148 <-- Var5]	    store i32 0, i32* @espera_plancha, align 4 
+		44;GDEF;43;DOMINATOR;4;FIObjVar ID: 149 (base object)  @espera_plancha = common dso_local global i32 0, align 4 { Glob  }
+	45;SUSE;0;loop;StoreVFGNode ID: 777 StoreStmt: [Var26 <-- Var829]	    store float %107, float* @kip1, align 4 
+		46;GDEF;45;DOMINATOR;4;FIObjVar ID: 27 (base object)  @kip1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	47;SUSE;0;loop;StoreVFGNode ID: 718 StoreStmt: [Var18 <-- Var517]	    store float %conv8, float* @kpa1, align 4 
+		48;GDEF;47;DOMINATOR;4;FIObjVar ID: 19 (base object)  @kpa1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	49;SUSE;0;loop;StoreVFGNode ID: 766 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;49;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	50;SUSE;0;loop;StoreVFGNode ID: 755 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;50;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	51;SUSE;0;loop;StoreVFGNode ID: 775 StoreStmt: [Var156 <-- Var5]	    store i32 0, i32* @incre, align 4 
+		52;GDEF;51;DOMINATOR;4;FIObjVar ID: 157 (base object)  @incre = common dso_local global i32 0, align 4 { Glob  }
+	53;SUSE;0;loop;StoreVFGNode ID: 785 StoreStmt: [Var158 <-- Var877]	    store i32 %and, i32* @in1, align 4 
+		54;GDEF;53;DOMINATOR;4;FIObjVar ID: 159 (base object)  @in1 = common dso_local global i32 0, align 4 { Glob  }
+	55;SUSE;0;loop;StoreVFGNode ID: 774 StoreStmt: [Var154 <-- Var824]	    store float %conv147, float* @YN, align 4 
+		56;GDEF;55;DOMINATOR;4;FIObjVar ID: 155 (base object)  @YN = common dso_local global float 0.000000e+00, align 4 { Glob  }
+	57;SUSE;0;loop;StoreVFGNode ID: 719 StoreStmt: [Var20 <-- Var524]	    store float %conv10, float* @kia1, align 4 
+		58;GDEF;57;DOMINATOR;4;FIObjVar ID: 21 (base object)  @kia1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	59;SUSE;0;loop;StoreVFGNode ID: 783 StoreStmt: [Var156 <-- Var865]	    store i32 %inc166, i32* @incre, align 4 
+		52;GDEF;59;DOMINATOR;4;FIObjVar ID: 157 (base object)  @incre = common dso_local global i32 0, align 4 { Glob  }
+	60;SUSE;0;loop;StoreVFGNode ID: 778 StoreStmt: [Var28 <-- Var831]	    store float %108, float* @kdp1, align 4 
+		61;GDEF;60;DOMINATOR;4;FIObjVar ID: 29 (base object)  @kdp1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	62;SUSE;0;loop;StoreVFGNode ID: 745 StoreStmt: [Var7 <-- Var221]	    store i32 1, i32* @terminar_ciclo, align 4 
+		63;GDEF;62;DOMINATOR;4;FIObjVar ID: 8 (base object)  @terminar_ciclo = dso_local global i32 0, align 4 { Glob  }
+	64;SUSE;0;loop;StoreVFGNode ID: 716 StoreStmt: [Var122 <-- Var509]	    store i32 %conv6, i32* @tempe_z1, align 4 
+		65;GDEF;64;DOMINATOR;4;FIObjVar ID: 123 (base object)  @tempe_z1 = common dso_local global i32 0, align 4 { Glob  }
+	66;SUSE;0;Modbus_get_FC3;StoreVFGNode ID: 664 StoreStmt: [Var275 <-- Var271]	    store i16 %conv7, i16* %arrayidx9, align 2 
+		68;DDEF;66;BASE;-1;FIObjVar ID: 923 (base object)    %call1 = call noalias i8* @malloc(i32 40) #4 
+			67;GDEF;68;DOMINATOR;4;FIObjVar ID: 52 (base object)  @au16regs = common dso_local global i16* null, align 4 { Glob  }
+		68;DDEF;66;BASE;-1;FIObjVar ID: 923 (base object)    %call1 = call noalias i8* @malloc(i32 40) #4 
+			67;GDEF;68;DOMINATOR;4;FIObjVar ID: 52 (base object)  @au16regs = common dso_local global i16* null, align 4 { Glob  }
+	69;SUSE;0;Modbus_poll;StoreVFGNode ID: 670 StoreStmt: [Var318 <-- Var316]	    store i8 %conv, i8* %arrayidx, align 1 
+		1;GDEF;69;BASE;100;FIObjVar ID: 50 (base object)  @au8Buffer = common dso_local global [100 x i8] zeroinitializer, align 1 { Glob  }
+	70;SUSE;0;loop;StoreVFGNode ID: 730 StoreStmt: [Var112 <-- Var578]	    store i32 %call29, i32* @u32wait, align 4 
+		8;GDEF;70;DOMINATOR;4;FIObjVar ID: 113 (base object)  @u32wait = common dso_local global i32 0, align 4 { Glob  }
+	71;SUSE;0;loop;StoreVFGNode ID: 756 StoreStmt: [Var148 <-- Var5]	    store i32 0, i32* @espera_plancha, align 4 
+		44;GDEF;71;DOMINATOR;4;FIObjVar ID: 149 (base object)  @espera_plancha = common dso_local global i32 0, align 4 { Glob  }
+	72;SUSE;0;loop;StoreVFGNode ID: 773 StoreStmt: [Var152 <-- Var821]	    store i32 %conv146, i32* @pid1, align 4 
+		73;GDEF;72;DOMINATOR;4;FIObjVar ID: 153 (base object)  @pid1 = common dso_local global i32 0, align 4 { Glob  }
+	74;SUSE;0;loop;StoreVFGNode ID: 734 StoreStmt: [Var53 <-- Var607]	    store i8 %inc39, i8* @u8state, align 1 
+		3;GDEF;74;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	75;SUSE;0;loop;StoreVFGNode ID: 723 StoreStmt: [Var130 <-- Var540]	    store i32 %conv14, i32* @minutos, align 4 
+		76;GDEF;75;DOMINATOR;4;FIObjVar ID: 131 (base object)  @minutos = common dso_local global i32 0, align 4 { Glob  }
+	77;SUSE;0;loop;StoreVFGNode ID: 731 StoreStmt: [Var4 <-- Var582]	    store i32 %conv30, i32* @estado, align 4 
+		78;GDEF;77;DOMINATOR;4;FIObjVar ID: 6 (base object)  @estado = dso_local global i32 0, align 4 { Glob  }
+	79;SUSE;0;loop;StoreVFGNode ID: 752 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;79;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	80;SUSE;0;loop;StoreVFGNode ID: 759 StoreStmt: [Var148 <-- Var719]	    store i32 %add89, i32* @espera_plancha, align 4 
+		44;GDEF;80;DOMINATOR;4;FIObjVar ID: 149 (base object)  @espera_plancha = common dso_local global i32 0, align 4 { Glob  }
+	81;SUSE;0;loop;StoreVFGNode ID: 720 StoreStmt: [Var22 <-- Var528]	    store float %conv11, float* @kda1, align 4 
+		82;GDEF;81;DOMINATOR;4;FIObjVar ID: 23 (base object)  @kda1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	83;SUSE;0;loop;StoreVFGNode ID: 782 StoreStmt: [Var857 <-- Var856]	    store i16 %conv161, i16* %115, align 2 
+		84;GDEF;83;BASE;64;FIObjVar ID: 107 (base object)  @au16data = common dso_local global [32 x i16] zeroinitializer, align 2 { Glob  }
+	85;SUSE;0;loop;StoreVFGNode ID: 740 StoreStmt: [Var142 <-- Var633]	    store i32 %sub47, i32* @sst, align 4 
+		86;GDEF;85;DOMINATOR;4;FIObjVar ID: 143 (base object)  @sst = common dso_local global i32 0, align 4 { Glob  }
+	87;SUSE;0;loop;StoreVFGNode ID: 722 StoreStmt: [Var128 <-- Var536]	    store i32 %conv13, i32* @duty2, align 4 
+		88;GDEF;87;DOMINATOR;4;FIObjVar ID: 129 (base object)  @duty2 = common dso_local global i32 0, align 4 { Glob  }
+	89;SUSE;0;loop;StoreVFGNode ID: 715 StoreStmt: [Var112 <-- Var505]	    store i32 %call5, i32* @u32wait, align 4 
+		8;GDEF;89;DOMINATOR;4;FIObjVar ID: 113 (base object)  @u32wait = common dso_local global i32 0, align 4 { Glob  }
+	90;SUSE;0;loop;StoreVFGNode ID: 739 StoreStmt: [Var138 <-- Var626]	    store i32 %add, i32* @mmt, align 4 
+		29;GDEF;90;DOMINATOR;4;FIObjVar ID: 139 (base object)  @mmt = common dso_local global i32 0, align 4 { Glob  }
+	91;SUSE;0;loop;StoreVFGNode ID: 744 StoreStmt: [Var652 <-- Var651]	    store i16 %conv55, i16* %59, align 2 
+		84;GDEF;91;BASE;64;FIObjVar ID: 107 (base object)  @au16data = common dso_local global [32 x i16] zeroinitializer, align 2 { Glob  }
+	92;SUSE;0;loop;StoreVFGNode ID: 732 StoreStmt: [Var134 <-- Var586]	    store i32 %conv31, i32* @tiempo_espera, align 4 
+		93;GDEF;92;DOMINATOR;4;FIObjVar ID: 135 (base object)  @tiempo_espera = common dso_local global i32 0, align 4 { Glob  }
+	94;SUSE;0;loop;StoreVFGNode ID: 784 StoreStmt: [Var156 <-- Var870]	    store i32 %inc168, i32* @incre, align 4 
+		52;GDEF;94;DOMINATOR;4;FIObjVar ID: 157 (base object)  @incre = common dso_local global i32 0, align 4 { Glob  }
+	95;SUSE;0;loop;StoreVFGNode ID: 780 StoreStmt: [Var154 <-- Var845]	    store float %conv155, float* @YN, align 4 
+		56;GDEF;95;DOMINATOR;4;FIObjVar ID: 155 (base object)  @YN = common dso_local global float 0.000000e+00, align 4 { Glob  }
+	96;SUSE;0;loop;StoreVFGNode ID: 772 StoreStmt: [Var22 <-- Var812]	    store float %sub142, float* @kda1, align 4 
+		82;GDEF;96;DOMINATOR;4;FIObjVar ID: 23 (base object)  @kda1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	97;SUSE;0;loop;StoreVFGNode ID: 771 StoreStmt: [Var20 <-- Var804]	    store float %add139, float* @kia1, align 4 
+		58;GDEF;97;DOMINATOR;4;FIObjVar ID: 21 (base object)  @kia1 = dso_local global float 0.000000e+00, align 4 { Glob  }
+	98;SUSE;0;loop;StoreVFGNode ID: 721 StoreStmt: [Var126 <-- Var532]	    store i32 %conv12, i32* @duty1, align 4 
+		99;GDEF;98;DOMINATOR;4;FIObjVar ID: 127 (base object)  @duty1 = common dso_local global i32 0, align 4 { Glob  }
+	100;SUSE;0;loop;StoreVFGNode ID: 762 StoreStmt: [Var140 <-- Var5]	    store i32 0, i32* @ssres, align 4 
+		19;GDEF;100;DOMINATOR;4;FIObjVar ID: 141 (base object)  @ssres = common dso_local global i32 0, align 4 { Glob  }
+	101;SUSE;0;loop;StoreVFGNode ID: 737 StoreStmt: [Var53 <-- Var615]	    store i8 %inc42, i8* @u8state, align 1 
+		3;GDEF;101;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+	102;SUSE;0;loop;StoreVFGNode ID: 743 StoreStmt: [Var648 <-- Var647]	    store i16 %conv54, i16* %57, align 2 
+		84;GDEF;102;BASE;64;FIObjVar ID: 107 (base object)  @au16data = common dso_local global [32 x i16] zeroinitializer, align 2 { Glob  }
+	103;SUSE;0;loop;StoreVFGNode ID: 742 StoreStmt: [Var142 <-- Var642]	    store i32 %add52, i32* @sst, align 4 
+		86;GDEF;103;DOMINATOR;4;FIObjVar ID: 143 (base object)  @sst = common dso_local global i32 0, align 4 { Glob  }
+	104;SUSE;0;loop;StoreVFGNode ID: 751 StoreStmt: [Var136 <-- Var5]	    store i32 0, i32* @mmres, align 4 
+		23;GDEF;104;DOMINATOR;4;FIObjVar ID: 137 (base object)  @mmres = common dso_local global i32 0, align 4 { Glob  }
+	105;SUSE;0;loop;StoreVFGNode ID: 717 StoreStmt: [Var124 <-- Var513]	    store i32 %conv7, i32* @tempe_z2, align 4 
+		106;GDEF;105;DOMINATOR;4;FIObjVar ID: 125 (base object)  @tempe_z2 = common dso_local global i32 0, align 4 { Glob  }
+	107;SUSE;0;loop;StoreVFGNode ID: 781 StoreStmt: [Var154 <-- Var10]	    store float 0.000000e+00, float* @YN, align 4 
+		56;GDEF;107;DOMINATOR;4;FIObjVar ID: 155 (base object)  @YN = common dso_local global float 0.000000e+00, align 4 { Glob  }
+	108;SUSE;0;loop;StoreVFGNode ID: 750 StoreStmt: [Var146 <-- Var678]	    store i32 %66, i32* @segundosp, align 4 
+		14;GDEF;108;DOMINATOR;4;FIObjVar ID: 147 (base object)  @segundosp = common dso_local global i32 0, align 4 { Glob  }
+	109;SUSE;0;loop;StoreVFGNode ID: 765 StoreStmt: [Var120 <-- Var764]	    store i32 %add119, i32* @reloj, align 4 
+		16;GDEF;109;DOMINATOR;4;FIObjVar ID: 121 (base object)  @reloj = common dso_local global i32 0, align 4 { Glob  }
+	110;SUSE;0;loop;StoreVFGNode ID: 757 StoreStmt: [Var148 <-- Var705]	    store i32 %inc81, i32* @espera_plancha, align 4 
+		44;GDEF;110;DOMINATOR;4;FIObjVar ID: 149 (base object)  @espera_plancha = common dso_local global i32 0, align 4 { Glob  }
+	111;SUSE;0;loop;StoreVFGNode ID: 726 StoreStmt: [Var53 <-- Var555]	    store i8 %inc20, i8* @u8state, align 1 
+		3;GDEF;111;DOMINATOR;1;FIObjVar ID: 54 (base object)  @u8state = common dso_local global i8 0, align 1 { Glob  }
+112;IN;-1;CallICFGNode249 {fun: loop}
+	113;ADEF;112;BASE;200;FIObjVar ID: 478 (base object)    %buffer = alloca [200 x i8], align 1 
+	114;SUSE;112;master_query_instrumented;StoreVFGNode ID: 855 StoreStmt: [Var1352 <-- Var1342]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		115;ADEF;114;DOMINATOR;4;FIObjVar ID: 1353 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+116;IN;-1;CallICFGNode268 {fun: loop}
+	117;LUSE;116;loop;CallICFGNode268 {fun: loop}
+		113;ADEF;117;BASE;200;FIObjVar ID: 478 (base object)    %buffer = alloca [200 x i8], align 1 

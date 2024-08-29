@@ -1,0 +1,19 @@
+0;IN;-1;CallICFGNode94 {fun: Serial_readString_instrumented}
+	1;LUSE;0;Serial_readString_instrumented;CallICFGNode94 {fun: Serial_readString_instrumented}
+		2;ADEF;1;BASE;20;FIObjVar ID: 55 (base object)    %message = alloca [20 x i8], align 1 
+		3;ADEF;1;DOMINATOR;4;FIObjVar ID: 136 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+4;IN;-1;CallICFGNode91 {fun: Serial_readString_instrumented}
+	2;ADEF;4;BASE;20;FIObjVar ID: 55 (base object)    %message = alloca [20 x i8], align 1 
+	5;SUSE;4;lcd_write_instrumented;StoreVFGNode ID: 132 StoreStmt: [Var185 <-- Var179]	    store i8 %10, i8* %arrayidx2_instrumented, align 1, !ziuse !3 
+		6;SDEF;5;BASE;32;64;[4];FIObjVar ID: 5 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		7;ADEF;5;DOMINATOR;4;FIObjVar ID: 159 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 
+	8;SUSE;4;lcd_write_instrumented;StoreVFGNode ID: 130 StoreStmt: [Var160 <-- Var151]	    store i8 %c, i8* %c.addr_instrumented, align 1 
+		9;ADEF;8;DOMINATOR;1;FIObjVar ID: 161 (base object)    %c.addr_instrumented = alloca i8, align 1 
+	10;SUSE;4;Serial_readString_instrumented;StoreVFGNode ID: 126 StoreStmt: [Var135 <-- Var128]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		3;ADEF;10;DOMINATOR;4;FIObjVar ID: 136 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	11;SUSE;4;lcd_write_instrumented;StoreVFGNode ID: 131 StoreStmt: [Var175 <-- Var169]	    store i8 %6, i8* %arrayidx_instrumented, align 1, !ziuse !3 
+		12;SDEF;11;BASE;32;32;[3];FIObjVar ID: 5 (base object)  @lcd = common dso_local global %struct.lcd zeroinitializer, align 4 { Glob  }
+		7;ADEF;11;DOMINATOR;4;FIObjVar ID: 159 (base object)    %lcd.addr_instrumented = alloca %struct.lcd*, align 4 
+	3;ADEF;4;DOMINATOR;4;FIObjVar ID: 136 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 
+	13;SUSE;4;Serial_readString_instrumented;StoreVFGNode ID: 126 StoreStmt: [Var135 <-- Var128]	    store i8* %buffer, i8** %buffer.addr_instrumented, align 4 
+		3;ADEF;13;DOMINATOR;4;FIObjVar ID: 136 (base object)    %buffer.addr_instrumented = alloca i8*, align 4 

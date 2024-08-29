@@ -1,0 +1,47 @@
+Instrumenting Function: die
+Function die has parameters:
+Function die doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pc_read_buf_vuln
+Function pc_read_buf_vuln has parameters:
+	-i8* %buf
+Instrumenting Function: read_data
+Function read_data has parameters:
+	-i8* %data_read
+Instrumenting Function: get_humidity
+Function get_humidity has parameters:
+Function get_humidity doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: get_temp
+Function get_temp has parameters:
+Function get_temp doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: get_new_temp
+Function get_new_temp has parameters:
+Function get_new_temp doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: check_temp
+Function check_temp has parameters:
+	-float %temp
+Function check_temp doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pc_read_buf_vuln_instrumented
+Function pc_read_buf_vuln_instrumented has parameters:
+	-i8* %buf
+	-i32 %buf_id
+Function pc_read_buf_vuln_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: read_data_instrumented
+Function read_data_instrumented has parameters:
+	-i8* %data_read
+	-i32 %data_read_id
+Function read_data_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function pc_read_buf_vuln was extended with 1 arguments
+Function read_data was extended with 1 arguments
+Searching for calls to:
+	- pc_read_buf_vuln
+	- read_data
+Found call to read_data inside get_humidity
+Found call to read_data inside get_temp
+Replacing calls
+Removing function pc_read_buf_vuln
+Remove OK pc_read_buf_vuln
+Removing function read_data
+Remove OK read_data

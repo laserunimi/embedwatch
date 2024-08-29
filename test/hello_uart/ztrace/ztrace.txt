@@ -1,0 +1,19 @@
+0;IN;-1;CallICFGNode243 {fun: uart_input_instrumented}
+	1;ADEF;0;BASE;40;FIObjVar ID: 79 (base object)    %buf = alloca [40 x i8], align 1 
+	2;SUSE;0;uart_puts_instrumented;StoreVFGNode ID: 200 StoreStmt: [Var315 <-- Var305]	    store i8* %str, i8** %str.addr_instrumented, align 4 
+		3;ADEF;2;DOMINATOR;4;FIObjVar ID: 316 (base object)    %str.addr_instrumented = alloca i8*, align 4 
+	4;SUSE;0;uart_input_instrumented;StoreVFGNode ID: 204 StoreStmt: [Var341 <-- Var331]	    store i8* %buf, i8** %buf.addr_instrumented, align 4 
+		5;ADEF;4;DOMINATOR;4;FIObjVar ID: 342 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	5;ADEF;0;DOMINATOR;4;FIObjVar ID: 342 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	6;SUSE;0;uart_input_instrumented;StoreVFGNode ID: 204 StoreStmt: [Var341 <-- Var331]	    store i8* %buf, i8** %buf.addr_instrumented, align 4 
+		5;ADEF;6;DOMINATOR;4;FIObjVar ID: 342 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+7;IN;-1;CallICFGNode246 {fun: uart_input_instrumented}
+	8;LUSE;7;uart_input_instrumented;CallICFGNode246 {fun: uart_input_instrumented}
+		1;ADEF;8;BASE;40;FIObjVar ID: 79 (base object)    %buf = alloca [40 x i8], align 1 
+		5;ADEF;8;DOMINATOR;4;FIObjVar ID: 342 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+9;IN;-1;CallICFGNode118 {fun: uart_init_instrumented} GepStmt: [Var358 <-- Var186]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  GepStmt: [Var359 <-- Var188]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  LoadStmt: [Var360 <-- Var359]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  StoreStmt: [Var358 <-- Var360]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  CopyStmt: [Var189 <-- Var187]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3 
+	10;LUSE;9;uart_init_instrumented;CallICFGNode118 {fun: uart_init_instrumented} GepStmt: [Var358 <-- Var186]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  GepStmt: [Var359 <-- Var188]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  LoadStmt: [Var360 <-- Var359]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  StoreStmt: [Var358 <-- Var360]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3  CopyStmt: [Var189 <-- Var187]	    %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %5), !ziuse !3 
+		11;SDEF;10;BASE;5;0;[0];FIObjVar ID: 77 (base object)    %uart = alloca %struct.uart, align 4 
+		11;SDEF;10;BASE;5;0;[0];FIObjVar ID: 77 (base object)    %uart = alloca %struct.uart, align 4 
+		11;SDEF;10;BASE;5;0;[0];FIObjVar ID: 77 (base object)    %uart = alloca %struct.uart, align 4 
+		12;ADEF;10;DOMINATOR;4;FIObjVar ID: 177 (base object)    %uart.addr_instrumented = alloca %struct.uart*, align 4 

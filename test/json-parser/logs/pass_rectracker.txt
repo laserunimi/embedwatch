@@ -1,0 +1,64 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: json_is_token_delimiter
+Tracking recursion for json_is_token_delimiter
+Instrumenting entry point of json_is_token_delimiter
+Instrumenting exit point of json_is_token_delimiter
+Instrumenting Function: json_is_whitespace
+Tracking recursion for json_is_whitespace
+Instrumenting entry point of json_is_whitespace
+Instrumenting exit point of json_is_whitespace
+Instrumenting Function: json_parse_instrumented
+Tracking recursion for json_parse_instrumented
+Instrumenting entry point of json_parse_instrumented
+Instrumenting exit point of json_parse_instrumented
+Instrumenting Function: json_set_token_id_instrumented
+Tracking recursion for json_set_token_id_instrumented
+Instrumenting entry point of json_set_token_id_instrumented
+Instrumenting exit point of json_set_token_id_instrumented
+Instrumenting Function: json_set_token_primitive_instrumented
+Tracking recursion for json_set_token_primitive_instrumented
+Instrumenting entry point of json_set_token_primitive_instrumented
+Instrumenting exit point of json_set_token_primitive_instrumented
+Instrumenting Function: json_parse_value_instrumented
+Tracking recursion for json_parse_value_instrumented
+Instrumenting entry point of json_parse_value_instrumented
+Instrumenting exit point of json_parse_value_instrumented
+Instrumenting Function: json_skip_whitespace_instrumented
+Tracking recursion for json_skip_whitespace_instrumented
+Instrumenting entry point of json_skip_whitespace_instrumented
+Instrumenting exit point of json_skip_whitespace_instrumented
+Instrumenting Function: json_set_token_complex_instrumented
+Tracking recursion for json_set_token_complex_instrumented
+Instrumenting entry point of json_set_token_complex_instrumented
+Instrumenting exit point of json_set_token_complex_instrumented
+Instrumenting Function: json_parse_object_instrumented
+Tracking recursion for json_parse_object_instrumented
+Instrumenting entry point of json_parse_object_instrumented
+Instrumenting exit point of json_parse_object_instrumented
+Instrumenting Function: json_parse_array_instrumented
+Tracking recursion for json_parse_array_instrumented
+Instrumenting entry point of json_parse_array_instrumented
+Instrumenting exit point of json_parse_array_instrumented
+Instrumenting Function: json_parse_number_instrumented
+Tracking recursion for json_parse_number_instrumented
+Instrumenting entry point of json_parse_number_instrumented
+Instrumenting exit point of json_parse_number_instrumented
+Instrumenting Function: json_parse_string_instrumented
+Tracking recursion for json_parse_string_instrumented
+Instrumenting entry point of json_parse_string_instrumented
+Instrumenting exit point of json_parse_string_instrumented
+Instrumenting Function: json_get_token_instrumented
+Tracking recursion for json_get_token_instrumented
+Instrumenting entry point of json_get_token_instrumented
+Instrumenting exit point of json_get_token_instrumented
+Instrumenting Function: json_is_valid_token_instrumented
+Tracking recursion for json_is_valid_token_instrumented
+Instrumenting entry point of json_is_valid_token_instrumented
+Instrumenting exit point of json_is_valid_token_instrumented

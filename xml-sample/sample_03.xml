@@ -1,0 +1,8 @@
+<Root>
+  <aw:Data xmlns:aw="http://www.adventure-works.com">
+    <aw:Child aw:MyAttr="content">content</aw:Child>
+  </aw:Data>
+  <ad:Data xmlns:ad="http://www.adatum.com">
+    <ad:Child ad:MyAttr="content">content</ad:Child>
+  </ad:Data>
+</Root>

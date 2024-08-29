@@ -1,0 +1,57 @@
+
+<root>
+  <row>
+    <post_title>Toolset custom fields post1</post_title>
+    <post_content>test content</post_content>
+    <post_excerpt>excerpt2</post_excerpt>
+    <post_name>testtt1</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <audio-field>give the url of the audio file available in your gallery</audio-field>
+    <checkboxes-field>1|2|4</checkboxes-field>
+    <checkbox-field>1</checkbox-field>
+    <colorpicker-field>#3eed1b</colorpicker-field>
+    <date-field>02/19/2020</date-field>
+    <email-field>admin1234@gmail.com</email-field>
+    <embedded-media-field>https://www.youtube.com/watch?v=8OBfr46Y0cQ</embedded-media-field>
+    <file-field>give the url of the local media gallery</file-field>
+    <image-field>https://s.w.org/images/backgrounds/wordpress-bg-medblue-square.png</image-field>
+    <number-field>3</number-field>
+    <phone-field>9098878651</phone-field>
+    <radio-field>1</radio-field>
+    <select-field>1</select-field>
+    <skype-field>aadhiaadhi</skype-field>
+    <multiple-lines-field>Toolset, formerly WP-Types, is a suite of plugins that are used to extend what WordPress does by creating custom post types and relationships among post types. That is just scratching the surface of what Toolset can do.</multiple-lines-field>
+    <single-line-field>Toolset is a plugin.</single-line-field>
+    <url-field>https://smackcoders.com/</url-field>
+    <video-field>give the url of the video file available in your media gallery</video-field>
+    <wysiwyg-field>This is the WYSIWYG editing field</wysiwyg-field>
+  </row>
+  <row>
+    <post_title>Toolset custom fields post2</post_title>
+    <post_content>test content</post_content>
+    <post_excerpt>excerpt3</post_excerpt>
+    <post_name>testtt</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <audio-field>give the url of the audio file available in your gallery</audio-field>
+    <checkboxes-field>2|3|5</checkboxes-field>
+    <checkbox-field>0</checkbox-field>
+    <colorpicker-field>#3eed1b</colorpicker-field>
+    <date-field>02/19/2019</date-field>
+    <email-field>admin12345@gmail.com</email-field>
+    <embedded-media-field>https://www.youtube.com/watch?v=EXKwAk0j3k8</embedded-media-field>
+    <file-field>give the url of the local media gallery</file-field>
+    <image-field>https://images.pexels.com/photos/34950/pexels-photo.jpg</image-field>
+    <number-field>732</number-field>
+    <phone-field>67390022</phone-field>
+    <radio-field>0</radio-field>
+    <select-field>0</select-field>
+    <skype-field>aadhiaadhi</skype-field>
+    <multiple-lines-field>Toolset, formerly WP-Types, is a suite of plugins that are used to extend what WordPress does by creating custom post types and relationships among post types. That is just scratching the surface of what Toolset can do.</multiple-lines-field>
+    <single-line-field>Toolset is a plugin.</single-line-field>
+    <url-field>https://demo.smackcoders.com/wordpress/wp-admin/</url-field>
+    <video-field>give the url of the video file available in your media gallery</video-field>
+    <wysiwyg-field>This is the WYSIWYG editing field</wysiwyg-field>
+  </row>
+</root>

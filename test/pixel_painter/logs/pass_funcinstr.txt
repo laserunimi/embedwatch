@@ -1,0 +1,143 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Adafruit_NeoPixel
+Function Adafruit_NeoPixel has parameters:
+	-i32 %numpixels
+	-i32 %pin
+	-i32 %other
+Function Adafruit_NeoPixel doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: begin
+Function begin has parameters:
+	-%struct.display* %d
+	-i32 %num1
+	-i32 %num2
+Instrumenting Function: show
+Function show has parameters:
+	-%struct.display* %d
+Instrumenting Function: setTextSize
+Function setTextSize has parameters:
+	-%struct.display* %d
+	-i32 %num
+Instrumenting Function: setTextColor
+Function setTextColor has parameters:
+	-%struct.display* %d
+	-i32 %num
+Instrumenting Function: setCursor
+Function setCursor has parameters:
+	-%struct.display* %d
+	-i32 %num1
+	-i32 %num2
+Instrumenting Function: clearDisplay
+Function clearDisplay has parameters:
+	-%struct.display* %d
+Instrumenting Function: println
+Function println has parameters:
+	-%struct.display* %d
+	-i8* %str
+Instrumenting Function: showImage
+Function showImage has parameters:
+	-[3 x i32] %p.coerce
+Function showImage doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %n
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setPixelColor
+Function setPixelColor has parameters:
+	-[3 x i32] %p.coerce
+	-i32 %y
+Function setPixelColor doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup
+Function setup has parameters:
+Function setup doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: loop
+Function loop has parameters:
+Function loop doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: begin_instrumented
+Function begin_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %num1
+	-i32 %num2
+	-i32 %d_id
+Function begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: show_instrumented
+Function show_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %d_id
+Function show_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setTextSize_instrumented
+Function setTextSize_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %num
+	-i32 %d_id
+Function setTextSize_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setTextColor_instrumented
+Function setTextColor_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %num
+	-i32 %d_id
+Function setTextColor_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setCursor_instrumented
+Function setCursor_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %num1
+	-i32 %num2
+	-i32 %d_id
+Function setCursor_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: clearDisplay_instrumented
+Function clearDisplay_instrumented has parameters:
+	-%struct.display* %d
+	-i32 %d_id
+Function clearDisplay_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: println_instrumented
+Function println_instrumented has parameters:
+	-%struct.display* %d
+	-i8* %str
+	-i32 %d_id
+	-i32 %str_id
+Function println_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function begin was extended with 1 arguments
+Function clearDisplay was extended with 1 arguments
+Function println was extended with 2 arguments
+Function setCursor was extended with 1 arguments
+Function setTextColor was extended with 1 arguments
+Function setTextSize was extended with 1 arguments
+Function show was extended with 1 arguments
+Searching for calls to:
+	- begin
+	- clearDisplay
+	- println
+	- setCursor
+	- setTextColor
+	- setTextSize
+	- show
+Found call to begin inside setup
+Found call to show inside setup
+Found call to setTextSize inside setup
+Found call to setTextColor inside setup
+Found call to setCursor inside setup
+Found call to clearDisplay inside setup
+Found call to println inside setup
+Found call to show inside setup
+Found call to show inside loop
+Replacing calls
+Removing function begin
+Remove OK begin
+Removing function clearDisplay
+Remove OK clearDisplay
+Removing function println
+Remove OK println
+Removing function setCursor
+Remove OK setCursor
+Removing function setTextColor
+Remove OK setTextColor
+Removing function setTextSize
+Remove OK setTextSize
+Removing function show
+Remove OK show

@@ -1,0 +1,31 @@
+
+<root>
+  <row>
+    <post_title>Shoe Product</post_title>
+    <product_bundle_items>Adidas|Reebok</product_bundle_items>
+    <layout>Tabular</layout>
+    <form_location>Before Tabs</form_location>
+    <item_grouping>Flat</item_grouping>
+    <edit_in_cart>Yes</edit_in_cart>
+    <optional>Yes|Yes</optional>
+    <quantity_min>1|1</quantity_min>
+    <quantity_max>2|2</quantity_max>
+    <priced_individually>Yes|Yes</priced_individually>
+    <discount>10|5</discount>
+    <product_details>Yes|Yes</product_details>
+    <cart_checkout>Yes|Yes</cart_checkout>
+    <order_details>Yes|Yes</order_details>
+    <override_title>Yes|Yes</override_title>
+    <override_title_value>overridetitle|overridetitle</override_title_value>
+    <override_description>Yes|Yes</override_description>
+    <override_description_value>overridedescription|overridedescription</override_description_value>
+    <hide_thumbnail>Yes|Yes</hide_thumbnail>
+    <visibility>1</visibility>
+    <tax_status>taxable</tax_status>
+    <product_type>7</product_type>
+    <stock_status>instock</stock_status>
+    <_wc_pb_virtual_bundle>yes</_wc_pb_virtual_bundle>
+    <_wcpb_min_qty_limit>2</_wcpb_min_qty_limit>
+    <_wcpb_max_qty_limit>3</_wcpb_max_qty_limit>
+  </row>
+</root>

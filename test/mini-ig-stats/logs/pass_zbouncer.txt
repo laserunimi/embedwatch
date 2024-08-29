@@ -1,0 +1,190 @@
+Checking for function: hook_exit
+Checking for function: delay
+Checking for function: pinMode
+Checking for function: analogWrite
+Checking for function: setColor
+Checking for function: handleResult
+Checking for function: main
+Checking for function: getHttpPage_instrumented
+Checking for function: fetchInteger_instrumented
+Checking for function: getFollowers_instrumented
+Checking for function: getLikes_instrumented
+Checking for function: getComments_instrumented
+Checking for function: publish_instrumented
+Checking for function: setup_instrumented
+-------------------------LOOPS----------------------------
+Loop in getHttpPage_instrumented: ZSUSE 23 |   store i32 %call12_instrumented, i32* %c_instrumented, align 4, !zsuse !8
+Injecting zbouncer_use(use=23, addr=0x55b0b07be8b8)
+Loop in getHttpPage_instrumented: ZIUSE 16 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !ziuse !9, !zsuse !10
+Injecting zbouncer_iuse(use=16, def=response_id, addr=0x55b0b07c0238)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 32 | @headers = dso_local global [2 x i8*] [i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str, i32 0, i32 0), i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i32 0, i32 0)], align 4, !zdef !0
+Injecting zbouncer_collect_galloca(def=32, addr=0x55b0b07a5818)
+METADATA::zdef 47 | @publishString = common dso_local global [40 x i8] zeroinitializer, align 1, !zdef !1
+Injecting zbouncer_collect_galloca(def=47, addr=0x55b0b0789478)
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 19 |   %response = alloca %struct.http_response, align 1, !zdef !5
+Injecting zbouncer_collect_alloca(def=19, addr=0x55b0b07b8538)
+METADATA::zdef 2 |   %request = alloca %struct.http_request, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=2, addr=0x55b0b07b8598)
+METADATA::zdef 20 |   %response.addr_instrumented = alloca %struct.http_response*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=20, addr=0x55b0b07be6d8)
+METADATA::zdef 15 |   %c_instrumented = alloca i32, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=15, addr=0x55b0b07be8b8)
+METADATA::zdef 21 |   %response.addr_instrumented = alloca %struct.http_response*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=21, addr=0x55b0b07c1988)
+METADATA::zdef 13 |   %request.addr_instrumented = alloca %struct.http_request*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=13, addr=0x55b0b07b6db8)
+METADATA::zdef 18 |   %response.addr_instrumented = alloca %struct.http_response*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=18, addr=0x55b0b07b6e18)
+METADATA::zdef 10 |   %request.addr_instrumented = alloca %struct.http_request*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=10, addr=0x55b0b07b3cd8)
+METADATA::zdef 17 |   %response.addr_instrumented = alloca %struct.http_response*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=17, addr=0x55b0b07b3d38)
+METADATA::zdef 7 |   %request.addr_instrumented = alloca %struct.http_request*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=7, addr=0x55b0b07c6918)
+METADATA::zdef 22 |   %response.addr_instrumented = alloca %struct.http_response*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=22, addr=0x55b0b07c6978)
+METADATA::zdef 3 |   %request.addr_instrumented = alloca %struct.http_request*, align 4, !zdef !5
+Injecting zbouncer_collect_alloca(def=3, addr=0x55b0b07c86f8)
+----------------------------------------------------------
+METADATA::zuse 24 |   store i32 100, i32* %c_instrumented, align 4, !zsuse !7
+Injecting zbouncer_use(use=24, addr=0x55b0b07be8b8)
+METADATA::zuse 23 |   store i32 %call12_instrumented, i32* %c_instrumented, align 4, !zsuse !8
+Injecting zbouncer_use(use=23, addr=0x55b0b07be8b8)
+METADATA::zuse 16 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !ziuse !9, !zsuse !10
+Injecting zbouncer_iuse(use=16, def=response_id, addr=0x55b0b07c0238)
+----------------------------------------------------------
+METADATA::zluse 12 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %23) #5, !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=12, def=request_id, addr=0x55b0b07b7188, size_of_write=0x55b0b07e0720)
+METADATA::zluse 9 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %23) #5, !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=9, def=request_id, addr=0x55b0b07b40a8, size_of_write=0x55b0b07e0720)
+METADATA::zluse 5 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %23) #5, !ziuse !7, !zluse !8
+Injecting zbouncer_iluse(use=5, def=request_id, addr=0x55b0b07c6ce8, size_of_write=0x55b0b07e0720)
+METADATA::zluse 1 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %14) #5, !ziuse !6, !zluse !7
+Injecting zbouncer_iluse(use=1, def=request_id, addr=0x55b0b07c8908, size_of_write=0x55b0b07e0720)
+Instruction:   call void @setup_instrumented(%struct.http_request* %request, i32 0), !zref_request_id !7
+Has metadata zref_request_id with value 48
+Arguments recap:
+  %request = alloca %struct.http_request, align 4, !zdef !6
+  %38 = load i32, i32* %32
+Instruction:   %call1 = call i32 @getFollowers_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !8, !zref_response_id !9, !zref_headers_id !0
+Has metadata zref_request_id with value 25
+Instruction:   %call1 = call i32 @getFollowers_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !8, !zref_response_id !9, !zref_headers_id !0
+Has metadata zref_response_id with value 29
+Instruction:   %call1 = call i32 @getFollowers_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !8, !zref_response_id !9, !zref_headers_id !0
+Has metadata zref_headers_id with value 32
+Arguments recap:
+  %request = alloca %struct.http_request, align 4, !zdef !6
+  %response = alloca %struct.http_response, align 1, !zdef !5
+i8* bitcast ([2 x i8*]* @headers to i8*)
+  %47 = load i32, i32* %41
+  %56 = load i32, i32* %50
+  %65 = load i32, i32* %59
+Instruction:   %call2 = call i32 @getLikes_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !10, !zref_response_id !11, !zref_headers_id !0
+Has metadata zref_request_id with value 33
+Instruction:   %call2 = call i32 @getLikes_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !10, !zref_response_id !11, !zref_headers_id !0
+Has metadata zref_response_id with value 37
+Instruction:   %call2 = call i32 @getLikes_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !10, !zref_response_id !11, !zref_headers_id !0
+Has metadata zref_headers_id with value 32
+Arguments recap:
+  %request = alloca %struct.http_request, align 4, !zdef !6
+  %response = alloca %struct.http_response, align 1, !zdef !5
+i8* bitcast ([2 x i8*]* @headers to i8*)
+  %77 = load i32, i32* %71
+  %86 = load i32, i32* %80
+  %95 = load i32, i32* %89
+Instruction:   %call4 = call i32 @getComments_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !12, !zref_response_id !13, !zref_headers_id !0
+Has metadata zref_request_id with value 40
+Instruction:   %call4 = call i32 @getComments_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !12, !zref_response_id !13, !zref_headers_id !0
+Has metadata zref_response_id with value 44
+Instruction:   %call4 = call i32 @getComments_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !12, !zref_response_id !13, !zref_headers_id !0
+Has metadata zref_headers_id with value 32
+Arguments recap:
+  %request = alloca %struct.http_request, align 4, !zdef !6
+  %response = alloca %struct.http_response, align 1, !zdef !5
+i8* bitcast ([2 x i8*]* @headers to i8*)
+  %107 = load i32, i32* %101
+  %116 = load i32, i32* %110
+  %125 = load i32, i32* %119
+Instruction:   call void @publish_instrumented(i8* %140, i8* %141, i32 0, i32 0), !zref_buffer_id !1
+Has metadata zref_buffer_id with value 47
+Arguments recap:
+  %140 = getelementptr inbounds [15 x i8], [15 x i8]* @.str.15, i32 0, i32 0
+  %141 = getelementptr inbounds [40 x i8], [40 x i8]* @publishString, i32 0, i32 0
+i32 0
+  %150 = load i32, i32* %144
+Instruction:   call void @getHttpPage_instrumented(%struct.http_request* %13, %struct.http_response* %14, i8* %15, i32 0, i32 0, i32 0), !zref_request_id !6, !zref_response_id !7, !zref_headers_id !8
+Has metadata zref_request_id with value request_id
+Instruction:   call void @getHttpPage_instrumented(%struct.http_request* %13, %struct.http_response* %14, i8* %15, i32 0, i32 0, i32 0), !zref_request_id !6, !zref_response_id !7, !zref_headers_id !8
+Has metadata zref_response_id with value response_id
+Instruction:   call void @getHttpPage_instrumented(%struct.http_request* %13, %struct.http_response* %14, i8* %15, i32 0, i32 0, i32 0), !zref_request_id !6, !zref_response_id !7, !zref_headers_id !8
+Has metadata zref_headers_id with value headers_id
+Arguments recap:
+  %13 = load %struct.http_request*, %struct.http_request** %request.addr_instrumented, align 4
+  %14 = load %struct.http_response*, %struct.http_response** %response.addr_instrumented, align 4
+  %15 = load i8*, i8** %headers.addr_instrumented, align 4
+i32 %request_id
+i32 %response_id
+i32 %headers_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_request_id with value request_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_response_id with value response_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_headers_id with value headers_id
+Arguments recap:
+  %33 = load %struct.http_request*, %struct.http_request** %request.addr_instrumented, align 4
+  %34 = load %struct.http_response*, %struct.http_response** %response.addr_instrumented, align 4
+  %35 = load i8*, i8** %headers.addr_instrumented, align 4
+i32 %request_id
+i32 %response_id
+i32 %headers_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_request_id with value request_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_response_id with value response_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_headers_id with value headers_id
+Arguments recap:
+  %33 = load %struct.http_request*, %struct.http_request** %request.addr_instrumented, align 4
+  %34 = load %struct.http_response*, %struct.http_response** %response.addr_instrumented, align 4
+  %35 = load i8*, i8** %headers.addr_instrumented, align 4
+i32 %request_id
+i32 %response_id
+i32 %headers_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_request_id with value request_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_response_id with value response_id
+Instruction:   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10
+Has metadata zref_headers_id with value headers_id
+Arguments recap:
+  %33 = load %struct.http_request*, %struct.http_request** %request.addr_instrumented, align 4
+  %34 = load %struct.http_response*, %struct.http_response** %response.addr_instrumented, align 4
+  %35 = load i8*, i8** %headers.addr_instrumented, align 4
+i32 %request_id
+i32 %response_id
+i32 %headers_id
+Replacing   call void @publish_instrumented(i8* %140, i8* %141, i32 0, i32 0), !zref_buffer_id !1 with   call void @publish_instrumented(i8* %140, i8* %141, i32 0, i32 %150)
+Replaced call
+Replacing   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10 with   %36 = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 %request_id, i32 %response_id, i32 %headers_id)
+Replaced call
+Replacing   call void @setup_instrumented(%struct.http_request* %request, i32 0), !zref_request_id !7 with   call void @setup_instrumented(%struct.http_request* %request, i32 %38)
+Replaced call
+Replacing   %call1 = call i32 @getFollowers_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !8, !zref_headers_id !0 with   %66 = call i32 @getFollowers_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 %47, i32 %56, i32 %65)
+Replaced call
+Replacing   %call2 = call i32 @getLikes_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !8, !zref_headers_id !0 with   %96 = call i32 @getLikes_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 %77, i32 %86, i32 %95)
+Replaced call
+Replacing   %call4 = call i32 @getComments_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !8, !zref_headers_id !0 with   %126 = call i32 @getComments_instrumented(%struct.http_request* %request, %struct.http_response* %response, i8* bitcast ([2 x i8*]* @headers to i8*), i32 %107, i32 %116, i32 %125)
+Replaced call
+Replacing   call void @getHttpPage_instrumented(%struct.http_request* %13, %struct.http_response* %14, i8* %15, i32 0, i32 0, i32 0), !zref_request_id !6, !zref_response_id !7, !zref_headers_id !8 with   call void @getHttpPage_instrumented(%struct.http_request* %13, %struct.http_response* %14, i8* %15, i32 %request_id, i32 %response_id, i32 %headers_id)
+Replaced call
+Replacing   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10 with   %36 = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 %request_id, i32 %response_id, i32 %headers_id)
+Replaced call
+Replacing   %call1_instrumented = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 0, i32 0, i32 0), !zref_request_id !7, !zref_response_id !9, !zref_headers_id !10 with   %36 = call i32 @fetchInteger_instrumented(%struct.http_request* %33, %struct.http_response* %34, i8* %35, i32 %request_id, i32 %response_id, i32 %headers_id)
+Replaced call
+Returning

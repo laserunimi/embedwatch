@@ -1,0 +1,40 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: uart_init is whitelisted
+FN:strcpy
+FN:printf
+----------------------------------------------------------
+Function: gpio_set_tx is whitelisted
+----------------------------------------------------------
+Function: gpio_set_rx is whitelisted
+----------------------------------------------------------
+Function: uart_putc_raw is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: uart_putc is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: uart_puts is whitelisted
+FN:puts
+FN:usleep
+----------------------------------------------------------
+Function: uart_input is whitelisted
+FN:__isoc99_scanf
+Function: uart_input, found scanf call
+Args size:2
+FN:usleep
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:uart_init
+FN:gpio_set_tx
+FN:gpio_set_rx
+FN:uart_putc_raw
+FN:uart_putc
+FN:uart_puts
+FN:uart_input
+FN:uart_puts
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

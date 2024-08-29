@@ -1,0 +1,66 @@
+Checking for function: hook_exit
+Checking for function: main
+Checking for function: is_valid_instrumented
+Checking for function: read_instrumented
+-------------------------LOOPS----------------------------
+Loop in read_instrumented: ZSUSE 2 |   store i32 %call_instrumented, i32* %c_instrumented, align 4, !zsuse !6
+Injecting zbouncer_use(use=2, addr=0x558cc62d99f8)
+Loop in read_instrumented: ZIUSE 4 |   store i32 %15, i32* %arrayidx_instrumented, align 4, !ziuse !7, !zsuse !8
+Injecting zbouncer_iuse(use=4, def=t_id, addr=0x558cc62da110)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 5 |   %buff1 = alloca [10 x i32], align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=5, addr=0x558cc62d3eb8)
+METADATA::zdef 6 |   %buff2 = alloca [100 x i32], align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=6, addr=0x558cc62d3f18)
+METADATA::zdef 7 |   %t.addr_instrumented = alloca i32*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=7, addr=0x558cc62d8818)
+METADATA::zdef 8 |   %t.addr_instrumented = alloca i32*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=8, addr=0x558cc62d9938)
+METADATA::zdef 1 |   %c_instrumented = alloca i32, align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=1, addr=0x558cc62d99f8)
+----------------------------------------------------------
+METADATA::zuse 3 |   store i32 100, i32* %c_instrumented, align 4, !zsuse !5
+Injecting zbouncer_use(use=3, addr=0x558cc62d99f8)
+METADATA::zuse 2 |   store i32 %call_instrumented, i32* %c_instrumented, align 4, !zsuse !6
+Injecting zbouncer_use(use=2, addr=0x558cc62d99f8)
+METADATA::zuse 4 |   store i32 %51, i32* %arrayidx_instrumented, align 4, !ziuse !7, !zsuse !8
+Injecting zbouncer_iuse(use=4, def=t_id, addr=0x558cc62da110)
+----------------------------------------------------------
+Instruction:   call void @is_valid_instrumented(i32* %arraydecay, %struct._IO_FILE* %25, i32 0, i32 0), !zref_t_id !3, !zref_f_id !5
+Has metadata zref_t_id with value 5
+Instruction:   call void @is_valid_instrumented(i32* %arraydecay, %struct._IO_FILE* %25, i32 0, i32 0), !zref_t_id !3, !zref_f_id !5
+Has metadata zref_f_id with value 9
+Arguments recap:
+  %arraydecay = getelementptr inbounds [10 x i32], [10 x i32]* %buff1, i32 0, i32 0
+  %25 = load %struct._IO_FILE*, %struct._IO_FILE** %f, align 4
+  %34 = load i32, i32* %28
+  %43 = load i32, i32* %37
+Instruction:   call void @is_valid_instrumented(i32* %arraydecay2, %struct._IO_FILE* %44, i32 0, i32 0), !zref_t_id !4, !zref_f_id !6
+Has metadata zref_t_id with value 6
+Instruction:   call void @is_valid_instrumented(i32* %arraydecay2, %struct._IO_FILE* %44, i32 0, i32 0), !zref_t_id !4, !zref_f_id !6
+Has metadata zref_f_id with value 11
+Arguments recap:
+  %arraydecay2 = getelementptr inbounds [100 x i32], [100 x i32]* %buff2, i32 0, i32 0
+  %44 = load %struct._IO_FILE*, %struct._IO_FILE** %f, align 4
+  %53 = load i32, i32* %47
+  %62 = load i32, i32* %56
+Instruction:   call void @read_instrumented(i32* %15, %struct._IO_FILE* %16, i32 0, i32 0), !zref_t_id !4, !zref_f_id !5
+Has metadata zref_t_id with value t_id
+Instruction:   call void @read_instrumented(i32* %15, %struct._IO_FILE* %16, i32 0, i32 0), !zref_t_id !4, !zref_f_id !5
+Has metadata zref_f_id with value f_id
+Arguments recap:
+  %15 = load i32*, i32** %t.addr_instrumented, align 4
+  %16 = load %struct._IO_FILE*, %struct._IO_FILE** %f.addr_instrumented, align 4
+i32 %t_id
+i32 %f_id
+Replacing   call void @is_valid_instrumented(i32* %arraydecay, %struct._IO_FILE* %25, i32 0, i32 0), !zref_t_id !3, !zref_f_id !5 with   call void @is_valid_instrumented(i32* %arraydecay, %struct._IO_FILE* %25, i32 %34, i32 %43)
+Replaced call
+Replacing   call void @is_valid_instrumented(i32* %arraydecay2, %struct._IO_FILE* %44, i32 0, i32 0), !zref_t_id !4, !zref_f_id !5 with   call void @is_valid_instrumented(i32* %arraydecay2, %struct._IO_FILE* %44, i32 %53, i32 %62)
+Replaced call
+Replacing   call void @read_instrumented(i32* %15, %struct._IO_FILE* %16, i32 0, i32 0), !zref_t_id !4, !zref_f_id !5 with   call void @read_instrumented(i32* %15, %struct._IO_FILE* %16, i32 %t_id, i32 %f_id)
+Replaced call
+Returning

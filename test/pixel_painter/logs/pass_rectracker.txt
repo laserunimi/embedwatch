@@ -1,0 +1,60 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: Adafruit_NeoPixel
+Tracking recursion for Adafruit_NeoPixel
+Instrumenting entry point of Adafruit_NeoPixel
+Instrumenting exit point of Adafruit_NeoPixel
+Instrumenting Function: showImage
+Tracking recursion for showImage
+Instrumenting entry point of showImage
+Instrumenting exit point of showImage
+Instrumenting Function: delay
+Tracking recursion for delay
+Instrumenting entry point of delay
+Instrumenting exit point of delay
+Instrumenting Function: setPixelColor
+Tracking recursion for setPixelColor
+Instrumenting entry point of setPixelColor
+Instrumenting exit point of setPixelColor
+Instrumenting Function: setup
+Tracking recursion for setup
+Instrumenting entry point of setup
+Instrumenting exit point of setup
+Instrumenting Function: loop
+Tracking recursion for loop
+Instrumenting entry point of loop
+Instrumenting exit point of loop
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: begin_instrumented
+Tracking recursion for begin_instrumented
+Instrumenting entry point of begin_instrumented
+Instrumenting exit point of begin_instrumented
+Instrumenting Function: show_instrumented
+Tracking recursion for show_instrumented
+Instrumenting entry point of show_instrumented
+Instrumenting exit point of show_instrumented
+Instrumenting Function: setTextSize_instrumented
+Tracking recursion for setTextSize_instrumented
+Instrumenting entry point of setTextSize_instrumented
+Instrumenting exit point of setTextSize_instrumented
+Instrumenting Function: setTextColor_instrumented
+Tracking recursion for setTextColor_instrumented
+Instrumenting entry point of setTextColor_instrumented
+Instrumenting exit point of setTextColor_instrumented
+Instrumenting Function: setCursor_instrumented
+Tracking recursion for setCursor_instrumented
+Instrumenting entry point of setCursor_instrumented
+Instrumenting exit point of setCursor_instrumented
+Instrumenting Function: clearDisplay_instrumented
+Tracking recursion for clearDisplay_instrumented
+Instrumenting entry point of clearDisplay_instrumented
+Instrumenting exit point of clearDisplay_instrumented
+Instrumenting Function: println_instrumented
+Tracking recursion for println_instrumented
+Instrumenting entry point of println_instrumented
+Instrumenting exit point of println_instrumented

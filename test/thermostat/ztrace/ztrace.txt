@@ -1,0 +1,20 @@
+0;IN;-1;CallICFGNode277 {fun: pc_read_buf_vuln_instrumented}
+	1;ADEF;0;DOMINATOR;1;FIObjVar ID: 348 (base object)    %c_instrumented = alloca i8, align 1 
+	2;SUSE;0;pc_read_buf_vuln_instrumented;StoreVFGNode ID: 236 StoreStmt: [Var360 <-- Var357]	    store i8 %5, i8* %arrayidx_instrumented, align 1 
+		3;ADEF;2;DOMINATOR;4;FIObjVar ID: 344 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	4;SUSE;0;pc_read_buf_vuln_instrumented;StoreVFGNode ID: 235 StoreStmt: [Var347 <-- Var355]	    store i8 %conv_instrumented, i8* %c_instrumented, align 1 
+		1;ADEF;4;DOMINATOR;1;FIObjVar ID: 348 (base object)    %c_instrumented = alloca i8, align 1 
+5;IN;-1;CallICFGNode107 {fun: get_new_temp}
+	6;ADEF;5;DOMINATOR;1;FIObjVar ID: 155 (base object)    %c = alloca i8, align 1 
+	7;SUSE;5;get_new_temp;StoreVFGNode ID: 214 StoreStmt: [Var154 <-- Var163]	    store i8 %conv, i8* %c, align 1 
+		6;ADEF;7;DOMINATOR;1;FIObjVar ID: 155 (base object)    %c = alloca i8, align 1 
+	8;SUSE;5;get_new_temp;StoreVFGNode ID: 217 StoreStmt: [Var195 <-- Var193]	    store i8 %10, i8* %arrayidx12, align 1 
+		9;ADEF;8;BASE;16;FIObjVar ID: 151 (base object)    %buf = alloca [16 x i8], align 1 
+	10;SUSE;5;get_new_temp;StoreVFGNode ID: 215 StoreStmt: [Var176 <-- Var178]	    store i8 0, i8* %arrayidx, align 1 
+		9;ADEF;10;BASE;16;FIObjVar ID: 151 (base object)    %buf = alloca [16 x i8], align 1 
+11;IN;-1;CallICFGNode230 {fun: main}
+	12;ADEF;11;DOMINATOR;1;FIObjVar ID: 291 (base object)    %cmd = alloca i8, align 1 
+	13;SUSE;11;main;StoreVFGNode ID: 228 StoreStmt: [Var290 <-- Var307]	    store i8 %conv, i8* %cmd, align 1 
+		12;ADEF;13;DOMINATOR;1;FIObjVar ID: 291 (base object)    %cmd = alloca i8, align 1 
+14;ADEF;-1;BASE;10;FIObjVar ID: 67 (base object)    %reply = alloca [10 x i8], align 1 
+15;ADEF;-1;BASE;10;FIObjVar ID: 108 (base object)    %reply = alloca [10 x i8], align 1 

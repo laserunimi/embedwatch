@@ -1,0 +1,11 @@
+0;IN;-1;CallICFGNode245 {fun: Serial_read_instrumented}
+	1;ADEF;0;BASE;20;FIObjVar ID: 124 (base object)    %buf = alloca [5 x i8*], align 4 
+	2;SUSE;0;Serial_read_instrumented;StoreVFGNode ID: 258 StoreStmt: [Var316 <-- Var309]	    store i8* %buf, i8** %buf.addr_instrumented, align 4 
+		3;ADEF;2;DOMINATOR;4;FIObjVar ID: 317 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	3;ADEF;0;DOMINATOR;4;FIObjVar ID: 317 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+	4;SUSE;0;Serial_read_instrumented;StoreVFGNode ID: 258 StoreStmt: [Var316 <-- Var309]	    store i8* %buf, i8** %buf.addr_instrumented, align 4 
+		3;ADEF;4;DOMINATOR;4;FIObjVar ID: 317 (base object)    %buf.addr_instrumented = alloca i8*, align 4 
+5;IN;-1;CallICFGNode248 {fun: Serial_read_instrumented}
+	6;LUSE;5;Serial_read_instrumented;CallICFGNode248 {fun: Serial_read_instrumented}
+		1;ADEF;6;BASE;20;FIObjVar ID: 124 (base object)    %buf = alloca [5 x i8*], align 4 
+		3;ADEF;6;DOMINATOR;4;FIObjVar ID: 317 (base object)    %buf.addr_instrumented = alloca i8*, align 4 

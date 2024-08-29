@@ -1,0 +1,71 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: Adafruit_NeoPixel is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: begin is whitelisted
+FN:printf
+FN:strcpy
+----------------------------------------------------------
+Function: show is whitelisted
+FN:printf
+FN:printf
+----------------------------------------------------------
+Function: setTextSize is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: setTextColor is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: setCursor is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: clearDisplay is whitelisted
+FN:strcpy
+FN:strcpy
+----------------------------------------------------------
+Function: println is whitelisted
+FN:strcpy
+----------------------------------------------------------
+Function: showImage is whitelisted
+----------------------------------------------------------
+Function: delay is whitelisted
+FN:usleep
+----------------------------------------------------------
+Function: setPixelColor is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:Adafruit_NeoPixel
+FN:begin
+FN:show
+FN:setTextSize
+FN:setTextColor
+FN:setCursor
+FN:clearDisplay
+FN:println
+FN:show
+----------------------------------------------------------
+Function: loop is whitelisted
+FN:setPixelColor
+FN:show
+FN:delay
+FN:setPixelColor
+FN:setPixelColor
+FN:showImage
+FN:delay
+FN:fopen
+FN:exit
+FN:fgetc
+FN:setPixelColor
+FN:showImage
+FN:fclose
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:loop
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

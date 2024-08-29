@@ -1,0 +1,54 @@
+Checking for function: hook_exit
+Checking for function: setup
+Checking for function: loop
+	wrapper_scanf |   %8 = call i8* @wrapper_scanf(i8* %7, i8* %arraydecay)
+	wrapper_scanf |   %45 = call i8* @wrapper_scanf(i8* %44, i8* %arraydecay37)
+Checking for function: main
+Checking for function: pinMode
+Checking for function: digitalWrite
+Checking for function: startWaveform
+Checking for function: startWaveform2
+Checking for function: delay
+Checking for function: stopWaveform
+Checking for function: max
+Checking for function: min
+Checking for function: constrain
+Checking for function: analogRead
+Checking for function: map
+Checking for function: millis
+Checking for function: master_query_instrumented
+-------------------------LOOPS----------------------------
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 2 |   %buffer = alloca [200 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=2, addr=0x562ff9e149f8)
+METADATA::zdef 5 |   %buffer.addr_instrumented = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=5, addr=0x562ff9e11fc8)
+----------------------------------------------------------
+METADATA::zuse 4 |   store i8* %buffer, i8** %buffer.addr_instrumented, align 4, !zsuse !4
+Injecting zbouncer_use(use=4, addr=0x562ff9e11fc8)
+----------------------------------------------------------
+METADATA::zluse 1 |   %call3 = call i32 (i8*, ...) @__isoc99_scanf(i8* %18, i8* %arraydecay), !zluse !4
+Injecting zbouncer_luse(use=1, addr=0x562ff9e15058, size_of_write=0x562ff9e3c540)
+METADATA::zluse 7 |   %call38 = call i32 (i8*, ...) @__isoc99_scanf(i8* %64, i8* %arraydecay37), !zluse !5
+Injecting zbouncer_luse(use=7, addr=0x562ff9e17e48, size_of_write=0x562ff9e3c540)
+Instruction:   call void @master_query_instrumented(i8* %arraydecay5, [3 x i32] %29, i32 0), !zref_buffer_id !3
+Has metadata zref_buffer_id with value 2
+Arguments recap:
+  %arraydecay5 = getelementptr inbounds [200 x i8], [200 x i8]* %buffer, i32 0, i32 0
+  %29 = load [3 x i32], [3 x i32]* bitcast ([6 x %struct.modbus_t]* @telegram to [3 x i32]*), align 4
+  %38 = load i32, i32* %32
+Instruction:   call void @master_query_instrumented(i8* %arraydecay29, [3 x i32] %64, i32 0), !zref_buffer_id !3
+Has metadata zref_buffer_id with value 2
+Arguments recap:
+  %arraydecay29 = getelementptr inbounds [200 x i8], [200 x i8]* %buffer, i32 0, i32 0
+  %64 = load [3 x i32], [3 x i32]* %63, align 4
+  %73 = load i32, i32* %67
+Replacing   call void @master_query_instrumented(i8* %arraydecay5, [3 x i32] %29, i32 0), !zref_buffer_id !3 with   call void @master_query_instrumented(i8* %arraydecay5, [3 x i32] %29, i32 %38)
+Replaced call
+Replacing   call void @master_query_instrumented(i8* %arraydecay29, [3 x i32] %64, i32 0), !zref_buffer_id !3 with   call void @master_query_instrumented(i8* %arraydecay29, [3 x i32] %64, i32 %73)
+Replaced call
+Returning

@@ -1,0 +1,132 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_begin
+Function Serial_begin has parameters:
+	-%struct.serial* %serial
+	-i32 %value
+Instrumenting Function: Serial_read
+Function Serial_read has parameters:
+	-%struct.serial* %serial
+Instrumenting Function: matrix_setIntensity
+Function matrix_setIntensity has parameters:
+	-%struct.matrix* %matrix
+	-i32 %intensity
+Instrumenting Function: matrix_fillScreen
+Function matrix_fillScreen has parameters:
+	-%struct.matrix* %matrix
+	-i32 %value
+Instrumenting Function: matrix_drawPixel
+Function matrix_drawPixel has parameters:
+	-%struct.matrix* %matrix
+	-i32 %x
+	-i32 %y
+	-i32 %value
+Instrumenting Function: matrix_write
+Function matrix_write has parameters:
+	-%struct.matrix* %matrix
+Instrumenting Function: setup
+Function setup has parameters:
+	-%struct.serial* %serial
+	-%struct.matrix* %matrix
+Instrumenting Function: Serial_available
+Function Serial_available has parameters:
+	-%struct.serial* %serial
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_begin_instrumented
+Function Serial_begin_instrumented has parameters:
+	-%struct.serial* %serial
+	-i32 %value
+	-i32 %serial_id
+Function Serial_begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_read_instrumented
+Function Serial_read_instrumented has parameters:
+	-%struct.serial* %serial
+	-i32 %serial_id
+Function Serial_read_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: matrix_setIntensity_instrumented
+Function matrix_setIntensity_instrumented has parameters:
+	-%struct.matrix* %matrix
+	-i32 %intensity
+	-i32 %matrix_id
+Function matrix_setIntensity_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: matrix_fillScreen_instrumented
+Function matrix_fillScreen_instrumented has parameters:
+	-%struct.matrix* %matrix
+	-i32 %value
+	-i32 %matrix_id
+Function matrix_fillScreen_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: matrix_drawPixel_instrumented
+Function matrix_drawPixel_instrumented has parameters:
+	-%struct.matrix* %matrix
+	-i32 %x
+	-i32 %y
+	-i32 %value
+	-i32 %matrix_id
+Function matrix_drawPixel_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: matrix_write_instrumented
+Function matrix_write_instrumented has parameters:
+	-%struct.matrix* %matrix
+	-i32 %matrix_id
+Function matrix_write_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup_instrumented
+Function setup_instrumented has parameters:
+	-%struct.serial* %serial
+	-%struct.matrix* %matrix
+	-i32 %serial_id
+	-i32 %matrix_id
+Function setup_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_available_instrumented
+Function Serial_available_instrumented has parameters:
+	-%struct.serial* %serial
+	-i32 %serial_id
+Function Serial_available_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Serial_available was extended with 1 arguments
+Function Serial_begin was extended with 1 arguments
+Function Serial_read was extended with 1 arguments
+Function matrix_drawPixel was extended with 1 arguments
+Function matrix_fillScreen was extended with 1 arguments
+Function matrix_setIntensity was extended with 1 arguments
+Function matrix_write was extended with 1 arguments
+Function setup was extended with 2 arguments
+Searching for calls to:
+	- Serial_available
+	- Serial_begin
+	- Serial_read
+	- matrix_drawPixel
+	- matrix_fillScreen
+	- matrix_setIntensity
+	- matrix_write
+	- setup
+Found call to setup inside main
+Found call to Serial_available inside main
+Found call to Serial_read inside main
+Found call to matrix_fillScreen inside main
+Found call to matrix_write inside main
+Found call to matrix_drawPixel inside main
+Found call to matrix_write inside main
+Found call to Serial_begin inside setup_instrumented
+Found call to matrix_setIntensity inside setup_instrumented
+Found call to matrix_fillScreen inside setup_instrumented
+Found call to matrix_write inside setup_instrumented
+Replacing calls
+Removing function Serial_available
+Remove OK Serial_available
+Removing function Serial_begin
+Remove OK Serial_begin
+Removing function Serial_read
+Remove OK Serial_read
+Removing function matrix_drawPixel
+Remove OK matrix_drawPixel
+Removing function matrix_fillScreen
+Remove OK matrix_fillScreen
+Removing function matrix_setIntensity
+Remove OK matrix_setIntensity
+Removing function matrix_write
+Remove OK matrix_write
+Removing function setup
+Remove OK setup

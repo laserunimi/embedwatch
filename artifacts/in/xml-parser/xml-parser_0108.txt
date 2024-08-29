@@ -1,0 +1,4 @@
+<root>
+  <commands> 
+    <attack subjectId="Chimera" weapon="ion cannon" power="14" targetId="Mantis"/>
+</root>

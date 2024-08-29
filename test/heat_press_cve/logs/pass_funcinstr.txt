@@ -1,0 +1,102 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_get_FC3
+Function Modbus_get_FC3 has parameters:
+Function Modbus_get_FC3 doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_poll
+Function Modbus_poll has parameters:
+Function Modbus_poll doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: master_query
+Function master_query has parameters:
+	-i8* %buffer
+	-[3 x i32] %m.coerce
+Instrumenting Function: setup
+Function setup has parameters:
+Function setup doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: loop
+Function loop has parameters:
+Function loop doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pinMode
+Function pinMode has parameters:
+	-i32 %pin
+	-i32 %value
+Function pinMode doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: digitalWrite
+Function digitalWrite has parameters:
+	-i32 %pin
+	-i32 %value
+Function digitalWrite doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: startWaveform
+Function startWaveform has parameters:
+	-i32 %pin
+	-i32 %v1
+	-i32 %refresh_interval
+	-i32 %v2
+Function startWaveform doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: startWaveform2
+Function startWaveform2 has parameters:
+	-i32 %pin
+	-i32 %v1
+	-i32 %refresh_interval
+	-i32 %v2
+	-i32 %phaseReference
+Function startWaveform2 doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %refresh_interval
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: stopWaveform
+Function stopWaveform has parameters:
+	-i32 %pin
+Function stopWaveform doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: max
+Function max has parameters:
+	-i32 %v1
+	-i32 %v2
+Function max doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: min
+Function min has parameters:
+	-i32 %v1
+	-i32 %v2
+Function min doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: constrain
+Function constrain has parameters:
+	-i32 %value
+	-i32 %v1
+	-i32 %v2
+Function constrain doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogRead
+Function analogRead has parameters:
+	-i32 %pin
+Function analogRead doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: map
+Function map has parameters:
+	-i32 %x
+	-i32 %in_min
+	-i32 %in_max
+	-i32 %out_min
+	-i32 %out_max
+Function map doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: millis
+Function millis has parameters:
+Function millis doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: master_query_instrumented
+Function master_query_instrumented has parameters:
+	-i8* %buffer
+	-[3 x i32] %m.coerce
+	-i32 %buffer_id
+Function master_query_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function master_query was extended with 1 arguments
+Searching for calls to:
+	- master_query
+Found call to master_query inside loop
+Found call to master_query inside loop
+Replacing calls
+Removing function master_query
+Remove OK master_query

@@ -1,0 +1,110 @@
+Instrumenting Function: bitWrite
+Function bitWrite has parameters:
+	-i8* %x
+	-i8 %n
+	-i8 %value
+Instrumenting Function: bitRead
+Function bitRead has parameters:
+	-i8* %x
+	-i8 %n
+Instrumenting Function: Modbus_process_FC1
+Function Modbus_process_FC1 has parameters:
+	-i16* %regs
+	-i8 %u8size
+Instrumenting Function: Modbus_process_FC3
+Function Modbus_process_FC3 has parameters:
+	-i16* %regs
+	-i8 %u8size
+Instrumenting Function: Modbus_process_FC15
+Function Modbus_process_FC15 has parameters:
+	-i16* %regs
+	-i8 %u8size
+Instrumenting Function: Modbus_process_FC16
+Function Modbus_process_FC16 has parameters:
+	-i16* %regs
+	-i8 %u8size
+Instrumenting Function: Modbus_poll
+Function Modbus_poll has parameters:
+	-i16* %regs
+	-i8 %u8size
+Instrumenting Function: main
+Function main has parameters:
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: bitWrite_instrumented
+Function bitWrite_instrumented has parameters:
+	-i8* %x
+	-i8 %n
+	-i8 %value
+	-i32 %x_id
+Function bitWrite_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: bitRead_instrumented
+Function bitRead_instrumented has parameters:
+	-i8* %x
+	-i8 %n
+	-i32 %x_id
+Function bitRead_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_process_FC1_instrumented
+Function Modbus_process_FC1_instrumented has parameters:
+	-i16* %regs
+	-i8 %u8size
+	-i32 %regs_id
+Function Modbus_process_FC1_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_process_FC3_instrumented
+Function Modbus_process_FC3_instrumented has parameters:
+	-i16* %regs
+	-i8 %u8size
+	-i32 %regs_id
+Function Modbus_process_FC3_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_process_FC15_instrumented
+Function Modbus_process_FC15_instrumented has parameters:
+	-i16* %regs
+	-i8 %u8size
+	-i32 %regs_id
+Function Modbus_process_FC15_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_process_FC16_instrumented
+Function Modbus_process_FC16_instrumented has parameters:
+	-i16* %regs
+	-i8 %u8size
+	-i32 %regs_id
+Function Modbus_process_FC16_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Modbus_poll_instrumented
+Function Modbus_poll_instrumented has parameters:
+	-i16* %regs
+	-i8 %u8size
+	-i32 %regs_id
+Function Modbus_poll_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Modbus_poll was extended with 1 arguments
+Function Modbus_process_FC1 was extended with 1 arguments
+Function Modbus_process_FC15 was extended with 1 arguments
+Function Modbus_process_FC16 was extended with 1 arguments
+Function Modbus_process_FC3 was extended with 1 arguments
+Function bitRead was extended with 1 arguments
+Function bitWrite was extended with 1 arguments
+Searching for calls to:
+	- Modbus_poll
+	- Modbus_process_FC1
+	- Modbus_process_FC15
+	- Modbus_process_FC16
+	- Modbus_process_FC3
+	- bitRead
+	- bitWrite
+Found call to Modbus_poll inside main
+Found call to Modbus_process_FC1 inside Modbus_poll_instrumented
+Found call to Modbus_process_FC3 inside Modbus_poll_instrumented
+Found call to Modbus_process_FC15 inside Modbus_poll_instrumented
+Found call to Modbus_process_FC16 inside Modbus_poll_instrumented
+Replacing calls
+Removing function Modbus_poll
+Remove OK Modbus_poll
+Removing function Modbus_process_FC1
+Remove OK Modbus_process_FC1
+Removing function Modbus_process_FC15
+Remove OK Modbus_process_FC15
+Removing function Modbus_process_FC16
+Remove OK Modbus_process_FC16
+Removing function Modbus_process_FC3
+Remove OK Modbus_process_FC3
+Removing function bitRead
+Remove OK bitRead
+Removing function bitWrite
+Remove OK bitWrite

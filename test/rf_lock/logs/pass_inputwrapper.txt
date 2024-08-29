@@ -1,0 +1,65 @@
+Function: die is whitelisted
+----------------------------------------------------------
+Function: debug_print is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: rf_write_buf is whitelisted
+FN:putchar
+----------------------------------------------------------
+Function: rf_read_buf is whitelisted
+FN:fgetc
+----------------------------------------------------------
+Function: get_rf_config is whitelisted
+FN:rf_write_buf
+FN:rf_read_buf
+----------------------------------------------------------
+Function: reset_rf_config is whitelisted
+FN:debug_print
+FN:rf_write_buf
+FN:rf_read_buf
+FN:debug_print
+FN:strncmp
+FN:debug_print
+FN:die
+----------------------------------------------------------
+Function: max_tx_power is whitelisted
+FN:rf_write_buf
+FN:fgets
+FFFgets max_tx_power call skip...
+FN:debug_print
+FN:strncmp
+FN:debug_print
+FN:die
+----------------------------------------------------------
+Function: configure_rf is whitelisted
+FN:reset_rf_config
+FN:max_tx_power
+FN:get_rf_config
+----------------------------------------------------------
+Function: unlock is whitelisted
+FN:debug_print
+FN:sleep
+----------------------------------------------------------
+Function: read_code is whitelisted
+FN:fgetc
+FN:strcmp
+FN:rf_write_buf
+FN:unlock
+FN:debug_print
+FN:rf_write_buf
+----------------------------------------------------------
+Function: set_code is whitelisted
+FN:fgetc
+FN:strcpy
+FN:putchar
+----------------------------------------------------------
+Function: main is whitelisted
+FN:printf
+FN:printf
+FN:fgetc
+FN:read_code
+FN:debug_print
+FN:rf_write_buf
+FN:set_code
+FN:printf
+----------------------------------------------------------

@@ -1,0 +1,27 @@
+Function: bitWrite is whitelisted
+----------------------------------------------------------
+Function: bitRead is whitelisted
+----------------------------------------------------------
+Function: Modbus_process_FC1 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Modbus_process_FC3 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Modbus_process_FC15 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Modbus_process_FC16 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Modbus_poll is whitelisted
+FN:fgetc
+FN:printf
+FN:Modbus_process_FC1
+FN:Modbus_process_FC3
+FN:Modbus_process_FC15
+FN:Modbus_process_FC16
+----------------------------------------------------------
+Function: main is whitelisted
+FN:Modbus_poll
+----------------------------------------------------------

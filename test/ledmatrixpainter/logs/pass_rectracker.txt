@@ -1,0 +1,40 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: Serial_begin_instrumented
+Tracking recursion for Serial_begin_instrumented
+Instrumenting entry point of Serial_begin_instrumented
+Instrumenting exit point of Serial_begin_instrumented
+Instrumenting Function: Serial_read_instrumented
+Tracking recursion for Serial_read_instrumented
+Instrumenting entry point of Serial_read_instrumented
+Instrumenting exit point of Serial_read_instrumented
+Instrumenting Function: matrix_setIntensity_instrumented
+Tracking recursion for matrix_setIntensity_instrumented
+Instrumenting entry point of matrix_setIntensity_instrumented
+Instrumenting exit point of matrix_setIntensity_instrumented
+Instrumenting Function: matrix_fillScreen_instrumented
+Tracking recursion for matrix_fillScreen_instrumented
+Instrumenting entry point of matrix_fillScreen_instrumented
+Instrumenting exit point of matrix_fillScreen_instrumented
+Instrumenting Function: matrix_drawPixel_instrumented
+Tracking recursion for matrix_drawPixel_instrumented
+Instrumenting entry point of matrix_drawPixel_instrumented
+Instrumenting exit point of matrix_drawPixel_instrumented
+Instrumenting Function: matrix_write_instrumented
+Tracking recursion for matrix_write_instrumented
+Instrumenting entry point of matrix_write_instrumented
+Instrumenting exit point of matrix_write_instrumented
+Instrumenting Function: setup_instrumented
+Tracking recursion for setup_instrumented
+Instrumenting entry point of setup_instrumented
+Instrumenting exit point of setup_instrumented
+Instrumenting Function: Serial_available_instrumented
+Tracking recursion for Serial_available_instrumented
+Instrumenting entry point of Serial_available_instrumented
+Instrumenting exit point of Serial_available_instrumented

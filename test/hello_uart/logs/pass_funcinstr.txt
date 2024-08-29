@@ -1,0 +1,121 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_init
+Function uart_init has parameters:
+	-%struct.uart* %uart
+	-i8* %name
+	-i32 %rate
+Instrumenting Function: gpio_set_tx
+Function gpio_set_tx has parameters:
+	-%struct.uart* %uart
+	-i32 %tx
+Instrumenting Function: gpio_set_rx
+Function gpio_set_rx has parameters:
+	-%struct.uart* %uart
+	-i32 %rx
+Instrumenting Function: uart_putc_raw
+Function uart_putc_raw has parameters:
+	-%struct.uart* %uart
+	-i8 %c
+Instrumenting Function: uart_putc
+Function uart_putc has parameters:
+	-%struct.uart* %uart
+	-i8 %c
+Instrumenting Function: uart_puts
+Function uart_puts has parameters:
+	-%struct.uart* %uart
+	-i8* %str
+Instrumenting Function: uart_input
+Function uart_input has parameters:
+	-%struct.uart* %uart
+	-i8* %buf
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_init_instrumented
+Function uart_init_instrumented has parameters:
+	-%struct.uart* %uart
+	-i8* %name
+	-i32 %rate
+	-i32 %uart_id
+	-i32 %name_id
+Function uart_init_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: gpio_set_tx_instrumented
+Function gpio_set_tx_instrumented has parameters:
+	-%struct.uart* %uart
+	-i32 %tx
+	-i32 %uart_id
+Function gpio_set_tx_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: gpio_set_rx_instrumented
+Function gpio_set_rx_instrumented has parameters:
+	-%struct.uart* %uart
+	-i32 %rx
+	-i32 %uart_id
+Function gpio_set_rx_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_putc_raw_instrumented
+Function uart_putc_raw_instrumented has parameters:
+	-%struct.uart* %uart
+	-i8 %c
+	-i32 %uart_id
+Function uart_putc_raw_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_putc_instrumented
+Function uart_putc_instrumented has parameters:
+	-%struct.uart* %uart
+	-i8 %c
+	-i32 %uart_id
+Function uart_putc_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_puts_instrumented
+Function uart_puts_instrumented has parameters:
+	-%struct.uart* %uart
+	-i8* %str
+	-i32 %uart_id
+	-i32 %str_id
+Function uart_puts_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: uart_input_instrumented
+Function uart_input_instrumented has parameters:
+	-%struct.uart* %uart
+	-i8* %buf
+	-i32 %uart_id
+	-i32 %buf_id
+Function uart_input_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function gpio_set_rx was extended with 1 arguments
+Function gpio_set_tx was extended with 1 arguments
+Function uart_init was extended with 2 arguments
+Function uart_input was extended with 2 arguments
+Function uart_putc was extended with 1 arguments
+Function uart_putc_raw was extended with 1 arguments
+Function uart_puts was extended with 2 arguments
+Searching for calls to:
+	- gpio_set_rx
+	- gpio_set_tx
+	- uart_init
+	- uart_input
+	- uart_putc
+	- uart_putc_raw
+	- uart_puts
+Found call to uart_init inside main
+Found call to gpio_set_tx inside main
+Found call to gpio_set_rx inside main
+Found call to uart_putc_raw inside main
+Found call to uart_putc inside main
+Found call to uart_puts inside main
+Found call to uart_input inside main
+Found call to uart_puts inside main
+Replacing calls
+Removing function gpio_set_rx
+Remove OK gpio_set_rx
+Removing function gpio_set_tx
+Remove OK gpio_set_tx
+Removing function uart_init
+Remove OK uart_init
+Removing function uart_input
+Remove OK uart_input
+Removing function uart_putc
+Remove OK uart_putc
+Removing function uart_putc_raw
+Remove OK uart_putc_raw
+Removing function uart_puts
+Remove OK uart_puts

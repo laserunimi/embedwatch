@@ -1,0 +1,8 @@
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: read_instrumented
+Tracking recursion for read_instrumented
+Instrumenting entry point of read_instrumented
+Instrumenting exit point of read_instrumented

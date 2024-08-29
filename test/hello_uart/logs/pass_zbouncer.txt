@@ -1,0 +1,110 @@
+Checking for function: hook_exit
+Checking for function: main
+Checking for function: uart_init_instrumented
+Checking for function: gpio_set_tx_instrumented
+Checking for function: gpio_set_rx_instrumented
+Checking for function: uart_putc_raw_instrumented
+Checking for function: uart_putc_instrumented
+Checking for function: uart_puts_instrumented
+Checking for function: uart_input_instrumented
+	wrapper_scanf |   %6 = call i8* @wrapper_scanf(i8* %5, i8* %4)
+-------------------------LOOPS----------------------------
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 11 |   %uart = alloca %struct.uart, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=11, addr=0x55f189f23738)
+METADATA::zdef 1 |   %buf = alloca [40 x i8], align 1, !zdef !4
+Injecting zbouncer_collect_alloca(def=1, addr=0x55f189f23798)
+METADATA::zdef 12 |   %uart.addr_instrumented = alloca %struct.uart*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=12, addr=0x55f189f277a8)
+METADATA::zdef 3 |   %str.addr_instrumented = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=3, addr=0x55f189f25c38)
+METADATA::zdef 5 |   %buf.addr_instrumented = alloca i8*, align 4, !zdef !3
+Injecting zbouncer_collect_alloca(def=5, addr=0x55f189f2cb78)
+----------------------------------------------------------
+METADATA::zuse 2 |   store i8* %str, i8** %str.addr_instrumented, align 4, !zsuse !4
+Injecting zbouncer_use(use=2, addr=0x55f189f25c38)
+METADATA::zuse 4 |   store i8* %buf, i8** %buf.addr_instrumented, align 4, !zsuse !4
+Injecting zbouncer_use(use=4, addr=0x55f189f2cb78)
+----------------------------------------------------------
+METADATA::zluse 10 |   %call_instrumented = call i8* @strcpy(i8* %arraydecay_instrumented, i8* %14), !ziuse !4, !zluse !5
+Injecting zbouncer_iluse(use=10, def=uart_id, addr=0x55f189f27b78, size_of_write=0x55f189f3fa30)
+METADATA::zluse 8 |   %call_instrumented = call i32 (i8*, ...) @__isoc99_scanf(i8* %25, i8* %22), !ziuse !5, !zluse !6
+Injecting zbouncer_iluse(use=8, def=buf_id, addr=0x55f189f2ccd8, size_of_write=0x55f189f3fa30)
+Instruction:   call void @uart_init_instrumented(%struct.uart* %uart, i8* %22, i32 115200, i32 0, i32 0), !zref_uart_id !5
+Has metadata zref_uart_id with value 21
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+  %22 = getelementptr inbounds [6 x i8], [6 x i8]* @.str.4, i32 0, i32 0
+i32 115200
+  %31 = load i32, i32* %25
+i32 0
+Instruction:   call void @gpio_set_tx_instrumented(%struct.uart* %uart, i32 0, i32 0), !zref_uart_id !6
+Has metadata zref_uart_id with value 29
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+i32 0
+  %40 = load i32, i32* %34
+Instruction:   call void @gpio_set_rx_instrumented(%struct.uart* %uart, i32 1, i32 0), !zref_uart_id !7
+Has metadata zref_uart_id with value 37
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+i32 1
+  %49 = load i32, i32* %43
+Instruction:   call void @uart_putc_raw_instrumented(%struct.uart* %uart, i8 65, i32 0), !zref_uart_id !8
+Has metadata zref_uart_id with value 45
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+i8 65
+  %58 = load i32, i32* %52
+Instruction:   call void @uart_putc_instrumented(%struct.uart* %uart, i8 66, i32 0), !zref_uart_id !9
+Has metadata zref_uart_id with value 61
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+i8 66
+  %67 = load i32, i32* %61
+Instruction:   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %68, i32 0, i32 0), !zref_uart_id !10
+Has metadata zref_uart_id with value 13
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+  %68 = getelementptr inbounds [15 x i8], [15 x i8]* @.str.5, i32 0, i32 0
+  %77 = load i32, i32* %71
+i32 0
+Instruction:   call void @uart_input_instrumented(%struct.uart* %uart, i8* %arraydecay, i32 0, i32 0), !zref_uart_id !11, !zref_buf_id !4
+Has metadata zref_uart_id with value 69
+Instruction:   call void @uart_input_instrumented(%struct.uart* %uart, i8* %arraydecay, i32 0, i32 0), !zref_uart_id !11, !zref_buf_id !4
+Has metadata zref_buf_id with value 1
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+  %arraydecay = getelementptr inbounds [40 x i8], [40 x i8]* %buf, i32 0, i32 0
+  %86 = load i32, i32* %80
+  %95 = load i32, i32* %89
+Instruction:   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %arraydecay1, i32 0, i32 0), !zref_uart_id !12, !zref_str_id !4
+Has metadata zref_uart_id with value 53
+Instruction:   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %arraydecay1, i32 0, i32 0), !zref_uart_id !12, !zref_str_id !4
+Has metadata zref_str_id with value 1
+Arguments recap:
+  %uart = alloca %struct.uart, align 4, !zdef !3
+  %arraydecay1 = getelementptr inbounds [40 x i8], [40 x i8]* %buf, i32 0, i32 0
+  %104 = load i32, i32* %98
+  %113 = load i32, i32* %107
+Replacing   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %68, i32 0, i32 0), !zref_uart_id !10 with   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %68, i32 %77, i32 0)
+Replaced call
+Replacing   call void @uart_init_instrumented(%struct.uart* %uart, i8* %22, i32 115200, i32 0, i32 0), !zref_uart_id !5 with   call void @uart_init_instrumented(%struct.uart* %uart, i8* %22, i32 115200, i32 %31, i32 0)
+Replaced call
+Replacing   call void @gpio_set_tx_instrumented(%struct.uart* %uart, i32 0, i32 0), !zref_uart_id !5 with   call void @gpio_set_tx_instrumented(%struct.uart* %uart, i32 0, i32 %40)
+Replaced call
+Replacing   call void @gpio_set_rx_instrumented(%struct.uart* %uart, i32 1, i32 0), !zref_uart_id !5 with   call void @gpio_set_rx_instrumented(%struct.uart* %uart, i32 1, i32 %49)
+Replaced call
+Replacing   call void @uart_putc_raw_instrumented(%struct.uart* %uart, i8 65, i32 0), !zref_uart_id !5 with   call void @uart_putc_raw_instrumented(%struct.uart* %uart, i8 65, i32 %58)
+Replaced call
+Replacing   call void @uart_putc_instrumented(%struct.uart* %uart, i8 66, i32 0), !zref_uart_id !5 with   call void @uart_putc_instrumented(%struct.uart* %uart, i8 66, i32 %67)
+Replaced call
+Replacing   call void @uart_input_instrumented(%struct.uart* %uart, i8* %arraydecay, i32 0, i32 0), !zref_uart_id !5, !zref_buf_id !4 with   call void @uart_input_instrumented(%struct.uart* %uart, i8* %arraydecay, i32 %86, i32 %95)
+Replaced call
+Replacing   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %arraydecay1, i32 0, i32 0), !zref_uart_id !5, !zref_str_id !4 with   call void @uart_puts_instrumented(%struct.uart* %uart, i8* %arraydecay1, i32 %104, i32 %113)
+Replaced call
+Returning

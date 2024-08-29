@@ -1,0 +1,98 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_read
+Function Serial_read has parameters:
+	-i8* %buf
+Instrumenting Function: pixel_matrix_init
+Function pixel_matrix_init has parameters:
+	-%struct.pixel* %pixel
+	-i32 %num
+	-i32 %pin
+Instrumenting Function: setup
+Function setup has parameters:
+	-%struct.pixel* %pixel
+Instrumenting Function: color
+Function color has parameters:
+	-i32 %r
+	-i32 %g
+	-i32 %b
+Function color doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setPixelColor
+Function setPixelColor has parameters:
+	-%struct.pixel* %pixel
+	-i32 %pos
+	-i32 %color
+Instrumenting Function: show
+Function show has parameters:
+	-%struct.pixel* %pixel
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %time
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_read_instrumented
+Function Serial_read_instrumented has parameters:
+	-i8* %buf
+	-i32 %buf_id
+Function Serial_read_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pixel_matrix_init_instrumented
+Function pixel_matrix_init_instrumented has parameters:
+	-%struct.pixel* %pixel
+	-i32 %num
+	-i32 %pin
+	-i32 %pixel_id
+Function pixel_matrix_init_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup_instrumented
+Function setup_instrumented has parameters:
+	-%struct.pixel* %pixel
+	-i32 %pixel_id
+Function setup_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setPixelColor_instrumented
+Function setPixelColor_instrumented has parameters:
+	-%struct.pixel* %pixel
+	-i32 %pos
+	-i32 %color
+	-i32 %pixel_id
+Function setPixelColor_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: show_instrumented
+Function show_instrumented has parameters:
+	-%struct.pixel* %pixel
+	-i32 %pixel_id
+Function show_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Serial_read was extended with 1 arguments
+Function pixel_matrix_init was extended with 1 arguments
+Function setPixelColor was extended with 1 arguments
+Function setup was extended with 1 arguments
+Function show was extended with 1 arguments
+Searching for calls to:
+	- Serial_read
+	- pixel_matrix_init
+	- setPixelColor
+	- setup
+	- show
+Found call to setup inside main
+Found call to Serial_read inside main
+Found call to setPixelColor inside main
+Found call to show inside main
+Found call to Serial_read inside main
+Found call to Serial_read inside main
+Found call to Serial_read inside main
+Found call to setPixelColor inside main
+Found call to show inside main
+Found call to pixel_matrix_init inside setup_instrumented
+Replacing calls
+Removing function Serial_read
+Remove OK Serial_read
+Removing function pixel_matrix_init
+Remove OK pixel_matrix_init
+Removing function setPixelColor
+Remove OK setPixelColor
+Removing function setup
+Remove OK setup
+Removing function show
+Remove OK show

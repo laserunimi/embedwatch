@@ -1,0 +1,23 @@
+Checking for function: main
+-------------------------LOOPS----------------------------
+Loop in main: ZSUSE 5 |   store i32 %call2, i32* %c, align 4, !zsuse !6
+Injecting zbouncer_use(use=5, addr=0x55a49a2e1c98)
+Loop in main: ZSUSE 2 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !7
+Injecting zbouncer_use(use=2, addr=0x55a49a2e3078)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+----------------------------------------------------------
+METADATA::zdef 3 |   %buf = alloca [20 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=3, addr=0x55a49a2e1628)
+METADATA::zdef 1 |   %c = alloca i32, align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=1, addr=0x55a49a2e1c98)
+----------------------------------------------------------
+METADATA::zuse 4 |   store i32 100, i32* %c, align 4, !zsuse !5
+Injecting zbouncer_use(use=4, addr=0x55a49a2e1c98)
+METADATA::zuse 5 |   store i32 %call2, i32* %c, align 4, !zsuse !6
+Injecting zbouncer_use(use=5, addr=0x55a49a2e1c98)
+METADATA::zuse 2 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !7
+Injecting zbouncer_use(use=2, addr=0x55a49a2e3078)
+----------------------------------------------------------
+Returning

@@ -1,0 +1,2 @@
+101;ADEF;-1;BASE;8128;FIObjVar ID: 360 (base object)    %buffer = alloca [8128 x i8], align 1 
+144;ADEF;-1;BASE;1536;FIObjVar ID: 364 (base object)    %tokens = alloca [128 x %struct.sxmltok_t], align 4 

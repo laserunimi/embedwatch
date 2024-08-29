@@ -1,0 +1,23 @@
+0;IN;-1;CallICFGNode224 {fun: Serial_read_instrumented}
+	1;LUSE;0;Serial_read_instrumented;CallICFGNode224 {fun: Serial_read_instrumented}
+		2;ADEF;1;BASE;1;FIObjVar ID: 303 (base object)    %buf_instrumented = alloca [1 x i8], align 1 
+3;IN;-1;CallICFGNode221 {fun: Serial_read_instrumented}
+	2;ADEF;3;BASE;1;FIObjVar ID: 303 (base object)    %buf_instrumented = alloca [1 x i8], align 1 
+	4;SUSE;3;matrix_drawPixel_instrumented;StoreVFGNode ID: 289 StoreStmt: [Var416 <-- Var405]	    store i32 %x, i32* %x.addr_instrumented, align 4 
+		5;ADEF;4;DOMINATOR;4;FIObjVar ID: 417 (base object)    %x.addr_instrumented = alloca i32, align 4 
+	6;SUSE;3;matrix_drawPixel_instrumented;StoreVFGNode ID: 290 StoreStmt: [Var418 <-- Var406]	    store i32 %y, i32* %y.addr_instrumented, align 4 
+		7;ADEF;6;DOMINATOR;4;FIObjVar ID: 419 (base object)    %y.addr_instrumented = alloca i32, align 4 
+	8;SUSE;3;main;StoreVFGNode ID: 252 StoreStmt: [Var164 <-- Var163]	    store i8 0, i8* %arrayidx13, align 1 
+		9;ADEF;8;BASE;2;FIObjVar ID: 74 (base object)    %bytes = alloca [2 x i8], align 1 
+	10;SUSE;3;main;StoreVFGNode ID: 251 StoreStmt: [Var161 <-- Var163]	    store i8 0, i8* %arrayidx12, align 1 
+		9;ADEF;10;BASE;2;FIObjVar ID: 74 (base object)    %bytes = alloca [2 x i8], align 1 
+	11;SUSE;3;main;StoreVFGNode ID: 249 StoreStmt: [Var140 <-- Var134]	    store i8 %call3, i8* %arrayidx, align 1 
+		9;ADEF;11;BASE;2;FIObjVar ID: 74 (base object)    %bytes = alloca [2 x i8], align 1 
+	12;SUSE;3;main;StoreVFGNode ID: 254 StoreStmt: [Var87 <-- Var177]	    store i32 %add, i32* %val, align 4 
+		13;ADEF;12;DOMINATOR;4;FIObjVar ID: 88 (base object)    %val = alloca i32, align 4 
+	14;SUSE;3;main;StoreVFGNode ID: 256 StoreStmt: [Var87 <-- Var189]	    store i32 %sub, i32* %val, align 4 
+		13;ADEF;14;DOMINATOR;4;FIObjVar ID: 88 (base object)    %val = alloca i32, align 4 
+	15;SUSE;3;main;StoreVFGNode ID: 257 StoreStmt: [Var91 <-- Var198]	    store i32 %rem, i32* %y, align 4 
+		16;ADEF;15;DOMINATOR;4;FIObjVar ID: 92 (base object)    %y = alloca i32, align 4 
+	17;SUSE;3;main;StoreVFGNode ID: 258 StoreStmt: [Var93 <-- Var204]	    store i32 %rem27, i32* %x, align 4 
+		18;ADEF;17;DOMINATOR;4;FIObjVar ID: 94 (base object)    %x = alloca i32, align 4 

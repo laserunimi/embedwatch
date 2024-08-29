@@ -1,0 +1,478 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sxml_init
+Function sxml_init has parameters:
+	-%struct.sxml_t* %state
+Instrumenting Function: sxml_parse
+Function sxml_parse has parameters:
+	-%struct.sxml_t* %state
+	-i8* %buffer
+	-i32 %bufferlen
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+Instrumenting Function: str_ltrim
+Function str_ltrim has parameters:
+	-i8* %start
+	-i8* %end
+Instrumenting Function: state_setpos
+Function state_setpos has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %ptr
+Instrumenting Function: parse_instruction
+Function parse_instruction has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: parse_doctype
+Function parse_doctype has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: parse_start
+Function parse_start has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: str_findchr
+Function str_findchr has parameters:
+	-i8* %start
+	-i8* %end
+	-i32 %c
+Instrumenting Function: parse_characters
+Function parse_characters has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %end
+Instrumenting Function: parse_end
+Function parse_end has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: parse_comment
+Function parse_comment has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: parse_cdata
+Function parse_cdata has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: str_startswith
+Function str_startswith has parameters:
+	-i8* %start
+	-i8* %end
+	-i8* %prefix
+Instrumenting Function: str_findstr
+Function str_findstr has parameters:
+	-i8* %start
+	-i8* %end
+	-i8* %needle
+Instrumenting Function: state_pushtoken
+Function state_pushtoken has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %type
+	-i8* %start
+	-i8* %end
+Instrumenting Function: NameStartChar
+Function NameStartChar has parameters:
+	-i32 %c
+Function NameStartChar doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_find_notalnum
+Function str_find_notalnum has parameters:
+	-i8* %start
+	-i8* %end
+Instrumenting Function: NameChar
+Function NameChar has parameters:
+	-i32 %c
+Function NameChar doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_attributes
+Function parse_attributes has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+Instrumenting Function: str_rtrim
+Function str_rtrim has parameters:
+	-i8* %start
+	-i8* %end
+Instrumenting Function: parse_attrvalue
+Function parse_attrvalue has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %end
+Instrumenting Function: WhiteSpace
+Function WhiteSpace has parameters:
+	-i32 %c
+Function WhiteSpace doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_prettyxml
+Function print_prettyxml has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+	-i32* %indentlevel
+Instrumenting Function: count_lines
+Function count_lines has parameters:
+	-i8* %buffer
+	-i32 %bufferlen
+Instrumenting Function: print_indent
+Function print_indent has parameters:
+	-i32 %indentlevel
+Function print_indent doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_tokenvalue
+Function print_tokenvalue has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %token
+Instrumenting Function: print_chartokens
+Function print_chartokens has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+Instrumenting Function: sxml_init_instrumented
+Function sxml_init_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-i32 %state_id
+Function sxml_init_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: sxml_parse_instrumented
+Function sxml_parse_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-i8* %buffer
+	-i32 %bufferlen
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+	-i32 %state_id
+	-i32 %buffer_id
+	-i32 %tokens_id
+Function sxml_parse_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_ltrim_instrumented
+Function str_ltrim_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i32 %start_id
+	-i32 %end_id
+Function str_ltrim_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: state_setpos_instrumented
+Function state_setpos_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %ptr
+	-i32 %state_id
+	-i32 %args_id
+	-i32 %ptr_id
+Function state_setpos_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_instruction_instrumented
+Function parse_instruction_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_instruction_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_doctype_instrumented
+Function parse_doctype_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_doctype_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_start_instrumented
+Function parse_start_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_start_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_findchr_instrumented
+Function str_findchr_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i32 %c
+	-i32 %start_id
+	-i32 %end_id
+Function str_findchr_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_characters_instrumented
+Function parse_characters_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %end
+	-i32 %state_id
+	-i32 %args_id
+	-i32 %end_id
+Function parse_characters_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_end_instrumented
+Function parse_end_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_end_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_comment_instrumented
+Function parse_comment_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_comment_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_cdata_instrumented
+Function parse_cdata_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_cdata_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_startswith_instrumented
+Function str_startswith_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i8* %prefix
+	-i32 %start_id
+	-i32 %end_id
+	-i32 %prefix_id
+Function str_startswith_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_findstr_instrumented
+Function str_findstr_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i8* %needle
+	-i32 %start_id
+	-i32 %end_id
+	-i32 %needle_id
+Function str_findstr_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: state_pushtoken_instrumented
+Function state_pushtoken_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %type
+	-i8* %start
+	-i8* %end
+	-i32 %state_id
+	-i32 %args_id
+	-i32 %start_id
+	-i32 %end_id
+Function state_pushtoken_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_find_notalnum_instrumented
+Function str_find_notalnum_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i32 %start_id
+	-i32 %end_id
+Function str_find_notalnum_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_attributes_instrumented
+Function parse_attributes_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i32 %state_id
+	-i32 %args_id
+Function parse_attributes_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: str_rtrim_instrumented
+Function str_rtrim_instrumented has parameters:
+	-i8* %start
+	-i8* %end
+	-i32 %start_id
+	-i32 %end_id
+Function str_rtrim_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: parse_attrvalue_instrumented
+Function parse_attrvalue_instrumented has parameters:
+	-%struct.sxml_t* %state
+	-%struct.sxml_args_t* %args
+	-i8* %end
+	-i32 %state_id
+	-i32 %args_id
+	-i32 %end_id
+Function parse_attrvalue_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_prettyxml_instrumented
+Function print_prettyxml_instrumented has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+	-i32* %indentlevel
+	-i32 %buffer_id
+	-i32 %tokens_id
+	-i32 %indentlevel_id
+Function print_prettyxml_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: count_lines_instrumented
+Function count_lines_instrumented has parameters:
+	-i8* %buffer
+	-i32 %bufferlen
+	-i32 %buffer_id
+Function count_lines_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_tokenvalue_instrumented
+Function print_tokenvalue_instrumented has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %token
+	-i32 %buffer_id
+	-i32 %token_id
+Function print_tokenvalue_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: print_chartokens_instrumented
+Function print_chartokens_instrumented has parameters:
+	-i8* %buffer
+	-%struct.sxmltok_t* %tokens
+	-i32 %num_tokens
+	-i32 %buffer_id
+	-i32 %tokens_id
+Function print_chartokens_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function count_lines was extended with 1 arguments
+Function parse_attributes was extended with 2 arguments
+Function parse_attrvalue was extended with 3 arguments
+Function parse_cdata was extended with 2 arguments
+Function parse_characters was extended with 3 arguments
+Function parse_comment was extended with 2 arguments
+Function parse_doctype was extended with 2 arguments
+Function parse_end was extended with 2 arguments
+Function parse_instruction was extended with 2 arguments
+Function parse_start was extended with 2 arguments
+Function print_chartokens was extended with 2 arguments
+Function print_prettyxml was extended with 3 arguments
+Function print_tokenvalue was extended with 2 arguments
+Function state_pushtoken was extended with 4 arguments
+Function state_setpos was extended with 3 arguments
+Function str_find_notalnum was extended with 2 arguments
+Function str_findchr was extended with 2 arguments
+Function str_findstr was extended with 3 arguments
+Function str_ltrim was extended with 2 arguments
+Function str_rtrim was extended with 2 arguments
+Function str_startswith was extended with 3 arguments
+Function sxml_init was extended with 1 arguments
+Function sxml_parse was extended with 3 arguments
+Searching for calls to:
+	- count_lines
+	- parse_attributes
+	- parse_attrvalue
+	- parse_cdata
+	- parse_characters
+	- parse_comment
+	- parse_doctype
+	- parse_end
+	- parse_instruction
+	- parse_start
+	- print_chartokens
+	- print_prettyxml
+	- print_tokenvalue
+	- state_pushtoken
+	- state_setpos
+	- str_find_notalnum
+	- str_findchr
+	- str_findstr
+	- str_ltrim
+	- str_rtrim
+	- str_startswith
+	- sxml_init
+	- sxml_parse
+Found call to sxml_init inside main
+Found call to sxml_parse inside main
+Found call to print_prettyxml inside main
+Found call to print_prettyxml inside main
+Found call to count_lines inside main
+Found call to count_lines inside main
+Found call to print_prettyxml inside main
+Found call to str_ltrim inside sxml_parse_instrumented
+Found call to state_setpos inside sxml_parse_instrumented
+Found call to parse_instruction inside sxml_parse_instrumented
+Found call to parse_doctype inside sxml_parse_instrumented
+Found call to parse_start inside sxml_parse_instrumented
+Found call to str_findchr inside sxml_parse_instrumented
+Found call to parse_characters inside sxml_parse_instrumented
+Found call to parse_instruction inside sxml_parse_instrumented
+Found call to parse_end inside sxml_parse_instrumented
+Found call to parse_comment inside sxml_parse_instrumented
+Found call to parse_cdata inside sxml_parse_instrumented
+Found call to parse_start inside sxml_parse_instrumented
+Found call to str_startswith inside parse_instruction_instrumented
+Found call to str_find_notalnum inside parse_instruction_instrumented
+Found call to state_pushtoken inside parse_instruction_instrumented
+Found call to state_setpos inside parse_instruction_instrumented
+Found call to parse_attributes inside parse_instruction_instrumented
+Found call to str_startswith inside parse_instruction_instrumented
+Found call to state_setpos inside parse_instruction_instrumented
+Found call to str_startswith inside parse_doctype_instrumented
+Found call to str_findstr inside parse_doctype_instrumented
+Found call to state_pushtoken inside parse_doctype_instrumented
+Found call to state_setpos inside parse_doctype_instrumented
+Found call to str_find_notalnum inside parse_start_instrumented
+Found call to state_pushtoken inside parse_start_instrumented
+Found call to state_setpos inside parse_start_instrumented
+Found call to parse_attributes inside parse_start_instrumented
+Found call to state_pushtoken inside parse_start_instrumented
+Found call to state_setpos inside parse_start_instrumented
+Found call to str_findchr inside parse_characters_instrumented
+Found call to state_pushtoken inside parse_characters_instrumented
+Found call to state_setpos inside parse_characters_instrumented
+Found call to str_findchr inside parse_characters_instrumented
+Found call to state_pushtoken inside parse_characters_instrumented
+Found call to state_setpos inside parse_characters_instrumented
+Found call to str_startswith inside parse_end_instrumented
+Found call to str_findchr inside parse_end_instrumented
+Found call to str_find_notalnum inside parse_end_instrumented
+Found call to str_ltrim inside parse_end_instrumented
+Found call to state_pushtoken inside parse_end_instrumented
+Found call to state_setpos inside parse_end_instrumented
+Found call to str_startswith inside parse_comment_instrumented
+Found call to str_findstr inside parse_comment_instrumented
+Found call to state_pushtoken inside parse_comment_instrumented
+Found call to state_setpos inside parse_comment_instrumented
+Found call to str_startswith inside parse_cdata_instrumented
+Found call to str_findstr inside parse_cdata_instrumented
+Found call to state_pushtoken inside parse_cdata_instrumented
+Found call to state_setpos inside parse_cdata_instrumented
+Found call to str_ltrim inside parse_attributes_instrumented
+Found call to str_findchr inside parse_attributes_instrumented
+Found call to str_rtrim inside parse_attributes_instrumented
+Found call to state_pushtoken inside parse_attributes_instrumented
+Found call to str_ltrim inside parse_attributes_instrumented
+Found call to str_findchr inside parse_attributes_instrumented
+Found call to state_setpos inside parse_attributes_instrumented
+Found call to parse_attrvalue inside parse_attributes_instrumented
+Found call to str_ltrim inside parse_attributes_instrumented
+Found call to state_setpos inside parse_attributes_instrumented
+Found call to parse_characters inside parse_attrvalue_instrumented
+Found call to print_tokenvalue inside print_prettyxml_instrumented
+Found call to print_tokenvalue inside print_prettyxml_instrumented
+Found call to print_chartokens inside print_prettyxml_instrumented
+Found call to print_tokenvalue inside print_prettyxml_instrumented
+Found call to print_tokenvalue inside print_chartokens_instrumented
+Replacing calls
+Removing function count_lines
+Remove OK count_lines
+Removing function parse_attributes
+Remove OK parse_attributes
+Removing function parse_attrvalue
+Remove OK parse_attrvalue
+Removing function parse_cdata
+Remove OK parse_cdata
+Removing function parse_characters
+Remove OK parse_characters
+Removing function parse_comment
+Remove OK parse_comment
+Removing function parse_doctype
+Remove OK parse_doctype
+Removing function parse_end
+Remove OK parse_end
+Removing function parse_instruction
+Remove OK parse_instruction
+Removing function parse_start
+Remove OK parse_start
+Removing function print_chartokens
+Remove OK print_chartokens
+Removing function print_prettyxml
+Remove OK print_prettyxml
+Removing function print_tokenvalue
+Remove OK print_tokenvalue
+Removing function state_pushtoken
+Remove OK state_pushtoken
+Removing function state_setpos
+Remove OK state_setpos
+Removing function str_find_notalnum
+Remove OK str_find_notalnum
+Removing function str_findchr
+Remove OK str_findchr
+Removing function str_findstr
+Remove OK str_findstr
+Removing function str_ltrim
+Remove OK str_ltrim
+Removing function str_rtrim
+Remove OK str_rtrim
+Removing function str_startswith
+Remove OK str_startswith
+Removing function sxml_init
+Remove OK sxml_init
+Removing function sxml_parse
+Remove OK sxml_parse

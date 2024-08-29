@@ -1,0 +1,145 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: led_on is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: led_off is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: lcd_begin is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: lcd_clear is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: lcd_print is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: lcd_setCursor is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: pinMode is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: digitalRead is whitelisted
+FN:printf
+FN:__isoc99_scanf
+Function: digitalRead, found scanf call
+Args size:2
+----------------------------------------------------------
+Function: digitalWrite is whitelisted
+----------------------------------------------------------
+Function: Serial_begin is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: Serial_available is whitelisted
+----------------------------------------------------------
+Function: Serial_read is whitelisted
+FN:fgetc
+----------------------------------------------------------
+Function: Serial_write is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: analogRead is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: millis is whitelisted
+FN:gettimeofday
+----------------------------------------------------------
+Function: usecs is whitelisted
+FN:gettimeofday
+----------------------------------------------------------
+Function: delayMicroseconds is whitelisted
+FN:usleep
+----------------------------------------------------------
+Function: toUInt is whitelisted
+FN:atoi
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:lcd_begin
+FN:lcd_clear
+FN:lcd_print
+FN:pinMode
+FN:pinMode
+FN:digitalWrite
+FN:digitalWrite
+FN:pinMode
+FN:pinMode
+FN:Serial_begin
+----------------------------------------------------------
+Function: loop is whitelisted
+FN:readSerial
+FN:usecs
+FN:processSerial
+FN:usecs
+FN:printf
+----------------------------------------------------------
+Function: readSerial is whitelisted
+FN:llvm.memset.p0i8.i32
+FN:Serial_available
+FN:Serial_read
+FN:strcpy
+----------------------------------------------------------
+Function: processSerial is whitelisted
+FN:bolus
+FN:updateScreen
+FN:bolus
+FN:updateScreen
+FN:toUInt
+FN:toUInt
+FN:updateScreen
+FN:Serial_write
+FN:Serial_write
+FN:Serial_write
+----------------------------------------------------------
+Function: bolus is whitelisted
+FN:led_on
+FN:digitalWrite
+FN:led_off
+FN:digitalWrite
+FN:digitalWrite
+FN:delayMicroseconds
+FN:digitalWrite
+FN:delayMicroseconds
+----------------------------------------------------------
+Function: updateScreen is whitelisted
+FN:sprintf
+FN:sprintf
+FN:sprintf
+FN:sprintf
+FN:lcd_clear
+FN:lcd_setCursor
+FN:lcd_print
+FN:lcd_setCursor
+FN:lcd_print
+----------------------------------------------------------
+Function: checkTriggers is whitelisted
+FN:digitalRead
+FN:bolus
+FN:updateScreen
+FN:digitalRead
+FN:bolus
+FN:updateScreen
+----------------------------------------------------------
+Function: readKey is whitelisted
+FN:analogRead
+FN:get_key
+FN:millis
+FN:doKeyAction
+----------------------------------------------------------
+Function: get_key is whitelisted
+----------------------------------------------------------
+Function: doKeyAction is whitelisted
+FN:bolus
+FN:bolus
+FN:updateScreen
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:printf
+FN:setup
+FN:loop
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

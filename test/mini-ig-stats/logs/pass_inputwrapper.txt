@@ -1,0 +1,81 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: delay is whitelisted
+----------------------------------------------------------
+Function: pinMode is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: analogWrite is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: setColor is whitelisted
+FN:analogWrite
+FN:analogWrite
+FN:analogWrite
+----------------------------------------------------------
+Function: handleResult is whitelisted
+FN:setColor
+FN:setColor
+FN:setColor
+FN:setColor
+----------------------------------------------------------
+Function: getHttpPage is whitelisted
+FN:sprintf
+FN:printf
+FN:fopen
+FN:fseek
+FN:ftell
+FN:fseek
+FN:printf
+FN:exit
+FN:fgetc
+FN:fclose
+FN:delay
+----------------------------------------------------------
+Function: fetchInteger is whitelisted
+FN:getHttpPage
+FN:strlen
+FN:sprintf
+FN:atoi
+----------------------------------------------------------
+Function: getFollowers is whitelisted
+FN:strcpy
+FN:fetchInteger
+----------------------------------------------------------
+Function: getLikes is whitelisted
+FN:strcpy
+FN:fetchInteger
+----------------------------------------------------------
+Function: getComments is whitelisted
+FN:strcpy
+FN:fetchInteger
+----------------------------------------------------------
+Function: publish is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:strcpy
+FN:pinMode
+FN:pinMode
+FN:pinMode
+FN:setColor
+FN:delay
+FN:setColor
+FN:delay
+FN:setColor
+FN:delay
+FN:setColor
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:getFollowers
+FN:getLikes
+FN:getComments
+FN:handleResult
+FN:sprintf
+FN:publish
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

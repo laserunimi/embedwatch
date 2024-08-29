@@ -1,0 +1,36 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: color
+Tracking recursion for color
+Instrumenting entry point of color
+Instrumenting exit point of color
+Instrumenting Function: delay
+Tracking recursion for delay
+Instrumenting entry point of delay
+Instrumenting exit point of delay
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: Serial_read_instrumented
+Tracking recursion for Serial_read_instrumented
+Instrumenting entry point of Serial_read_instrumented
+Instrumenting exit point of Serial_read_instrumented
+Instrumenting Function: pixel_matrix_init_instrumented
+Tracking recursion for pixel_matrix_init_instrumented
+Instrumenting entry point of pixel_matrix_init_instrumented
+Instrumenting exit point of pixel_matrix_init_instrumented
+Instrumenting Function: setup_instrumented
+Tracking recursion for setup_instrumented
+Instrumenting entry point of setup_instrumented
+Instrumenting exit point of setup_instrumented
+Instrumenting Function: setPixelColor_instrumented
+Tracking recursion for setPixelColor_instrumented
+Instrumenting entry point of setPixelColor_instrumented
+Instrumenting exit point of setPixelColor_instrumented
+Instrumenting Function: show_instrumented
+Tracking recursion for show_instrumented
+Instrumenting entry point of show_instrumented
+Instrumenting exit point of show_instrumented

@@ -1,0 +1,27 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: read
+Function read has parameters:
+	-i32* %t
+	-%struct._IO_FILE* %f
+Instrumenting Function: read_instrumented
+Function read_instrumented has parameters:
+	-i32* %t
+	-%struct._IO_FILE* %f
+	-i32 %t_id
+	-i32 %f_id
+Function read_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function read was extended with 2 arguments
+Searching for calls to:
+	- read
+Found call to read inside main
+Found call to read inside main
+Replacing calls
+Removing function read
+Remove OK read

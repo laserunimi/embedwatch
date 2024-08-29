@@ -1,0 +1,19 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: is_valid is whitelisted
+FN:read
+----------------------------------------------------------
+Function: read is whitelisted
+FN:fgetc
+FN:fclose
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:fopen
+FN:exit
+FN:is_valid
+FN:is_valid
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

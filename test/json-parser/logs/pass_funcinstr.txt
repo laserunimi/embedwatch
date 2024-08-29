@@ -1,0 +1,301 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse
+Function json_parse has parameters:
+	-i8* %buffer
+	-i32 %size
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+Instrumenting Function: json_set_token_id
+Function json_set_token_id has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %id
+	-i32 %id_length
+Instrumenting Function: json_set_token_primitive
+Function json_set_token_primitive has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %type
+	-i32 %value
+	-i32 %value_length
+Instrumenting Function: json_parse_value
+Function json_parse_value has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32* %current
+	-i1 %simple
+Instrumenting Function: json_skip_whitespace
+Function json_skip_whitespace has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+Instrumenting Function: json_set_token_complex
+Function json_set_token_complex has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %type
+	-i32 %pos
+Instrumenting Function: json_parse_object
+Function json_parse_object has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32* %current
+	-i1 %simple
+Instrumenting Function: json_parse_array
+Function json_parse_array has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %owner
+	-i32* %current
+	-i1 %simple
+Instrumenting Function: json_parse_number
+Function json_parse_number has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+Instrumenting Function: json_is_token_delimiter
+Function json_is_token_delimiter has parameters:
+	-i8 %c
+Function json_is_token_delimiter doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_string
+Function json_parse_string has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-i1 %key
+	-i1 %simple
+Instrumenting Function: json_is_whitespace
+Function json_is_whitespace has parameters:
+	-i8 %c
+Function json_is_whitespace doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_get_token
+Function json_get_token has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %index
+Instrumenting Function: json_is_valid_token
+Function json_is_valid_token has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %index
+Instrumenting Function: json_parse_instrumented
+Function json_parse_instrumented has parameters:
+	-i8* %buffer
+	-i32 %size
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %buffer_id
+	-i32 %tokens_id
+Function json_parse_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_set_token_id_instrumented
+Function json_set_token_id_instrumented has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %id
+	-i32 %id_length
+	-i32 %tokens_id
+Function json_set_token_id_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_set_token_primitive_instrumented
+Function json_set_token_primitive_instrumented has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %type
+	-i32 %value
+	-i32 %value_length
+	-i32 %tokens_id
+Function json_set_token_primitive_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_value_instrumented
+Function json_parse_value_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32* %current
+	-i1 %simple
+	-i32 %buffer_id
+	-i32 %tokens_id
+	-i32 %current_id
+Function json_parse_value_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_skip_whitespace_instrumented
+Function json_skip_whitespace_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-i32 %buffer_id
+Function json_skip_whitespace_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_set_token_complex_instrumented
+Function json_set_token_complex_instrumented has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %current
+	-i32 %type
+	-i32 %pos
+	-i32 %tokens_id
+Function json_set_token_complex_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_object_instrumented
+Function json_parse_object_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32* %current
+	-i1 %simple
+	-i32 %buffer_id
+	-i32 %tokens_id
+	-i32 %current_id
+Function json_parse_object_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_array_instrumented
+Function json_parse_array_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %owner
+	-i32* %current
+	-i1 %simple
+	-i32 %buffer_id
+	-i32 %tokens_id
+	-i32 %current_id
+Function json_parse_array_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_number_instrumented
+Function json_parse_number_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-i32 %buffer_id
+Function json_parse_number_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_parse_string_instrumented
+Function json_parse_string_instrumented has parameters:
+	-i8* %buffer
+	-i32 %length
+	-i32 %pos
+	-i1 %key
+	-i1 %simple
+	-i32 %buffer_id
+Function json_parse_string_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_get_token_instrumented
+Function json_get_token_instrumented has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %index
+	-i32 %tokens_id
+Function json_get_token_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: json_is_valid_token_instrumented
+Function json_is_valid_token_instrumented has parameters:
+	-%struct.json_token_t* %tokens
+	-i32 %capacity
+	-i32 %index
+	-i32 %tokens_id
+Function json_is_valid_token_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function json_get_token was extended with 1 arguments
+Function json_is_valid_token was extended with 1 arguments
+Function json_parse was extended with 2 arguments
+Function json_parse_array was extended with 3 arguments
+Function json_parse_number was extended with 1 arguments
+Function json_parse_object was extended with 3 arguments
+Function json_parse_string was extended with 1 arguments
+Function json_parse_value was extended with 3 arguments
+Function json_set_token_complex was extended with 1 arguments
+Function json_set_token_id was extended with 1 arguments
+Function json_set_token_primitive was extended with 1 arguments
+Function json_skip_whitespace was extended with 1 arguments
+Searching for calls to:
+	- json_get_token
+	- json_is_valid_token
+	- json_parse
+	- json_parse_array
+	- json_parse_number
+	- json_parse_object
+	- json_parse_string
+	- json_parse_value
+	- json_set_token_complex
+	- json_set_token_id
+	- json_set_token_primitive
+	- json_skip_whitespace
+Found call to json_parse inside main
+Found call to json_set_token_id inside json_parse_instrumented
+Found call to json_set_token_primitive inside json_parse_instrumented
+Found call to json_parse_value inside json_parse_instrumented
+Found call to json_get_token inside json_set_token_id_instrumented
+Found call to json_get_token inside json_set_token_primitive_instrumented
+Found call to json_skip_whitespace inside json_parse_value_instrumented
+Found call to json_set_token_complex inside json_parse_value_instrumented
+Found call to json_parse_object inside json_parse_value_instrumented
+Found call to json_set_token_complex inside json_parse_value_instrumented
+Found call to json_parse_array inside json_parse_value_instrumented
+Found call to json_parse_number inside json_parse_value_instrumented
+Found call to json_set_token_primitive inside json_parse_value_instrumented
+Found call to json_set_token_primitive inside json_parse_value_instrumented
+Found call to json_set_token_primitive inside json_parse_value_instrumented
+Found call to json_set_token_primitive inside json_parse_value_instrumented
+Found call to json_parse_string inside json_parse_value_instrumented
+Found call to json_set_token_primitive inside json_parse_value_instrumented
+Found call to json_get_token inside json_set_token_complex_instrumented
+Found call to json_skip_whitespace inside json_parse_object_instrumented
+Found call to json_is_valid_token inside json_parse_object_instrumented
+Found call to json_is_valid_token inside json_parse_object_instrumented
+Found call to json_get_token inside json_parse_object_instrumented
+Found call to json_skip_whitespace inside json_parse_object_instrumented
+Found call to json_parse_string inside json_parse_object_instrumented
+Found call to json_set_token_id inside json_parse_object_instrumented
+Found call to json_skip_whitespace inside json_parse_object_instrumented
+Found call to json_parse_value inside json_parse_object_instrumented
+Found call to json_skip_whitespace inside json_parse_object_instrumented
+Found call to json_get_token inside json_parse_object_instrumented
+Found call to json_get_token inside json_parse_array_instrumented
+Found call to json_skip_whitespace inside json_parse_array_instrumented
+Found call to json_skip_whitespace inside json_parse_array_instrumented
+Found call to json_set_token_id inside json_parse_array_instrumented
+Found call to json_parse_value inside json_parse_array_instrumented
+Found call to json_get_token inside json_parse_array_instrumented
+Found call to json_skip_whitespace inside json_parse_array_instrumented
+Found call to json_get_token inside json_is_valid_token_instrumented
+Replacing calls
+Removing function json_get_token
+Remove OK json_get_token
+Removing function json_is_valid_token
+Remove OK json_is_valid_token
+Removing function json_parse
+Remove OK json_parse
+Removing function json_parse_array
+Remove OK json_parse_array
+Removing function json_parse_number
+Remove OK json_parse_number
+Removing function json_parse_object
+Remove OK json_parse_object
+Removing function json_parse_string
+Remove OK json_parse_string
+Removing function json_parse_value
+Remove OK json_parse_value
+Removing function json_set_token_complex
+Remove OK json_set_token_complex
+Removing function json_set_token_id
+Remove OK json_set_token_id
+Removing function json_set_token_primitive
+Remove OK json_set_token_primitive
+Removing function json_skip_whitespace
+Remove OK json_skip_whitespace

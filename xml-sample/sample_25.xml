@@ -1,0 +1,57 @@
+
+<root>
+  <row>
+    <post_title>Toolset custom fields post1</post_title>
+    <post_content>test content</post_content>
+    <post_excerpt>excerpt2</post_excerpt>
+    <post_name>testtt1</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <audio-field>give the url of the audio file available in your gallery|give the url of the audio file available in your gallery</audio-field>
+    <checkboxes-field>1,2,3|4</checkboxes-field>
+    <checkbox-field>1|0</checkbox-field>
+    <colorpicker-field>#3eed1b|#3eed1b</colorpicker-field>
+    <date-field>02/19/2020|02/19/2019</date-field>
+    <email-field>admin1234@gmail.com|admin@gmail.com</email-field>
+    <embedded-media-field>https://www.youtube.com/watch?v=8OBfr46Y0cQ|https://www.youtube.com/watch?v=EXKwAk0j3k8</embedded-media-field>
+    <file-field>give the url of the local media gallery with pipe separator for multiple file upload</file-field>
+    <image-field>https://images.pexels.com/photos/34950/pexels-photo.jpg|https://s.w.org/images/backgrounds/wordpress-bg-medblue-square.png</image-field>
+    <number-field>4|5</number-field>
+    <phone-field>737282|32772822</phone-field>
+    <radio-field>1|0</radio-field>
+    <select-field>1|0</select-field>
+    <skype-field>aadhiaadhi|muthukumar</skype-field>
+    <multiple-lines-field>Toolset, formerly WP-Types, is a suite of plugins that are used to extend what WordPress does by creating custom post types and relationships among post types. That is just scratching the surface of what Toolset can do.|new data</multiple-lines-field>
+    <single-line-field>Toolset is a plugin|wordpress is a cms</single-line-field>
+    <url-field>https://smackcoders.com/|https://demo.smackcoders.com/wordpress/wp-admin/</url-field>
+    <video-field>give the url of the video file available in your media gallery with pipe separator for multiple video upload</video-field>
+    <wysiwyg-field>This is the WYSIWYG editing field|second field</wysiwyg-field>
+  </row>
+  <row>
+    <post_title>Toolset custom fields post2</post_title>
+    <post_content>test content</post_content>
+    <post_excerpt>excerpt3</post_excerpt>
+    <post_name>testtt</post_name>
+    <post_author>aathilakshmid@smackcoders.com</post_author>
+    <post_status>publish</post_status>
+    <audio-field>give the url of the audio file available in your gallery|give the url of the audio file available in your gallery</audio-field>
+    <checkboxes-field>2,3,4|1</checkboxes-field>
+    <checkbox-field>0|1</checkbox-field>
+    <colorpicker-field>#3eed1b|#3eed1b</colorpicker-field>
+    <date-field>02/19/2020|02/19/2020</date-field>
+    <email-field>admin12345@gmail.com|ad@gmail.com</email-field>
+    <embedded-media-field>https://www.youtube.com/watch?v=8OBfr46Y0cQ|https://www.youtube.com/watch?v=EXKwAk0j3k8</embedded-media-field>
+    <file-field>give the url of the local media gallery with pipe separator for multiple file upload</file-field>
+    <image-field>https://images.pexels.com/photos/34950/pexels-photo.jpg|https://s.w.org/images/backgrounds/wordpress-bg-medblue-square.png</image-field>
+    <number-field>5|6</number-field>
+    <phone-field>2728782828|2828882</phone-field>
+    <radio-field>0|1</radio-field>
+    <select-field>0|1</select-field>
+    <skype-field>aadhiaadhi|muthukumar</skype-field>
+    <multiple-lines-field>Toolset, formerly WP-Types, is a suite of plugins that are used to extend what WordPress does by creating custom post types and relationships among post types. That is just scratching the surface of what Toolset can do|new data</multiple-lines-field>
+    <single-line-field>Toolset is a plugin|wordpress is a cms</single-line-field>
+    <url-field>https://smackcoders.com/|https://demo.smackcoders.com/wordpress/wp-admin/</url-field>
+    <video-field>give the url of the video file available in your media gallery with pipe separator for multiple video upload</video-field>
+    <wysiwyg-field>This is the WYSIWYG editing field|second field</wysiwyg-field>
+  </row>
+</root>

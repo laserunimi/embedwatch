@@ -1,0 +1,84 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: pinMode
+Tracking recursion for pinMode
+Instrumenting entry point of pinMode
+Instrumenting exit point of pinMode
+Instrumenting Function: digitalWrite
+Tracking recursion for digitalWrite
+Instrumenting entry point of digitalWrite
+Instrumenting exit point of digitalWrite
+Instrumenting Function: Serial_begin
+Tracking recursion for Serial_begin
+Instrumenting entry point of Serial_begin
+Instrumenting exit point of Serial_begin
+Instrumenting Function: delay
+Tracking recursion for delay
+Instrumenting entry point of delay
+Instrumenting exit point of delay
+Instrumenting Function: myDFPlayer_readFileCounts
+Tracking recursion for myDFPlayer_readFileCounts
+Instrumenting entry point of myDFPlayer_readFileCounts
+Instrumenting exit point of myDFPlayer_readFileCounts
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: Serial_print_instrumented
+Tracking recursion for Serial_print_instrumented
+Instrumenting entry point of Serial_print_instrumented
+Instrumenting exit point of Serial_print_instrumented
+Instrumenting Function: Serial_println_instrumented
+Tracking recursion for Serial_println_instrumented
+Instrumenting entry point of Serial_println_instrumented
+Instrumenting exit point of Serial_println_instrumented
+Instrumenting Function: WiFi_status_instrumented
+Tracking recursion for WiFi_status_instrumented
+Instrumenting entry point of WiFi_status_instrumented
+Instrumenting exit point of WiFi_status_instrumented
+Instrumenting Function: WiFi_begin_instrumented
+Tracking recursion for WiFi_begin_instrumented
+Instrumenting entry point of WiFi_begin_instrumented
+Instrumenting exit point of WiFi_begin_instrumented
+Instrumenting Function: printWiFiStatus_instrumented
+Tracking recursion for printWiFiStatus_instrumented
+Instrumenting entry point of printWiFiStatus_instrumented
+Instrumenting exit point of printWiFiStatus_instrumented
+Instrumenting Function: setupWifi_instrumented
+Tracking recursion for setupWifi_instrumented
+Instrumenting entry point of setupWifi_instrumented
+Instrumenting exit point of setupWifi_instrumented
+Instrumenting Function: myDFPlayer_begin_instrumented
+Tracking recursion for myDFPlayer_begin_instrumented
+Instrumenting entry point of myDFPlayer_begin_instrumented
+Instrumenting exit point of myDFPlayer_begin_instrumented
+Instrumenting Function: myDFPlayer_readState_instrumented
+Tracking recursion for myDFPlayer_readState_instrumented
+Instrumenting entry point of myDFPlayer_readState_instrumented
+Instrumenting exit point of myDFPlayer_readState_instrumented
+Instrumenting Function: myDFPlayer_readVolume_instrumented
+Tracking recursion for myDFPlayer_readVolume_instrumented
+Instrumenting entry point of myDFPlayer_readVolume_instrumented
+Instrumenting exit point of myDFPlayer_readVolume_instrumented
+Instrumenting Function: myDFPlayer_volume_instrumented
+Tracking recursion for myDFPlayer_volume_instrumented
+Instrumenting entry point of myDFPlayer_volume_instrumented
+Instrumenting exit point of myDFPlayer_volume_instrumented
+Instrumenting Function: myDFPlayer_select_instrumented
+Tracking recursion for myDFPlayer_select_instrumented
+Instrumenting entry point of myDFPlayer_select_instrumented
+Instrumenting exit point of myDFPlayer_select_instrumented
+Instrumenting Function: myDFPlayer_play_instrumented
+Tracking recursion for myDFPlayer_play_instrumented
+Instrumenting entry point of myDFPlayer_play_instrumented
+Instrumenting exit point of myDFPlayer_play_instrumented
+Instrumenting Function: SetupMP3_instrumented
+Tracking recursion for SetupMP3_instrumented
+Instrumenting entry point of SetupMP3_instrumented
+Instrumenting exit point of SetupMP3_instrumented
+Instrumenting Function: setup_instrumented
+Tracking recursion for setup_instrumented
+Instrumenting entry point of setup_instrumented
+Instrumenting exit point of setup_instrumented

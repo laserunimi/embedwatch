@@ -1,0 +1,46 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: Serial_begin is whitelisted
+----------------------------------------------------------
+Function: Serial_read is whitelisted
+FN:__isoc99_scanf
+Function: Serial_read, found scanf call
+Args size:2
+FN:usleep
+----------------------------------------------------------
+Function: matrix_setIntensity is whitelisted
+----------------------------------------------------------
+Function: matrix_fillScreen is whitelisted
+----------------------------------------------------------
+Function: matrix_drawPixel is whitelisted
+----------------------------------------------------------
+Function: matrix_write is whitelisted
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+FN:printf
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:Serial_begin
+FN:matrix_setIntensity
+FN:matrix_fillScreen
+FN:matrix_write
+----------------------------------------------------------
+Function: Serial_available is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:Serial_available
+FN:Serial_read
+FN:matrix_fillScreen
+FN:matrix_write
+FN:matrix_drawPixel
+FN:matrix_write
+FN:usleep
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

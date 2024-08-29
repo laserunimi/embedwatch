@@ -1,0 +1,46 @@
+Instrumenting Function: die
+Tracking recursion for die
+Instrumenting entry point of die
+Instrumenting Function: get_rf_config
+Tracking recursion for get_rf_config
+Instrumenting entry point of get_rf_config
+Instrumenting exit point of get_rf_config
+Instrumenting Function: reset_rf_config
+Tracking recursion for reset_rf_config
+Instrumenting entry point of reset_rf_config
+Instrumenting exit point of reset_rf_config
+Instrumenting Function: max_tx_power
+Tracking recursion for max_tx_power
+Instrumenting entry point of max_tx_power
+Instrumenting exit point of max_tx_power
+Instrumenting Function: configure_rf
+Tracking recursion for configure_rf
+Instrumenting entry point of configure_rf
+Instrumenting exit point of configure_rf
+Instrumenting Function: unlock
+Tracking recursion for unlock
+Instrumenting entry point of unlock
+Instrumenting exit point of unlock
+Instrumenting Function: read_code
+Tracking recursion for read_code
+Instrumenting entry point of read_code
+Instrumenting exit point of read_code
+Instrumenting Function: set_code
+Tracking recursion for set_code
+Instrumenting entry point of set_code
+Instrumenting exit point of set_code
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting Function: debug_print_instrumented
+Tracking recursion for debug_print_instrumented
+Instrumenting entry point of debug_print_instrumented
+Instrumenting exit point of debug_print_instrumented
+Instrumenting Function: rf_write_buf_instrumented
+Tracking recursion for rf_write_buf_instrumented
+Instrumenting entry point of rf_write_buf_instrumented
+Instrumenting exit point of rf_write_buf_instrumented
+Instrumenting Function: rf_read_buf_instrumented
+Tracking recursion for rf_read_buf_instrumented
+Instrumenting entry point of rf_read_buf_instrumented
+Instrumenting exit point of rf_read_buf_instrumented

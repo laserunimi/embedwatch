@@ -1,0 +1,41 @@
+
+<root>
+  <row>
+    <post_title>Sampletesting-1</post_title>
+    <title>Yoastsamples</title>
+    <meta_desc>New meta description here</meta_desc>
+    <meta-robots-noindex>1</meta-robots-noindex>
+    <meta-robots-nofollow>1</meta-robots-nofollow>
+    <meta-robots-adv>noarchive,nosnippet,noimageindex</meta-robots-adv>
+    <bctitle>Breadcrumbsvaluehere</bctitle>
+    <canonical>https://trial.smackcoders.com/yyrtcvaj/wp-admin</canonical>
+    <opengraph-title>fbyoasttitle</opengraph-title>
+    <opengraph-description>fbyoastdescription</opengraph-description>
+    <opengraph-image>https://cdn.poststatus.com/wp-content/uploads/2015/01/Yoast_Icon_Large_RGB.png</opengraph-image>
+    <twitter-title>twyoasttitle</twitter-title>
+    <twitter-description>twyoastdescription</twitter-description>
+    <twitter-image>https://cdn.poststatus.com/wp-content/uploads/2015/01/Yoast_Icon_Large_RGB.png</twitter-image>
+    <focus_keyword>YoastSEOimport</focus_keyword>
+    <focuskeywords>relatedkeyphrase1|relatedkeyphrase2</focuskeywords>
+    <keywordsynonyms>synonyms1|synonyms2</keywordsynonyms>
+  </row>
+  <row>
+    <post_title>Sampletesting-2</post_title>
+    <title>Yoastsamples1</title>
+    <meta_desc>New meta description here</meta_desc>
+    <meta-robots-noindex></meta-robots-noindex>
+    <meta-robots-nofollow></meta-robots-nofollow>
+    <meta-robots-adv>nosnippet</meta-robots-adv>
+    <bctitle>Breadcrumbsvaluehere</bctitle>
+    <canonical>https://trial.smackcoders.com/yyrtcvaj/wp-admin</canonical>
+    <opengraph-title>fbyoasttitle</opengraph-title>
+    <opengraph-description>fbyoastdescription</opengraph-description>
+    <opengraph-image>https://blogwings.com/wp-content/uploads/2019/11/Yoast.png</opengraph-image>
+    <twitter-title>twyoasttitle</twitter-title>
+    <twitter-description>twyoastdescription</twitter-description>
+    <twitter-image>https://blogwings.com/wp-content/uploads/2019/11/Yoast.png</twitter-image>
+    <focus_keyword>YoastSEOimport1</focus_keyword>
+    <focuskeywords>relatedkeyphrase3</focuskeywords>
+    <keywordsynonyms>synonyms3</keywordsynonyms>
+  </row>
+</root>

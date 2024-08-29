@@ -1,0 +1,29 @@
+Checking for function: hook_exit
+Checking for function: main
+-------------------------LOOPS----------------------------
+Loop in main: ZSUSE 3 |   store i32 %call, i32* %c, align 4, !zsuse !6
+Injecting zbouncer_use(use=3, addr=0x55b1f7068cd8)
+Loop in main: ZSUSE 4 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !7
+Injecting zbouncer_use(use=4, addr=0x55b1f70630b8)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 5 |   %buf = alloca [20 x i8], align 1, !zdef !3
+Injecting zbouncer_collect_alloca(def=5, addr=0x55b1f7068c78)
+METADATA::zdef 1 |   %c = alloca i32, align 4, !zdef !4
+Injecting zbouncer_collect_alloca(def=1, addr=0x55b1f7068cd8)
+----------------------------------------------------------
+METADATA::zuse 2 |   store i32 100, i32* %c, align 4, !zsuse !5
+Injecting zbouncer_use(use=2, addr=0x55b1f7068cd8)
+METADATA::zuse 3 |   store i32 %call, i32* %c, align 4, !zsuse !6
+Injecting zbouncer_use(use=3, addr=0x55b1f7068cd8)
+METADATA::zuse 4 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !7
+Injecting zbouncer_use(use=4, addr=0x55b1f70630b8)
+METADATA::zuse 6 |   store i8 122, i8* %arrayidx6, align 1, !zsuse !8
+Injecting zbouncer_use(use=6, addr=0x55b1f706a7b8)
+METADATA::zuse 7 |   store i8 120, i8* %arrayidx7, align 1, !zsuse !9
+Injecting zbouncer_use(use=7, addr=0x55b1f706a938)
+----------------------------------------------------------
+Returning

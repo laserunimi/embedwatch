@@ -1,0 +1,116 @@
+Instrumenting Function: hook_exit
+Tracking recursion for hook_exit
+Instrumenting entry point of hook_exit
+Instrumenting exit point of hook_exit
+Instrumenting Function: NameStartChar
+Tracking recursion for NameStartChar
+Instrumenting entry point of NameStartChar
+Instrumenting exit point of NameStartChar
+Instrumenting Function: NameChar
+Tracking recursion for NameChar
+Instrumenting entry point of NameChar
+Instrumenting exit point of NameChar
+Instrumenting Function: WhiteSpace
+Tracking recursion for WhiteSpace
+Instrumenting entry point of WhiteSpace
+Instrumenting exit point of WhiteSpace
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main
+Instrumenting exit point of main
+Instrumenting Function: print_indent
+Tracking recursion for print_indent
+Instrumenting entry point of print_indent
+Instrumenting exit point of print_indent
+Instrumenting Function: sxml_init_instrumented
+Tracking recursion for sxml_init_instrumented
+Instrumenting entry point of sxml_init_instrumented
+Instrumenting exit point of sxml_init_instrumented
+Instrumenting Function: sxml_parse_instrumented
+Tracking recursion for sxml_parse_instrumented
+Instrumenting entry point of sxml_parse_instrumented
+Instrumenting exit point of sxml_parse_instrumented
+Instrumenting Function: str_ltrim_instrumented
+Tracking recursion for str_ltrim_instrumented
+Instrumenting entry point of str_ltrim_instrumented
+Instrumenting exit point of str_ltrim_instrumented
+Instrumenting Function: state_setpos_instrumented
+Tracking recursion for state_setpos_instrumented
+Instrumenting entry point of state_setpos_instrumented
+Instrumenting exit point of state_setpos_instrumented
+Instrumenting Function: parse_instruction_instrumented
+Tracking recursion for parse_instruction_instrumented
+Instrumenting entry point of parse_instruction_instrumented
+Instrumenting exit point of parse_instruction_instrumented
+Instrumenting Function: parse_doctype_instrumented
+Tracking recursion for parse_doctype_instrumented
+Instrumenting entry point of parse_doctype_instrumented
+Instrumenting exit point of parse_doctype_instrumented
+Instrumenting Function: parse_start_instrumented
+Tracking recursion for parse_start_instrumented
+Instrumenting entry point of parse_start_instrumented
+Instrumenting exit point of parse_start_instrumented
+Instrumenting Function: str_findchr_instrumented
+Tracking recursion for str_findchr_instrumented
+Instrumenting entry point of str_findchr_instrumented
+Instrumenting exit point of str_findchr_instrumented
+Instrumenting Function: parse_characters_instrumented
+Tracking recursion for parse_characters_instrumented
+Instrumenting entry point of parse_characters_instrumented
+Instrumenting exit point of parse_characters_instrumented
+Instrumenting Function: parse_end_instrumented
+Tracking recursion for parse_end_instrumented
+Instrumenting entry point of parse_end_instrumented
+Instrumenting exit point of parse_end_instrumented
+Instrumenting Function: parse_comment_instrumented
+Tracking recursion for parse_comment_instrumented
+Instrumenting entry point of parse_comment_instrumented
+Instrumenting exit point of parse_comment_instrumented
+Instrumenting Function: parse_cdata_instrumented
+Tracking recursion for parse_cdata_instrumented
+Instrumenting entry point of parse_cdata_instrumented
+Instrumenting exit point of parse_cdata_instrumented
+Instrumenting Function: str_startswith_instrumented
+Tracking recursion for str_startswith_instrumented
+Instrumenting entry point of str_startswith_instrumented
+Instrumenting exit point of str_startswith_instrumented
+Instrumenting Function: str_findstr_instrumented
+Tracking recursion for str_findstr_instrumented
+Instrumenting entry point of str_findstr_instrumented
+Instrumenting exit point of str_findstr_instrumented
+Instrumenting Function: state_pushtoken_instrumented
+Tracking recursion for state_pushtoken_instrumented
+Instrumenting entry point of state_pushtoken_instrumented
+Instrumenting exit point of state_pushtoken_instrumented
+Instrumenting Function: str_find_notalnum_instrumented
+Tracking recursion for str_find_notalnum_instrumented
+Instrumenting entry point of str_find_notalnum_instrumented
+Instrumenting exit point of str_find_notalnum_instrumented
+Instrumenting Function: parse_attributes_instrumented
+Tracking recursion for parse_attributes_instrumented
+Instrumenting entry point of parse_attributes_instrumented
+Instrumenting exit point of parse_attributes_instrumented
+Instrumenting Function: str_rtrim_instrumented
+Tracking recursion for str_rtrim_instrumented
+Instrumenting entry point of str_rtrim_instrumented
+Instrumenting exit point of str_rtrim_instrumented
+Instrumenting Function: parse_attrvalue_instrumented
+Tracking recursion for parse_attrvalue_instrumented
+Instrumenting entry point of parse_attrvalue_instrumented
+Instrumenting exit point of parse_attrvalue_instrumented
+Instrumenting Function: print_prettyxml_instrumented
+Tracking recursion for print_prettyxml_instrumented
+Instrumenting entry point of print_prettyxml_instrumented
+Instrumenting exit point of print_prettyxml_instrumented
+Instrumenting Function: count_lines_instrumented
+Tracking recursion for count_lines_instrumented
+Instrumenting entry point of count_lines_instrumented
+Instrumenting exit point of count_lines_instrumented
+Instrumenting Function: print_tokenvalue_instrumented
+Tracking recursion for print_tokenvalue_instrumented
+Instrumenting entry point of print_tokenvalue_instrumented
+Instrumenting exit point of print_tokenvalue_instrumented
+Instrumenting Function: print_chartokens_instrumented
+Tracking recursion for print_chartokens_instrumented
+Instrumenting entry point of print_chartokens_instrumented
+Instrumenting exit point of print_chartokens_instrumented

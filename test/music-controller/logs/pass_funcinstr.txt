@@ -1,0 +1,170 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_init
+Function lcd_init has parameters:
+	-%struct.lcd* %lcd
+	-i32 %pin1
+	-i32 %pin2
+	-i32 %pin3
+	-i32 %pin4
+	-i32 %pin5
+	-i32 %pin6
+Instrumenting Function: lcd_begin
+Function lcd_begin has parameters:
+	-%struct.lcd* %lcd
+	-i32 %ch
+	-i32 %line
+Instrumenting Function: pinMode
+Function pinMode has parameters:
+	-i32 %pin
+	-i32 %status
+Function pinMode doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogWrite
+Function analogWrite has parameters:
+	-i32 %pin
+	-i32 %value
+Function analogWrite doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_begin
+Function Serial_begin has parameters:
+	-i32 %boud_rate
+Function Serial_begin doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_available
+Function Serial_available has parameters:
+Function Serial_available doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_write
+Function Serial_write has parameters:
+	-i8* %msg
+Instrumenting Function: Serial_readString
+Function Serial_readString has parameters:
+	-i8* %buffer
+Instrumenting Function: lcd_clear
+Function lcd_clear has parameters:
+	-%struct.lcd* %lcd
+Instrumenting Function: lcd_write
+Function lcd_write has parameters:
+	-%struct.lcd* %lcd
+	-i8 %c
+Instrumenting Function: lcd_setCursor
+Function lcd_setCursor has parameters:
+	-%struct.lcd* %lcd
+	-i32 %line
+	-i32 %ch
+Instrumenting Function: digitalRead
+Function digitalRead has parameters:
+	-i32 %pin
+Function digitalRead doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: analogRead
+Function analogRead has parameters:
+	-i32 %pin
+Function analogRead doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %msec
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: map
+Function map has parameters:
+	-i32 %v0
+	-i32 %v1
+	-i32 %v2
+	-i32 %v3
+	-i32 %v4
+Function map doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup
+Function setup has parameters:
+Function setup doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: loop
+Function loop has parameters:
+Function loop doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_init_instrumented
+Function lcd_init_instrumented has parameters:
+	-%struct.lcd* %lcd
+	-i32 %pin1
+	-i32 %pin2
+	-i32 %pin3
+	-i32 %pin4
+	-i32 %pin5
+	-i32 %pin6
+	-i32 %lcd_id
+Function lcd_init_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_begin_instrumented
+Function lcd_begin_instrumented has parameters:
+	-%struct.lcd* %lcd
+	-i32 %ch
+	-i32 %line
+	-i32 %lcd_id
+Function lcd_begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_write_instrumented
+Function Serial_write_instrumented has parameters:
+	-i8* %msg
+	-i32 %msg_id
+Function Serial_write_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_readString_instrumented
+Function Serial_readString_instrumented has parameters:
+	-i8* %buffer
+	-i32 %buffer_id
+Function Serial_readString_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_clear_instrumented
+Function lcd_clear_instrumented has parameters:
+	-%struct.lcd* %lcd
+	-i32 %lcd_id
+Function lcd_clear_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_write_instrumented
+Function lcd_write_instrumented has parameters:
+	-%struct.lcd* %lcd
+	-i8 %c
+	-i32 %lcd_id
+Function lcd_write_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: lcd_setCursor_instrumented
+Function lcd_setCursor_instrumented has parameters:
+	-%struct.lcd* %lcd
+	-i32 %line
+	-i32 %ch
+	-i32 %lcd_id
+Function lcd_setCursor_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Serial_readString was extended with 1 arguments
+Function Serial_write was extended with 1 arguments
+Function lcd_begin was extended with 1 arguments
+Function lcd_clear was extended with 1 arguments
+Function lcd_init was extended with 1 arguments
+Function lcd_setCursor was extended with 1 arguments
+Function lcd_write was extended with 1 arguments
+Searching for calls to:
+	- Serial_readString
+	- Serial_write
+	- lcd_begin
+	- lcd_clear
+	- lcd_init
+	- lcd_setCursor
+	- lcd_write
+Found call to lcd_init inside setup
+Found call to lcd_begin inside setup
+Found call to Serial_readString inside loop
+Found call to lcd_clear inside loop
+Found call to lcd_write inside loop
+Found call to lcd_setCursor inside loop
+Found call to Serial_write inside loop
+Found call to Serial_write inside loop
+Found call to Serial_write inside loop
+Found call to Serial_write inside loop
+Found call to Serial_write inside loop
+Replacing calls
+Removing function Serial_readString
+Remove OK Serial_readString
+Removing function Serial_write
+Remove OK Serial_write
+Removing function lcd_begin
+Remove OK lcd_begin
+Removing function lcd_clear
+Remove OK lcd_clear
+Removing function lcd_init
+Remove OK lcd_init
+Removing function lcd_setCursor
+Remove OK lcd_setCursor
+Removing function lcd_write
+Remove OK lcd_write

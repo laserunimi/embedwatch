@@ -1,0 +1,279 @@
+Checking for function: hook_exit
+Checking for function: Modbus_get_FC3
+Checking for function: Modbus_poll
+Checking for function: setup
+Checking for function: loop
+	wrapper_scanf |   %42 = call i8* @wrapper_scanf(i8* %41, i8* %arraydecay35)
+Checking for function: main
+Checking for function: pinMode
+Checking for function: digitalWrite
+Checking for function: startWaveform
+Checking for function: startWaveform2
+Checking for function: delay
+Checking for function: stopWaveform
+Checking for function: max
+Checking for function: min
+Checking for function: constrain
+Checking for function: analogRead
+Checking for function: map
+Checking for function: millis
+Checking for function: master_query_instrumented
+-------------------------LOOPS----------------------------
+Loop in Modbus_get_FC3: ZSUSE 66 |   store i16 %conv7, i16* %arrayidx9, align 2, !zsuse !36
+Injecting zbouncer_use(use=66, addr=0x5582affe6380)
+Loop in Modbus_poll: ZSUSE 69 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !36
+Injecting zbouncer_use(use=69, addr=0x5582affe8ae8)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 78 | @estado = dso_local global i32 0, align 4, !zdef !0
+Injecting zbouncer_collect_galloca(def=78, addr=0x5582affd2618)
+METADATA::zdef 63 | @terminar_ciclo = dso_local global i32 0, align 4, !zdef !1
+Injecting zbouncer_collect_galloca(def=63, addr=0x5582affd2778)
+METADATA::zdef 36 | @ep1 = dso_local global float 0.000000e+00, align 4, !zdef !2
+Injecting zbouncer_collect_galloca(def=36, addr=0x5582affd27f8)
+METADATA::zdef 42 | @e1 = dso_local global float 0.000000e+00, align 4, !zdef !3
+Injecting zbouncer_collect_galloca(def=42, addr=0x5582affd2878)
+METADATA::zdef 48 | @kpa1 = dso_local global float 0.000000e+00, align 4, !zdef !4
+Injecting zbouncer_collect_galloca(def=48, addr=0x5582affd1e98)
+METADATA::zdef 58 | @kia1 = dso_local global float 0.000000e+00, align 4, !zdef !5
+Injecting zbouncer_collect_galloca(def=58, addr=0x5582affd1f18)
+METADATA::zdef 82 | @kda1 = dso_local global float 0.000000e+00, align 4, !zdef !6
+Injecting zbouncer_collect_galloca(def=82, addr=0x5582affd1f98)
+METADATA::zdef 46 | @kip1 = dso_local global float 0.000000e+00, align 4, !zdef !7
+Injecting zbouncer_collect_galloca(def=46, addr=0x5582affd2938)
+METADATA::zdef 61 | @kdp1 = dso_local global float 0.000000e+00, align 4, !zdef !8
+Injecting zbouncer_collect_galloca(def=61, addr=0x5582affd29b8)
+METADATA::zdef 1 | @au8Buffer = common dso_local global [100 x i8] zeroinitializer, align 1, !zdef !9
+Injecting zbouncer_collect_galloca(def=1, addr=0x5582affd5128)
+METADATA::zdef 3 | @u8state = common dso_local global i8 0, align 1, !zdef !10
+Injecting zbouncer_collect_galloca(def=3, addr=0x5582affd5228)
+METADATA::zdef 84 | @au16data = common dso_local global [32 x i16] zeroinitializer, align 2, !zdef !11
+Injecting zbouncer_collect_galloca(def=84, addr=0x5582affd5328)
+METADATA::zdef 8 | @u32wait = common dso_local global i32 0, align 4, !zdef !12
+Injecting zbouncer_collect_galloca(def=8, addr=0x5582affd5778)
+METADATA::zdef 27 | @tiempopid1 = common dso_local global i32 0, align 4, !zdef !13
+Injecting zbouncer_collect_galloca(def=27, addr=0x5582affd5818)
+METADATA::zdef 16 | @reloj = common dso_local global i32 0, align 4, !zdef !14
+Injecting zbouncer_collect_galloca(def=16, addr=0x5582affd5a28)
+METADATA::zdef 65 | @tempe_z1 = common dso_local global i32 0, align 4, !zdef !15
+Injecting zbouncer_collect_galloca(def=65, addr=0x5582affd5ac8)
+METADATA::zdef 106 | @tempe_z2 = common dso_local global i32 0, align 4, !zdef !16
+Injecting zbouncer_collect_galloca(def=106, addr=0x5582affd5b78)
+METADATA::zdef 99 | @duty1 = common dso_local global i32 0, align 4, !zdef !17
+Injecting zbouncer_collect_galloca(def=99, addr=0x5582affd5c28)
+METADATA::zdef 88 | @duty2 = common dso_local global i32 0, align 4, !zdef !18
+Injecting zbouncer_collect_galloca(def=88, addr=0x5582affd68f8)
+METADATA::zdef 76 | @minutos = common dso_local global i32 0, align 4, !zdef !19
+Injecting zbouncer_collect_galloca(def=76, addr=0x5582affd6998)
+METADATA::zdef 39 | @segundos = common dso_local global i32 0, align 4, !zdef !20
+Injecting zbouncer_collect_galloca(def=39, addr=0x5582affd6a38)
+METADATA::zdef 93 | @tiempo_espera = common dso_local global i32 0, align 4, !zdef !21
+Injecting zbouncer_collect_galloca(def=93, addr=0x5582affd6ae8)
+METADATA::zdef 23 | @mmres = common dso_local global i32 0, align 4, !zdef !22
+Injecting zbouncer_collect_galloca(def=23, addr=0x5582affd6b98)
+METADATA::zdef 29 | @mmt = common dso_local global i32 0, align 4, !zdef !23
+Injecting zbouncer_collect_galloca(def=29, addr=0x5582affd6c38)
+METADATA::zdef 19 | @ssres = common dso_local global i32 0, align 4, !zdef !24
+Injecting zbouncer_collect_galloca(def=19, addr=0x5582affd6cd8)
+METADATA::zdef 86 | @sst = common dso_local global i32 0, align 4, !zdef !25
+Injecting zbouncer_collect_galloca(def=86, addr=0x5582affd6d78)
+METADATA::zdef 33 | @minutosp = common dso_local global i32 0, align 4, !zdef !26
+Injecting zbouncer_collect_galloca(def=33, addr=0x5582affd6e18)
+METADATA::zdef 14 | @segundosp = common dso_local global i32 0, align 4, !zdef !27
+Injecting zbouncer_collect_galloca(def=14, addr=0x5582affd6ec8)
+METADATA::zdef 44 | @espera_plancha = common dso_local global i32 0, align 4, !zdef !28
+Injecting zbouncer_collect_galloca(def=44, addr=0x5582affd6f78)
+METADATA::zdef 73 | @pid1 = common dso_local global i32 0, align 4, !zdef !29
+Injecting zbouncer_collect_galloca(def=73, addr=0x5582affd70d8)
+METADATA::zdef 56 | @YN = common dso_local global float 0.000000e+00, align 4, !zdef !30
+Injecting zbouncer_collect_galloca(def=56, addr=0x5582affd7178)
+METADATA::zdef 52 | @incre = common dso_local global i32 0, align 4, !zdef !31
+Injecting zbouncer_collect_galloca(def=52, addr=0x5582affd7218)
+METADATA::zdef 54 | @in1 = common dso_local global i32 0, align 4, !zdef !32
+Injecting zbouncer_collect_galloca(def=54, addr=0x5582affd82d8)
+-------------------------- ZEXIT ----------------------------
+Function: main found ret -> injecting zexit()
+----------------------------------------------------------
+METADATA::zdef 113 |   %buffer = alloca [200 x i8], align 1, !zdef !36
+Injecting zbouncer_collect_alloca(def=113, addr=0x5582afff2528)
+METADATA::zdef 68 |   %call1 = call noalias i8* @malloc(i32 40) #4, !zdef !36
+Injecting alloca of call to malloc
+Size: i32 40 Addr:   %call1 = call noalias i8* @malloc(i32 40) #4, !zdef !36
+Injecting zbouncer_collect_dalloca(def=68, addr=0x5582affe7ad0,size=0x5582affee2e0)
+METADATA::zdef 115 |   %buffer.addr_instrumented = alloca i8*, align 4, !zdef !36
+Injecting zbouncer_collect_alloca(def=115, addr=0x5582b0013e18)
+----------------------------------------------------------
+METADATA::zuse 66 |   store i16 %conv7, i16* %arrayidx9, align 2, !zsuse !36
+Injecting zbouncer_use(use=66, addr=0x5582affe6380)
+METADATA::zuse 69 |   store i8 %conv, i8* %arrayidx, align 1, !zsuse !36
+Injecting zbouncer_use(use=69, addr=0x5582affe8ae8)
+METADATA::zuse 4 |   store i8 1, i8* @u8state, align 1, !zsuse !37
+Injecting zbouncer_use(use=4, addr=0x5582affd5228)
+METADATA::zuse 12 |   store i8 %inc, i8* @u8state, align 1, !zsuse !37
+Injecting zbouncer_use(use=12, addr=0x5582affd5228)
+METADATA::zuse 17 |   store i8 %inc4, i8* @u8state, align 1, !zsuse !38
+Injecting zbouncer_use(use=17, addr=0x5582affd5228)
+METADATA::zuse 89 |   store i32 %call5, i32* @u32wait, align 4, !zsuse !39
+Injecting zbouncer_use(use=89, addr=0x5582affd5778)
+METADATA::zuse 64 |   store i32 %conv6, i32* @tempe_z1, align 4, !zsuse !40
+Injecting zbouncer_use(use=64, addr=0x5582affd5ac8)
+METADATA::zuse 105 |   store i32 %conv7, i32* @tempe_z2, align 4, !zsuse !41
+Injecting zbouncer_use(use=105, addr=0x5582affd5b78)
+METADATA::zuse 47 |   store float %conv8, float* @kpa1, align 4, !zsuse !42
+Injecting zbouncer_use(use=47, addr=0x5582affd1e98)
+METADATA::zuse 57 |   store float %conv10, float* @kia1, align 4, !zsuse !43
+Injecting zbouncer_use(use=57, addr=0x5582affd1f18)
+METADATA::zuse 81 |   store float %conv11, float* @kda1, align 4, !zsuse !44
+Injecting zbouncer_use(use=81, addr=0x5582affd1f98)
+METADATA::zuse 98 |   store i32 %conv12, i32* @duty1, align 4, !zsuse !45
+Injecting zbouncer_use(use=98, addr=0x5582affd5c28)
+METADATA::zuse 87 |   store i32 %conv13, i32* @duty2, align 4, !zsuse !46
+Injecting zbouncer_use(use=87, addr=0x5582affd68f8)
+METADATA::zuse 75 |   store i32 %conv14, i32* @minutos, align 4, !zsuse !47
+Injecting zbouncer_use(use=75, addr=0x5582affd6998)
+METADATA::zuse 38 |   store i32 %conv15, i32* @segundos, align 4, !zsuse !48
+Injecting zbouncer_use(use=38, addr=0x5582affd6a38)
+METADATA::zuse 2 |   store i8 0, i8* @u8state, align 1, !zsuse !49
+Injecting zbouncer_use(use=2, addr=0x5582affd5228)
+METADATA::zuse 111 |   store i8 %inc20, i8* @u8state, align 1, !zsuse !50
+Injecting zbouncer_use(use=111, addr=0x5582affd5228)
+METADATA::zuse 9 |   store i32 %call21, i32* @u32wait, align 4, !zsuse !51
+Injecting zbouncer_use(use=9, addr=0x5582affd5778)
+METADATA::zuse 11 |   store i8 %dec, i8* @u8state, align 1, !zsuse !52
+Injecting zbouncer_use(use=11, addr=0x5582affd5228)
+METADATA::zuse 10 |   store i8 %inc28, i8* @u8state, align 1, !zsuse !53
+Injecting zbouncer_use(use=10, addr=0x5582affd5228)
+METADATA::zuse 70 |   store i32 %call29, i32* @u32wait, align 4, !zsuse !54
+Injecting zbouncer_use(use=70, addr=0x5582affd5778)
+METADATA::zuse 77 |   store i32 %conv30, i32* @estado, align 4, !zsuse !55
+Injecting zbouncer_use(use=77, addr=0x5582affd2618)
+METADATA::zuse 92 |   store i32 %conv31, i32* @tiempo_espera, align 4, !zsuse !56
+Injecting zbouncer_use(use=92, addr=0x5582affd6ae8)
+METADATA::zuse 5 |   store i8 %dec33, i8* @u8state, align 1, !zsuse !57
+Injecting zbouncer_use(use=5, addr=0x5582affd5228)
+METADATA::zuse 74 |   store i8 %inc39, i8* @u8state, align 1, !zsuse !59
+Injecting zbouncer_use(use=74, addr=0x5582affd5228)
+METADATA::zuse 7 |   store i32 %call40, i32* @u32wait, align 4, !zsuse !60
+Injecting zbouncer_use(use=7, addr=0x5582affd5778)
+METADATA::zuse 6 |   store i8 0, i8* @u8state, align 1, !zsuse !61
+Injecting zbouncer_use(use=6, addr=0x5582affd5228)
+METADATA::zuse 101 |   store i8 %inc42, i8* @u8state, align 1, !zsuse !62
+Injecting zbouncer_use(use=101, addr=0x5582affd5228)
+METADATA::zuse 40 |   store i32 %sub, i32* @mmt, align 4, !zsuse !63
+Injecting zbouncer_use(use=40, addr=0x5582affd6c38)
+METADATA::zuse 90 |   store i32 %add, i32* @mmt, align 4, !zsuse !64
+Injecting zbouncer_use(use=90, addr=0x5582affd6c38)
+METADATA::zuse 85 |   store i32 %sub47, i32* @sst, align 4, !zsuse !65
+Injecting zbouncer_use(use=85, addr=0x5582affd6d78)
+METADATA::zuse 28 |   store i32 %sub51, i32* @mmt, align 4, !zsuse !66
+Injecting zbouncer_use(use=28, addr=0x5582affd6c38)
+METADATA::zuse 103 |   store i32 %add52, i32* @sst, align 4, !zsuse !67
+Injecting zbouncer_use(use=103, addr=0x5582affd6d78)
+METADATA::zuse 102 |   store i16 %conv54, i16* %336, align 2, !zsuse !68
+Injecting zbouncer_use(use=102, addr=0x5582afff73c8)
+METADATA::zuse 91 |   store i16 %conv55, i16* %347, align 2, !zsuse !69
+Injecting zbouncer_use(use=91, addr=0x5582afff75a8)
+METADATA::zuse 62 |   store i32 1, i32* @terminar_ciclo, align 4, !zsuse !70
+Injecting zbouncer_use(use=62, addr=0x5582affd2778)
+METADATA::zuse 37 |   store i32 0, i32* @mmres, align 4, !zsuse !71
+Injecting zbouncer_use(use=37, addr=0x5582affd6b98)
+METADATA::zuse 31 |   store i32 0, i32* @ssres, align 4, !zsuse !72
+Injecting zbouncer_use(use=31, addr=0x5582affd6cd8)
+METADATA::zuse 13 |   store i32 %lnot.ext, i32* @segundosp, align 4, !zsuse !73
+Injecting zbouncer_use(use=13, addr=0x5582affd6ec8)
+METADATA::zuse 32 |   store i32 %398, i32* @minutosp, align 4, !zsuse !74
+Injecting zbouncer_use(use=32, addr=0x5582affd6e18)
+METADATA::zuse 108 |   store i32 %408, i32* @segundosp, align 4, !zsuse !75
+Injecting zbouncer_use(use=108, addr=0x5582affd6ec8)
+METADATA::zuse 104 |   store i32 0, i32* @mmres, align 4, !zsuse !76
+Injecting zbouncer_use(use=104, addr=0x5582affd6b98)
+METADATA::zuse 79 |   store i32 0, i32* @ssres, align 4, !zsuse !77
+Injecting zbouncer_use(use=79, addr=0x5582affd6cd8)
+METADATA::zuse 43 |   store i32 0, i32* @espera_plancha, align 4, !zsuse !78
+Injecting zbouncer_use(use=43, addr=0x5582affd6f78)
+METADATA::zuse 30 |   store i32 0, i32* @mmres, align 4, !zsuse !79
+Injecting zbouncer_use(use=30, addr=0x5582affd6b98)
+METADATA::zuse 50 |   store i32 0, i32* @ssres, align 4, !zsuse !80
+Injecting zbouncer_use(use=50, addr=0x5582affd6cd8)
+METADATA::zuse 71 |   store i32 0, i32* @espera_plancha, align 4, !zsuse !81
+Injecting zbouncer_use(use=71, addr=0x5582affd6f78)
+METADATA::zuse 110 |   store i32 %inc81, i32* @espera_plancha, align 4, !zsuse !82
+Injecting zbouncer_use(use=110, addr=0x5582affd6f78)
+METADATA::zuse 15 |   store i32 %add83, i32* @reloj, align 4, !zsuse !83
+Injecting zbouncer_use(use=15, addr=0x5582affd5a28)
+METADATA::zuse 80 |   store i32 %add89, i32* @espera_plancha, align 4, !zsuse !84
+Injecting zbouncer_use(use=80, addr=0x5582affd6f78)
+METADATA::zuse 21 |   store i32 %inc97, i32* @ssres, align 4, !zsuse !85
+Injecting zbouncer_use(use=21, addr=0x5582affd6cd8)
+METADATA::zuse 34 |   store i32 %add99, i32* @reloj, align 4, !zsuse !86
+Injecting zbouncer_use(use=34, addr=0x5582affd5a28)
+METADATA::zuse 100 |   store i32 0, i32* @ssres, align 4, !zsuse !87
+Injecting zbouncer_use(use=100, addr=0x5582affd6cd8)
+METADATA::zuse 25 |   store i32 %inc104, i32* @mmres, align 4, !zsuse !88
+Injecting zbouncer_use(use=25, addr=0x5582affd6b98)
+METADATA::zuse 20 |   store i32 %inc117, i32* @ssres, align 4, !zsuse !89
+Injecting zbouncer_use(use=20, addr=0x5582affd6cd8)
+METADATA::zuse 109 |   store i32 %add119, i32* @reloj, align 4, !zsuse !90
+Injecting zbouncer_use(use=109, addr=0x5582affd5a28)
+METADATA::zuse 49 |   store i32 0, i32* @ssres, align 4, !zsuse !91
+Injecting zbouncer_use(use=49, addr=0x5582affd6cd8)
+METADATA::zuse 24 |   store i32 %inc124, i32* @mmres, align 4, !zsuse !92
+Injecting zbouncer_use(use=24, addr=0x5582affd6b98)
+METADATA::zuse 18 |   store i32 0, i32* @ssres, align 4, !zsuse !93
+Injecting zbouncer_use(use=18, addr=0x5582affd6cd8)
+METADATA::zuse 22 |   store i32 0, i32* @mmres, align 4, !zsuse !94
+Injecting zbouncer_use(use=22, addr=0x5582affd6b98)
+METADATA::zuse 41 |   store float %sub137, float* @e1, align 4, !zsuse !95
+Injecting zbouncer_use(use=41, addr=0x5582affd2878)
+METADATA::zuse 97 |   store float %add139, float* @kia1, align 4, !zsuse !96
+Injecting zbouncer_use(use=97, addr=0x5582affd1f18)
+METADATA::zuse 96 |   store float %sub142, float* @kda1, align 4, !zsuse !97
+Injecting zbouncer_use(use=96, addr=0x5582affd1f98)
+METADATA::zuse 72 |   store i32 %conv146, i32* @pid1, align 4, !zsuse !98
+Injecting zbouncer_use(use=72, addr=0x5582affd70d8)
+METADATA::zuse 55 |   store float %conv147, float* @YN, align 4, !zsuse !99
+Injecting zbouncer_use(use=55, addr=0x5582affd7178)
+METADATA::zuse 51 |   store i32 0, i32* @incre, align 4, !zsuse !100
+Injecting zbouncer_use(use=51, addr=0x5582affd7218)
+METADATA::zuse 35 |   store float %682, float* @ep1, align 4, !zsuse !101
+Injecting zbouncer_use(use=35, addr=0x5582affd27f8)
+METADATA::zuse 45 |   store float %692, float* @kip1, align 4, !zsuse !102
+Injecting zbouncer_use(use=45, addr=0x5582affd2938)
+METADATA::zuse 60 |   store float %702, float* @kdp1, align 4, !zsuse !103
+Injecting zbouncer_use(use=60, addr=0x5582affd29b8)
+METADATA::zuse 26 |   store i32 %add149, i32* @tiempopid1, align 4, !zsuse !104
+Injecting zbouncer_use(use=26, addr=0x5582affd5818)
+METADATA::zuse 95 |   store float %conv155, float* @YN, align 4, !zsuse !105
+Injecting zbouncer_use(use=95, addr=0x5582affd7178)
+METADATA::zuse 107 |   store float 0.000000e+00, float* @YN, align 4, !zsuse !106
+Injecting zbouncer_use(use=107, addr=0x5582affd7178)
+METADATA::zuse 83 |   store i16 %conv161, i16* %745, align 2, !zsuse !107
+Injecting zbouncer_use(use=83, addr=0x5582afffefa8)
+METADATA::zuse 59 |   store i32 %inc166, i32* @incre, align 4, !zsuse !108
+Injecting zbouncer_use(use=59, addr=0x5582affd7218)
+METADATA::zuse 94 |   store i32 %inc168, i32* @incre, align 4, !zsuse !109
+Injecting zbouncer_use(use=94, addr=0x5582affd7218)
+METADATA::zuse 53 |   store i32 %and, i32* @in1, align 4, !zsuse !110
+Injecting zbouncer_use(use=53, addr=0x5582affd82d8)
+METADATA::zuse 114 |   store i8* %buffer, i8** %buffer.addr_instrumented, align 4, !zsuse !37
+Injecting zbouncer_use(use=114, addr=0x5582b0013e18)
+----------------------------------------------------------
+METADATA::zluse 117 |   %call36 = call i32 (i8*, ...) @__isoc99_scanf(i8* %241, i8* %arraydecay35), !zluse !58
+Injecting zbouncer_luse(use=117, addr=0x5582afff56c8, size_of_write=0x5582b0048980)
+Instruction:   call void @master_query_instrumented(i8* %arraydecay, [3 x i32] %26, i32 0), !zref_buffer_id !36
+Has metadata zref_buffer_id with value 113
+Arguments recap:
+  %arraydecay = getelementptr inbounds [200 x i8], [200 x i8]* %buffer, i32 0, i32 0
+  %26 = load [3 x i32], [3 x i32]* bitcast ([6 x %struct.modbus_t]* @telegram to [3 x i32]*), align 4
+  %35 = load i32, i32* %29
+Instruction:   call void @master_query_instrumented(i8* %arraydecay27, [3 x i32] %196, i32 0), !zref_buffer_id !36
+Has metadata zref_buffer_id with value 113
+Arguments recap:
+  %arraydecay27 = getelementptr inbounds [200 x i8], [200 x i8]* %buffer, i32 0, i32 0
+  %196 = load [3 x i32], [3 x i32]* %195, align 4
+  %205 = load i32, i32* %199
+Replacing   call void @master_query_instrumented(i8* %arraydecay, [3 x i32] %26, i32 0), !zref_buffer_id !36 with   call void @master_query_instrumented(i8* %arraydecay, [3 x i32] %26, i32 %35)
+Replaced call
+Replacing   call void @master_query_instrumented(i8* %arraydecay27, [3 x i32] %196, i32 0), !zref_buffer_id !36 with   call void @master_query_instrumented(i8* %arraydecay27, [3 x i32] %196, i32 %205)
+Replaced call
+Returning

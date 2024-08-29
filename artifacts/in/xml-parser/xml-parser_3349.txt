@@ -1,0 +1,150 @@
+ 
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<article>
+<articleinfo>
+  <title>OLS Tutorial</title>
+</articleinfo>
+
+<sect1>
+<title>Introduction</title>
+<para>This is a paragraph.
+</para>
+
+<para>This is <emphasis>emphasized</emphasis> text. This is
+<emphasis role="strong">strongly emphasized</emphasis> text.
+</para>
+<note>
+<para>This is not a very <emphasis>brilliant</emphasis> document!</para>
+</note>
+<para>some text  DocBook stylesheets are in
+<filename>/usr/share/sgml/docbook/docbook-xsl-1.51.1</filename>
+</para>
+
+<para>Use <indexterm><primary>xsltproc</primary><secondary>XSLT
+processing</secondary></indexterm><footnote><para>Don't volunteer to show
+indexing if you don't work with it regularly.</para></footnote>
+<command>xsltproc</command> to process your files.  See the 
+<link linkend="installation">Installation section</link> for more info.
+</para>
+
+<para>Use <command>xsltproc</command> to process your files.  See
+<xref linkend="installation"/> for more info.
+</para>
+
+<warning>
+<para>Don't use the 802.11 network while presenting!</para>
+</warning>
+
+<para>SOme more text.
+</para>
+
+<example>
+  <title>My example</title>
+  <programlisting>
+    print "Hello, my &amp; world!"
+  </programlisting>
+</example>
+
+<para>This is a paragraph.
+</para>
+   <itemizedlist>
+   <listitem>
+   <para>This is my first item
+   </para>
+
+      <itemizedlist>
+      <listitem>
+      <para>item a
+      </para>
+      </listitem>
+      <listitem>
+      <para>item b
+      </para>
+      </listitem>
+      </itemizedlist>
+
+   </listitem>
+   <listitem> <para>This is my second item.  </para>
+   <para>This is another paragraph.
+   </para></listitem>
+   
+   <listitem>
+   <para>
+   </para>
+   </listitem>
+   </itemizedlist>
+<sect2 >
+<title>Purpose</title>
+<para>There is little purpose to this document.
+</para>
+</sect2>
+
+<sect2 os="windows;mac">
+<title>Scope</title>
+<para>The scope of this document is a intro to DocBook.
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="installation"> 
+<title>Installation</title>
+<para>This is another paragraph. Here is an XML file:
+</para>
+
+<para os="windows">On Windows, you install this .EXE.
+</para>
+<para os="mac">On the Mac, you double-click some icon.
+</para>
+<para os="linux">On Linux, you install this RPM.
+</para>
+
+<para category="general">Download <command>xsltproc</command> from
+<ulink url="ftp://xmlsoft.org/">xmlsoft.org</ulink>. You need both
+<filename>libxml2</filename> and <filename>libxslt</filename>
+</para>
+
+<para id="foo" category="expert"><indexterm><primary>foo</primary></indexterm>
+This section talks about installation
+</para>
+
+<programlisting>
+
+<![CDATA[ <?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"/usr/share/sgml/docbook/xml-dtd-4.1.2/docbookx.dtd">
+
+<article>
+<articleinfo>
+<title>My First DocBook Article</title>
+</articleinfo>
+
+<sect1 id="installation">
+<title>Installation</title>
+<para>To install DocBook, you do the following...
+</para>
+<para >On Windows, you install this .EXE.
+</para>
+<para >On Linux, you install this RPM.
+</para>
+</sect1>
+</article>
+]]>   
+</programlisting>
+</sect1>
+
+<sect1 id="troubleshooting" os="linux" >
+<title>Troubleshooting</title>
+<para><indexterm><primary>troubleshooting</primary></indexterm>this is some text on troubleshooting
+</para>
+<para ><indexterm><primary>foo</primary></indexterm>
+This section talks about installation
+</para>
+
+</sect1>
+
+<index/>
+
+</article>

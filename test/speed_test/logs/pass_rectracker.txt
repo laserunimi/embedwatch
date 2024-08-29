@@ -1,0 +1,3 @@
+Instrumenting Function: main
+Tracking recursion for main
+Instrumenting entry point of main

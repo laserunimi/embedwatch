@@ -1,0 +1,22 @@
+<root>
+  <row>
+    <post_title>Apple</post_title>
+    <language_code>en</language_code>
+    <translated_post_title></translated_post_title>
+  </row>
+  <row>
+    <post_title>Pomme</post_title>
+    <language_code>es</language_code>
+    <translated_post_title>Apple</translated_post_title>
+  </row>
+  <row>
+    <post_title>Pomegranate</post_title>
+    <language_code>en</language_code>
+    <translated_post_title></translated_post_title>
+  </row>
+  <row>
+    <post_title>Grenade</post_title>
+    <language_code>es</language_code>
+    <translated_post_title>Pomegranate</translated_post_title>
+  </row>
+</root>

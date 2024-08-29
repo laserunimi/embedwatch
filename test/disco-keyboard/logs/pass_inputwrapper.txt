@@ -1,0 +1,48 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: Serial_read is whitelisted
+FN:printf
+FN:__isoc99_scanf
+Function: Serial_read, found scanf call
+Args size:2
+FN:usleep
+----------------------------------------------------------
+Function: pixel_matrix_init is whitelisted
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:pixel_matrix_init
+----------------------------------------------------------
+Function: color is whitelisted
+----------------------------------------------------------
+Function: setPixelColor is whitelisted
+----------------------------------------------------------
+Function: show is whitelisted
+FN:printf
+FN:printf
+----------------------------------------------------------
+Function: delay is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:Serial_read
+FN:atoi
+FN:color
+FN:setPixelColor
+FN:show
+FN:delay
+FN:Serial_read
+FN:atoi
+FN:Serial_read
+FN:atoi
+FN:Serial_read
+FN:atoi
+FN:color
+FN:setPixelColor
+FN:show
+FN:delay
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

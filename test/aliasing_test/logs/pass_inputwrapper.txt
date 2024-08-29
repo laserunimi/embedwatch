@@ -1,0 +1,16 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:fopen
+FN:exit
+FN:read
+FN:read
+FN:fclose
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------
+Function: read is whitelisted
+FN:fgetc
+----------------------------------------------------------

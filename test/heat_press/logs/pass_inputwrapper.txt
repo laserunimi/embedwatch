@@ -1,0 +1,80 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: master_query is whitelisted
+FN:printf
+FN:llvm.memcpy.p0i8.p0i8.i32
+----------------------------------------------------------
+Function: setup is whitelisted
+FN:pinMode
+FN:pinMode
+FN:pinMode
+FN:pinMode
+FN:digitalWrite
+FN:digitalWrite
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+----------------------------------------------------------
+Function: loop is whitelisted
+FN:millis
+FN:__isoc99_scanf
+Function: loop, found scanf call
+Args size:2
+FN:master_query
+FN:millis
+FN:millis
+FN:master_query
+FN:millis
+FN:__isoc99_scanf
+Function: loop, found scanf call
+Args size:2
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+FN:millis
+----------------------------------------------------------
+Function: main is whitelisted
+FN:gettimeofday
+FN:setup
+FN:loop
+FN:gettimeofday
+FN:printf
+FN:hook_exit
+----------------------------------------------------------
+Function: pinMode is whitelisted
+----------------------------------------------------------
+Function: digitalWrite is whitelisted
+----------------------------------------------------------
+Function: startWaveform is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: startWaveform2 is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: delay is whitelisted
+----------------------------------------------------------
+Function: stopWaveform is whitelisted
+FN:printf
+----------------------------------------------------------
+Function: max is whitelisted
+----------------------------------------------------------
+Function: min is whitelisted
+----------------------------------------------------------
+Function: constrain is whitelisted
+----------------------------------------------------------
+Function: analogRead is whitelisted
+FN:time
+FN:srand
+FN:rand
+----------------------------------------------------------
+Function: map is whitelisted
+----------------------------------------------------------
+Function: millis is whitelisted
+----------------------------------------------------------

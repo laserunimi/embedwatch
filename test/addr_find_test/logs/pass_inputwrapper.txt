@@ -1,0 +1,8 @@
+Function: hook_exit is whitelisted
+----------------------------------------------------------
+Function: main is whitelisted
+FN:llvm.memset.p0i8.i32
+FN:fgetc
+FN:printf
+FN:hook_exit
+----------------------------------------------------------

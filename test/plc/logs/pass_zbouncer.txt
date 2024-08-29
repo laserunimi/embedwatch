@@ -1,0 +1,246 @@
+Checking for function: main
+Checking for function: bitWrite_instrumented
+Checking for function: bitRead_instrumented
+Checking for function: Modbus_process_FC1_instrumented
+Checking for function: Modbus_process_FC3_instrumented
+Checking for function: Modbus_process_FC15_instrumented
+Checking for function: Modbus_process_FC16_instrumented
+Checking for function: Modbus_poll_instrumented
+-------------------------LOOPS----------------------------
+Loop in Modbus_process_FC1_instrumented: ZSUSE 45 |   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2, !zsuse !19
+Injecting zbouncer_use(use=45, addr=0x55a49754e338)
+Loop in Modbus_process_FC1_instrumented: ZSUSE 12 |   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1, !zsuse !20
+Injecting zbouncer_use(use=12, addr=0x55a497558068)
+Loop in Modbus_process_FC1_instrumented: ZSUSE 10 |   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1, !zsuse !21
+Injecting zbouncer_use(use=10, addr=0x55a4975580c8)
+Loop in Modbus_process_FC1_instrumented: ZSUSE 64 |   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1, !zsuse !22
+Injecting zbouncer_use(use=64, addr=0x55a4975549c8)
+Loop in Modbus_process_FC1_instrumented: ZSUSE 19 |   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1, !zsuse !23
+Injecting zbouncer_use(use=19, addr=0x55a49752d5d8)
+Loop in Modbus_process_FC3_instrumented: ZSUSE 57 |   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1, !zsuse !15
+Injecting zbouncer_use(use=57, addr=0x55a497561fb8)
+Loop in Modbus_process_FC3_instrumented: ZSUSE 16 |   store i8 %inc_instrumented, i8* @u8BufferSize, align 1, !zsuse !16
+Injecting zbouncer_use(use=16, addr=0x55a49752d5d8)
+Loop in Modbus_process_FC3_instrumented: ZSUSE 27 |   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1, !zsuse !17
+Injecting zbouncer_use(use=27, addr=0x55a497562618)
+Loop in Modbus_process_FC3_instrumented: ZSUSE 69 |   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1, !zsuse !18
+Injecting zbouncer_use(use=69, addr=0x55a49752d5d8)
+Loop in Modbus_process_FC3_instrumented: ZSUSE 74 |   store i8 %inc25_instrumented, i8* %i_instrumented, align 1, !zsuse !19
+Injecting zbouncer_use(use=74, addr=0x55a4975607f8)
+Loop in Modbus_process_FC15_instrumented: ZSUSE 76 |   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2, !zsuse !16
+Injecting zbouncer_use(use=76, addr=0x55a497566598)
+Loop in Modbus_process_FC15_instrumented: ZSUSE 8 |   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1, !zsuse !17
+Injecting zbouncer_use(use=8, addr=0x55a497566358)
+Loop in Modbus_process_FC15_instrumented: ZSUSE 6 |   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1, !zsuse !18
+Injecting zbouncer_use(use=6, addr=0x55a4975663b8)
+Loop in Modbus_process_FC15_instrumented: ZSUSE 34 |   store i8 %47, i8* %bTemp_instrumented, align 1, !zsuse !19
+Injecting zbouncer_use(use=34, addr=0x55a4975665f8)
+Loop in Modbus_process_FC15_instrumented: ZIUSE 39 |   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2, !ziuse !20, !zsuse !21
+Injecting zbouncer_iuse(use=39, def=regs_id, addr=0x55a4975681c0)
+Loop in Modbus_process_FC16_instrumented: ZSUSE 67 |   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2, !zsuse !18
+Injecting zbouncer_use(use=67, addr=0x55a497553238)
+Loop in Modbus_process_FC16_instrumented: ZIUSE 70 |   store i16 %33, i16* %arrayidx24_instrumented, align 2, !ziuse !19, !zsuse !20
+Injecting zbouncer_iuse(use=70, def=regs_id, addr=0x55a49756d9e0)
+Loop in Modbus_poll_instrumented: ZSUSE 51 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !zsuse !8
+Injecting zbouncer_use(use=51, addr=0x55a497570498)
+-------------------------- ZINIT ----------------------------
+Function: main is the entry point -> injecting zinit()
+METADATA::zdef 1 | @au8Buffer = common dso_local global [15 x i8] zeroinitializer, align 1, !zdef !0
+Injecting zbouncer_collect_galloca(def=1, addr=0x55a49752d558)
+METADATA::zdef 17 | @u8BufferSize = common dso_local global i8 0, align 1, !zdef !1
+Injecting zbouncer_collect_galloca(def=17, addr=0x55a49752d5d8)
+METADATA::zdef 40 | @au16data = dso_local global [16 x i16] [i16 3, i16 1415, i16 9265, i16 4, i16 2, i16 7182, i16 28182, i16 8, i16 0, i16 0, i16 0, i16 0, i16 0, i16 0, i16 1, i16 -1], align 2, !zdef !2
+Injecting zbouncer_collect_galloca(def=40, addr=0x55a49752d288)
+-------------------------- ZEXIT ----------------------------
+----------------------------------------------------------
+METADATA::zdef 13 |   %u8currentRegister_instrumented = alloca i8, align 1, !zdef !6
+Injecting zbouncer_collect_alloca(def=13, addr=0x55a497558068)
+METADATA::zdef 11 |   %u8currentBit_instrumented = alloca i8, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=11, addr=0x55a4975580c8)
+METADATA::zdef 24 |   %u8bytesno_instrumented = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=24, addr=0x55a497558128)
+METADATA::zdef 15 |   %u8CopyBufferSize_instrumented = alloca i8, align 1, !zdef !9
+Injecting zbouncer_collect_alloca(def=15, addr=0x55a49754e278)
+METADATA::zdef 46 |   %u16coil_instrumented = alloca i16, align 2, !zdef !10
+Injecting zbouncer_collect_alloca(def=46, addr=0x55a49754e338)
+METADATA::zdef 44 |   %u16StartCoil_instrumented = alloca i16, align 2, !zdef !11
+Injecting zbouncer_collect_alloca(def=44, addr=0x55a49754e398)
+METADATA::zdef 31 |   %u16Coilno_instrumented = alloca i16, align 2, !zdef !12
+Injecting zbouncer_collect_alloca(def=31, addr=0x55a49754e3f8)
+METADATA::zdef 61 |   %u8StartAdd_instrumented = alloca i8, align 1, !zdef !6
+Injecting zbouncer_collect_alloca(def=61, addr=0x55a4975606d8)
+METADATA::zdef 26 |   %u8regsno_instrumented = alloca i8, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=26, addr=0x55a497560738)
+METADATA::zdef 5 |   %u8CopyBufferSize_instrumented = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=5, addr=0x55a497560798)
+METADATA::zdef 33 |   %i_instrumented = alloca i8, align 1, !zdef !9
+Injecting zbouncer_collect_alloca(def=33, addr=0x55a4975607f8)
+METADATA::zdef 41 |   %regs.addr_instrumented = alloca i16*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=41, addr=0x55a497566298)
+METADATA::zdef 9 |   %u8currentRegister_instrumented = alloca i8, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=9, addr=0x55a497566358)
+METADATA::zdef 7 |   %u8currentBit_instrumented = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=7, addr=0x55a4975663b8)
+METADATA::zdef 56 |   %u8CopyBufferSize_instrumented = alloca i8, align 1, !zdef !9
+Injecting zbouncer_collect_alloca(def=56, addr=0x55a4975664d8)
+METADATA::zdef 77 |   %u16coil_instrumented = alloca i16, align 2, !zdef !10
+Injecting zbouncer_collect_alloca(def=77, addr=0x55a497566598)
+METADATA::zdef 35 |   %bTemp_instrumented = alloca i8, align 1, !zdef !11
+Injecting zbouncer_collect_alloca(def=35, addr=0x55a4975665f8)
+METADATA::zdef 63 |   %u16StartCoil_instrumented = alloca i16, align 2, !zdef !12
+Injecting zbouncer_collect_alloca(def=63, addr=0x55a497566658)
+METADATA::zdef 38 |   %u16Coilno_instrumented = alloca i16, align 2, !zdef !13
+Injecting zbouncer_collect_alloca(def=38, addr=0x55a4975666b8)
+METADATA::zdef 71 |   %regs.addr_instrumented = alloca i16*, align 4, !zdef !6
+Injecting zbouncer_collect_alloca(def=71, addr=0x55a497552f98)
+METADATA::zdef 29 |   %u8func_instrumented = alloca i8, align 1, !zdef !7
+Injecting zbouncer_collect_alloca(def=29, addr=0x55a497553058)
+METADATA::zdef 73 |   %u8StartAdd_instrumented = alloca i8, align 1, !zdef !8
+Injecting zbouncer_collect_alloca(def=73, addr=0x55a4975530b8)
+METADATA::zdef 66 |   %u8regsno_instrumented = alloca i8, align 1, !zdef !9
+Injecting zbouncer_collect_alloca(def=66, addr=0x55a497553118)
+METADATA::zdef 59 |   %u8CopyBufferSize_instrumented = alloca i8, align 1, !zdef !10
+Injecting zbouncer_collect_alloca(def=59, addr=0x55a497553178)
+METADATA::zdef 68 |   %temp_instrumented = alloca i16, align 2, !zdef !11
+Injecting zbouncer_collect_alloca(def=68, addr=0x55a497553238)
+METADATA::zdef 3 |   %retval_instrumented = alloca i8, align 1, !zdef !6
+Injecting zbouncer_collect_alloca(def=3, addr=0x55a49756fc48)
+METADATA::zdef 42 |   %regs.addr_instrumented = alloca i16*, align 4, !zdef !7
+Injecting zbouncer_collect_alloca(def=42, addr=0x55a49756fca8)
+----------------------------------------------------------
+METADATA::zuse 43 |   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2, !zsuse !13
+Injecting zbouncer_use(use=43, addr=0x55a49754e398)
+METADATA::zuse 30 |   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2, !zsuse !14
+Injecting zbouncer_use(use=30, addr=0x55a49754e3f8)
+METADATA::zuse 75 |   store i8 %conv9_instrumented, i8* %u8bytesno_instrumented, align 1, !zsuse !15
+Injecting zbouncer_use(use=75, addr=0x55a497558128)
+METADATA::zuse 23 |   store i8 %inc_instrumented, i8* %u8bytesno_instrumented, align 1, !zsuse !16
+Injecting zbouncer_use(use=23, addr=0x55a497558128)
+METADATA::zuse 36 |   store i8 %115, i8* %116, align 1, !zsuse !17
+Injecting zbouncer_use(use=36, addr=0x55a4975588b8)
+METADATA::zuse 50 |   store i8 3, i8* @u8BufferSize, align 1, !zsuse !18
+Injecting zbouncer_use(use=50, addr=0x55a49752d5d8)
+METADATA::zuse 45 |   store i16 %conv18_instrumented, i16* %u16coil_instrumented, align 2, !zsuse !19
+Injecting zbouncer_use(use=45, addr=0x55a49754e338)
+METADATA::zuse 12 |   store i8 %conv21_instrumented, i8* %u8currentRegister_instrumented, align 1, !zsuse !20
+Injecting zbouncer_use(use=12, addr=0x55a497558068)
+METADATA::zuse 10 |   store i8 %conv24_instrumented, i8* %u8currentBit_instrumented, align 1, !zsuse !21
+Injecting zbouncer_use(use=10, addr=0x55a4975580c8)
+METADATA::zuse 64 |   store i8 %conv25_instrumented, i8* %arrayidx27_instrumented, align 1, !zsuse !22
+Injecting zbouncer_use(use=64, addr=0x55a4975549c8)
+METADATA::zuse 19 |   store i8 %inc33_instrumented, i8* @u8BufferSize, align 1, !zsuse !23
+Injecting zbouncer_use(use=19, addr=0x55a49752d5d8)
+METADATA::zuse 18 |   store i8 %inc41_instrumented, i8* @u8BufferSize, align 1, !zsuse !24
+Injecting zbouncer_use(use=18, addr=0x55a49752d5d8)
+METADATA::zuse 14 |   store i8 %conv45_instrumented, i8* %u8CopyBufferSize_instrumented, align 1, !zsuse !25
+Injecting zbouncer_use(use=14, addr=0x55a49754e278)
+METADATA::zuse 60 |   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1, !zsuse !10
+Injecting zbouncer_use(use=60, addr=0x55a4975606d8)
+METADATA::zuse 25 |   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1, !zsuse !11
+Injecting zbouncer_use(use=25, addr=0x55a497560738)
+METADATA::zuse 49 |   store i8 %conv9_instrumented, i8* %68, align 1, !zsuse !12
+Injecting zbouncer_use(use=49, addr=0x55a497561538)
+METADATA::zuse 22 |   store i8 3, i8* @u8BufferSize, align 1, !zsuse !13
+Injecting zbouncer_use(use=22, addr=0x55a49752d5d8)
+METADATA::zuse 32 |   store i8 %87, i8* %i_instrumented, align 1, !zsuse !14
+Injecting zbouncer_use(use=32, addr=0x55a4975607f8)
+METADATA::zuse 57 |   store i8 %conv15_instrumented, i8* %arrayidx17_instrumented, align 1, !zsuse !15
+Injecting zbouncer_use(use=57, addr=0x55a497561fb8)
+METADATA::zuse 16 |   store i8 %inc_instrumented, i8* @u8BufferSize, align 1, !zsuse !16
+Injecting zbouncer_use(use=16, addr=0x55a49752d5d8)
+METADATA::zuse 27 |   store i8 %conv21_instrumented, i8* %arrayidx23_instrumented, align 1, !zsuse !17
+Injecting zbouncer_use(use=27, addr=0x55a497562618)
+METADATA::zuse 69 |   store i8 %inc24_instrumented, i8* @u8BufferSize, align 1, !zsuse !18
+Injecting zbouncer_use(use=69, addr=0x55a49752d5d8)
+METADATA::zuse 74 |   store i8 %inc25_instrumented, i8* %i_instrumented, align 1, !zsuse !19
+Injecting zbouncer_use(use=74, addr=0x55a4975607f8)
+METADATA::zuse 4 |   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1, !zsuse !20
+Injecting zbouncer_use(use=4, addr=0x55a497560798)
+METADATA::zuse 62 |   store i16 %conv2_instrumented, i16* %u16StartCoil_instrumented, align 2, !zsuse !14
+Injecting zbouncer_use(use=62, addr=0x55a497566658)
+METADATA::zuse 37 |   store i16 %conv7_instrumented, i16* %u16Coilno_instrumented, align 2, !zsuse !15
+Injecting zbouncer_use(use=37, addr=0x55a4975666b8)
+METADATA::zuse 76 |   store i16 %conv13_instrumented, i16* %u16coil_instrumented, align 2, !zsuse !16
+Injecting zbouncer_use(use=76, addr=0x55a497566598)
+METADATA::zuse 8 |   store i8 %conv15_instrumented, i8* %u8currentRegister_instrumented, align 1, !zsuse !17
+Injecting zbouncer_use(use=8, addr=0x55a497566358)
+METADATA::zuse 6 |   store i8 %conv17_instrumented, i8* %u8currentBit_instrumented, align 1, !zsuse !18
+Injecting zbouncer_use(use=6, addr=0x55a4975663b8)
+METADATA::zuse 34 |   store i8 %164, i8* %bTemp_instrumented, align 1, !zsuse !19
+Injecting zbouncer_use(use=34, addr=0x55a4975665f8)
+METADATA::zuse 39 |   store i16 %conv18_instrumented, i16* %arrayidx20_instrumented, align 2, !ziuse !20, !zsuse !21
+Injecting zbouncer_iuse(use=39, def=regs_id, addr=0x55a4975681c0)
+METADATA::zuse 21 |   store i8 6, i8* @u8BufferSize, align 1, !zsuse !22
+Injecting zbouncer_use(use=21, addr=0x55a49752d5d8)
+METADATA::zuse 55 |   store i8 %conv28_instrumented, i8* %u8CopyBufferSize_instrumented, align 1, !zsuse !23
+Injecting zbouncer_use(use=55, addr=0x55a4975664d8)
+METADATA::zuse 28 |   store i8 %60, i8* %u8func_instrumented, align 1, !zsuse !12
+Injecting zbouncer_use(use=28, addr=0x55a497553058)
+METADATA::zuse 72 |   store i8 %conv2_instrumented, i8* %u8StartAdd_instrumented, align 1, !zsuse !13
+Injecting zbouncer_use(use=72, addr=0x55a4975530b8)
+METADATA::zuse 65 |   store i8 %conv7_instrumented, i8* %u8regsno_instrumented, align 1, !zsuse !14
+Injecting zbouncer_use(use=65, addr=0x55a497553118)
+METADATA::zuse 54 |   store i8 0, i8* %96, align 1, !zsuse !15
+Injecting zbouncer_use(use=54, addr=0x55a49756c8d8)
+METADATA::zuse 48 |   store i8 %106, i8* %107, align 1, !zsuse !16
+Injecting zbouncer_use(use=48, addr=0x55a497558f28)
+METADATA::zuse 20 |   store i8 6, i8* @u8BufferSize, align 1, !zsuse !17
+Injecting zbouncer_use(use=20, addr=0x55a49752d5d8)
+METADATA::zuse 67 |   store i16 %conv20_instrumented, i16* %temp_instrumented, align 2, !zsuse !18
+Injecting zbouncer_use(use=67, addr=0x55a497553238)
+METADATA::zuse 70 |   store i16 %150, i16* %arrayidx24_instrumented, align 2, !ziuse !19, !zsuse !20
+Injecting zbouncer_iuse(use=70, def=regs_id, addr=0x55a49756d9e0)
+METADATA::zuse 58 |   store i8 %conv27_instrumented, i8* %u8CopyBufferSize_instrumented, align 1, !zsuse !21
+Injecting zbouncer_use(use=58, addr=0x55a497553178)
+METADATA::zuse 51 |   store i8 %conv_instrumented, i8* %arrayidx_instrumented, align 1, !zsuse !8
+Injecting zbouncer_use(use=51, addr=0x55a497570498)
+METADATA::zuse 52 |   store i8 %call4_instrumented, i8* %retval_instrumented, align 1, !zsuse !10
+Injecting zbouncer_use(use=52, addr=0x55a49756fc48)
+METADATA::zuse 2 |   store i8 %call6_instrumented, i8* %retval_instrumented, align 1, !zsuse !11
+Injecting zbouncer_use(use=2, addr=0x55a49756fc48)
+METADATA::zuse 53 |   store i8 %call8_instrumented, i8* %retval_instrumented, align 1, !zsuse !12
+Injecting zbouncer_use(use=53, addr=0x55a49756fc48)
+METADATA::zuse 47 |   store i8 %call10_instrumented, i8* %retval_instrumented, align 1, !zsuse !13
+Injecting zbouncer_use(use=47, addr=0x55a49756fc48)
+----------------------------------------------------------
+Instruction:   %call = call i8 @Modbus_poll_instrumented(i16* %16, i8 16, i32 0), !zref_regs_id !2
+Has metadata zref_regs_id with value 40
+Arguments recap:
+  %16 = getelementptr inbounds [16 x i16], [16 x i16]* @au16data, i32 0, i32 0
+i8 16
+  %25 = load i32, i32* %19
+Instruction:   %call4_instrumented = call i8 @Modbus_process_FC1_instrumented(i16* %51, i8 %52, i32 0), !zref_regs_id !9
+Has metadata zref_regs_id with value regs_id
+Arguments recap:
+  %51 = load i16*, i16** %regs.addr_instrumented, align 4
+  %52 = load i8, i8* %u8size.addr_instrumented, align 1
+i32 %regs_id
+Instruction:   %call6_instrumented = call i8 @Modbus_process_FC3_instrumented(i16* %63, i8 %64, i32 0), !zref_regs_id !9
+Has metadata zref_regs_id with value regs_id
+Arguments recap:
+  %63 = load i16*, i16** %regs.addr_instrumented, align 4
+  %64 = load i8, i8* %u8size.addr_instrumented, align 1
+i32 %regs_id
+Instruction:   %call8_instrumented = call i8 @Modbus_process_FC15_instrumented(i16* %75, i8 %76, i32 0), !zref_regs_id !9
+Has metadata zref_regs_id with value regs_id
+Arguments recap:
+  %75 = load i16*, i16** %regs.addr_instrumented, align 4
+  %76 = load i8, i8* %u8size.addr_instrumented, align 1
+i32 %regs_id
+Instruction:   %call10_instrumented = call i8 @Modbus_process_FC16_instrumented(i16* %87, i8 %88, i32 0), !zref_regs_id !9
+Has metadata zref_regs_id with value regs_id
+Arguments recap:
+  %87 = load i16*, i16** %regs.addr_instrumented, align 4
+  %88 = load i8, i8* %u8size.addr_instrumented, align 1
+i32 %regs_id
+Replacing   %call = call i8 @Modbus_poll_instrumented(i16* %16, i8 16, i32 0), !zref_regs_id !2 with   %26 = call i8 @Modbus_poll_instrumented(i16* %16, i8 16, i32 %25)
+Replaced call
+Replacing   %call4_instrumented = call i8 @Modbus_process_FC1_instrumented(i16* %51, i8 %52, i32 0), !zref_regs_id !9 with   %53 = call i8 @Modbus_process_FC1_instrumented(i16* %51, i8 %52, i32 %regs_id)
+Replaced call
+Replacing   %call6_instrumented = call i8 @Modbus_process_FC3_instrumented(i16* %63, i8 %64, i32 0), !zref_regs_id !10 with   %65 = call i8 @Modbus_process_FC3_instrumented(i16* %63, i8 %64, i32 %regs_id)
+Replaced call
+Replacing   %call8_instrumented = call i8 @Modbus_process_FC15_instrumented(i16* %75, i8 %76, i32 0), !zref_regs_id !11 with   %77 = call i8 @Modbus_process_FC15_instrumented(i16* %75, i8 %76, i32 %regs_id)
+Replaced call
+Replacing   %call10_instrumented = call i8 @Modbus_process_FC16_instrumented(i16* %87, i8 %88, i32 0), !zref_regs_id !12 with   %89 = call i8 @Modbus_process_FC16_instrumented(i16* %87, i8 %88, i32 %regs_id)
+Replaced call
+Returning

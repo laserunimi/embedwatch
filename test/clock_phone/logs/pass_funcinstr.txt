@@ -1,0 +1,234 @@
+Instrumenting Function: hook_exit
+Function hook_exit has parameters:
+Function hook_exit doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: pinMode
+Function pinMode has parameters:
+	-i32 %pin
+	-i32 %status
+Function pinMode doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: digitalWrite
+Function digitalWrite has parameters:
+	-i32 %pin
+	-i32 %value
+Function digitalWrite doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_begin
+Function Serial_begin has parameters:
+	-i32 %boud_rate
+Function Serial_begin doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_print
+Function Serial_print has parameters:
+	-i8* %msg
+Instrumenting Function: Serial_println
+Function Serial_println has parameters:
+	-i8* %msg
+Instrumenting Function: delay
+Function delay has parameters:
+	-i32 %msec
+Function delay doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_status
+Function WiFi_status has parameters:
+	-%struct.wifi* %wifi
+Instrumenting Function: WiFi_begin
+Function WiFi_begin has parameters:
+	-%struct.wifi* %wifi
+	-i8* %ssid
+	-i8* %password
+Instrumenting Function: printWiFiStatus
+Function printWiFiStatus has parameters:
+	-%struct.wifi* %wifi
+Instrumenting Function: setupWifi
+Function setupWifi has parameters:
+	-%struct.wifi* %wifi
+Instrumenting Function: myDFPlayer_begin
+Function myDFPlayer_begin has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: myDFPlayer_readState
+Function myDFPlayer_readState has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: myDFPlayer_readVolume
+Function myDFPlayer_readVolume has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: myDFPlayer_volume
+Function myDFPlayer_volume has parameters:
+	-%struct.mp3* %mp3
+	-i32 %value
+Instrumenting Function: myDFPlayer_readFileCounts
+Function myDFPlayer_readFileCounts has parameters:
+	-i32 %mp3
+Function myDFPlayer_readFileCounts doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_select
+Function myDFPlayer_select has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: myDFPlayer_play
+Function myDFPlayer_play has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: SetupMP3
+Function SetupMP3 has parameters:
+	-%struct.mp3* %mp3
+Instrumenting Function: setup
+Function setup has parameters:
+	-%struct.mp3* %mp3
+	-%struct.wifi* %wifi
+Instrumenting Function: main
+Function main has parameters:
+	-i32 %argc
+	-i8** %argv
+Function main doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_print_instrumented
+Function Serial_print_instrumented has parameters:
+	-i8* %msg
+	-i32 %msg_id
+Function Serial_print_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: Serial_println_instrumented
+Function Serial_println_instrumented has parameters:
+	-i8* %msg
+	-i32 %msg_id
+Function Serial_println_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_status_instrumented
+Function WiFi_status_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i32 %wifi_id
+Function WiFi_status_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: WiFi_begin_instrumented
+Function WiFi_begin_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i8* %ssid
+	-i8* %password
+	-i32 %wifi_id
+	-i32 %ssid_id
+	-i32 %password_id
+Function WiFi_begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: printWiFiStatus_instrumented
+Function printWiFiStatus_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i32 %wifi_id
+Function printWiFiStatus_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setupWifi_instrumented
+Function setupWifi_instrumented has parameters:
+	-%struct.wifi* %wifi
+	-i32 %wifi_id
+Function setupWifi_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_begin_instrumented
+Function myDFPlayer_begin_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function myDFPlayer_begin_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_readState_instrumented
+Function myDFPlayer_readState_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function myDFPlayer_readState_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_readVolume_instrumented
+Function myDFPlayer_readVolume_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function myDFPlayer_readVolume_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_volume_instrumented
+Function myDFPlayer_volume_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %value
+	-i32 %mp3_id
+Function myDFPlayer_volume_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_select_instrumented
+Function myDFPlayer_select_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function myDFPlayer_select_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: myDFPlayer_play_instrumented
+Function myDFPlayer_play_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function myDFPlayer_play_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: SetupMP3_instrumented
+Function SetupMP3_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-i32 %mp3_id
+Function SetupMP3_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Instrumenting Function: setup_instrumented
+Function setup_instrumented has parameters:
+	-%struct.mp3* %mp3
+	-%struct.wifi* %wifi
+	-i32 %mp3_id
+	-i32 %wifi_id
+Function setup_instrumented doesn't need instrumentation since either no pointer arguments are present or it is blacklisted
+Function Serial_print was extended with 1 arguments
+Function Serial_println was extended with 1 arguments
+Function SetupMP3 was extended with 1 arguments
+Function WiFi_begin was extended with 3 arguments
+Function WiFi_status was extended with 1 arguments
+Function myDFPlayer_begin was extended with 1 arguments
+Function myDFPlayer_play was extended with 1 arguments
+Function myDFPlayer_readState was extended with 1 arguments
+Function myDFPlayer_readVolume was extended with 1 arguments
+Function myDFPlayer_select was extended with 1 arguments
+Function myDFPlayer_volume was extended with 1 arguments
+Function printWiFiStatus was extended with 1 arguments
+Function setup was extended with 2 arguments
+Function setupWifi was extended with 1 arguments
+Searching for calls to:
+	- Serial_print
+	- Serial_println
+	- SetupMP3
+	- WiFi_begin
+	- WiFi_status
+	- myDFPlayer_begin
+	- myDFPlayer_play
+	- myDFPlayer_readState
+	- myDFPlayer_readVolume
+	- myDFPlayer_select
+	- myDFPlayer_volume
+	- printWiFiStatus
+	- setup
+	- setupWifi
+Found call to setup inside main
+Found call to Serial_println inside main
+Found call to myDFPlayer_play inside main
+Found call to Serial_println inside setupWifi_instrumented
+Found call to Serial_print inside setupWifi_instrumented
+Found call to Serial_println inside setupWifi_instrumented
+Found call to WiFi_begin inside setupWifi_instrumented
+Found call to WiFi_status inside setupWifi_instrumented
+Found call to printWiFiStatus inside setupWifi_instrumented
+Found call to Serial_print inside SetupMP3_instrumented
+Found call to myDFPlayer_begin inside SetupMP3_instrumented
+Found call to Serial_print inside SetupMP3_instrumented
+Found call to myDFPlayer_readState inside SetupMP3_instrumented
+Found call to Serial_println inside SetupMP3_instrumented
+Found call to myDFPlayer_volume inside SetupMP3_instrumented
+Found call to Serial_print inside SetupMP3_instrumented
+Found call to myDFPlayer_readState inside SetupMP3_instrumented
+Found call to Serial_print inside SetupMP3_instrumented
+Found call to Serial_print inside SetupMP3_instrumented
+Found call to myDFPlayer_select inside SetupMP3_instrumented
+Found call to SetupMP3 inside setup_instrumented
+Found call to setupWifi inside setup_instrumented
+Found call to Serial_println inside setup_instrumented
+Replacing calls
+Removing function Serial_print
+Remove OK Serial_print
+Removing function Serial_println
+Remove OK Serial_println
+Removing function SetupMP3
+Remove OK SetupMP3
+Removing function WiFi_begin
+Remove OK WiFi_begin
+Removing function WiFi_status
+Remove OK WiFi_status
+Removing function myDFPlayer_begin
+Remove OK myDFPlayer_begin
+Removing function myDFPlayer_play
+Remove OK myDFPlayer_play
+Removing function myDFPlayer_readState
+Remove OK myDFPlayer_readState
+Removing function myDFPlayer_readVolume
+Remove OK myDFPlayer_readVolume
+Removing function myDFPlayer_select
+Remove OK myDFPlayer_select
+Removing function myDFPlayer_volume
+Remove OK myDFPlayer_volume
+Removing function printWiFiStatus
+Remove OK printWiFiStatus
+Removing function setup
+Remove OK setup
+Removing function setupWifi
+Remove OK setupWifi

@@ -1,0 +1,47 @@
+<root>
+  <row>
+    <name>WordPress</name>
+    <slug>wordpress</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>WordPress&gt;CSVImporterplugin</name>
+    <slug>csvimporterplugin</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>WordPress&gt;CSVImporterplugin&gt;ACFSupport</name>
+    <slug>acfsupport</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>WordPress&gt;CSVImporterplugin&gt;Toolset support</name>
+    <slug>toolset-support</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>CRM</name>
+    <slug>crm</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>CRM&gt;VtigerMailchimp</name>
+    <slug>vtigermailchimp</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>CRM&gt;SuiteMailchimp</name>
+    <slug>suitemailchimp</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>Mobile Apps</name>
+    <slug>mobile-apps</slug>
+    <description>plugins and modules</description>
+  </row>
+  <row>
+    <name>HRM</name>
+    <slug>hrm</slug>
+    <description>plugins and modules</description>
+  </row>
+</root>

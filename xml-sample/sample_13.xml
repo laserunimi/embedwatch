@@ -1,0 +1,12 @@
+<root>
+  <row>
+    <post_title>Intermediary Sample post1</post_title>
+    <post_content>Sample paragraph</post_content>
+    <post_excerpt></post_excerpt>
+    <post_name>intermediary-sample-post</post_name>
+    <post_author>admin@gmail.com</post_author>
+    <post_status>publish</post_status>
+    <intermediate>intermediatepost1, intermediatepost2</intermediate>
+    <relationship_slug>post1slug-post2slug</relationship_slug>
+  </row>
+</root>
